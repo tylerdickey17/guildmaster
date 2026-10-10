@@ -63,14 +63,15 @@ These details appeared in the conversation but lack explicit user confirmation i
 | --- | --- | --- |
 | Each mercenary tracks XP individually; XP beyond the level threshold carries over. | P-001 | Confirm the bookkeeping and carryover rule. |
 | Personnel receive a per-contract rate based on level. | P-002 | Confirm the payment basis and when a newly earned level changes pay. |
-| Company profit equals contract payout minus squad pay minus overhead. | P-003 | Confirm this accounting model and define overhead. |
+
+The financial model previously recorded as provisional **P-003** is now confirmed by **B-006**: company profit equals contract payout minus squad pay minus overhead. See [System B](system-b-contracts.md). The definition of overhead and numerical rates remain deferred; the personnel rules above are unchanged.
 
 ## Deferred mechanics
 
 - **XP rewards:** base XP by contract, leadership and MVP amounts, exact qualifying outcomes, treatment of unsuccessful or incomplete contracts, and who determines awards. **D-001**
 - **Pay and balancing:** rates by level, scale shape, payment timing, and the relationship between squad cost and contract payout. **D-002**
 - **Starting personnel and Leader Abilities:** the source recap leaves the starting roster and individual abilities for later. **D-003**
-- **Contract design:** mission structure, resolution, difficulty, rewards, and their interaction with personnel require later documentation. **D-004**
+- **Contract design:** [System B](system-b-contracts.md) and [System C](system-c-mission-resolution.md) now document the confirmed frameworks. Numerical difficulty, rewards, overall outcome procedures, and remaining personnel interactions are deferred. **D-004 / D-009 through D-013**
 - **Loyalty scale:** starting score, range or tiers, limits, how loyalty modifies rival-deployment probability, other ways to gain or lose loyalty, and the size of the rescue bonus. **D-006**
 - **Daily status procedure:** dice or random method, probabilities, eligible NPCs and treatment of ongoing deployments or captivity, mission duration and return timing, and the relationship between the roll and player-assigned guild missions. **D-007**
 - **Rival-mission capture and rescue:** how and when rival mission outcomes are resolved, capture probability, rescue-mission generation and resolution, and post-rescue availability. **D-008**

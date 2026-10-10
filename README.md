@@ -6,13 +6,15 @@ Repository: [`tylerdickey17/sf2e-contract-operations`](https://github.com/tylerd
 
 A design workspace for a mercenary-company subsystem for **Starfinder 2e**, initially intended for *The Brood Beneath* campaign.
 
-Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the personnel rules already agreed in discussion and identifies what still needs design or balancing.
+Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, and mission-resolution frameworks and identifies what still needs design or balancing.
 
 **Stage:** initial design documentation; incomplete and not yet balanced or playtested. A Foundry VTT v14 module is a future target. This repository contains no module implementation or compatibility claim.
 
 ## Documents
 
 - [System A: Personnel](docs/system-a-personnel.md) — advancement, pay, loyalty, daily availability, rival deployment, and rescue decisions, plus unresolved details and missing source material.
+- [System B: Contracts](docs/system-b-contracts.md) — job board, ten categories, contract cards, rewards, rescue contracts, and finances.
+- [System C: Mission Resolution](docs/system-c-mission-resolution.md) — three shared phase rolls, automatic support, visible outcomes, continuing consequences, and deployment risk versus reward.
 - [Decision log](docs/design-decisions.md) — decision IDs, evidence, status, and unresolved questions.
 
 ## Decision status
@@ -26,9 +28,9 @@ These labels describe the evidence behind a rule, not its playtest quality. An a
 
 ## Working with the design
 
-When a rule changes, update both the personnel document and its decision-log entry. Keep the reasoning and prior outcome available; mark replaced decisions as superseded rather than silently overwriting the history. Examples and possible implementations must remain labeled as proposals until approved.
+When a rule changes, update the affected system documents and their decision-log entries. Keep the reasoning and prior outcome available; mark replaced decisions as superseded rather than silently overwriting the history. Examples and possible implementations must remain labeled as proposals until approved.
 
-Next steps are to recover the missing personnel decisions, settle the provisional details, and balance XP rewards and personnel pay alongside contract rewards. Contract resolution and module development need their own later design work.
+Next steps are to recover the missing personnel decisions, settle the provisional details, and balance XP rewards and personnel pay alongside contract rewards. Systems B and C now establish the contract and resolution frameworks; their numerical values and remaining procedures still need design and playtesting. Module development remains deferred.
 
 The loyalty framework also needs a score scale, daily status probabilities and persistence rules, rival-mission capture procedures, and a numerical rescue bonus. Foundry automation details remain deferred.
 
@@ -37,3 +39,5 @@ The loyalty framework also needs a score scale, daily status probabilities and p
 Initial documentation prepared on October 10, 2026 from [Starfinder Business Systems](https://chatgpt.com/c/6acaafb2-9434-83e9-8bd8-517d291ed264) and the repository-setup request. Access to the source conversation may require its owner's account.
 
 The retrieved source includes five recent user exchanges covering XP, pay, and documentation. It does not expose the earlier personnel discussion. The October 10, 2026 follow-up in the repository-setup conversation adds the loyalty, daily availability, rival deployment, capture, and rescue framework. See the decision log for exact evidence and limitations. Numerical rules here are subsystem design choices, not a verification of the published Starfinder rules.
+
+The October 10, 2026 Systems B/C update uses the current explicit documentation request as confirmation of the listed framework. A fresh read of the linked conversation returned five recent exchanges about automatic support, squad bounds, and deployment risk/reward, with no older-page cursor. The update does not claim to recover the full earlier discussion or resolve unrelated System A source gaps.
