@@ -6,7 +6,7 @@ Status: initial design record, October 10, 2026. Read the [decision log](design-
 
 Mercenaries develop through contract work. Higher levels bring higher pay, creating a cost to advancement. A strong individual does not necessarily make the best team; concentrating advancement in one NPC is allowed, with squad composition remaining a player consideration.
 
-The available source establishes the advancement core and the direction of personnel pay. It does not provide a complete, playable personnel subsystem.
+The available source establishes the advancement core, the direction of personnel pay, and the loyalty and availability framework. The subsystem still needs numerical balancing and resolution procedures before it is playable.
 
 ## Confirmed decisions
 
@@ -31,6 +31,30 @@ This establishes the direction of the pay scale, not its shape. Neither a linear
 
 Players may concentrate bonus XP on one NPC when that NPC qualifies for both awards. There is no approved anti-stacking restriction or forced equalization of total XP. The user's stated expectation is that investing in one NPC does not necessarily produce the best team. **A-004**
 
+### Loyalty and daily availability
+
+Each NPC has a loyalty score or level. Higher loyalty makes that NPC less likely to work for a rival guild and therefore less likely to be deployed on a rival guild's mission. The loyalty scale and the relationship between score and probability remain to be designed. **A-006**
+
+At the start of each in-game day, each NPC receives an automatic status roll to determine availability or deployment. The roll must account for loyalty when determining rival-guild deployment. The roll procedure and its interaction with ongoing missions and other statuses are deferred. **A-007**
+
+The design distinguishes these availability and deployment states. Names below are descriptive documentation labels; final interface wording can be chosen later. **A-008**
+
+| State | Meaning |
+| --- | --- |
+| Available | The NPC is available for the player's guild to deploy. |
+| Deployed — Guild Mission | The NPC is deployed on a mission for the player's guild. |
+| Deployed — Rival Guild Mission | The NPC is deployed on a mission for a rival guild. |
+
+The two deployment states must remain distinguishable. The available source does not yet specify whether the daily roll assigns a new mission for the player's guild or merely reflects a deployment already assigned by the players.
+
+### Rival missions, capture, and rescue
+
+An NPC deployed by a rival guild can be captured during that mission. That capture still generates a rescue mission for the party, even though the NPC was working for another guild. Capture is a possible mission outcome; it is not an additional confirmed direct result of the daily availability roll. **A-009**
+
+If the party successfully rescues that NPC, the rescued NPC receives a large loyalty bonus. The magnitude of that bonus, its timing, and any maximum loyalty limit are deferred. **A-010**
+
+This connects roster availability to adventuring: rival deployment can lead to capture, capture creates a rescue mission, and a successful rescue substantially strengthens the NPC's loyalty to the player's guild. The exact capture and rescue procedures remain open.
+
 ## Provisional details from the assistant's recap
 
 These details appeared in the conversation but lack explicit user confirmation in the retrieved portion. They are recorded here for review rather than treated as settled rules.
@@ -47,6 +71,9 @@ These details appeared in the conversation but lack explicit user confirmation i
 - **Pay and balancing:** rates by level, scale shape, payment timing, and the relationship between squad cost and contract payout. **D-002**
 - **Starting personnel and Leader Abilities:** the source recap leaves the starting roster and individual abilities for later. **D-003**
 - **Contract design:** mission structure, resolution, difficulty, rewards, and their interaction with personnel require later documentation. **D-004**
+- **Loyalty scale:** starting score, range or tiers, limits, how loyalty modifies rival-deployment probability, other ways to gain or lose loyalty, and the size of the rescue bonus. **D-006**
+- **Daily status procedure:** dice or random method, probabilities, eligible NPCs and treatment of ongoing deployments or captivity, mission duration and return timing, and the relationship between the roll and player-assigned guild missions. **D-007**
+- **Rival-mission capture and rescue:** how and when rival mission outcomes are resolved, capture probability, rescue-mission generation and resolution, and post-rescue availability. **D-008**
 
 No placeholder numbers in these areas should be used as approved rules.
 
@@ -58,11 +85,13 @@ The assistant's recap says that NPC statistics, recruitment, statuses, and leade
 | --- | --- |
 | NPC statistics | The approved statistic model and how it changes with advancement. |
 | Recruitment | The approved recruitment process and any limits or costs. |
-| Statuses | The approved status list, effects, and transitions. |
+| Statuses | The earlier status list, effects, and transitions beyond the availability and two deployment states confirmed above. Reconcile those earlier rules with loyalty, daily rolls, and capture. |
 | Leadership | Leader selection, qualifications, and effects beyond the confirmed XP bonus. |
 
 Recover these decisions before adding rules for these topics. A source gap is not permission to redesign an already agreed mechanic.
 
 ## Future implementation boundary
 
-Foundry VTT v14 is a future implementation target. This phase adds no module manifest, source code, data schema, automation, or implementation scaffolding. Performance-based MVP triggers and automatic XP calculation remain suggestions, not implementation requirements. **P-004 / R-001**
+Foundry VTT v14 is a future implementation target. This phase adds no module manifest, source code, data schema, automation, or implementation scaffolding. The automatic daily status roll is a confirmed gameplay requirement; its Foundry implementation is deferred. How the module advances in-game days, records rival mission outcomes, generates rescue missions, and applies rescue loyalty bonuses will be designed later. **A-007 / D-005 / R-001**
+
+Performance-based MVP triggers and automatic XP calculation remain suggestions. **P-004**
