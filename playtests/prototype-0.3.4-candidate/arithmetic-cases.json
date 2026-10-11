@@ -1,50 +1,115 @@
 {
-  "scope": "Draft arithmetic, not engine or campaign tests",
+  "scope": "Candidate arithmetic; not engine or campaign tests",
   "cases": [
     {
       "case": "lean",
-      "steady_month_upkeep": 150,
-      "months_without_income_or_other_spending": 13,
-      "remaining_after_one_upkeep": 1850
+      "steady_month_upkeep": 300,
+      "remaining_after_one_upkeep_from_2000": 1700,
+      "excluded": [
+        "installation purchases",
+        "mission pay",
+        "training materials",
+        "debt"
+      ]
     },
     {
       "case": "training",
-      "steady_month_upkeep": 215,
-      "months_without_income_or_other_spending": 9,
-      "remaining_after_one_upkeep": 1785
+      "steady_month_upkeep": 365,
+      "remaining_after_one_upkeep_from_2000": 1635,
+      "excluded": [
+        "installation purchases",
+        "mission pay",
+        "training materials",
+        "debt"
+      ]
     },
     {
       "case": "infirmary",
-      "steady_month_upkeep": 240,
-      "months_without_income_or_other_spending": 8,
-      "remaining_after_one_upkeep": 1760
+      "steady_month_upkeep": 390,
+      "remaining_after_one_upkeep_from_2000": 1610,
+      "excluded": [
+        "installation purchases",
+        "mission pay",
+        "training materials",
+        "debt"
+      ]
     },
     {
       "case": "recruitment",
-      "steady_month_upkeep": 185,
-      "months_without_income_or_other_spending": 10,
-      "remaining_after_one_upkeep": 1815
+      "steady_month_upkeep": 335,
+      "remaining_after_one_upkeep_from_2000": 1665,
+      "excluded": [
+        "installation purchases",
+        "mission pay",
+        "training materials",
+        "debt"
+      ]
     },
     {
       "case": "training_infirmary",
-      "steady_month_upkeep": 305,
-      "months_without_income_or_other_spending": 6,
-      "remaining_after_one_upkeep": 1695
+      "steady_month_upkeep": 455,
+      "remaining_after_one_upkeep_from_2000": 1545,
+      "excluded": [
+        "installation purchases",
+        "mission pay",
+        "training materials",
+        "debt"
+      ]
     },
     {
       "case": "training_recruitment",
-      "steady_month_upkeep": 250,
-      "months_without_income_or_other_spending": 8,
-      "remaining_after_one_upkeep": 1750
+      "steady_month_upkeep": 400,
+      "remaining_after_one_upkeep_from_2000": 1600,
+      "excluded": [
+        "installation purchases",
+        "mission pay",
+        "training materials",
+        "debt"
+      ]
+    },
+    {
+      "case": "staffed_opening",
+      "due": 350,
+      "treasury_before": 2000,
+      "treasury_after": 1650,
+      "first_asset_maintenance_due": "Turn2",
+      "steady_upkeep": 365
+    },
+    {
+      "case": "training_hq_standard_success",
+      "receipt": 600,
+      "free_agent_wages": 200,
+      "upkeep": 365,
+      "net": 35
     },
     {
       "case": "two_retained_plus_two_free",
       "free_assignment": 50,
       "retained_retainer": 25,
       "retained_assignment": 40,
-      "monthly_upkeep": 200,
+      "monthly_upkeep": 350,
       "mission_wages": 180,
-      "net_after_600_standard_receipt": 220
+      "net_after_600_standard_receipt": 70
+    },
+    {
+      "case": "permanent_hq_four_upgrades",
+      "facilities": [
+        "training_suite",
+        "infirmary",
+        "recruitment_office",
+        "comms_hub"
+      ],
+      "occupied_slots": 4,
+      "monthly_total": 365
+    },
+    {
+      "case": "outpost_with_training",
+      "property_monthly": 80,
+      "chief_monthly": 125,
+      "facility_monthly": 65,
+      "monthly_total": 270,
+      "property_and_chief_hire_upfront": 3100,
+      "training_installation_upfront": 600
     }
   ]
 }

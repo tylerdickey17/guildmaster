@@ -322,3 +322,10 @@ Primary evidence: current Work conversation, including the user's request for a 
 **Confirmed user requirement:** make Upkeep more meaningful and visible in the browser playtest, adding a base and expansions. **Designer-proposed candidate:** Turn1 invoice, visible leased HQ and slots, itemized costs/forecasts, staffed/lean scenario presets, Training Suite/Infirmary/Recruitment Office payroll, candidate retained rates and explicit service/payment clocks. Individual values are not claimed user-approved or balanced. See [Upkeep draft](upkeep-and-base-playtest.md).
 
 **Implementation blocked:** execution workspace offline; supported Site source-helper/testing/packaging unavailable. Documentation and arithmetic cases only, live browser remains0.3.3. No changed executable values, tests or deployment. Existing staffing and restructuring rules remain accepted; this candidate does not silently finalize missed-retainer, termination, release or creditor procedures.
+
+## LIVE-019–020: base-price approval and purchase testing
+
+- **LIVE-019 — Explicit user approval:** use300 credits per Guild Turn for the starter leased base, with250 rent and50 routine services; replaces the earlier150 candidate for the next browser prototype. At steady state a staffed Training Suite brings this to365. Deployed0.3.3 still uses150 until code migration.
+- **LIVE-020 — Confirmed scope; designer-selected catalog:** add purchasable new bases and upgrades so players can test their values. [Base purchase catalog](base-purchase-playtest.md) retains older3,000 Field HQ/6,000 Permanent HQ/3,000 Outpost prices for ready-property offers, separates ongoing chief/facility staffing, adds Comms Hub and an artificial expansion-test preset. Exact new effects/staff prices are not individually user-approved or balance-tested. Construction versus turnkey, site-specific services, transfer clocks, lease overlap and one shared pool remain explicit.
+
+These additions are saved as candidate design/data only. Execution workspace is disconnected, so browser code/testing/publication remains blocked; no new deployment is claimed.

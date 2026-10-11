@@ -1,12 +1,12 @@
 # Upkeep and base playtest: 0.3.4 candidate
 
-October 11, 2026 (America/Chicago). **Designer-proposed first draft; not implemented or deployed.**
+October 11, 2026 (America/Chicago). **Accepted feature direction; 300-credit starter base explicitly approved. Other values remain designer-selected candidates. Not implemented or deployed.**
 
 The user requested a more meaningful, visible Upkeep phase with a base and expansions in the browser playtest. The current execution workspace is disconnected, so the supported Site source-helper/testing/publication workflow cannot run. This checkpoint preserves concrete values and implementation requirements; it does not claim a site update.
 
 ## Problem found in the existing code
 
-Browser 0.3.3 already has a 150-credit inclusive HQ lease, two installation slots, Training Suite and Infirmary construction, and facility bills. However, a fresh game begins in Activity; later Upkeep auto-deducts bills and mainly displays that they have settled. Development lists projects, but the base and its operating budget are not represented as a clear management screen.
+Browser 0.3.3 already has a 150-credit inclusive HQ lease (historical deployed value; the user has since approved300 for the next prototype), two installation slots, Training Suite and Infirmary construction, and facility bills. However, a fresh game begins in Activity; later Upkeep auto-deducts bills and mainly displays that they have settled. Development lists projects, but the base and its operating budget are not represented as a clear management screen.
 
 Current source: [engine](../prototypes/browser-playtest/dist/engine.js), [interface](../prototypes/browser-playtest/dist/app.js), [values](../prototypes/browser-playtest/dist/values.js). The live site remains 0.3.3. This candidate is separate from its frozen executable values.
 
@@ -28,21 +28,20 @@ The page should explain that client receipts and assignment wages settled in the
 
 **Station Operations Office**: leased station headquarters, two upgrade slots, four unpaid PC officers, no roster cap.
 
-Preserve **150 credits total monthly base cost**. Proposed presentation split:
+The user explicitly accepted **300 credits total monthly base cost** for the next prototype. Presentation split:
 
 | Component | Monthly credits |
 | --- | ---: |
-| Lease | 100 |
-| Utilities and maintenance | 25 |
-| Routine administration and basic security | 25 |
-| **Total** | **150** |
+| Rent | 250 |
+| Utilities, maintenance and routine services | 50 |
+| **Total** | **300** |
 
-This is an illustrative allocation of the existing inclusive 150, not three additional charges. It remains one base obligation; players cannot selectively default on a presentation subcomponent. Ordinary tax/security bookkeeping stays abstracted.
+This replaces the prior150-credit candidate with the explicitly approved300-credit prototype total. It remains one base obligation; players cannot selectively default on a presentation subcomponent. Ordinary tax/security bookkeeping stays abstracted.
 
 ### New-game presets
 
-- **Lean start:** 2,000 liquid credits, four Level 1 Free Agents, leased HQ, no installed expansion. First Upkeep is 150, leaving 1,850.
-- **Staffed start:** same liquid credits, roster and HQ plus one landlord-owned Training Suite and a qualified instructor. First Upkeep is 150 base +50 instructor =200, leaving 1,800. The first asset-maintenance bill follows the occupied interval; later steady Upkeep is215.
+- **Lean start:** 2,000 liquid credits, four Level 1 Free Agents, leased HQ, no installed expansion. First Upkeep is300, leaving1,700.
+- **Staffed start:** same liquid credits, roster and HQ plus one landlord-owned Training Suite and a qualified instructor. First Upkeep is300 base +50 instructor =350, leaving1,650. The first asset-maintenance bill follows the occupied interval; later steady Upkeep is365.
 
 Use **Staffed start** as the recommended demonstration of recurring upkeep and an active facility; retain Lean start for comparison. Starting fitted space is a disclosed scenario asset, not an invisible cash purchase. The landlord-owned starting suite cannot be sold for guild proceeds and awards no setup Guild XP. Its slot remains occupied unless its lease arrangement is changed. Later commissioned facilities are separately owned under their actual terms.
 
@@ -112,16 +111,16 @@ Arithmetic only, not a campaign or browser test:
 
 | Steady monthly configuration | Upkeep | Liquid reserve after one bill from2,000 |
 | --- | ---: | ---: |
-| Bare HQ | 150 | 1,850 |
-| HQ + Recruitment Office | 185 | 1,815 |
-| HQ + Training Suite | 215 | 1,785 |
-| HQ + Infirmary | 240 | 1,760 |
-| HQ + Training + Recruitment | 250 | 1,750 |
-| HQ + Training + Infirmary | 305 | 1,695 |
+| Bare HQ | 300 | 1,700 |
+| HQ + Recruitment Office | 335 | 1,665 |
+| HQ + Training Suite | 365 | 1,635 |
+| HQ + Infirmary | 390 | 1,610 |
+| HQ + Training + Recruitment | 400 | 1,600 |
+| HQ + Training + Infirmary | 455 | 1,545 |
 
 These examples exclude installation purchases, mission wages, optional training/materials and debt. They are not claims about how many full campaign months the treasury supports.
 
-Two retained and two free Level1 operatives at a bare HQ cost200/month in base+retainers and180 assignment wages. A successful unadjusted600-credit Standard receipt leaves220 after those costs, before other spending. Retained exclusivity has a continuing cost even though its assignment rate is reduced.
+Two retained and two free Level1 operatives at a bare HQ cost350/month in base+retainers and180 assignment wages. A successful unadjusted600-credit Standard receipt leaves70 after those costs, before other spending. Retained exclusivity has a continuing cost even though its assignment rate is reduced.
 
 ## Implementation acceptance checks
 
@@ -145,3 +144,7 @@ Two retained and two free Level1 operatives at a bare HQ cost200/month in base+r
 [Candidate values](../playtests/prototype-0.3.4-candidate/upkeep-values.json) and [arithmetic cases](../playtests/prototype-0.3.4-candidate/arithmetic-cases.json) reproduce the draft. The arithmetic was checked in the conversation's JavaScript runtime; no Node engine tests, browser QA, Site source push or deployment could run with the execution workspace offline.
 
 The current site remains [prototype0.3.3](https://contract-operations-playtest.primeangel2.chatgpt.site). Resume through the existing Sites source-helper workflow once the workspace is connected; retain the same project and private audience. No replacement site or unverified code patch is published in this checkpoint.
+
+## Approved base-price revision and property catalog
+
+The user accepted300-credit monthly starter-base expense (250 rent +50 routine services), accepted adding the Upkeep features to the site, and requested purchasable bases/upgrades for value testing. [Base purchase and upgrade catalog](base-purchase-playtest.md) adds turnkey Mobile Field HQ, Permanent Operations Center and Regional Outpost offers, a staffed Comms Hub, site-specific slots/staffing, transfer/lease boundaries and an optional Expansion test preset. Remaining catalog prices are designer-selected prototypes, with property prices retained from the earlier numerical pack. Browser0.3.3 remains unchanged while the execution workspace is offline.
