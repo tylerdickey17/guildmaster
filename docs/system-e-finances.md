@@ -1,5 +1,7 @@
 # System E: Finances
 
+> **Latest staffing pay boundary:** [Officers and staffing](officers-and-staffing.md) adds Upkeep salaries for facility staff and one disclosed employment agreement for a retained officer's combined duties. Do not automatically double-charge salary and retainer, or payroll already included in facility overhead. Rates remain unresolved; browser 0.3.3 is unchanged.
+
 > **Latest accepted employment rules:** [Free Agents and Retained Operatives](personnel-employment.md). Retainers are Upkeep overhead; mission wages settle in Events. This later design checkpoint is recorded but not yet in browser0.3.3. See the [session handoff](session-checkpoint-2026-10-11.md).
 
 > **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.

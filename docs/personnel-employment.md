@@ -47,9 +47,13 @@ For Retained Operatives, use their reduced assignment quote as the full/half bas
 - First retainer payment for a worker hired during Activity: upfront charge, next-Upkeep start, any proration, and interaction with existing onboarding and hiring fees.
 - Missed-retainer notices, cure window, Loyalty effect, termination and when exclusivity ends. Reconcile with existing per-obligation financial distress rather than creating silent rival deployment.
 - Conversion between Free Agent and Retained Operative, agreement renewal and release rules.
-- Whether a retained NPC officer's salary includes the retainer or is a distinct obligation; avoid charging for the same employment commitment twice without disclosed terms. Starting PC officers remain unpaid fixtures.
+- Exact combined pay for retained officers and support staff. The later [officer/staffing draft](officers-and-staffing.md) adopts one employment agreement covering retained and officer duties, avoiding an automatic second full salary. Rates and separately priced duties remain to be authored. Starting PC officers remain unpaid fixtures.
 - How Reputation changes affect existing agreements versus access to new candidates. A recruitment gate alone does not establish automatic contract termination.
 
 ## Implementation boundary
 
 Browser0.3.3 has one ordinary assignment-pay model and no employment-type or retainer system. Next implementation should show worker type and both pay amounts before hiring/deployment, settle retainers once in Upkeep, and settle actual assignment wages in Events. Full location/asset overhead still needs a playable treatment alongside these costs. The proposed Foundry implementation should preserve the same phase and obligation distinctions; no module code or compatibility claim is added by this checkpoint.
+
+## Later officer and staffing checkpoint
+
+The accepted [officer/staffing working draft](officers-and-staffing.md) adds Personnel Officer signature **Negotiate Retention** as a proposed conversion procedure, without finalizing its prices, access gate or four-degree outcomes. Support assignments and offices are separate from employment type and availability. Retained officers use one agreement covering both duties; salaries and retainers are Upkeep overhead. Role changes use **Reorganize Command**, one shared action during Activity, once per turn. These additions remain unimplemented in browser 0.3.3.

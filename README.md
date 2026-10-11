@@ -8,16 +8,17 @@ A design workspace for a mercenary-company subsystem for **Starfinder 2e**, init
 
 Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, mission-resolution, guild-development, finance, property, and events/rival-guild frameworks and identifies what still needs design or balancing.
 
-**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.3**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers and revised failed-pay Loyalty. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner playtest feedback is positive; broader human playtesting and content/balance remain ahead. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
+**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.3**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers and revised failed-pay Loyalty. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. The later officer/staffing working draft is documented but not implemented in the browser. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
 
 ## Documents
 
-- [Latest session checkpoint: October11](docs/session-checkpoint-2026-10-11.md) — owner proof-of-concept feedback, starting-capital discussion and next-session Site/Foundry agenda.
+- [Latest session checkpoint: October11](docs/session-checkpoint-2026-10-11.md) — owner/spouse proof-of-concept feedback, employment, officer/staffing decisions and next authoring work.
+- [Officer positions and outpost staffing](docs/officers-and-staffing.md) — four founding offices, specialist progression and signature actions, facility staffing, and Reorganize Command; accepted working draft with provisional values, queued for implementation.
 - [Personnel employment](docs/personnel-employment.md) — accepted Free Agent/Retained Operative rules and payment phases; queued for browser implementation, with rates and threshold unresolved.
 
 - [Play the browser demo](https://contract-operations-playtest.primeangel2.chatgpt.site) — interactive opening-season playtest using prototype0.3.3; private owner access.
 - [Browser playtest guide](docs/browser-playtest.md) — first session, feedback export, verification and scope; [source and tests](prototypes/browser-playtest/README.md).
-- [Live-play patch0.3.3](docs/prototype-values-v0.3.3.md) — current authority for party-sized shared actions, officer roles and failed-pay Loyalty.
+- [Live-play patch0.3.3](docs/prototype-values-v0.3.3.md) — implemented authority for party-sized shared actions and failed-pay Loyalty; later office-access rules are in the officer/staffing draft.
 - [Live-play patch0.3.2](docs/prototype-values-v0.3.2.md) — current authority for Events contract resolution, crew circumstance bonuses and retained cash discounts.
 - [Prototype values0.3.1](docs/prototype-values-v0.3.1.md) — retained numerical patch; applies where0.3.2 does not override it.
 - [Full numerical pack0.3.0](docs/prototype-values-v0.3.md) — frozen starting values, complete action/feat/facility/event cards; apply0.3.1 changes above.

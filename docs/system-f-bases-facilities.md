@@ -1,5 +1,7 @@
 # System F: Bases & Facilities
 
+> **Latest officer and staffing design:** [Officer positions and outpost staffing](officers-and-staffing.md) records founding/specialist offices, exclusive action concepts, staffing and **Reorganize Command (1 action, Activity, once per turn)**. This later tabletop draft supersedes conflicting office-access and role-change text below; browser 0.3.3 does not implement it yet.
+
 > **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
 
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.

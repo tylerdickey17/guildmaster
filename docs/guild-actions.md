@@ -1,5 +1,7 @@
 # Guild Action catalog
 
+> **Latest officer and staffing design:** [Officer positions and outpost staffing](officers-and-staffing.md) records founding/specialist offices, exclusive action concepts, staffing and **Reorganize Command (1 action, Activity, once per turn)**. This later tabletop draft supersedes conflicting office-access and role-change text below; browser 0.3.3 does not implement it yet.
+
 > Current pool, starting PC officers and failed-pay Loyalty are superseded where conflicting by [the0.3.3 live-play patch](prototype-values-v0.3.3.md). Older evidence and decisions remain for provenance.
 
 > **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
@@ -9,7 +11,7 @@
 
 Status: accepted names and conceptual purposes, October 10, 2026. See the [integration checkpoint](integration-checkpoint.md) for timing and the [decision log](design-decisions.md) for INT-016.
 
-Every Guild Action needs an available PC/NPC officer and uses the shared level-based action pool. The provisional officer limit is two per turn. Basic actions are intended to remain accessible to any available eligible officer; trained actions require the listed proficiency. No Expert-tier action catalog is adopted.
+Every Guild Action needs an available PC/NPC officer and uses the shared pool: PC count + Guild Level − 1. There are no personal officer action caps. Basic actions remain accessible to any available eligible officer. Matching signature actions now require both their assigned office and trained proficiency; see [officers and staffing](officers-and-staffing.md). No Expert-tier catalog is adopted.
 
 **Current costs:** edition 0.2 adopts one action for every accepted basic/trained action and Relocate Operations as a prototype. Prior Secure Contract/Recruit Operative user approvals remain. Numerical effects, resources, DCs and exceptions await balancing/content; the prior provisional cost distinction is retained in historical logs.
 
@@ -24,7 +26,8 @@ Every Guild Action needs an available PC/NPC officer and uses the shared level-b
 | Promote the Guild | Modestly improve public reputation through outreach/publicity/service. |
 | Boost Morale | Invest in personnel loyalty through recognition/support/team development. |
 | Establish Relations | Improve relations with another guild or organization. |
-| Appoint Officer | Hire an outside officer or promote an eligible existing member. |
+| Appoint Officer | Hire an outside officer or initially appoint an eligible existing member. Reassigning existing offices uses Reorganize Command. |
+| Reorganize Command | Redistribute existing primary officer positions during Activity; one shared action covers the reshuffle, once per Guild Turn. No credit fee for rearranging existing personnel. |
 | Commission Project | Begin construction, an upgrade, or property expansion. Ongoing progress is automatic; manager remains committed. Edition 0.2 adopts minimal facility-disruption/repair scope. |
 | Secure Financing | Apply for borrowing/refinancing, subject to lender approval and debt requirements. |
 | Negotiate Property Deal | Buy, lease, or sell property, subject to transaction terms. |
@@ -53,7 +56,7 @@ Proficiency is an access requirement, not an automatic guaranteed bonus or succe
 
 **Relocate Operations** is accepted through INT-009: initiate headquarters/facility relocation, observing Transferable N, slots, lease restrictions, and inactive transfer time. Its one-action prototype cost is now adopted in edition 0.2; no additional actions are spent just to advance an existing transfer.
 
-Gather Intel, Provide R&R, Reorganize Command, and Renegotiate Terms were proposed earlier but were not individually finalized. Keep them as optional catalog candidates rather than silently treating all five earlier suggestions as approved. Distinguish general Gather Intel from trained technical investigation, Provide R&R from medical recovery, and ordinary lease/contract renegotiation from Secure Financing.
+**Reorganize Command is now adopted** by the October 11 officer-design checkpoint; the earlier optional-only status is superseded. It costs one shared action during Activity, once per turn, and covers the whole reshuffle. Gather Intel, Provide R&R and Renegotiate Terms remain earlier optional concepts unless explicitly adopted under a new signature card. Distinguish general Gather Intel from trained technical investigation, Provide R&R from medical recovery, and ordinary lease/contract renegotiation from Secure Financing.
 
 Expert-level Negotiate Retainer and Establish Intelligence Network are explicitly deferred. Action-free recurring-client benefits are accepted as a progression concept, not as an adopted Expert action.
 
@@ -65,7 +68,11 @@ Commerce actions consume the same shared pool before Activity. A free immediate 
 
 ## Playtest boundaries
 
-Matched acquisition A/B: one action to secure a Standard contract versus free securing, with deployment free in both. Hold initial resources, roster, officer capacity, contracts, events, and action pool constant. Compare strategic crowd-out, interesting tradeoffs, deploy-on-every-job incentives, workload, and elapsed live table time. Officer capacity starts at two; one versus two can be tested separately.
+Matched acquisition A/B: one action to secure a Standard contract versus free securing, with deployment free in both. Hold initial resources, roster, officer capacity, contracts, events, and action pool constant. Compare strategic crowd-out, interesting tradeoffs, deploy-on-every-job incentives, workload, and elapsed live table time. The earlier one-versus-two officer-capacity experiment is historical: 0.3.3 removes personal caps. Test shared-pool crowd-out and role access instead.
 
-Three starting shared actions was an assistant suggestion only. No shared actions-by-level schedule is approved.
+Three starting shared actions was an earlier assistant suggestion only. The current designer-selected prototype formula is PC count + Guild Level − 1; NPC appointments do not increase it.
 
+
+## October 11 officer signatures and staffing
+
+[Officer positions and outpost staffing](officers-and-staffing.md) supplies the complete working catalog: twelve founding signature concepts and twelve specialist success effects, plus office progression and facility staffing. Matching entries above gain the documented office gates in the tabletop design; their prior skill-only browser behavior remains implementation history. Overlapping counterintelligence/logistics names require consolidation before new cards are implemented. Numerical effects and unlock levels remain prototype choices.

@@ -1,5 +1,7 @@
 # Integration rules pass: playtest edition 0.2
 
+> **Latest officer and staffing design:** [Officer positions and outpost staffing](officers-and-staffing.md) records founding/specialist offices, exclusive action concepts, staffing and **Reorganize Command (1 action, Activity, once per turn)**. This later tabletop draft supersedes conflicting office-access and role-change text below; browser 0.3.3 does not implement it yet.
+
 > **Current live-play patches:** [0.3.3 shared pool and Loyalty](prototype-values-v0.3.3.md), then [0.3.2 Events timing and crew bonuses](prototype-values-v0.3.2.md), over [0.3.1 revisions](prototype-values-v0.3.1.md) and the [full0.3.0 catalog](prototype-values-v0.3.md). Historical deferrals and conflicting timing below are superseded by these patches. See the [simulation report](prototype-simulation-report-v0.3.md) for historical evidence and limits.
 
 Date: October 10, 2026 (America/Chicago).

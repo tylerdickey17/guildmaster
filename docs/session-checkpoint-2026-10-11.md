@@ -1,6 +1,6 @@
 # Session checkpoint: October11,2026
 
-This is the handoff after the owner's first browser playtest and subsequent employment/finance discussion. Read [personnel employment](personnel-employment.md) for the newly accepted rules and [0.3.3](prototype-values-v0.3.3.md) for the current implemented prototype.
+This handoff now includes the owner's follow-up playtests with their wife and the employment, officer-position and staffing discussions. Read [officers and staffing](officers-and-staffing.md) and [personnel employment](personnel-employment.md) for the later tabletop design, and [0.3.3](prototype-values-v0.3.3.md) for the implemented browser prototype.
 
 ## What exists
 
@@ -16,7 +16,7 @@ The implemented0.3.3 checkpoint is [commit056a2e1](https://github.com/tylerdicke
 
 ## Owner playtest feedback
 
-The user said the playtests were fun and the browser version works well as a proof of concept. This is positive feedback from the owner, not evidence of group playtests, finalized numerical balance, complete system coverage or Foundry readiness.
+The user initially said the playtests were fun and the browser version worked well as a proof of concept. They subsequently reported running playtests with their wife and said the core gameplay loop seemed good. This is positive two-person human feedback, not a controlled balance study, complete system coverage or Foundry readiness. The earlier owner-only description is superseded by this later report.
 
 The user wants to continue improving the playtest site and may begin work on the Foundry module in the next working session. This is a direction for follow-up, not a request to implement or publish the module during this checkpoint.
 
@@ -27,6 +27,18 @@ Two employment models: **Free Agents** and **Retained Operatives**. Free Agents 
 **Retainers are overhead, paid at the start of every Guild Turn in Upkeep. Assignment wages resolve in Events when the mission resolves.** Full/half/no failed-job wages apply to assignment compensation; the retainer is a separate obligation. Loyalty continues to matter under both employment models. See the employment document for exact boundaries and unresolved values.
 
 These employment rules are recorded but are not in browser0.3.3 yet.
+
+## Officer and staffing design added later in this session
+
+The user requested position-exclusive actions so each officer feels distinct, later specialist offices and outpost staff. They accepted a working draft with Commander, Operations, Quartermaster and Personnel as founding offices; Intelligence/Logistics/Diplomatic Liaison/Research at prototype Guild Levels 3/5/7/9; and an Outpost Chief plus facility-specific staff.
+
+The full draft contains twelve founding signature concepts, twelve specialist success effects, qualifications and staffing/payment boundaries. The office responsibilities and staffing structure are accepted working design; numerical effects, unlock levels, full four-degree cards and salaries remain prototype/deferred work.
+
+**Reorganize Command:** one shared Guild Action during Activity, once per Guild Turn, covers the entire reshuffle among existing PCs/appointed NPC officers. Assignments take effect immediately, each person holds one primary position and meets its requirements, no rearrangement credit fee applies, and hiring a new NPC remains separate. This supersedes free Upkeep switching and edition 0.2's role-change use of Appoint Officer.
+
+Support staff enable ongoing services rather than receiving separate action menus. Each person covers one ongoing staff assignment; location-compatible actions are permitted, construction Full Commitment remains. NPC officer/staff pay is Upkeep overhead; retained personnel's agreement covers both roles without automatic duplicate billing.
+
+See [officers and staffing](officers-and-staffing.md). These rules are saved, but not implemented in browser 0.3.3. Existing browser portfolios and unrestricted skill-based action access have not changed.
 
 ## Starting capital and overhead discussion
 
@@ -39,6 +51,8 @@ Current demo costs include150/month HQ rent and overhead for installed facilitie
 The source of startup funds remains open: personal PC investment, an earned startup award, patron backing or another campaign arrangement. The existing rule allowing PC withdrawals remains in force; earmarking company cash alone does not remove its effect on adventuring treasure if withdrawn for gear.
 
 ## Next working session
+
+Before implementation, finish officer action cards and resolve overlapping counterintelligence/logistics names. Define appointment and staff qualifications, salary quotes, vacancy handling and the fuller operating budget. Then add role gates, staffing and Reorganize Command to the browser alongside employment changes.
 
 1. Choose prototype retainer and reduced assignment-pay values, recruitment access threshold, first-payment timing and missed-retainer consequences.
 2. Add employment types and phase-separated pay to the browser, with clear quotes and upkeep costs.

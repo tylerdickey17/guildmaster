@@ -25,7 +25,7 @@ The exported chronological log includes the seed, acquisition mode, decisions, r
 
 The demo includes contracts, three mission phases, wages, reputation, loyalty, candidate hiring/onboarding, training, recovery, selected trained actions, leader and guild feats, two facilities, monthly advancement and three authored event fixtures.
 
-It omits loans and property transactions, new officer appointments, rival missions, full creditor enforcement, damage and transfers, capture/death/rescue content, Priority adventures and the complete trained-action catalog. Construction uses funded qualified external managers. Two PC officers and NPC skill profiles are scenario fixtures rather than a complete generated character catalog.
+It omits loans and property transactions, new officer appointments, rival missions, full creditor enforcement, damage and transfers, capture/death/rescue content, Priority adventures and the complete trained-action catalog. Construction uses funded qualified external managers. Four PC officers and NPC skill profiles are scenario fixtures rather than a complete generated character catalog.
 
 ## Verification and reproducibility
 
@@ -41,4 +41,8 @@ Default PC officers are Navasi, Iseph, Dae and Chk Chk; their administrative sta
 
 ## Accepted follow-up design, queued for implementation
 
-The owner found this proof of concept fun and useful. [Free Agents/Retained Operatives](personnel-employment.md), retainer payment in Upkeep, and reduced retained assignment pay in Events are accepted design additions, not current0.3.3 browser features. Full asset/location overhead and retainer amounts still need a pass before settling the starting treasury. See [the session checkpoint](session-checkpoint-2026-10-11.md) for the next Site and possible Foundry work.
+The owner found this proof of concept fun and useful, subsequently played with their wife and reported that the core loop seemed good. This is positive two-person feedback, not a controlled balance study. [Free Agents/Retained Operatives](personnel-employment.md), retainer payment in Upkeep, and reduced retained assignment pay in Events are accepted design additions, not current0.3.3 browser features. Full asset/location overhead and retainer amounts still need a pass before settling the starting treasury. See [the session checkpoint](session-checkpoint-2026-10-11.md) for the next Site and possible Foundry work.
+
+## Later officer and staffing draft
+
+[Officers and staffing](officers-and-staffing.md) now records distinct founding offices, Guild Level 3/5/7/9 specialist positions, signature action concepts, outpost/facility staffing and paid role restructuring. **Reorganize Command** costs one shared action during Activity, once per Guild Turn, covering the entire reshuffle. These are documentation-only additions: this deployed version still uses its existing portfolios and skill-based action access, with no office gates, staff-assignment system or restructuring action. Proposed numerical effects and unlock levels need testing after implementation.
