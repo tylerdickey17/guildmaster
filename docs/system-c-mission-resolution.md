@@ -4,13 +4,15 @@ Status: confirmed framework, October 10, 2026; numerical balancing and the proce
 
 ## Design intent
 
-**Maximum narrative impact. Minimum dice rolls.** Players should be able to resolve multiple contracts in one sitting. Decisions about the squad, phase leads, risks, and consequences provide depth while the normal resolution requires just three rolls. **C-001 / C-002**
+**Maximum narrative impact. Minimum dice rolls.** Players should be able to resolve multiple Standard Contracts in one sitting during Guild Turns. Decisions about the squad, phase leads, risks, and consequences provide depth while the normal resolution requires just three rolls. **C-001 / C-002**
+
+This procedure governs **Standard Contracts assigned to NPCs**. **Priority Contracts are full adventures PCs can participate in**, potentially across multiple sessions; they are not reduced to these three phase rolls. See [System B](system-b-contracts.md), **B-007**.
 
 ## Confirmed framework
 
 ### Three phases and shared rolls
 
-Resolve each contract in order: **Insertion → Engagement → Extraction**. Players designate a **lead operative for each phase**, using that operative's relevant statistics for the contract's specified skill/stat check. Share the three rolls around the table so multiple players participate. Each phase has one check; supporting NPCs do not add rolls. **C-001**
+Resolve each Standard Contract in order: **Insertion → Engagement → Extraction**. Players designate a **lead operative for each phase**, using that operative's relevant statistics for the contract's specified skill/stat check. Share the three rolls around the table so multiple players participate. Each phase has one check; supporting NPCs do not add rolls. **C-001**
 
 | Phase | Narrative role |
 | --- | --- |
@@ -28,7 +30,7 @@ Support values by proficiency, eligibility, stacking, caps, and the interaction 
 
 ### Open outcomes and consequences
 
-Every contract card openly displays **all four degrees of success and their consequences for each of the three phases**. Players can inspect those outcomes when evaluating the job. **C-003**
+Every Standard Contract card openly displays **all four degrees of success and their consequences for each of the three phases**. Players can inspect those outcomes when evaluating the job. **C-003**
 
 | Degree | Typical direction |
 | --- | --- |
@@ -47,7 +49,7 @@ For illustration only, an Insertion complication could put the site on alert for
 
 ### Deployment range and risk versus reward
 
-Every contract specifies **minimum, recommended, and maximum squad size**, and **minimum, recommended, and maximum squad level**. Squad size and squad level are separate deployment factors; both matter when evaluating the mission. **C-006**
+Every Standard Contract specifies **minimum, recommended, and maximum squad size**, and **minimum, recommended, and maximum squad level**. Squad size and squad level are separate deployment factors; both matter when evaluating the mission. **C-006**
 
 | Deployment relative to recommendation | Intended difficulty | Intended reward |
 | --- | --- | --- |
@@ -69,7 +71,7 @@ This sequence summarizes the framework; numerical content must be authored and b
 2. Assemble the squad and evaluate its size and level relative to the recommendations. Designate phase leads and share responsibility for the three rolls around the table.
 3. Resolve Insertion with its lead's single check, automatic support, and applicable deployment effects. Apply the card's result and record any continuing consequences.
 4. Resolve Engagement the same way, accounting for any effects carried from Insertion.
-5. Resolve Extraction, accounting for all still-applicable effects from earlier phases. Apply the contract's outcomes and reward terms, then account for squad pay and overhead.
+5. Resolve Extraction, accounting for all still-applicable effects from earlier phases. Apply the contract's outcomes and reward terms, then account for squad pay and the applicable share of overhead. System E charges asset-based overhead monthly; do not charge it again at each contract completion. Allocation procedures remain deferred.
 
 There is no established “two successes wins” rule, summed phase score, or extra overall mission roll. How the phase results determine overall completion and partial rewards still needs design. **D-012**
 

@@ -64,7 +64,7 @@ These details appeared in the conversation but lack explicit user confirmation i
 | Each mercenary tracks XP individually; XP beyond the level threshold carries over. | P-001 | Confirm the bookkeeping and carryover rule. |
 | Personnel receive a per-contract rate based on level. | P-002 | Confirm the payment basis and when a newly earned level changes pay. |
 
-The financial model previously recorded as provisional **P-003** is now confirmed by **B-006**: company profit equals contract payout minus squad pay minus overhead. See [System B](system-b-contracts.md). The definition of overhead and numerical rates remain deferred; the personnel rules above are unchanged.
+The financial model previously recorded as provisional **P-003** is now confirmed by **B-006**: company profit equals contract payout minus squad pay minus overhead. See [System B](system-b-contracts.md). System E now confirms asset-based monthly overhead, upgrade effects, and completion-based contract income. Numerical rates and ordinary mercenary payment terms remain deferred; NPC officer salaries are a separate confirmed monthly obligation. The personnel advancement rules above are unchanged.
 
 ## Deferred mechanics
 

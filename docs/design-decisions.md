@@ -27,6 +27,19 @@ S8 and S9 are direct confirmation in the current documentation request, not reco
 
 S6 and S7 come from the repository-setup conversation, not the linked source conversation. The assistant recaps accompanying S1–S5 are secondary evidence; their “established” labels are not treated as independent approval.
 
+### October 10, 2026 Systems D–F evidence
+
+| Anchor | User statement / context |
+| --- | --- |
+| S11 | Current D–F documentation request explicitly confirms Guild Level 1–10, Guild XP sources, automatic advancement/benefits, even-level feats, numerical reputation and five tiers, officers, and concurrent monthly Guild Turns. It also confirms treasury/withdrawals, completion income, monthly salaries/overhead, loans/collateral, distress stages, and bankruptcy continuation. |
+| S12 | Same request explicitly confirms property types, facility slots/categories, location traits/caps, construction timing/capacity/managers, purchase/finance/lease, stable values, sale/conversion, and upgrade relocation traits. It directs that damage/repairs remain provisional unless expressly finalized, numerical balancing remain deferred, existing files be preserved, and no Foundry coding begin. |
+| S13 | Fresh source read exposes five recent property exchanges, with no older-page cursor. The user chooses stable values, suggests leasing, and accepts the purchase/finance/lease proposal. The final user reply expressly makes Transferable/Permanent traits of upgrades. Damage/repair appears only in an assistant proposal, not explicit user approval. |
+| S14 | Direct clarification in this documentation chat: Standard Contracts are assigned to NPCs and completed during Guild Turns using the established mechanics; Priority Contracts are full adventures PCs can participate in, potentially over multiple sessions. |
+
+S11/S12 are direct confirmation in the documentation request, not quotations reconstructed from unavailable turns. S13 corroborates acquisition, stable values, and relocation traits, but does not recover the full D–F discussion. S14 supplies the missing Standard/Priority distinction. Existing unrelated source gaps are retained.
+
+`SD-` identifies confirmed **System D** rules; existing `D-` IDs continue to identify **deferred** topics. No prior IDs are repurposed.
+
 ## Confirmed
 
 | ID | Decision | Evidence and boundary |
@@ -47,7 +60,7 @@ S6 and S7 come from the repository-setup conversation, not the linked source con
 | B-003 | Contract cards describe Insertion, Engagement, Extraction; contract-specific skill/stat checks; deployment requirements; duration; and rewards. | S8/S9. See C-003 and C-006 for visible outcomes and the full deployment ranges. Values remain TBD. |
 | B-004 | Rewards can include credits, XP, reputation, loyalty, and recruitment opportunities. | S8. Not every contract must award every type. Amounts and award procedures remain deferred; A-001 through A-004 are preserved. |
 | B-005 | Captured mercenaries can generate rescue contracts. | S8; retain the rival-capture and party-rescue rules A-009/A-010. Abstract versus played rescue procedures remain open. |
-| B-006 | Company profit = contract payout − squad pay − overhead. | S8 now explicitly confirms the model previously provisional under P-003. Rates, overhead definition, and reward-adjustment accounting remain deferred. |
+| B-006 | Company profit = contract payout − squad pay − overhead. | S8 now explicitly confirms the model previously provisional under P-003. S11/E-002/E-003 now establish completion-based pay and monthly asset-based overhead; rates, overhead allocation, and reward-adjustment accounting remain deferred. |
 | C-001 | Resolve Insertion, Engagement, Extraction with one designated lead operative and one check per phase; share the three rolls around the table. | S9/S10. Contract-specific checks use the lead's relevant statistics. This does not redefine System A's squad leader or bonus XP rules. |
 | C-002 | Supporting NPCs provide automatic support based on relevant proficiency, without extra Aid/support rolls. | S9 and explicit choice in S10. Preserve narrative depth and the three-roll target for multiple contracts in one sitting; support amounts remain deferred. |
 | C-003 | Openly show all four degrees of success and consequences for every phase on the contract card. | S9. No hidden generic outcome table replaces the card. |
@@ -56,6 +69,35 @@ S6 and S7 come from the repository-setup conversation, not the linked source con
 | C-006 | Each contract has minimum/recommended/maximum squad size and squad level. | S9/S10. Size and level are separate factors; specific bounds and mixed-level squad calculation remain deferred. |
 | C-007 | Underdeployment increases risk with potential bonus reward; recommended deployment receives standard reward; overdeployment improves success chances with reduced reward. | S9/S10. Applies to both size and level within contract bounds. No guaranteed success, fixed modifier, or settled reward/accounting formula. |
 
+### Systems D–F and contract-form update
+
+| ID | Decision | Evidence and boundary |
+| --- | --- | --- |
+| B-007 | Standard Contracts are NPC assignments resolved during Guild Turns using System C; Priority Contracts are full adventures PCs can join, potentially over multiple sessions. | S14. Scopes the existing B/C phase-card and three-roll requirements to Standard Contracts; Priority adventure details remain deferred. |
+| SD-001 | Guild Level is independent of PC/mercenary level and ranges from 1 to 10. | S11. No shared XP threshold inferred. |
+| SD-002 | Contracts and organizational development grant Guild XP; leveling and level benefits are automatic when thresholds are met. | S11. Award values, thresholds, and benefit schedule remain deferred. |
+| SD-003 | Guild feats occur at levels 2, 4, 6, 8, and 10. | S11. Feat catalog and selection rules remain deferred. |
+| SD-004 | Numerical reputation uses Unfriendly, Neutral, Friendly, Honored, Exalted; Neutral is the starting tier. | S11. Numerical starting score and thresholds remain deferred. |
+| SD-005 | Reputation can fall, affecting new opportunities without removing existing assets merely for reputation loss. | S11. Does not prevent debt-based repossession. |
+| SD-006 | Required officer roles can be filled by PCs or salaried NPCs; delegation reduces PC management burden. | S11. Role list, qualifications, vacancy effects, and salary scales remain deferred. |
+| SD-007 | Monthly Guild Turns run concurrently with adventures, without requiring universal downtime. | S11/S14. Task-specific PC downtime still applies; turn order and daily/monthly integration remain deferred. |
+| E-001 | Maintain a separate guild treasury; PC withdrawals are unrestricted but carry financial consequences. | S11. No withdrawal cap or minimum reserve invented. |
+| E-002 | Contract pay arrives on completion; officer salaries and overhead recur monthly. | S11. Ordinary mercenary payment terms and incomplete-contract rewards remain open. |
+| E-003 | Overhead is asset-based, affected by upgrades; property taxes and similar routine charges are abstracted into overhead. | S11. Rates and cost allocation remain deferred; monthly overhead is not paid again for every completed contract. |
+| E-004 | Allow multiple secured/unsecured amortizing loans, with borrowing based on Guild Level, reputation, and existing debt. | S11. No fixed interest, term, debt ceiling, or amortization formula selected. |
+| E-005 | Secured debt uses collateral and permits repossession through debt enforcement. | S11. Triggers, valuation, and enforcement procedures remain deferred. |
+| E-006 | Distress has three stages: Delinquent, Default, Insolvent. | S11. Exact triggers, timing, penalties, and recovery remain deferred. |
+| E-007 | Bankruptcy is not automatic game over. | S11. No guaranteed forgiveness or asset retention; continuation procedure remains open. |
+| F-001 | Property types include mobile HQ, primary permanent HQ, and outposts. | S12. Starting property and counts/capacities remain deferred. |
+| F-002 | Slot-based facilities use Personnel, Operations, Logistics, Administration, Infrastructure categories. | S12. Slot sizes/counts and facility catalog/effects remain deferred. |
+| F-003 | Properties have location traits and property-specific expansion caps. | S12. Trait mechanics and numerical caps remain deferred. |
+| F-004 | Construction takes monthly Guild Turns. | S12. Exact durations and interruption procedures remain deferred. |
+| F-005 | Simultaneous construction capacity is guild-wide and based on Guild Level, also constrained by slots, funding, and managers. | S12. No projects-per-level formula selected. |
+| F-006 | Each project needs a manager: PC downtime, an existing officer suspending normal duties, temporary contractor, or salaried project manager. | S12. Management costs, qualifications, and per-manager capacity remain deferred. |
+| F-007 | Acquire property by purchase, financing, or lease; leasing has rent and modification/expansion limits. | S12/S13. Financing uses System E; prices and lease terms remain deferred. |
+| F-008 | Keep values relatively stable; allow property sale/conversion, with improvements/events/GM decisions affecting value rather than simulated market fluctuation. | S12/S13. Accepted acquisition discussion includes secured-debt/transaction-cost deductions on sale; valuation and conversion details remain deferred. |
+| F-009 | Transferable/Permanent are upgrade traits determining relocation eligibility. | S12/S13. Not automatic facility-category traits; relocation cost/time remains deferred. |
+
 ## Provisional / unconfirmed in available source
 
 | ID | Detail | Evidence and next decision |
@@ -63,31 +105,48 @@ S6 and S7 come from the repository-setup conversation, not the linked source con
 | P-001 | Track XP individually and carry excess XP into the next level. | Assistant recaps following S1–S3. Confirm exact bookkeeping and carryover. |
 | P-002 | Pay a level-based rate per contract. | Assistant's question before S4 and recap after it. S4 confirms higher pay at higher levels but does not explicitly settle the payment basis or timing. Earlier confirmation may exist in the missing source. |
 | P-004 | Award MVP XP through objective performance triggers, such as a critical success on a mission phase, with future automatic calculation. | Assistant suggestion after S2. The user's next answer approves stacking, not this trigger or automation. |
+| P-005 | Property damage from attacks, accidents, or events, with credit costs and potentially construction time for repairs. | Assistant proposal in S13; S12 expressly requires provisional status absent explicit final approval. Adoption and all mechanics remain open. |
 
 ## Superseded status and scope
 
 | ID | Earlier status | October 10, 2026 update |
 | --- | --- | --- |
-| P-003 | Provisional: assistant recap after S4 proposed profit = payout − squad pay − overhead; approval was not visible. | S8 explicitly confirms this as B-006. The accounting model is settled; overhead components and values remain open. |
+| P-003 | Provisional: assistant recap after S4 proposed profit = payout − squad pay − overhead; approval was not visible. | S8 explicitly confirms this as B-006. The accounting model is settled. S11 now confirms monthly asset-based overhead and completion income under E-002/E-003; numerical components and allocation remain open. |
 | D-004 | Contract resolution and rewards were outside the initial personnel record and awaited their own design work. | S8/S9 now establish Systems B and C. Their remaining procedures and balancing are tracked under D-009 through D-013; this does not settle unrelated personnel gaps. |
+| B-003 / C-001 / C-003 / C-006 | Prior prose used “contracts” generally for phase cards, resolution, and deployment bounds. | S14/B-007 scopes these requirements to Standard NPC Contracts. Priority Contracts are full PC-participating adventures. |
+| D-009 / D-010 / D-002 | Reputation access, all reward timing, and all personnel payment timing were unresolved. | S11 confirms reputation affects new opportunities, contract pay on completion, and officer salaries monthly. Specific access requirements, non-credit reward timing, and ordinary mercenary payment terms remain open. |
 
 ## Deferred / unresolved
 
 | ID | Topic | What remains unresolved |
 | --- | --- | --- |
 | D-001 | XP balancing and awards | Contract XP values; bonus amounts; precise success/eligibility conditions; who awards bonuses; failed or incomplete contract treatment. Recaps defer amounts; the available source does not resolve the other procedures. |
-| D-002 | Personnel economy | Pay values, linear versus steeper progression, payment/raise timing, and balancing against contract payouts. S4 settles only that higher levels cost more. |
+| D-002 | Personnel economy | Pay values, linear versus steeper progression, ordinary mercenary payment/raise timing, and balancing against contract payouts. S4 settles that higher levels cost more; S11 now separately confirms monthly officer salaries. |
 | D-003 | Starting roster and individual Leader Abilities | Assistant recap after S4 explicitly leaves these for later; no values or ability definitions are supplied. |
 | D-004 | Contract system follow-through | Initial deferral is partially resolved by B-001 through B-006 and C-001 through C-007. Remaining work is scoped under D-009 through D-013; see status history above. |
 | D-005 | Foundry implementation | Deferred under S6 and S7. Automatic daily status rolls are confirmed as gameplay intent, but day advancement, persistent-state handling, rival outcomes, rescue generation, and loyalty updates need later implementation design. No code, manifest, schemas, or automation in this phase. |
 | D-006 | Loyalty balancing | Score range or tiers, starting values, limits, relationship to rival-deployment probability, other loyalty gains or losses, and the amount of the large rescue bonus. S7 establishes the direction and rescue reward, not numbers. |
 | D-007 | Daily status procedure | Random method and probabilities; treatment of ongoing deployments, captivity, and other statuses; mission duration and return timing; whether player-guild deployment is assigned by the roll or reflects a player assignment. S7 establishes the daily roll without settling these interactions. |
 | D-008 | Rival capture and rescue resolution | How and when rival missions resolve, capture probability, rescue-mission generation and resolution, and post-rescue availability. S7 confirms that rival capture can happen and generates a rescue mission. |
-| D-009 | Job board procedures | Board size, refresh/generation, availability, and any access/reputation requirements. |
-| D-010 | Contract values and content | Specific checks/DCs, durations, reward quantities/mixes, award conditions/timing, and authored phase outcomes. Recruitment as a reward does not settle the wider recruitment process. |
+| D-009 | Job board procedures | Board size, refresh/generation, availability, and specific access/reputation requirements. SD-005 confirms that reputation affects new opportunities. |
+| D-010 | Contract values and content | Specific checks/DCs, durations, reward quantities/mixes, award conditions, non-credit reward timing, and authored phase outcomes. E-002 now confirms contract pay on completion. Recruitment as a reward does not settle the wider recruitment process. |
 | D-011 | Phase leads and support | Lead-selection timing, repeat-lead restrictions, relationship to squad leadership, support eligibility/amounts, stacking/caps, and interaction with squad size. |
 | D-012 | Consequences and overall results | Numeric DC adjustments; combining ongoing effects; overall completion, interruption/early termination, partial/failed-contract rewards. No universal phase-score or extra overall roll is approved. |
 | D-013 | Deployment balancing and economics | Card-specific size/level bounds, mixed-level squad calculation, combining size and level effects, risk/reward formulas, affected reward types, and whether adjustments apply to payout, retained profit, or another reward component. |
+| D-014 | Guild advancement | Guild XP thresholds/awards, development milestones, benefits, and feat content/selection. Preserve the confirmed 1–10 range and feats at 2/4/6/8/10. |
+| D-015 | Reputation | Score range, starting score, tier boundaries, gains/losses, and precise opportunity requirements. Starting tier is Neutral. |
+| D-016 | Officers | Required titles, qualifications, vacancies, delegation procedures, salary values, and consequences of suspended normal duties. |
+| D-017 | Guild Turn procedure | Monthly order, partial months, daily availability integration, ongoing deployments, and completion/advancement timing within turns. No universal downtime requirement. |
+| D-018 | Treasury and receipts | Starting funds, withdrawal bookkeeping, payout values, and incomplete-contract treatment. Completion income and unrestricted withdrawals are confirmed. |
+| D-019 | Expense balancing and accounting | Salaries, overhead by asset, upgrade effects, detailed inclusions, contract allocation, and reporting of other costs. Monthly overhead must not be charged twice. |
+| D-020 | Loans | Eligibility, rates, terms, payment cadence/amortization, debt limits, collateral valuation, and repossession procedures. Multiple secured/unsecured loans are confirmed. |
+| D-021 | Distress and bankruptcy | Stage triggers, grace periods, penalties, creditor remedies, recovery, and playable bankruptcy outcomes. |
+| D-022 | Properties and facilities | Starting assets, slot counts/sizes, catalog/effects, location traits, expansion caps/costs, and conversion requirements. |
+| D-023 | Construction and managers | Costs/durations, projects by level, manager qualifications/capacity, contractor fees/salaries, interruptions, and suspended-duty effects. |
+| D-024 | Acquisition and transactions | Prices/resale valuation, loan terms, lease restrictions/terms, sale/conversion procedure and costs. No simulated market fluctuation. |
+| D-025 | Upgrade relocation | Trait assignment, move cost/time, destination constraints, and handling on sale/conversion/lease termination. |
+| D-026 | Property damage/repairs | First confirm adoption of P-005; then define damage effects, repairs, costs/time, and construction-capacity interactions. |
+| D-027 | Priority Contract follow-through | Adventure presentation, rewards, NPC participation, and rescue routing. Standard/Priority participation and resolution distinction is confirmed by S14. |
 
 ## Source gaps
 
