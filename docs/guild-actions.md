@@ -1,5 +1,7 @@
 # Guild Action catalog
 
+> **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
+
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
 
 
@@ -64,3 +66,4 @@ Commerce actions consume the same shared pool before Activity. A free immediate 
 Matched acquisition A/B: one action to secure a Standard contract versus free securing, with deployment free in both. Hold initial resources, roster, officer capacity, contracts, events, and action pool constant. Compare strategic crowd-out, interesting tradeoffs, deploy-on-every-job incentives, workload, and elapsed live table time. Officer capacity starts at two; one versus two can be tested separately.
 
 Three starting shared actions was an assistant suggestion only. No shared actions-by-level schedule is approved.
+

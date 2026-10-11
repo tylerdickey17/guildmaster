@@ -56,3 +56,4 @@ R11's 100/110 shows payout cadence only; it does not adopt 10% as the actual bon
 The workflow checks above are manual traces reviewed against PASS-001–011. A local verification script checks document links/IDs plus independently expressed accounting, action-budget, offer-window, completion-condition and training-streak cases. It is a temporary review aid, not module code or a general rules simulator.
 
 No new six-agent rerun or broad balance simulation has been performed. The original 58 turns used older assumptions. Next tests should use this edition and transparent content fixtures, then compare acquisition-action versus free acquisition and observed workload.
+

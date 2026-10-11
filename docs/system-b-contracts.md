@@ -1,5 +1,7 @@
 # System B: Contracts
 
+> **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
+
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
 
 
@@ -104,3 +106,4 @@ This equation concerns financial returns. It does not assign a credit value to X
 - **Personnel timing and rescue:** status persistence across durations and events, return availability, capture, and party versus delegated rescue. Rival missions resolve through System G events. **D-007 / D-008**
 
 No Foundry module code, automation, data schema, or implementation scaffolding is included.
+

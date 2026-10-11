@@ -1,5 +1,7 @@
 # Integration rules pass: playtest edition 0.2
 
+> **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
+
 Date: October 10, 2026 (America/Chicago).
 
 **Authority:** the user explicitly authorized the assistant to make the remaining integration decisions as a tabletop designer and receive feedback during playtesting. Rules below are **designer-adopted for playtesting**, not claims that the user individually approved each new detail. Previously explicit user decisions are preserved. This document takes precedence over conflicting open questions in the [earlier checkpoint](integration-checkpoint.md), [action catalog](guild-actions.md), and baseline A-G documents.
@@ -239,3 +241,4 @@ A follow-up regression note lists concrete cases checked for this pass. It does 
 5. [Paizo: Starfinder Player Core Explained](https://paizo.com/blog/starfinder-player-core-explained) and [Find Your Path—October 2025](https://paizo.com/blog/find-your-path-october-2025): search-indexed official confirmation of SF2e skills/compatibility; direct fetch was unavailable. No invented SF2e-specific advancement table is attributed to these pages.
 6. [D&D Beyond: Visitors to Trollskull Alley](https://www.dndbeyond.com/posts/316-visitors-to-trollskull-alley): recurring home-base contacts and business-linked story hooks. It includes author-added encounters/services; not all are book rules. The full Dragon Heist business chapter redirected to a storefront and was not readable, so no exact tavern accounting rule is claimed as verified.
 7. Prior Work checkpoint and explicit user decisions are primary for Contract Operations. Personal Context additionally recovered individual XP carryover approval; complete original stat/office procedures were not recovered. New PASS choices resolve them by current delegated design authority, not fabricated historical approval.
+

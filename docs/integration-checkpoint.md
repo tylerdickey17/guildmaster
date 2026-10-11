@@ -185,3 +185,4 @@ The user accepted the eleven renamed basic action concepts and all nine trained 
 - Choose shared action growth, most action costs, skill DCs, numerical benefits, wages, rewards, support limits, recovery durations, and contract content.
 - Run matched A/B acquisition tests and officer-capacity tests, followed by regression traces and live workload measurements.
 - Foundry v14 implementation remains deferred. No claim that the prior 58 authored turns validate these newly adopted rules.
+

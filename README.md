@@ -8,11 +8,15 @@ A design workspace for a mercenary-company subsystem for **Starfinder 2e**, init
 
 Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, mission-resolution, guild-development, finance, property, and events/rival-guild frameworks and identifies what still needs design or balancing.
 
-**Stage:** procedural integration pass complete for playtest edition 0.2; numerical/content balancing, larger regression runs, and live playtesting remain ahead. A Foundry VTT v14 module is a future target. This repository contains no module implementation or compatibility claim.
+**Stage:** procedural integration edition0.2 plus **numerical playtest prototype0.3.1**. Six independent agents reviewed frozen0.3.0; targeted reruns checked the resulting0.3.1 changes. Live playtesting and broader content/balance remain ahead. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
 
 ## Documents
 
-- [Integration rules pass 0.2](docs/integration-rules-v0.2.md) — current playtest authority; remaining procedures chosen under delegated tabletop-design authority.
+- [Prototype values0.3.1](docs/prototype-values-v0.3.1.md) — current numerical patch; retains starting values and explains evidence-based revisions.
+- [Full numerical pack0.3.0](docs/prototype-values-v0.3.md) — frozen starting values, complete action/feat/facility/event cards; apply0.3.1 changes above.
+- [Simulation report](docs/prototype-simulation-report-v0.3.md) — six-agent results, exact probabilities, bounded campaign trials, recommendations and limitations.
+- [Reproduction files](playtests/README.md) — Python scripts, JSON results, seed7 traces, pack hashes and coverage.
+- [Integration rules pass 0.2](docs/integration-rules-v0.2.md) — procedural playtest authority; remaining procedures chosen under delegated tabletop-design authority.
 - [Integration regression walkthroughs](docs/integration-regression-v0.2.md) — 28 deterministic workflow cases and explicit numerical-fixture limits.
 
 - [Current integration checkpoint](docs/integration-checkpoint.md) — accepted turn order, settlement, staffing, recruitment, training, leadership, recovery, debt, relocation, and events, with explicit provisional boundaries. Read this first; it supersedes conflicting older framework deferrals.
@@ -30,6 +34,7 @@ Players develop mercenary personnel and weigh the benefits of experienced operat
 ## Decision status
 
 - **Confirmed:** supported by an explicit user choice in the available source.
+- **Designer-adopted prototype:** selected under the user's delegated design authority; usable for testing, without claiming individual historical approval or final balance.
 - **Provisional:** suggested or summarized by the assistant, without an explicit user decision visible in the available source.
 - **Deferred:** a known design or balancing question intentionally left unresolved.
 - **Source gap:** an earlier decision was mentioned, but its actual rule and approval are not present in the retrieved conversation. This does not mean the decision was never made.
@@ -40,9 +45,9 @@ These labels describe the evidence behind a rule, not its playtest quality. An a
 
 When a rule changes, update the affected system documents and their decision-log entries. Keep the reasoning and prior outcome available; mark replaced decisions as superseded rather than silently overwriting the history. Examples and possible implementations must remain labeled as proposals until approved.
 
-Systems A–G now have framework documents, with explicit source gaps, provisional details, and deferred balancing retained. The October 10 integration checkpoint captures the user-approved procedures following six deterministic stress-test traces (58 authored monthly turns). Those tests used temporary assumptions and do not validate the new rules or their balance. Recover remaining personnel detail, resolve the explicitly open integration questions, and rerun the scenarios before numerical balancing and live playtesting. Module development remains deferred.
+Systems A–G retain historical framework documents and source gaps. The October10 integration checkpoint followed six deterministic stress-test traces (58 authored turns); edition0.2 then selected remaining procedures. The0.3 simulation pass is distinct from those older traces and does not turn them into probability evidence. Read current prototype/rules first, then older documents for provenance. Module development remains deferred.
 
-The loyalty framework still needs a score scale, event-resolution effects, status persistence/return rules, rival-mission capture procedures, and a numerical rescue bonus. Rival competition now occurs exclusively through visible Guild Events; the rival-deployment part of the earlier daily status roll is superseded. Any remaining non-rival daily procedure and Foundry automation details remain deferred.
+Loyalty scale, return/status rules, rescue bonuses and a visible rival-offer fixture now exist. Full authored rival-mission capture/rescue content and campaign consequences remain ahead. Rival competition is through visible Guild Events; the older daily rival-deployment roll is superseded. Any remaining non-rival daily procedure and Foundry automation details remain deferred.
 
 ## Source and scope
 
@@ -62,4 +67,5 @@ The current Work conversation is the primary source for the INT decisions, from 
 
 ## Delegated design pass
 
-On October 10, 2026 the user authorized the assistant to finish remaining integration choices using prior design, PF2e/SF2e, Kingmaker and Trollskull as guidance, with feedback during playtesting. PASS-001–011 in the rules pass are adopted playtest procedures, not individually confirmed historical user votes. This pass preserves earlier explicit decisions, chooses remaining defaults, and adopts minimal facility disruption/repair (superseding P-005's previous provisional status). The original full personnel transcript is still not recovered, but its remaining procedural gaps have designer-selected rules. Most numerical content remains unauthored; this is not a Foundry module release.
+On October 10, 2026 the user authorized the assistant to finish remaining integration choices using prior design, PF2e/SF2e, Kingmaker and Trollskull as guidance, with feedback during playtesting. PASS-001–011 in the rules pass are adopted playtest procedures, not individually confirmed historical user votes. This pass preserves earlier explicit decisions, chooses remaining defaults, and adopts minimal facility disruption/repair (superseding P-005's previous provisional status). The original full personnel transcript is still not recovered, but its remaining procedural gaps have designer-selected rules. Numerical prototype0.3 and its simulation evidence now supply the initial values; this is not a Foundry module release.
+

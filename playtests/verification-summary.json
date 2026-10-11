@@ -1,0 +1,15 @@
+{
+  "artifact_checks_passed": 252,
+  "baseline_assertions_passed": 150,
+  "independent_revision_oracle_configs": 32,
+  "revision_eligible_configs": 100,
+  "pack_hashes": {
+    "0.3.0": "5708920dfac9a55c40d273eed166024cd5bf63b84bf2549a21354ebc84aa099d",
+    "0.3.1": "32b207d3b379d4cc8e8b4ff818d912059866a2cdd98ab15f0a2b61c42e0dde99"
+  },
+  "notes": [
+    "Artifact checks include JSON parsing, Python syntax and relative documentation links.",
+    "Independent exact revised probabilities agree with root mission engine for32 balanced baseline cases.",
+    "Full evolving0.3.1 campaign suite and live-table experience have not been retested."
+  ]
+}

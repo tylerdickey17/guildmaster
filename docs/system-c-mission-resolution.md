@@ -1,5 +1,7 @@
 # System C: Mission Resolution
 
+> **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
+
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
 
 
@@ -95,3 +97,4 @@ There is no established “two successes wins” rule, summed phase score, or ex
 - **Deployment:** card-specific bounds; mixed-level squad calculation; formulas combining size and level; risk bonuses and reward reductions; applicable reward types and accounting order. **D-013**
 
 No Foundry module code or implementation design is part of this update.
+

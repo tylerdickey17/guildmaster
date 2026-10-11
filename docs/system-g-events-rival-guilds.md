@@ -1,5 +1,7 @@
 # System G: Events & Rival Guilds
 
+> **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
+
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
 
 
@@ -94,3 +96,4 @@ Illustrative event concept: a named rival offers an available mercenary temporar
 - **Personnel and rescue:** loyalty effects, availability persistence and return timing, rival-outcome/capture procedures, rescue routing, and rescue bonus values. **D-006 / D-007 / D-008 / D-027**
 
 This completes documentation of the A–G conceptual frameworks, not integration, numerical balance, or playtesting. Unrelated source gaps and provisional mechanics remain open. No Foundry module implementation is included.
+

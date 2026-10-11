@@ -228,7 +228,7 @@ These entries refine or supersede conflicting historical deferrals without reusi
 - P-001 XP carryover remains provisional. P-002 is refined by agreed assignment-fixed quotes, but exact ordinary pay basis/scale is not fully specified.
 - Foundry implementation remains deferred. Re-test these new rules before claiming integration validation.
 
-## Delegated integration pass 0.2 (current)
+## Delegated integration pass 0.2 (procedural authority)
 
 Evidence: user request at October 10, 2026 22:41 America/Chicago: “go through this integration pass and make the decisions” using previous design and PF2e/SF2e, Kingmaker, and Trollskull, with feedback during playtesting. The assistant has delegated design authority for these procedures; label them **designer-adopted for playtesting**, not individual prior user approvals or proven balance.
 
@@ -258,3 +258,22 @@ Evidence: user request at October 10, 2026 22:41 America/Chicago: “go through 
 - G-001 source provenance is still partially recovered. PASS rules resolve missing mechanics by delegated design rather than pretend the old transcript was recovered.
 - The earlier unresolved lists below/above are historical where PASS procedures settle them. Numeric DCs, rewards, pay, action growth, support caps, durations, facility/loan content and trained/Leader/Guild feat effects remain balancing/content work.
 - [28 regression walkthroughs](integration-regression-v0.2.md) are authored deterministic checks, not another independent six-agent test, probability simulation or live-session measurement.
+
+## Numerical prototype and simulated playtesting0.3 (current)
+
+Evidence: the user requested prototype values followed by subagents running simulated playtests and reporting on the values, and reminded the assistant that earlier decisions are in GitHub. This authorizes designer-selected numbers, independent agent testing, and repository persistence. It does not make every numerical selection an individually confirmed historical choice.
+
+| ID | Designer-adopted prototype | Evidence/status |
+| --- | --- | --- |
+| NUM-001 | Shared action schedule3/3/4/4/5/5/6/6/7/7; two/officer; starting treasury2000, fourL1 personnel, twoPCofficers, HQ150/month. | Frozen0.3.0, retained0.3.1 after bounded A/B; user-selected officer baseline preserved. |
+| NUM-002 | Wages50×1.25^(L−1), XP/rep/reward cards, capped rank support, phase effects, 1000 Guild/NPC XP thresholds. | [Full numerical pack](prototype-values-v0.3.md); pay/reward currency is custom guild economy. |
+| NUM-003 | Training150 XP, additive10% subsequent blocks cap50%, four-person cohorts, cost50+25/person. | Retained after independent progression/finance arithmetic; user10% example now chosen as prototype, not retroactive prior approval. |
+| NUM-004 | Basic/trained action cards, six Leader Feats, Guild Feat menu, properties, loans, minimal event deck. | Designer content; only explicitly tested subsets have evidence. |
+| NUM-005 | Cash discounts only, max100%; default minimum Squad Level recommended−2, floored at1. | 0.3.1 removes observed reward arbitrage; preserves floor-average and visible card bounds. |
+| NUM-006 | Demand/Exclusive DC+0 with3 required phases and1 recovery; improved payout/XP/rep cards. | Targeted exact rerun; complete evolving campaign suite has not been rerun for0.3.1. |
+| NUM-007 | Passive medical reductions preserve mandatory recovery; active postreturn Medicine can release eligible recovered staff immediately; Infrastructure fee0. | Corrects demonstrated erased-balancing/inert-action cases; trained checks remain outside Standard phases. |
+| NUM-008 | Training Suite500/15; rival refusal Loyalty divisor5; creditor-specific arrears and missed-interest accounting. | Targeted arithmetic/exact checks; general economic/campaign validation remains open. |
+| SIM-001 | Six independent reviews: mission odds, newGuild A/B, largeGuild, progression, debt/property, loyalty/actions. | Frozen0.3.0 plus two targeted independent0.3.1 reruns. [Report](prototype-simulation-report-v0.3.md) records samples, hashes, favorable fixture overrides and omissions. Not live play. |
+
+Older deferred numerical statements are historical wherever these packs now supply a value. Remaining content gaps include fully generated distinct NPC/contract catalogs, comprehensive disruptive events/rival outcomes, Priority adventure rewards, and full0.3.1 campaign/live-table testing. No Foundry code is adopted.
+

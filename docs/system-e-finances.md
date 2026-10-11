@@ -1,5 +1,7 @@
 # System E: Finances
 
+> **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
+
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
 
 
@@ -63,3 +65,4 @@ These descriptions distinguish the stages; they do not set automatic triggers, g
 - **Distress:** stage triggers, escalation timing, penalties, creditor remedies, recovery, and bankruptcy outcomes. **D-021**
 
 This is a game-economy framework, not a real-world financial model. No Foundry implementation is included.
+

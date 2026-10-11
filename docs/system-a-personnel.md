@@ -1,5 +1,7 @@
 # System A: Personnel
 
+> **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
+
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
 
 
@@ -108,3 +110,4 @@ Recover these decisions before adding rules for these topics. A source gap is no
 Foundry VTT v14 is a future implementation target. This phase adds no module manifest, source code, data schema, automation, or implementation scaffolding. The current rival-activity requirement is visible event-driven competition, superseding the rival-deployment part of A-007. How a future module advances time, records events and rival mission outcomes, generates rescue missions, and applies rescue loyalty bonuses will be designed later. **SG-007 / SG-008 / D-005 / R-001**
 
 Performance-based MVP triggers and automatic XP calculation remain suggestions. **P-004**
+
