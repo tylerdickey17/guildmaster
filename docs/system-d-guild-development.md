@@ -53,3 +53,15 @@ System A's daily personnel status rules continue on the daily timescale. Monthly
 - **Timing:** order within a Guild Turn, partial months, daily/monthly interactions, and project or contract completion across turns. **D-017**
 
 This is tabletop design documentation. Foundry implementation remains deferred.
+
+## Guild Actions (confirmed framework — October 10, 2026)
+
+Each monthly Guild Turn grants a **shared pool of Guild Actions**, with the pool increasing as **Guild Level** rises. Guild Actions represent deliberate organizational initiatives, distinct from routine operations.
+
+- **Every Guild Action requires assignment to an available Guild Officer** (PC or NPC).
+- NPC officers can carry out assigned actions while the PCs adventure.
+- Officers occupied by construction or other conflicting assignments cannot perform their regular Guild Actions.
+- Paying payroll/overhead, continuing approved construction, and resolving already deployed contracts are **automatic operations** and do not consume Guild Actions.
+- The number of actions by level, action catalog, officer action capacity, scheduling, and qualification requirements are **deferred**. A shared pool does not imply that an officer can perform unlimited actions.
+
+This addition supplements SD-006/SD-007 and does not change the established monthly calendar or construction staffing rules. **SD-008**
