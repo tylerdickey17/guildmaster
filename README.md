@@ -8,9 +8,12 @@ A design workspace for a mercenary-company subsystem for **Starfinder 2e**, init
 
 Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, mission-resolution, guild-development, finance, property, and events/rival-guild frameworks and identifies what still needs design or balancing.
 
-**Stage:** initial design documentation; incomplete and not yet balanced or playtested. A Foundry VTT v14 module is a future target. This repository contains no module implementation or compatibility claim.
+**Stage:** tabletop integration decisions recorded; numerical balancing, regression re-testing under the new rules, and live playtesting remain ahead. A Foundry VTT v14 module is a future target. This repository contains no module implementation or compatibility claim.
 
 ## Documents
+
+- [Current integration checkpoint](docs/integration-checkpoint.md) — accepted turn order, settlement, staffing, recruitment, training, leadership, recovery, debt, relocation, and events, with explicit provisional boundaries. Read this first; it supersedes conflicting older framework deferrals.
+- [Guild Action catalog](docs/guild-actions.md) — accepted basic/trained action concepts, requirements, costs versus provisional baselines, and A/B test agenda.
 
 - [System A: Personnel](docs/system-a-personnel.md) — advancement, pay, loyalty, availability, event-driven rival deployment, and rescue decisions, plus unresolved details and missing source material.
 - [System B: Contracts](docs/system-b-contracts.md) — Standard NPC assignments versus Priority adventures, job board, ten categories, contract cards, rewards, rescues, and finances.
@@ -34,7 +37,7 @@ These labels describe the evidence behind a rule, not its playtest quality. An a
 
 When a rule changes, update the affected system documents and their decision-log entries. Keep the reasoning and prior outcome available; mark replaced decisions as superseded rather than silently overwriting the history. Examples and possible implementations must remain labeled as proposals until approved.
 
-Systems A–G now have framework documents, with explicit source gaps, provisional details, and deferred balancing retained. The next step is an integration review before numerical balancing and playtesting. Recover the missing personnel decisions and settle open procedures before treating the full subsystem as complete. Module development remains deferred.
+Systems A–G now have framework documents, with explicit source gaps, provisional details, and deferred balancing retained. The October 10 integration checkpoint captures the user-approved procedures following six deterministic stress-test traces (58 authored monthly turns). Those tests used temporary assumptions and do not validate the new rules or their balance. Recover remaining personnel detail, resolve the explicitly open integration questions, and rerun the scenarios before numerical balancing and live playtesting. Module development remains deferred.
 
 The loyalty framework still needs a score scale, event-resolution effects, status persistence/return rules, rival-mission capture procedures, and a numerical rescue bonus. Rival competition now occurs exclusively through visible Guild Events; the rival-deployment part of the earlier daily status roll is superseded. Any remaining non-rival daily procedure and Foundry automation details remain deferred.
 
@@ -49,3 +52,7 @@ The October 10, 2026 Systems B/C update uses the current explicit documentation 
 The October 10, 2026 D–F update is confirmed by the user’s explicit documentation request. The source reader again exposed only five recent property exchanges, without an older-page cursor. A direct follow-up confirms that Standard Contracts are assigned to NPCs and resolved during Guild Turns using the established mechanics; Priority Contracts are full adventures PCs can participate in over potentially multiple sessions. Damage/repair remains provisional. See S11–S14 in the decision log.
 
 The October 10, 2026 D/G update uses the explicit documentation request to confirm Guild Actions and Events & Rival Guilds. It integrates the existing System D addition, records the superseded rival-deployment roll, and preserves unrelated source gaps and provisional property damage/repair. The supplied conversation preview corroborates visible event-driven competition; it is not a recovery of the complete earlier discussion. See S15–S17 in the decision log.
+
+## October 10 integration evidence
+
+The current Work conversation is the primary source for the INT decisions, from the user's numbered integration responses through confirmation that returning to Available ends a consecutive training streak. The user explicitly requested this repository checkpoint before context compaction. Original source-gap recovery used Personal Context summaries, not a full retrieved source transcript. Do not treat the 10% training example, three starting shared actions, or the complete two-clock hiring proposal as adopted numerical rules. No Foundry code is added.

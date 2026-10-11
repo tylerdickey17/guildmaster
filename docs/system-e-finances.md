@@ -1,5 +1,14 @@
 # System E: Finances
 
+## Current integration rules (October 10, 2026)
+
+Current finances integration: [INT-001–002 and INT-008](integration-checkpoint.md) put due receipts before obligations, freeze squad pay quotes at departure, deny failed jobs client cash, and let players choose full/half/no failed-job contractor pay. Agreements disclose delinquency/default escalation; repayment/restructuring can recover. Secured creditors may claim collateral; unsecured collections restrict finance; lease default can terminate access. Sale deficiency remains owed unless settled. Insolvency trigger, payment priority, detailed enforcement and values remain open. Financing/property actions use the shared pool in Commerce; routine repayment is free.
+
+**Precedence and history:** the accepted rules in the linked integration checkpoint supersede any conflicting baseline deferral below. The remaining text is retained as the pre-integration framework and evidence; an old “unresolved” statement does not undo an accepted INT rule. Unaddressed deferrals still apply.
+
+## Pre-integration framework
+
+
 Status: confirmed framework, October 10, 2026; numerical balancing and detailed procedures remain deferred. See the [decision log](design-decisions.md) for evidence and the [README](../README.md) for status definitions.
 
 ## Guild treasury

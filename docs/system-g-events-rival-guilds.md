@@ -1,5 +1,14 @@
 # System G: Events & Rival Guilds
 
+## Current integration rules (October 10, 2026)
+
+Current event integration: [INT-001 and INT-011](integration-checkpoint.md) establish free immediate decisions versus action-cost follow-up, disclosed response costs/deadlines with next-turn response opportunity, scheduled outcomes counting toward the monthly event minimum, valid fallback, and due rival returns shown in Upkeep. Do not wait for a random future draw to resolve an existing deployment. Free event choices do not waive recruitment/acquisition actions without an explicit exception. Event quantity beyond the minimum and numeric content remain deferred.
+
+**Precedence and history:** the accepted rules in the linked integration checkpoint supersede any conflicting baseline deferral below. The remaining text is retained as the pre-integration framework and evidence; an old “unresolved” statement does not undo an accepted INT rule. Unaddressed deferrals still apply.
+
+## Pre-integration framework
+
+
 Status: confirmed framework, October 10, 2026; event quantity beyond the monthly minimum, numerical mechanics, and detailed procedures remain deferred. See the [decision log](design-decisions.md) for evidence and the [README](../README.md) for status definitions.
 
 ## Monthly Guild Events

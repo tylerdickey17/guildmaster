@@ -1,5 +1,14 @@
 # System C: Mission Resolution
 
+## Current integration rules (October 10, 2026)
+
+Current mission integration: [INT-002 and INT-006–007](integration-checkpoint.md) establish contract-specific required-success counts, Squad Level as average rounded down, separate size/level evaluation combined into one final reward modifier, Trained-or-better support eligibility, and disclosed mission/phase recovery. Preserve three rolls and automatic support. No universal two-successes rule is imposed; the card chooses 1, 2, or 3. Critical Success counting as one phase is the working proposal awaiting explicit confirmation. Numerical support, rewards, risk effects, and essential-objective exceptions remain deferred.
+
+**Precedence and history:** the accepted rules in the linked integration checkpoint supersede any conflicting baseline deferral below. The remaining text is retained as the pre-integration framework and evidence; an old “unresolved” statement does not undo an accepted INT rule. Unaddressed deferrals still apply.
+
+## Pre-integration framework
+
+
 Status: confirmed framework, October 10, 2026; numerical balancing and the procedures listed below remain deferred. See the [decision log](design-decisions.md) for evidence and the [README](../README.md) for status definitions.
 
 ## Design intent

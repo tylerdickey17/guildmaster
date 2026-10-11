@@ -1,5 +1,14 @@
 # System A: Personnel
 
+## Current integration rules (October 10, 2026)
+
+Current personnel integration: [INT-007 and INT-012–015](integration-checkpoint.md) govern recovery, recovered historical rules, recruitment, Leader Feats, and training. One primary status; default training is 30 days with next-turn availability and a consecutive-training bonus whose amount is deferred. Recruitment uses Diplomacy and 0/1/2/3 candidates by degree; Recruit Operative hires one for one action. Level 5 grants a Leader Feat. Deployment pay quotes are fixed for the assignment; failed jobs retain participation XP and permit full/half/no contractor pay with corresponding Loyalty effects. Candidate offer/start clocks remain provisional. G-001 is partially recovered from summaries, not closed by a full original transcript.
+
+**Precedence and history:** the accepted rules in the linked integration checkpoint supersede any conflicting baseline deferral below. The remaining text is retained as the pre-integration framework and evidence; an old “unresolved” statement does not undo an accepted INT rule. Unaddressed deferrals still apply.
+
+## Pre-integration framework
+
+
 Status: initial design record, October 10, 2026. Read the [decision log](design-decisions.md) for evidence and the [README](../README.md) for status definitions.
 
 ## Design intent

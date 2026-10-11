@@ -1,5 +1,14 @@
 # System B: Contracts
 
+## Current integration rules (October 10, 2026)
+
+Current contract integration: [INT-002–004](integration-checkpoint.md) govern card-specific 1/2/3 phase-success thresholds, participation XP plus a completion bonus, no client cash for failure, failure Reputation loss, and optional failed-job contractor payment. Secure Contract costs one action; deployment is routine. Available → Accepted → In Progress → Resolved. Exclusive is a trait independent of Standard/Priority: harder, greater rewards, disclosed completion deadline, failure/Reputation loss if missed after acceptance. Ordinary expiration alone does not hurt Reputation. Progression can offer leads or qualifying action-free acquisition with optional acceptance. Interruption, critical-success weighting, and Priority acquisition details remain open.
+
+**Precedence and history:** the accepted rules in the linked integration checkpoint supersede any conflicting baseline deferral below. The remaining text is retained as the pre-integration framework and evidence; an old “unresolved” statement does not undo an accepted INT rule. Unaddressed deferrals still apply.
+
+## Pre-integration framework
+
+
 Status: confirmed framework, October 10, 2026; numerical balancing and the procedures listed below remain deferred. See the [decision log](design-decisions.md) for evidence and the [README](../README.md) for status definitions.
 
 ## Design intent

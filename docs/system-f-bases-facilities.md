@@ -1,5 +1,14 @@
 # System F: Bases & Facilities
 
+## Current integration rules (October 10, 2026)
+
+Current facility integration: [INT-009–010](integration-checkpoint.md) establish Transferable N as relocation/reinstallation Guild Turns, destination slot eligibility, benefits inactive during transfer, and sale valuation excluding removed upgrades. Permanent remains nonrelocatable. Relocate Operations starts a transfer; continuing progress is automatic. New development milestones can earn XP, moving/repairing/reinstalling the same asset cannot repeat it. Costs, management/project-capacity interactions and interruption remain open; P-005 damage/repair is still provisional.
+
+**Precedence and history:** the accepted rules in the linked integration checkpoint supersede any conflicting baseline deferral below. The remaining text is retained as the pre-integration framework and evidence; an old “unresolved” statement does not undo an accepted INT rule. Unaddressed deferrals still apply.
+
+## Pre-integration framework
+
+
 Status: confirmed framework, October 10, 2026, except the explicitly provisional damage/repair concept. Numerical balancing and the procedures listed below remain deferred. See the [decision log](design-decisions.md) and [README](../README.md).
 
 ## Guild properties

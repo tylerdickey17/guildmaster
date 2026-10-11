@@ -1,5 +1,14 @@
 # System D: Guild Development
 
+## Current integration rules (October 10, 2026)
+
+Current guild integration: [INT-001, INT-003, INT-005, INT-010 and INT-016](integration-checkpoint.md) establish Upkeep → Commerce → Activity → Events & Advancement, next-turn Guild Level capacity benefits, shared level-growing pool, strategic acquisition versus free deployment, and unique development milestones. Two actions per officer is the selected provisional test baseline. See the [basic/trained action catalog](guild-actions.md); most costs/benefits and the action growth schedule remain deferred. Meaningful upgrades can award new development XP; repair/reinstallation/relocation cannot repeat an existing award.
+
+**Precedence and history:** the accepted rules in the linked integration checkpoint supersede any conflicting baseline deferral below. The remaining text is retained as the pre-integration framework and evidence; an old “unresolved” statement does not undo an accepted INT rule. Unaddressed deferrals still apply.
+
+## Pre-integration framework
+
+
 Status: confirmed framework, October 10, 2026; numerical balancing and the procedures listed below remain deferred. See the [decision log](design-decisions.md) for evidence and the [README](../README.md) for status definitions.
 
 ## Independent guild advancement

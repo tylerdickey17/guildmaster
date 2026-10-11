@@ -186,3 +186,41 @@ S15/S16 are direct confirmation in the current request. The supplied preview is 
 ## Recording the next decision
 
 For each accepted change, record its ID, date, status, rule, user approval or source, and remaining boundaries. Add a superseding entry when an approved rule changes. Keep numerical examples and brainstorming separate from confirmed rules.
+
+## October 10, 2026 integration checkpoint (current)
+
+Primary evidence: this Work conversation's explicit user responses, beginning “1. Okay so for this one we should use Pathfinder Kingmaker as our guide” and continuing through the training-streak approval and request to save to GitHub. Full adopted procedures and remaining boundaries are in [integration-checkpoint.md](integration-checkpoint.md); the action catalog is in [guild-actions.md](guild-actions.md).
+
+These entries refine or supersede conflicting historical deferrals without reusing prior IDs. Earlier log rows are retained as history. Recovered historical summaries are distinguished from direct approval. Stress-test fixtures are not evidence for adopting numbers.
+
+| ID | Status | Decision | Prior scope / remaining boundary |
+| --- | --- | --- | --- |
+| INT-001 | Confirmed | Four-phase turn order; receipts before upkeep; next-turn level capacity; deployment-fixed wage quote. | D-017 partly resolved; partial-month details remain. |
+| INT-002 | Confirmed framework / explicit proposal boundary | Contract-specific 1/2/3 required successes; no failed client cash; participation XP + success bonus; failure Reputation loss; full/half/no failed pay affects Loyalty. | D-001/D-002/D-012/D-018 partly resolved. Critical Success weight remains a proposal; failed Guild XP/interruption open. |
+| INT-003 | Confirmed starting model / playtest | One-action acquisition, routine deployment; lifecycle; progression-based leads/free qualifying acquisition with player choice. | D-009/D-028 partly resolved. Acquisition cost A/B retained; no action growth table. |
+| INT-004 | Confirmed | Exclusive trait, higher difficulty/rewards, accepted completion deadline breach counts as failure. | Separate from B-007 forms; ordinary expiration alone no Reputation loss. |
+| INT-005 | Confirmed framework / provisional numeric baseline | Shared pool grows with level; two actions per available officer as test baseline; discrete versus ongoing duties. | D-016/D-028 partly resolved; roles and detailed conflicts open. |
+| INT-006 | Confirmed | Average squad level rounded down; size/level effects combine into one reward adjustment; Trained skill support. | D-011/D-013 partly resolved; modifiers/caps and reward scope open. |
+| INT-007 | Confirmed | Recovery from disclosed mission requirements or phase consequences; optional delegated rescue Loyalty vs large direct-party bonus. | D-007/D-008 partly resolved; numeric treatment and routing open. |
+| INT-008 | Confirmed framework | Recorded arrears, disclosed escalation, repayment/restructuring recovery, agreement-specific default remedies and persistent deficiency. | D-020/D-021 partly resolved; Insolvent remains, bankruptcy procedure not complete. |
+| INT-009 | Confirmed | Transferable N duration; inactive transfer; eligible slots; removed asset excluded from sale; automatic ongoing progress. | F-009 refined; D-025 partly resolved. No automatic adoption of P-005. |
+| INT-010 | Confirmed | Unique settlement; new development milestones; no repeat XP for relocation/repair/reinstallation. | D-014 partly resolved; milestone values/list open. |
+| INT-011 | Confirmed | Free event choice vs action follow-up, response windows, scheduled follow-up minimum, fallback, due Upkeep event notices. | SG-001 timing refined; D-030 partly resolved. Event-count scaling open. |
+| INT-012 | Recovered summaries + confirmed new status exclusivity | SF2e stats, 4-6 initial roster, eight statuses, six attribute-themed abilities recovered from historical summaries; one primary status. | G-001 partially recovered, full transcript/stat progression still missing. |
+| INT-013 | Confirmed checks/actions / provisional clocks | Diplomacy Work the Network, 0/1/2/3 candidates by degree, one-action hire per candidate. | Prior current-turn expiry superseded only as working proposal; next-turn hiring/start interpretation awaits clear confirmation. |
+| INT-014 | Confirmed Leader Feat / provisional qualification wording | Leader Feat at Level 5; six attribute-themed options; working one qualified squad leader distinct from phase leads. | D-003 partly resolved; leader XP eligibility, ability effects and tentative leadership threshold details remain. |
+| INT-015 | Confirmed framework / deferred bonus formula | 30-day one-turn training, completion XP/next-turn availability, continued-training bonus, Available ends streak. | 10% is illustrative only; extension XP cadence/group size/cap/management open. |
+| INT-016 | Accepted catalog concepts / provisional general costs | Eleven renamed basic actions and nine trained actions; relocation separately accepted; no Expert actions yet. | Secure Contract/Recruit Operative one-action costs confirmed; other one-action costs starting proposals. Four extra action suggestions not finalized. |
+
+### Explicit non-adoptions and outstanding interpretations
+
+- Two officer actions is a chosen provisional baseline; three starting shared actions is not adopted.
+- No Expert-tier action catalog or numeric trained-action bonuses are adopted.
+- Training's 10% consecutive-turn bonus is a suggestion for balancing, not a rule.
+- Candidate hiring-window versus onboarding date needs confirmation; the assistant's full two-clock example is not user approval.
+- Critical Success counting as one successful phase is the working proposal, not separately confirmed weighting.
+- G-001 is partially recovered via summaries; no full transcript or complete NPC-stat advancement was retrieved.
+- Gather Intel, Provide R&R, Reorganize Command, Renegotiate Terms remain proposals. Relocate Operations was subsequently accepted through Transferable N discussion.
+- P-005 property damage/repair remains provisional; naming Commission Project does not alone adopt its full damage mechanics.
+- P-001 XP carryover remains provisional. P-002 is refined by agreed assignment-fixed quotes, but exact ordinary pay basis/scale is not fully specified.
+- Foundry implementation remains deferred. Re-test these new rules before claiming integration validation.
