@@ -2,13 +2,13 @@
 
 [Play Contract Operations](https://contract-operations-playtest.primeangel2.chatgpt.site)
 
-This private demo lets the owner play an opening season using prototype0.3.2 values and edition0.2 procedures. It is a focused gameplay prototype, not a complete implementation of every subsystem.
+This private demo lets the owner play an opening season using prototype0.3.3 values and edition0.2 procedures. It is a focused gameplay prototype, not a complete implementation of every subsystem.
 
 ## First session
 
-1. Start with the default seed and paid contract acquisition. You begin at Guild Level1 with2,000 credits, four Level1 operatives, two unpaid PC officer fixtures, two Standard offers and three shared Guild Actions. Each officer can spend at most two actions.
+1. Start with the default seed and paid contract acquisition. You begin at Guild Level1 with2,000 credits, four Level1 operatives, four unpaid iconic PC officer fixtures, two Standard offers and four shared Guild Actions. The pool equals PC party members + Guild Level − 1; officers have no personal action cap. Let each player choose an action or pass before allocating repeats.
 2. Secure a contract from the board. Deploy available personnel and choose all three phase leads before departure. Deployment is routine administration.
-3. Spend the remaining actions on recruitment, training, publicity or other visible options. Watch the officer capacity as well as the shared pool.
+3. Spend the remaining actions on recruitment, training, publicity or other visible options. Watch the shared pool, treasury and trained-skill requirements.
 4. Finish the Activity phase. During the same turn’s Events, resolve deployed missions one phase at a time. All client receipts arrive before successful wages; rent and facility bills remain in the following Upkeep. Failed missions award participation XP, reduce reputation and let you decide whether to pay full, half or no wages.
 5. Play six monthly Guild Turns. Continuing beyond six turns is supported. Test whether contract acquisition crowds out growth, how recovery changes staffing and whether the treasury supports your decisions.
 6. Add feedback and use Copy Playtest Notes or download the notes. Paste them into the design chat for review. Useful feedback identifies a turn, a decision, its result and what felt unclear, slow, too generous or too punishing.
@@ -31,8 +31,10 @@ It omits loans and property transactions, new officer appointments, rival missio
 
 [Source and tests](../prototypes/browser-playtest/README.md) preserve the deployed implementation under `prototypes/browser-playtest/`. Open `dist/index.html` locally or serve that directory with any static server. Run `node tests.cjs` from the prototype directory.
 
-Twenty-three automated checks passed, including mission and settlement ordering, action limits, monthly status clocks, wages and arrears. Forty-eight deterministic smoke campaigns covered288 management intervals, including cash conservation; a minimal DOM smoke exercised workspace renders and stage transitions. These are implementation checks, not evidence that the rules are balanced for human players.
+Twenty-seven automated checks passed, including mission and settlement ordering, action limits, monthly status clocks, wages and arrears. Forty-eight deterministic smoke campaigns covered288 management intervals, including cash conservation; a minimal DOM smoke exercised workspace renders and stage transitions. These are implementation checks, not evidence that the rules are balanced for human players.
 
 Real browser visual QA was unavailable in the build environment. Hosting reported a successful deployment; visual interaction still needs player feedback. Report UI issues with the exported notes, turn, seed and acquisition mode.
 
 The0.3.2 update migrates existing browser progress, preserving recorded rolls and frozen quotes. New deployment quotes show the size circumstance bonus and cash percentage. Existing quoted deployments retain their original figures.
+
+Default PC officers are Navasi, Iseph, Dae and Chk Chk; their administrative statistics are scenario fixtures. New Playtest lets you choose1–8 PC party members. Failed-pay Loyalty is full+5, half0, none−5. Existing saves retain past pay outcomes and gain the revised party-sized action budget for an open Activity.

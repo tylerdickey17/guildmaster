@@ -1,6 +1,6 @@
 # Integration rules pass: playtest edition 0.2
 
-> **Current live-play patch:** [0.3.2 Events timing and crew bonuses](prototype-values-v0.3.2.md), over [0.3.1 revisions](prototype-values-v0.3.1.md) and the [full0.3.0 catalog](prototype-values-v0.3.md). Historical deferrals and conflicting timing below are superseded by these patches. See the [simulation report](prototype-simulation-report-v0.3.md) for historical evidence and limits.
+> **Current live-play patches:** [0.3.3 shared pool and Loyalty](prototype-values-v0.3.3.md), then [0.3.2 Events timing and crew bonuses](prototype-values-v0.3.2.md), over [0.3.1 revisions](prototype-values-v0.3.1.md) and the [full0.3.0 catalog](prototype-values-v0.3.md). Historical deferrals and conflicting timing below are superseded by these patches. See the [simulation report](prototype-simulation-report-v0.3.md) for historical evidence and limits.
 
 Date: October 10, 2026 (America/Chicago).
 
@@ -25,7 +25,7 @@ A Guild Turn is a monthly management boundary followed by a 30-day operating int
 | --- | --- |
 | 1. Upkeep: scheduled results | Process due training, recovery, construction, transfers and non-contract scheduled status changes. Contract mission results and actual mission returns occur in their due Events phase instead. Record development Guild XP for final advancement. |
 | 2. Upkeep: obligations and availability | Use cash banked from previous Events for monthly rent, asset overhead and debt. Pay or record unmet obligations; resolve arrears/default notices. Confirm released personnel, facilities and managers, pending recruits/officers now starting, and officer duties. |
-| 3. Budget reset | Reset the one shared Guild Action pool from the level in force at the start of this turn. Reset eligible officers to their two-action baseline. Pools reset once; unused capacity expires without XP or credit conversion. |
+| 3. Budget reset | Reset the one shared Guild Action pool to PC party count + Guild Level − 1, using the level in force at the start of this turn. Officers have no separate numerical action cap. Pools reset once; unused capacity expires without XP or credit conversion. |
 | 4. Commerce | Spend that same pool on financing/property transactions as desired. Payments/withdrawals alone are routine; borrowing and negotiated transactions use actions. |
 | 5. Activity | Generate leads/candidates, acquire work, hire, train, develop the guild and initiate projects. Deploy eligible squads on accepted jobs without another action. |
 | 6. Events & Advancement | Resolve due contracts and mission returns first; default one-turn work deployed during this Activity resolves now. Collect all due client receipts before successful payroll; apply mercenary XP, reputation and recovery, and finish failed-pay/MVP choices. Then resolve due event follow-ups and the monthly Guild Event; schedule substantial action work for next turn. Finally settle Guild XP and qualifying development awards, level the guild and choose earned Guild Feats. |
@@ -150,15 +150,15 @@ Use four **required administrative portfolios**, not four mandatory separate hir
 | Quartermaster | Treasury/obligations, property, logistics and project coordination. |
 | Personnel Officer | Hiring, training, welfare and personnel records. |
 
-PCs and appointed NPCs can cover multiple portfolios. A person still has only two actions total, not two per title. Portfolios determine accountability and story hooks; they do not exclusively gate basic actions to one title. Any available officer can perform a basic action; trained actions require the executing officer's actual skill.
+PCs and appointed NPCs can cover multiple portfolios. There is one shared action pool and no personal officer action cap. Give each player an action choice or a pass before allocating remaining actions together. Portfolios determine accountability and story hooks; they do not exclusively gate basic actions to one title. Any available officer can perform a basic action; trained actions require the executing officer's actual skill.
 
-Initial PC appointments are free at campaign setup. Later hire/promotion/role reassignment uses Appoint Officer, one action; an existing officer may change covered portfolios within that appointment. Newly appointed people gain officer execution capacity at the **next** boundary, preventing appointment chains from manufacturing same-turn actions.
+Initial PC appointments are free at campaign setup. Later hire/promotion/role reassignment uses Appoint Officer, one action; an existing officer may change covered portfolios within that appointment. Newly appointed people begin their duties at the **next** boundary; appointments never create shared Guild Actions.
 
 No universal level/skill gate for basic officer status: the guild appoints a willing PC or contracted NPC with agreed duties. A Level 1 officer can administer without qualifying as a squad leader. Skill requirements govern trained actions. A role's expertise can matter through authored feats/events, not a hidden minimum.
 
 Confirm who covers portfolios during Upkeep. If someone is unavailable, appoint a willing existing available officer as an **acting custodian** for that turn without a new-hire action; it adds no action capacity. If none is available, mark the portfolio vacant. Routine ledgers/salaries and already-managed work still process; no actions are executed without an available officer. Vacancies create a visible staffing issue, not automatic extra Reputation loss or a second penalty ladder.
 
-Reserve an officer from the start of construction or another Full Commitment through its release. Starting that commitment is their final discrete action that turn; they cannot start work, bank a second action afterward, or serve two mutually exclusive posts. A single manager oversees one active project; additional managers allow concurrent projects only within the guild-wide cap. Contractors are not automatically action-qualified officers.
+Reserve an officer from the start of construction or another Full Commitment through its release. Starting that commitment is their final discrete action that turn; they cannot start work, execute additional actions afterward, or serve two mutually exclusive posts. A single manager oversees one active project; additional managers allow concurrent projects only within the guild-wide cap. Contractors are not automatically action-qualified officers.
 
 An officer may deploy as a mercenary, with ordinary assignment pay plus their disclosed officer salary, but loses administrative availability until return. Salary continues during approved assignment unless employment terms say otherwise. PCs on an adventure may perform Remote actions if communications/time plausibly permit; Local or Full Commitment tasks require presence/downtime. No additional daily time sheet or compulsory week is imposed.
 
@@ -206,7 +206,7 @@ Recovery: current due bills are funded, no uncured default remains (or it is exp
 
 ## PASS-011: Actions, repeats and automation boundaries
 
-Set every accepted basic action, all nine trained actions, and Relocate Operations to **one Guild Action** as the prototype cost, plus executing officer capacity. Secure Contract and Recruit Operative retain their explicit costs. Future multi-action exceptions need text, not a guessed cost. Do not adopt the optional Gather Intel, Provide R&R, Reorganize Command, Renegotiate Terms or Expert catalog just to fill space; Appoint Officer already covers role changes.
+Set every accepted basic action, all nine trained actions, and Relocate Operations to **one Guild Action** as the prototype cost, with an eligible and available executing officer but no personal action quota. Secure Contract and Recruit Operative retain their explicit costs. Future multi-action exceptions need text, not a guessed cost. Do not adopt the optional Gather Intel, Provide R&R, Reorganize Command, Renegotiate Terms or Expert catalog just to fill space; Appoint Officer already covers role changes.
 
 Choose an action's aim/target and prerequisites before any check. Routine acceptance/hiring/known-cost construction/transactions don't need an extra “administrative success” roll; success depends on known terms. For uncertain business/trained activities use a single executing-officer skill check and a visible four-degree action card. Use Diplomacy for Work the Network; a trained action selects one of its listed approaches before rolling. No support rolls are added to mission phases.
 

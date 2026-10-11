@@ -1,5 +1,7 @@
 # Integration checkpoint: October 10, 2026
 
+> Current pool, starting PC officers and failed-pay Loyalty are superseded where conflicting by [the0.3.3 live-play patch](prototype-values-v0.3.3.md). Older evidence and decisions remain for provenance.
+
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
 
 

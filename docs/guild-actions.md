@@ -1,5 +1,7 @@
 # Guild Action catalog
 
+> Current pool, starting PC officers and failed-pay Loyalty are superseded where conflicting by [the0.3.3 live-play patch](prototype-values-v0.3.3.md). Older evidence and decisions remain for provenance.
+
 > **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
 
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.

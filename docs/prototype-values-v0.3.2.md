@@ -1,5 +1,7 @@
 # Prototype values: edition 0.3.2
 
+> Current pool, starting PC officers and failed-pay Loyalty are superseded where conflicting by [the0.3.3 live-play patch](prototype-values-v0.3.3.md). Older evidence and decisions remain for provenance.
+
 October 10, 2026 (America/Chicago). This is the current live-play patch, incorporating the user's first browser-playtest feedback. It supersedes conflicting contract timing and oversized-squad DC adjustments in editions0.2–0.3.1. All other0.3.1 values and procedures remain in force. [Core values](../playtests/prototype-0.3.2/values.json) and [playable demo](https://contract-operations-playtest.primeangel2.chatgpt.site).
 
 ## Contract resolution during Events

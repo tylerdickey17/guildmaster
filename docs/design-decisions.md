@@ -284,3 +284,11 @@ Older deferred numerical statements are historical wherever these packs now supp
 - **LIVE-002 — Confirmed:** +1 circumstance per operative above recommended count, with diminished reward. **Designer-selected value retained:**10% client cash reduction per extra operative, existing combined50% floor. Use the highest circumstance bonus, replace the old oversized DC reduction, retain undersized DC penalties and fixed XP.
 
 See [0.3.2](prototype-values-v0.3.2.md) and [browser guide](browser-playtest.md). These entries supersede conflicting older timing and size adjustments; prior simulation evidence remains historical.
+
+## LIVE-003–005: participation and failed pay, October11,2026
+
+- **LIVE-003 — Confirmed:** failed-job wages full+5/half0/none−5 Loyalty. Replaces +10/+4/−10; actual funded cash and separate Reputation consequences remain.
+- **LIVE-004 — User requirements:** baseline actions equal PC party count; every player has an action opportunity; choose one budget model rather than shared pool plus officer caps. **Designer-selected:** retain one shared pool, remove officer action caps, grow at PC count + Guild Level − 1; first offer each player an action/pass, then allocate remaining actions. Exact growth rate/Guild Level interpretation remain prototype choices.
+- **LIVE-005 — Confirmed:** four starting PC officers using default SF2e character names. Demo selects Navasi, Iseph, Dae and Chk Chk from Paizo’s four-hero pregenerated adventure; their administrative statistics remain fixtures.
+
+See [0.3.3](prototype-values-v0.3.3.md). Historical numerical trials used the old pool and pay model and are not rerun balance evidence for this patch.

@@ -1,5 +1,5 @@
 (function(root){const values={
-  "version": "0.3.2",
+  "version": "0.3.3",
   "rules_authority": "docs/integration-rules-v0.2.md",
   "currency": "credits",
   "level_dc": [
@@ -79,20 +79,6 @@
     "legendary": 4
   },
   "support_cap": 3,
-  "officer_actions": 2,
-  "guild_actions": [
-    null,
-    3,
-    3,
-    4,
-    4,
-    5,
-    5,
-    6,
-    6,
-    7,
-    7
-  ],
   "project_capacity": [
     null,
     1,
@@ -191,9 +177,9 @@
   "loyalty_min": 0,
   "loyalty_max": 100,
   "failed_pay_loyalty": {
-    "full": 10,
-    "half": 4,
-    "none": -10
+    "full": 5,
+    "half": 0,
+    "none": -5
   },
   "rescue_loyalty": {
     "delegated": 10,
@@ -231,7 +217,7 @@
   ],
   "starting_treasury": 2000,
   "starting_mercenaries": 4,
-  "starting_officers": 2,
+  "starting_officers": 4,
   "starting_merc_level": 1,
   "starting_officer_skill": 10,
   "hq_lease_monthly": 150,
@@ -326,6 +312,10 @@
   "default_contract_due": "deployment_turn_events",
   "extra_operative_circumstance_bonus": 1,
   "size_dc_adjustment_scope": "undersized_only",
-  "circumstance_bonus_stacking": "highest_only"
+  "circumstance_bonus_stacking": "highest_only",
+  "guild_action_pool_formula": "pc_party_size + guild_level - 1",
+  "starting_pc_party_size": 4,
+  "officer_action_cap": null,
+  "participation_procedure": "Each player chooses an action or passes before the group allocates remaining actions."
 }
 ;if(typeof module!=="undefined"&&module.exports)module.exports=values;root.GuildValues=values;})(typeof globalThis!=="undefined"?globalThis:this);
