@@ -38,3 +38,7 @@ Real browser visual QA was unavailable in the build environment. Hosting reporte
 The0.3.2 update migrates existing browser progress, preserving recorded rolls and frozen quotes. New deployment quotes show the size circumstance bonus and cash percentage. Existing quoted deployments retain their original figures.
 
 Default PC officers are Navasi, Iseph, Dae and Chk Chk; their administrative statistics are scenario fixtures. New Playtest lets you choose1–8 PC party members. Failed-pay Loyalty is full+5, half0, none−5. Existing saves retain past pay outcomes and gain the revised party-sized action budget for an open Activity.
+
+## Accepted follow-up design, queued for implementation
+
+The owner found this proof of concept fun and useful. [Free Agents/Retained Operatives](personnel-employment.md), retainer payment in Upkeep, and reduced retained assignment pay in Events are accepted design additions, not current0.3.3 browser features. Full asset/location overhead and retainer amounts still need a pass before settling the starting treasury. See [the session checkpoint](session-checkpoint-2026-10-11.md) for the next Site and possible Foundry work.

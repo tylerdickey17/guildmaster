@@ -1,5 +1,7 @@
 # System A: Personnel
 
+> **Latest accepted employment rules:** [Free Agents and Retained Operatives](personnel-employment.md). Retainers are Upkeep overhead; mission wages settle in Events. This later design checkpoint is recorded but not yet in browser0.3.3. See the [session handoff](session-checkpoint-2026-10-11.md).
+
 > **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
 
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
@@ -10,6 +12,10 @@
 Current personnel integration: [INT-007 and INT-012–015](integration-checkpoint.md) govern recovery, recovered historical rules, recruitment, Leader Feats, and training. One primary status; default training is 30 days with next-turn availability and a consecutive-training bonus whose amount is deferred. Recruitment uses Diplomacy and 0/1/2/3 candidates by degree; Recruit Operative hires one for one action. Level 5 grants a Leader Feat. Deployment pay quotes are fixed for the assignment; failed jobs retain participation XP and permit full/half/no contractor pay with corresponding Loyalty effects. Candidate offer/start clocks remain provisional. G-001 is partially recovered from summaries, not closed by a full original transcript.
 
 **Precedence and history:** the accepted rules in the linked integration checkpoint supersede any conflicting baseline deferral below. The remaining text is retained as the pre-integration framework and evidence; an old “unresolved” statement does not undo an accepted INT rule. Unaddressed deferrals still apply.
+
+## Accepted employment addition (October11,2026)
+
+Free Agents are nonexclusive and available as a recruitment category at every Reputation tier. Higher Reputation opens recruitment of Retained Operatives, who have exclusive agreements, monthly retainers and reduced assignment pay. Loyalty still affects free-agent preference/rival work and retained-worker morale/renewal. Employment type does not replace availability status. Retainer and assignment rates, exact access threshold, conversions and missed-retainer escalation need balancing; see [the employment rules](personnel-employment.md).
 
 ## Pre-integration framework
 

@@ -1,5 +1,7 @@
 # Prototype values: edition 0.3.3
 
+> **Latest accepted employment rules:** [Free Agents and Retained Operatives](personnel-employment.md). Retainers are Upkeep overhead; mission wages settle in Events. This later design checkpoint is recorded but not yet in browser0.3.3. See the [session handoff](session-checkpoint-2026-10-11.md).
+
 October 11, 2026 (America/Chicago). Current live-play patch. This supersedes earlier officer action caps, fixed Guild Action schedules, starting PC officer count and failed-pay Loyalty values. Other [0.3.2](prototype-values-v0.3.2.md) rules remain in force. [Core values](../playtests/prototype-0.3.3/values.json); [browser demo](https://contract-operations-playtest.primeangel2.chatgpt.site).
 
 ## Failed-contract pay

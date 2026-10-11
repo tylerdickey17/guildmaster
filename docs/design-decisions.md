@@ -292,3 +292,13 @@ See [0.3.2](prototype-values-v0.3.2.md) and [browser guide](browser-playtest.md)
 - **LIVE-005 — Confirmed:** four starting PC officers using default SF2e character names. Demo selects Navasi, Iseph, Dae and Chk Chk from Paizo’s four-hero pregenerated adventure; their administrative statistics remain fixtures.
 
 See [0.3.3](prototype-values-v0.3.3.md). Historical numerical trials used the old pool and pay model and are not rerun balance evidence for this patch.
+
+## LIVE-006–010: employment and proof-of-concept checkpoint, October11,2026
+
+- **LIVE-006 — Confirmed:** two worker models. Free Agents are nonexclusive and accessible regardless of Reputation tier; Loyalty matters to preference/rival work. Higher Reputation unlocks Retained Operatives with exclusive agreements, monthly retainers and reduced mission pay. Loyalty still matters to morale/renewal. Exact rates and access gate remain unresolved; Friendly is the working recommendation.
+- **LIVE-007 — Confirmed explicitly:** retainer pay is overhead, resolved in Upkeep at the start of every Guild Turn. Assignment pay resolves in Events when the contract resolves. Both apply to retained workers; only assignment pay applies to free agents. Failed-job full/half/no assignment-pay decisions do not waive the retainer.
+- **LIVE-008 — Owner feedback:** the user found the playtests fun and regarded the browser as a successful proof of concept. This is owner experience, not proof of complete balance, a group study or Foundry compatibility.
+- **LIVE-009 — Provisional planning:**2,000 starting credits remains under review against fuller asset/location overhead and new retainers. Current demo already includes150 HQ rent and installed-facility overhead. Source of startup funds and exact additional overhead still need decisions; no numerical change is authorized by the currency discussion alone.
+- **LIVE-010 — Next-session direction:** continue Site playtest work and possibly start the Foundry module. User requests this documentation commit now; no module scaffold or Site changes in this checkpoint. Prior phase-specific no-Foundry instructions remain historical scope, not a perpetual prohibition on future explicitly requested work.
+
+[Accepted employment rules](personnel-employment.md) and [session handoff](session-checkpoint-2026-10-11.md) preserve scope, unanswered questions and implementation status.

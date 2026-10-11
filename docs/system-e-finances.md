@@ -1,5 +1,7 @@
 # System E: Finances
 
+> **Latest accepted employment rules:** [Free Agents and Retained Operatives](personnel-employment.md). Retainers are Upkeep overhead; mission wages settle in Events. This later design checkpoint is recorded but not yet in browser0.3.3. See the [session handoff](session-checkpoint-2026-10-11.md).
+
 > **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
 
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
@@ -10,6 +12,10 @@
 Current finances integration: [INT-001–002 and INT-008](integration-checkpoint.md) put due receipts before obligations, freeze squad pay quotes at departure, deny failed jobs client cash, and let players choose full/half/no failed-job contractor pay. Agreements disclose delinquency/default escalation; repayment/restructuring can recover. Secured creditors may claim collateral; unsecured collections restrict finance; lease default can terminate access. Sale deficiency remains owed unless settled. Insolvency trigger, payment priority, detailed enforcement and values remain open. Financing/property actions use the shared pool in Commerce; routine repayment is free.
 
 **Precedence and history:** the accepted rules in the linked integration checkpoint supersede any conflicting baseline deferral below. The remaining text is retained as the pre-integration framework and evidence; an old “unresolved” statement does not undo an accepted INT rule. Unaddressed deferrals still apply.
+
+## Accepted retainer accounting (October11,2026)
+
+Retained Operatives’ monthly retainers are personnel overhead paid in **Upkeep at the start of every Guild Turn**, including idle months. Their reduced assignment pay settles separately in **Events when the mission resolves**. Free Agents have no retainer and receive ordinary quoted assignment pay. Failed-job full/half/no assignment pay changes Loyalty +5/0/−5 and does not waive retainers or erase Reputation loss. Routine paid retainers keep Loyalty steady; first-payment timing and missed-retainer effects remain open. Track these obligations separately from officer salaries and asset overhead; their exact overlap needs disclosed employment terms. See [personnel employment](personnel-employment.md).
 
 ## Pre-integration framework
 
