@@ -12,6 +12,8 @@ Players develop mercenary personnel and weigh the benefits of experienced operat
 
 ## Documents
 
+- [Play the browser demo](https://contract-operations-playtest.primeangel2.chatgpt.site) — interactive opening-season playtest using prototype0.3.1; private owner access.
+- [Browser playtest guide](docs/browser-playtest.md) — first session, feedback export, verification and scope; [source and tests](prototypes/browser-playtest/README.md).
 - [Prototype values0.3.1](docs/prototype-values-v0.3.1.md) — current numerical patch; retains starting values and explains evidence-based revisions.
 - [Full numerical pack0.3.0](docs/prototype-values-v0.3.md) — frozen starting values, complete action/feat/facility/event cards; apply0.3.1 changes above.
 - [Simulation report](docs/prototype-simulation-report-v0.3.md) — six-agent results, exact probabilities, bounded campaign trials, recommendations and limitations.
