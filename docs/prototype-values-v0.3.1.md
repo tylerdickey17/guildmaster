@@ -1,6 +1,8 @@
 # Prototype values: edition 0.3.1
 
-October 10, 2026 (America/Chicago). **Current designer-selected live-play prototype**, revised after six independent numerical reviews of frozen 0.3.0. This patch takes precedence over the affected numbers/content in [0.3.0](prototype-values-v0.3.md); all other values there remain in force. Edition [0.2](integration-rules-v0.2.md) remains the procedural authority. Machine-readable core numbers: [values.json](../playtests/prototype-0.3.1/values.json); these prose cards also supply effects and costs not encoded in JSON. Both packs and evidence are retained; no user-approved core mechanic is removed.
+> Superseded in contract timing and oversized-squad DC adjustment by [the0.3.2 live-play patch](prototype-values-v0.3.2.md). Other values below remain in force.
+
+October 10, 2026 (America/Chicago). **Retained designer-selected numerical patch**, revised after six independent numerical reviews of frozen 0.3.0. This patch takes precedence over the affected numbers/content in [0.3.0](prototype-values-v0.3.md); all other values there remain in force. Edition [0.2](integration-rules-v0.2.md) remains the procedural authority. Machine-readable core numbers: [values.json](../playtests/prototype-0.3.1/values.json); these prose cards also supply effects and costs not encoded in JSON. Both packs and evidence are retained; no user-approved core mechanic is removed.
 
 ## Keep these starting values
 

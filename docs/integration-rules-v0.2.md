@@ -1,6 +1,6 @@
 # Integration rules pass: playtest edition 0.2
 
-> **Current numerical prototype:** [0.3.1 revisions](prototype-values-v0.3.1.md) plus the [full0.3.0 catalog](prototype-values-v0.3.md). Historical numerical deferrals below are superseded where those packs supply a value. See the [simulation report](prototype-simulation-report-v0.3.md) for evidence and limits.
+> **Current live-play patch:** [0.3.2 Events timing and crew bonuses](prototype-values-v0.3.2.md), over [0.3.1 revisions](prototype-values-v0.3.1.md) and the [full0.3.0 catalog](prototype-values-v0.3.md). Historical deferrals and conflicting timing below are superseded by these patches. See the [simulation report](prototype-simulation-report-v0.3.md) for historical evidence and limits.
 
 Date: October 10, 2026 (America/Chicago).
 
@@ -23,12 +23,12 @@ A Guild Turn is a monthly management boundary followed by a 30-day operating int
 
 | Order | What happens |
 | --- | --- |
-| 1. Upkeep: scheduled results | Process all previously committed work now due: contracts/actual returns, training, recovery, construction, transfers, and scheduled rival outcomes. Resolve client cash and mercenary rewards; record Guild XP for final advancement. |
-| 2. Upkeep: obligations and availability | Apply all receipts before monthly bills. Pay or record unmet obligations; resolve arrears/default notices. Confirm released personnel, facilities and managers, pending recruits/officers now starting, and officer duties. |
+| 1. Upkeep: scheduled results | Process due training, recovery, construction, transfers and non-contract scheduled status changes. Contract mission results and actual mission returns occur in their due Events phase instead. Record development Guild XP for final advancement. |
+| 2. Upkeep: obligations and availability | Use cash banked from previous Events for monthly rent, asset overhead and debt. Pay or record unmet obligations; resolve arrears/default notices. Confirm released personnel, facilities and managers, pending recruits/officers now starting, and officer duties. |
 | 3. Budget reset | Reset the one shared Guild Action pool from the level in force at the start of this turn. Reset eligible officers to their two-action baseline. Pools reset once; unused capacity expires without XP or credit conversion. |
 | 4. Commerce | Spend that same pool on financing/property transactions as desired. Payments/withdrawals alone are routine; borrowing and negotiated transactions use actions. |
 | 5. Activity | Generate leads/candidates, acquire work, hire, train, develop the guild and initiate projects. Deploy eligible squads on accepted jobs without another action. |
-| 6. Events & Advancement | Resolve remaining due event follow-ups, then satisfy the monthly minimum with valid new/fallback events if needed. Choose immediate responses; schedule substantial action work for the next turn. Finally settle recorded Guild XP and qualifying development awards, level the guild and choose earned Guild Feats. |
+| 6. Events & Advancement | Resolve due contracts and mission returns first; default one-turn work deployed during this Activity resolves now. Collect all due client receipts before successful payroll; apply mercenary XP, reputation and recovery, and finish failed-pay/MVP choices. Then resolve due event follow-ups and the monthly Guild Event; schedule substantial action work for next turn. Finally settle Guild XP and qualifying development awards, level the guild and choose earned Guild Feats. |
 
 Apply mercenary XP at settlement so their next assignment uses their new statistics/pay. New Guild Level action/construction-capacity benefits begin the next boundary; existing projects do not disappear because a capacity changes.
 

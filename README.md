@@ -8,13 +8,14 @@ A design workspace for a mercenary-company subsystem for **Starfinder 2e**, init
 
 Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, mission-resolution, guild-development, finance, property, and events/rival-guild frameworks and identifies what still needs design or balancing.
 
-**Stage:** procedural integration edition0.2 plus **numerical playtest prototype0.3.1**. Six independent agents reviewed frozen0.3.0; targeted reruns checked the resulting0.3.1 changes. Live playtesting and broader content/balance remain ahead. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
+**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.2**, incorporating first browser feedback on Events resolution and extra-person circumstance bonuses. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Human playtesting and broader content/balance remain ahead. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
 
 ## Documents
 
-- [Play the browser demo](https://contract-operations-playtest.primeangel2.chatgpt.site) — interactive opening-season playtest using prototype0.3.1; private owner access.
+- [Play the browser demo](https://contract-operations-playtest.primeangel2.chatgpt.site) — interactive opening-season playtest using prototype0.3.2; private owner access.
 - [Browser playtest guide](docs/browser-playtest.md) — first session, feedback export, verification and scope; [source and tests](prototypes/browser-playtest/README.md).
-- [Prototype values0.3.1](docs/prototype-values-v0.3.1.md) — current numerical patch; retains starting values and explains evidence-based revisions.
+- [Live-play patch0.3.2](docs/prototype-values-v0.3.2.md) — current authority for Events contract resolution, crew circumstance bonuses and retained cash discounts.
+- [Prototype values0.3.1](docs/prototype-values-v0.3.1.md) — retained numerical patch; applies where0.3.2 does not override it.
 - [Full numerical pack0.3.0](docs/prototype-values-v0.3.md) — frozen starting values, complete action/feat/facility/event cards; apply0.3.1 changes above.
 - [Simulation report](docs/prototype-simulation-report-v0.3.md) — six-agent results, exact probabilities, bounded campaign trials, recommendations and limitations.
 - [Reproduction files](playtests/README.md) — Python scripts, JSON results, seed7 traces, pack hashes and coverage.

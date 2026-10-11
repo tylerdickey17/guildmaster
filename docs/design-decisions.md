@@ -277,3 +277,10 @@ Evidence: the user requested prototype values followed by subagents running simu
 
 Older deferred numerical statements are historical wherever these packs now supply a value. Remaining content gaps include fully generated distinct NPC/contract catalogs, comprehensive disruptive events/rival outcomes, Priority adventure rewards, and full0.3.1 campaign/live-table testing. No Foundry code is adopted.
 
+
+## LIVE-001–002: first browser feedback, October10,2026
+
+- **LIVE-001 — Confirmed:** user requested contracts resolve during Events, rejecting resolution during the next Upkeep. Default one-turn jobs deployed in Activity resolve in the same turn’s Events. Settlement/payment/MVP precede the ordinary monthly event and Advancement; recovery still occupies its printed future turns.
+- **LIVE-002 — Confirmed:** +1 circumstance per operative above recommended count, with diminished reward. **Designer-selected value retained:**10% client cash reduction per extra operative, existing combined50% floor. Use the highest circumstance bonus, replace the old oversized DC reduction, retain undersized DC penalties and fixed XP.
+
+See [0.3.2](prototype-values-v0.3.2.md) and [browser guide](browser-playtest.md). These entries supersede conflicting older timing and size adjustments; prior simulation evidence remains historical.

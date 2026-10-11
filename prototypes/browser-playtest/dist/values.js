@@ -1,5 +1,5 @@
 (function(root){const values={
-  "version": "0.3.1",
+  "version": "0.3.2",
   "rules_authority": "docs/integration-rules-v0.2.md",
   "currency": "credits",
   "level_dc": [
@@ -321,6 +321,11 @@
   "minimum_squad_level_gap": 2,
   "recovery_reductions_preserve_mandatory_floor": true,
   "recovery_protocol_activation": "immediate_after_actual_return",
-  "optimize_infrastructure_cash_cost": 0
+  "optimize_infrastructure_cash_cost": 0,
+  "contract_resolution_phase": "events",
+  "default_contract_due": "deployment_turn_events",
+  "extra_operative_circumstance_bonus": 1,
+  "size_dc_adjustment_scope": "undersized_only",
+  "circumstance_bonus_stacking": "highest_only"
 }
 ;if(typeof module!=="undefined"&&module.exports)module.exports=values;root.GuildValues=values;})(typeof globalThis!=="undefined"?globalThis:this);
