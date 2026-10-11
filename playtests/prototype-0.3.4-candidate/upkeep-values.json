@@ -1,0 +1,95 @@
+{
+  "version": "0.3.4-candidate",
+  "status": "designer-proposed; not deployed",
+  "currency": "credits",
+  "starting": {
+    "cash": 2000,
+    "phase": "upkeep",
+    "base": "leased_station_hq",
+    "pc_officers": 4,
+    "operatives": 4,
+    "employment": "free_agent",
+    "installed_facilities": [],
+    "description": "lean baseline; apply the selected preset before the first invoice"
+  },
+  "base": {
+    "id": "leased_station_hq",
+    "name": "Station Operations Office",
+    "ownership": "leased",
+    "slots": 2,
+    "monthly_total": 150,
+    "monthly_components": {
+      "lease": 100,
+      "utilities_and_maintenance": 25,
+      "routine_administration_and_security": 25
+    },
+    "billing": "current_interval_in_advance",
+    "roster_cap": null,
+    "initial_setup_fee": 0
+  },
+  "facilities": {
+    "training_suite": {
+      "construction": 500,
+      "manager_total": 100,
+      "construction_turns": 1,
+      "slots": 1,
+      "asset_monthly": 15,
+      "staff_monthly": 50,
+      "total_monthly": 65,
+      "staff": "Training Instructor",
+      "benefit": "cohort capacity 6; staffed instructor replaces the 50-credit ordinary trainer charge for facility cohorts",
+      "staffed_trainer_fee_per_cohort": 0,
+      "trainee_fee": 25
+    },
+    "infirmary": {
+      "construction": 1200,
+      "manager_total": 200,
+      "construction_turns": 2,
+      "slots": 1,
+      "asset_monthly": 40,
+      "staff_monthly": 50,
+      "total_monthly": 90,
+      "staff": "Medical Specialist",
+      "benefit": "phase-added recovery reduction 1; mandatory floor preserved; active treatment materials still cost 25 per target"
+    },
+    "recruitment_office": {
+      "construction": 400,
+      "manager_total": 100,
+      "construction_turns": 1,
+      "slots": 1,
+      "asset_monthly": 10,
+      "staff_monthly": 25,
+      "total_monthly": 35,
+      "staff": "Recruitment Agent",
+      "benefit": "local recruitment access; successful or critical-success local recruitment gains one candidate, maximum 3; no free hiring"
+    }
+  },
+  "employment": {
+    "free_agent_assignment_multiplier": 1,
+    "retained_access_reputation": 20,
+    "retained_retainer_wage_multiplier": 0.5,
+    "retained_assignment_multiplier": 0.8,
+    "rounding": 5,
+    "start": "next_upkeep_after_hire",
+    "first_retainer": "effective_start_upkeep",
+    "conversion": "requires Personnel signature and separate authored card",
+    "legacy_existing_agreements": "not terminated by reputation loss"
+  },
+  "billing": {
+    "base_and_staff": "advance for current interval",
+    "facility_asset": "arrears for prior active interval; first bill at boundary after activation",
+    "mission_wages": "events",
+    "funded_projects": "already paid; never bill manager again",
+    "optional_training": "after mandatory obligations",
+    "upkeep_action_cost": 0,
+    "payment_method": "explicit review and settle; insufficient funds require disclosed per-obligation choices",
+    "invoice_identity": "turn + obligation + covered_interval",
+    "budget_unlocked": "after upkeep choices and funding status recorded"
+  },
+  "setup_presets": {
+    "lean": "leased HQ, no installed facilities; all four starters Free Agents",
+    "staffed": "same cash and roster plus a landlord-owned Training Suite; instructor 50 due at first Upkeep, first asset overhead due next boundary; installation has no sale value or setup Guild XP"
+  },
+  "simulation_scope": "transparent arithmetic cases only; no engine/browser verification",
+  "recommended_setup_preset": "staffed"
+}

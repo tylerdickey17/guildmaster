@@ -12,6 +12,8 @@ Players develop mercenary personnel and weigh the benefits of experienced operat
 
 ## Documents
 
+- [Upkeep and base playtest draft](docs/upkeep-and-base-playtest.md) — visible invoices, staffed HQ/expansion fixtures, recurring costs and candidate retainer rates; implementation is blocked by a disconnected execution workspace. Live browser remains0.3.3.
+
 - [Latest session checkpoint: October11](docs/session-checkpoint-2026-10-11.md) — owner/spouse proof-of-concept feedback, employment, officer/staffing decisions and next authoring work.
 - [Officer positions and outpost staffing](docs/officers-and-staffing.md) — four founding offices, specialist progression and signature actions, facility staffing, and Reorganize Command; accepted working draft with provisional values, queued for implementation.
 - [Personnel employment](docs/personnel-employment.md) — accepted Free Agent/Retained Operative rules and payment phases; queued for browser implementation, with rates and threshold unresolved.

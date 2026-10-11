@@ -316,3 +316,9 @@ See [0.3.3](prototype-values-v0.3.3.md). Historical numerical trials used the ol
 Primary evidence: current Work conversation, including the user's request for a designer-led first draft, acceptance, the explicit role-switching cost correction and request to save before continuing.
 
 [Officer positions and outpost staffing](officers-and-staffing.md) is the authority for this later working design. **Documentation only:** no Site deployment, browser schema change, numerical simulation or Foundry implementation. Historical implementation checks do not validate these rules.
+
+## LIVE-018: visible Upkeep and base request, October 11, 2026
+
+**Confirmed user requirement:** make Upkeep more meaningful and visible in the browser playtest, adding a base and expansions. **Designer-proposed candidate:** Turn1 invoice, visible leased HQ and slots, itemized costs/forecasts, staffed/lean scenario presets, Training Suite/Infirmary/Recruitment Office payroll, candidate retained rates and explicit service/payment clocks. Individual values are not claimed user-approved or balanced. See [Upkeep draft](upkeep-and-base-playtest.md).
+
+**Implementation blocked:** execution workspace offline; supported Site source-helper/testing/packaging unavailable. Documentation and arithmetic cases only, live browser remains0.3.3. No changed executable values, tests or deployment. Existing staffing and restructuring rules remain accepted; this candidate does not silently finalize missed-retainer, termination, release or creditor procedures.

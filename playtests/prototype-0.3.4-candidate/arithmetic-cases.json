@@ -1,0 +1,50 @@
+{
+  "scope": "Draft arithmetic, not engine or campaign tests",
+  "cases": [
+    {
+      "case": "lean",
+      "steady_month_upkeep": 150,
+      "months_without_income_or_other_spending": 13,
+      "remaining_after_one_upkeep": 1850
+    },
+    {
+      "case": "training",
+      "steady_month_upkeep": 215,
+      "months_without_income_or_other_spending": 9,
+      "remaining_after_one_upkeep": 1785
+    },
+    {
+      "case": "infirmary",
+      "steady_month_upkeep": 240,
+      "months_without_income_or_other_spending": 8,
+      "remaining_after_one_upkeep": 1760
+    },
+    {
+      "case": "recruitment",
+      "steady_month_upkeep": 185,
+      "months_without_income_or_other_spending": 10,
+      "remaining_after_one_upkeep": 1815
+    },
+    {
+      "case": "training_infirmary",
+      "steady_month_upkeep": 305,
+      "months_without_income_or_other_spending": 6,
+      "remaining_after_one_upkeep": 1695
+    },
+    {
+      "case": "training_recruitment",
+      "steady_month_upkeep": 250,
+      "months_without_income_or_other_spending": 8,
+      "remaining_after_one_upkeep": 1750
+    },
+    {
+      "case": "two_retained_plus_two_free",
+      "free_assignment": 50,
+      "retained_retainer": 25,
+      "retained_assignment": 40,
+      "monthly_upkeep": 200,
+      "mission_wages": 180,
+      "net_after_600_standard_receipt": 220
+    }
+  ]
+}

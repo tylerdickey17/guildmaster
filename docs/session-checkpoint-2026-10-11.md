@@ -61,3 +61,11 @@ Before implementation, finish officer action cards and resolve overlapping count
 5. Consider beginning a small Foundry foundation: inspect the target Foundry/SF2e environment and supported APIs, define persistent guild/personnel/contract records, and build a first guild dashboard/turn ledger. Current v14 target and compatibility must be verified at implementation time. Expand automation after the relevant rules stabilize.
 
 No new Site deployment, numerical simulation, Foundry manifest, module scaffold or scheduled automation is part of this documentation-only checkpoint.
+
+## Subsequent Upkeep request and candidate checkpoint
+
+The user requested a more meaningful and visible Upkeep phase, adding a base and expansions to the browser. Source inspection found existing150-inclusive rent and two buildable installations, but fresh games skip Upkeep and later invoices auto-settle.
+
+[Upkeep and base playtest draft](upkeep-and-base-playtest.md) records a first-invoice review, visible base/slots, known-cost forecasts, three proposed facility quotes, ongoing specialist salaries, retained-worker candidate rates, service/obligation handling and migration acceptance checks. Candidate data is under playtests/prototype-0.3.4-candidate, separate from deployed values. Values are designer proposals; no user approval of individual rates is claimed.
+
+**Blocked implementation:** the execution workspace is disconnected, and no shell/runtime tool is available. The Site source-helper, local editing/tests, packaging and publication could not run. GitHub remains accessible, so the design and arithmetic checkpoint is saved there. Live Site/code remains0.3.3; resume the supported workflow when execution is restored. This is a partial completion of the requested browser change, not a deployment claim.
