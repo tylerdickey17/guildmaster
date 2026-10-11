@@ -38,6 +38,8 @@ Contracts are offered through a job board. The ten categories are **B-001 / B-00
 
 A category does not prescribe one universal check or outcome table. Each Standard Contract defines its own phase checks and consequences. Board size, refresh timing, generation, and access rules remain deferred.
 
+Rival claims on available contracts occur exclusively through visible [System G events](system-g-events-rival-guilds.md). The event identifies the affected contract and rival and explains the change to players; a silent random board refresh must not remove a contract as rival competition. Ordinary board generation/refresh procedures remain deferred. **SG-003 / SG-007**
+
 ### Contract cards
 
 Every Standard Contract card includes the following information. This is a tabletop content framework, not a software schema. **B-003 / C-003 / C-006**
@@ -87,6 +89,6 @@ This equation concerns financial returns. It does not assign a credit value to X
 - **Economy:** payout and pay scales, asset/upgrade overhead values, cost allocation, ordinary squad payment terms, and treatment of failed or incomplete jobs. **D-002 / D-010 / D-013**
 - **Rewards:** conditions and timing for reputation, loyalty, and recruitment rewards; how deployment adjustments affect each reward type. **D-010 / D-013**
 - **Priority adventures:** adventure presentation, reward design, NPC participation, and rescue routing. **D-027**
-- **Personnel timing and rescue:** duration's interaction with daily status rolls, return availability, capture, and party versus delegated rescue. **D-007 / D-008**
+- **Personnel timing and rescue:** status persistence across durations and events, return availability, capture, and party versus delegated rescue. Rival missions resolve through System G events. **D-007 / D-008**
 
 No Foundry module code, automation, data schema, or implementation scaffolding is included.

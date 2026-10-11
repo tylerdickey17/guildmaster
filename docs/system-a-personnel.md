@@ -31,11 +31,11 @@ This establishes the direction of the pay scale, not its shape. Neither a linear
 
 Players may concentrate bonus XP on one NPC when that NPC qualifies for both awards. There is no approved anti-stacking restriction or forced equalization of total XP. The user's stated expectation is that investing in one NPC does not necessarily produce the best team. **A-004**
 
-### Loyalty and daily availability
+### Loyalty and availability
 
 Each NPC has a loyalty score or level. Higher loyalty makes that NPC less likely to work for a rival guild and therefore less likely to be deployed on a rival guild's mission. The loyalty scale and the relationship between score and probability remain to be designed. **A-006**
 
-At the start of each in-game day, each NPC receives an automatic status roll to determine availability or deployment. The roll must account for loyalty when determining rival-guild deployment. The roll procedure and its interaction with ongoing missions and other statuses are deferred. **A-007**
+Rival recruitment and deployment now occur exclusively through visible Guild Events in [System G](system-g-events-rival-guilds.md), with loyalty influencing the outcome. This supersedes the rival-deployment portion of the earlier automatic daily status roll, **A-007**; its original wording remains in the decision log. Any remaining non-rival daily availability procedure is unresolved and cannot serve as a separate rival-deployment roll. **SG-007 / SG-008 / D-007**
 
 The design distinguishes these availability and deployment states. Names below are descriptive documentation labels; final interface wording can be chosen later. **A-008**
 
@@ -45,11 +45,11 @@ The design distinguishes these availability and deployment states. Names below a
 | Deployed — Guild Mission | The NPC is deployed on a mission for the player's guild. |
 | Deployed — Rival Guild Mission | The NPC is deployed on a mission for a rival guild. |
 
-The two deployment states must remain distinguishable. The available source does not yet specify whether the daily roll assigns a new mission for the player's guild or merely reflects a deployment already assigned by the players.
+The two deployment states must remain distinguishable. Players assign Standard Contracts to NPCs under System B; rival work arises through System G events. Status persistence, return timing, and the remaining non-rival daily procedure are deferred.
 
 ### Rival missions, capture, and rescue
 
-An NPC deployed by a rival guild can be captured during that mission. That capture still generates a rescue mission for the party, even though the NPC was working for another guild. Capture is a possible mission outcome; it is not an additional confirmed direct result of the daily availability roll. **A-009**
+An NPC deployed by a rival guild can be captured during that mission. That capture still generates a rescue mission for the party, even though the NPC was working for another guild. Rival mission outcomes, including capture, are handled through System G events without simulating a rival squad or its contract checks. **A-009 / SG-008**
 
 If the party successfully rescues that NPC, the rescued NPC receives a large loyalty bonus. The magnitude of that bonus, its timing, and any maximum loyalty limit are deferred. **A-010**
 
@@ -73,8 +73,8 @@ The financial model previously recorded as provisional **P-003** is now confirme
 - **Starting personnel and Leader Abilities:** the source recap leaves the starting roster and individual abilities for later. **D-003**
 - **Contract design:** [System B](system-b-contracts.md) and [System C](system-c-mission-resolution.md) now document the confirmed frameworks. Numerical difficulty, rewards, overall outcome procedures, and remaining personnel interactions are deferred. **D-004 / D-009 through D-013**
 - **Loyalty scale:** starting score, range or tiers, limits, how loyalty modifies rival-deployment probability, other ways to gain or lose loyalty, and the size of the rescue bonus. **D-006**
-- **Daily status procedure:** dice or random method, probabilities, eligible NPCs and treatment of ongoing deployments or captivity, mission duration and return timing, and the relationship between the roll and player-assigned guild missions. **D-007**
-- **Rival-mission capture and rescue:** how and when rival mission outcomes are resolved, capture probability, rescue-mission generation and resolution, and post-rescue availability. **D-008**
+- **Availability procedure:** any remaining non-rival daily procedure, eligible NPCs, persistence of ongoing deployments/captivity, and mission duration/return timing. Rival work must arise through System G events, not a silent daily roll. **D-007**
+- **Rival-mission capture and rescue:** event timing and resolution details, capture probability, rescue-mission generation and resolution, and post-rescue availability. The event-driven framework is confirmed; outcome formulas remain deferred. **D-008 / SG-008**
 
 No placeholder numbers in these areas should be used as approved rules.
 
@@ -86,13 +86,13 @@ The assistant's recap says that NPC statistics, recruitment, statuses, and leade
 | --- | --- |
 | NPC statistics | The approved statistic model and how it changes with advancement. |
 | Recruitment | The approved recruitment process and any limits or costs. |
-| Statuses | The earlier status list, effects, and transitions beyond the availability and two deployment states confirmed above. Reconcile those earlier rules with loyalty, daily rolls, and capture. |
+| Statuses | The earlier status list, effects, and transitions beyond the availability and two deployment states confirmed above. Reconcile those earlier rules with loyalty, event-driven rival deployment, and capture. |
 | Leadership | Leader selection, qualifications, and effects beyond the confirmed XP bonus. |
 
 Recover these decisions before adding rules for these topics. A source gap is not permission to redesign an already agreed mechanic.
 
 ## Future implementation boundary
 
-Foundry VTT v14 is a future implementation target. This phase adds no module manifest, source code, data schema, automation, or implementation scaffolding. The automatic daily status roll is a confirmed gameplay requirement; its Foundry implementation is deferred. How the module advances in-game days, records rival mission outcomes, generates rescue missions, and applies rescue loyalty bonuses will be designed later. **A-007 / D-005 / R-001**
+Foundry VTT v14 is a future implementation target. This phase adds no module manifest, source code, data schema, automation, or implementation scaffolding. The current rival-activity requirement is visible event-driven competition, superseding the rival-deployment part of A-007. How a future module advances time, records events and rival mission outcomes, generates rescue missions, and applies rescue loyalty bonuses will be designed later. **SG-007 / SG-008 / D-005 / R-001**
 
 Performance-based MVP triggers and automatic XP calculation remain suggestions. **P-004**

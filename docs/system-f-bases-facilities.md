@@ -25,6 +25,8 @@ Construction duration is measured in **monthly Guild Turns**. The guild has a **
 
 Manager qualifications, fees/salaries, exact availability rules, effects of suspended officer duties, and whether a manager can supervise more than one project remain deferred. Having capacity alone does not waive slots, funding, or management requirements. **D-023**
 
+Under [System D](system-d-guild-development.md), ongoing approved construction advances without spending Guild Actions, but its manager remains committed. An officer managing construction cannot execute conflicting Guild Actions. Exact officer capacity and scheduling remain deferred; a temporary contractor or project manager is not automatically a Guild Officer eligible to execute actions. **SD-008 / D-028**
+
 ## Acquisition: purchase, finance, or lease
 
 The guild may **purchase, finance, or lease** property. Financing uses [System E's loan and collateral rules](system-e-finances.md). Leasing gives lower-level guilds a lower-upfront-cost option, with recurring rent and restrictions on modifications or expansion. **F-007**

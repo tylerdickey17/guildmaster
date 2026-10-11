@@ -40,6 +40,16 @@ S11/S12 are direct confirmation in the documentation request, not quotations rec
 
 `SD-` identifies confirmed **System D** rules; existing `D-` IDs continue to identify **deferred** topics. No prior IDs are repurposed.
 
+### October 10, 2026 Guild Actions and System G evidence
+
+| Anchor | User statement / context |
+| --- | --- |
+| S15 | Current documentation request explicitly confirms a shared monthly Guild Action pool increasing with Guild Level, an available assigned PC/NPC officer for every action, conflicting-assignment restrictions, and NPC delegation while PCs adventure. Payroll, overhead, ongoing construction, and previously deployed contracts run without Guild Actions. Exact action counts and officer limits are deferred. |
+| S16 | Same request explicitly confirms the monthly event minimum, possible additional-event scaling pending simulations, Automatic/Decision Events, context-sensitive targets and effects, lightweight rival stat blocks, event-driven rival progression, five relationship states independent of reputation, and exclusively visible event-driven competition. Loyalty influences rival recruitment/deployment; rival capture can lead to rescue contracts. Numerical mechanics remain unbalanced; no Foundry coding. |
+| S17 | Supplied bounded preview of Starfinder Business Systems includes the user's approval of visible competition: players know when a contract or mercenary is lost instead of a random start-of-day disappearance. The accompanying assistant recap is secondary evidence, not independent confirmation of every rule. |
+
+S15/S16 are direct confirmation in the current request. The supplied preview is not the full earlier conversation and does not close unrelated source gaps. The existing GitHub System D addition already used SD-008; this update integrates it and adds its log entry without changing that ID. `SG-` identifies System G rules so that the existing source-gap ID G-001 retains its meaning.
+
 ## Confirmed
 
 | ID | Decision | Evidence and boundary |
@@ -51,7 +61,6 @@ S11/S12 are direct confirmation in the documentation request, not quotations rec
 | A-004 | Allow leadership and MVP bonuses to stack for one operative on one contract. | Explicit answer in S3. Team balance is a player consideration, not a reason to prohibit stacking. |
 | A-005 | Higher-level personnel require higher pay; advancement increases personnel cost. | Explicit choice in S4. This does not select a pay curve or rate. |
 | A-006 | Each NPC has loyalty; higher loyalty reduces the likelihood of working for and being deployed by rival guilds. | S7, October 10, 2026. No score range, starting value, probability curve, or immunity threshold is set. |
-| A-007 | At the start of each in-game day, each NPC receives an automatic status roll determining availability or deployment, with loyalty affecting rival deployment. | S7, October 10, 2026. The random procedure and treatment of ongoing missions, captivity, and other statuses remain unresolved; Foundry automation is deferred. |
 | A-008 | Distinguish Available, Deployed — Guild Mission, and Deployed — Rival Guild Mission. | S7, October 10, 2026. The two deployment states identify whose mission the NPC is on. Exact interface labels and the complete status model remain open. |
 | A-009 | An NPC can be captured while deployed on a rival guild mission; that capture still generates a rescue mission for the party. | S7, October 10, 2026. Capture chance, mission outcome resolution, and rescue details remain open. |
 | A-010 | A successful party rescue grants the rescued NPC a large loyalty bonus. | S7, October 10, 2026. Exact amount, award timing, and loyalty limits are deferred. |
@@ -98,6 +107,20 @@ S11/S12 are direct confirmation in the documentation request, not quotations rec
 | F-008 | Keep values relatively stable; allow property sale/conversion, with improvements/events/GM decisions affecting value rather than simulated market fluctuation. | S12/S13. Accepted acquisition discussion includes secured-debt/transaction-cost deductions on sale; valuation and conversion details remain deferred. |
 | F-009 | Transferable/Permanent are upgrade traits determining relocation eligibility. | S12/S13. Not automatic facility-category traits; relocation cost/time remains deferred. |
 
+### Guild Actions and System G
+
+| ID | Decision | Evidence and boundary |
+| --- | --- | --- |
+| SD-008 | Each monthly Guild Turn grants a shared Guild Action pool increasing with Guild Level. Every action needs an available assigned PC or NPC officer; construction or other conflicting assignments prevent execution. NPC officers can act while PCs adventure. Payroll, overhead, ongoing construction, and previously deployed contracts run automatically without actions. | S15. Preserve funding, staffing, timing, and resolution requirements. Counts, catalog/costs, officer limits, and scheduling remain deferred under D-028. |
+| SG-001 | Every monthly Guild Turn includes at least one Guild Event in its Event Phase. | S16. Additional quantity may scale with Guild Level, pending simulations; scaling is not a confirmed rule. |
+| SG-002 | Use Automatic Events and Decision Events. | S16. Automatic Events require no player choice but remain visible; Decision Events require a response. Checks, costs, response timing, and officer interactions remain deferred. |
+| SG-003 | Event eligibility and targets depend on actual NPCs, properties, contracts, and rivals; events can affect recruitment, contracts, finances, loyalty, reputation, facilities, and rival progression. | S16. Selection and outcome values remain deferred. Does not finalize P-005 property damage/repair. |
+| SG-004 | Rival stat blocks contain name, level, reputation tier, specialization, relationship, influence, and special traits; no separate rival guild turns, full finances, or contract simulations. | S16. Influence scale, trait catalog, and starting profiles remain deferred. |
+| SG-005 | Rival level and reputation can change through events. | S16. No independent rival XP/finance simulation or numerical progression rules are introduced. |
+| SG-006 | Rival relationships use Hostile, Unfriendly, Neutral, Friendly, Allied, independently of general reputation; relationships inform suitable interactions, including cooperative opportunities. | S16 and context-sensitive targeting. The similarly named reputation tiers remain a separate track. Transitions and exact event eligibility remain deferred. |
+| SG-007 | Rival contract, personnel, and market competition occurs exclusively through player-visible Guild Events, not silent random disappearance or rival simulations. | S16/S17. Supersedes A-007's rival-deployment mechanism; does not settle remaining non-rival daily availability. |
+| SG-008 | Loyalty influences rival recruitment/deployment; rival missions can lead to capture and rescue contracts, resolved through events. | S16; preserves A-006/A-008/A-009/A-010 and B-005. Loyalty formulas, capture probabilities, outcome timing, rescue routing, and rescue bonus values remain deferred. |
+
 ## Provisional / unconfirmed in available source
 
 | ID | Detail | Evidence and next decision |
@@ -111,6 +134,8 @@ S11/S12 are direct confirmation in the documentation request, not quotations rec
 
 | ID | Earlier status | October 10, 2026 update |
 | --- | --- | --- |
+| A-007 | S7 confirmed an automatic status roll at the start of each in-game day for every NPC, determining availability or deployment with loyalty affecting rival work. | S16/S17 and SG-007 supersede rival recruitment/deployment by silent daily roll with exclusively visible event-driven competition. A-008 deployment states and A-006 loyalty remain confirmed. Any remaining non-rival daily availability procedure is unresolved under D-007; this history is not a current rival-roll requirement. |
+| D-005 / D-007 / D-008 | Earlier deferrals assumed daily rival-deployment rolls and left the rival-resolution framework open. | S16/SG-007/SG-008 establish events as the rival-activity framework. Remaining timing, persistence, outcome values, and future implementation stay deferred. |
 | P-003 | Provisional: assistant recap after S4 proposed profit = payout − squad pay − overhead; approval was not visible. | S8 explicitly confirms this as B-006. The accounting model is settled. S11 now confirms monthly asset-based overhead and completion income under E-002/E-003; numerical components and allocation remain open. |
 | D-004 | Contract resolution and rewards were outside the initial personnel record and awaited their own design work. | S8/S9 now establish Systems B and C. Their remaining procedures and balancing are tracked under D-009 through D-013; this does not settle unrelated personnel gaps. |
 | B-003 / C-001 / C-003 / C-006 | Prior prose used “contracts” generally for phase cards, resolution, and deployment bounds. | S14/B-007 scopes these requirements to Standard NPC Contracts. Priority Contracts are full PC-participating adventures. |
@@ -124,10 +149,10 @@ S11/S12 are direct confirmation in the documentation request, not quotations rec
 | D-002 | Personnel economy | Pay values, linear versus steeper progression, ordinary mercenary payment/raise timing, and balancing against contract payouts. S4 settles that higher levels cost more; S11 now separately confirms monthly officer salaries. |
 | D-003 | Starting roster and individual Leader Abilities | Assistant recap after S4 explicitly leaves these for later; no values or ability definitions are supplied. |
 | D-004 | Contract system follow-through | Initial deferral is partially resolved by B-001 through B-006 and C-001 through C-007. Remaining work is scoped under D-009 through D-013; see status history above. |
-| D-005 | Foundry implementation | Deferred under S6 and S7. Automatic daily status rolls are confirmed as gameplay intent, but day advancement, persistent-state handling, rival outcomes, rescue generation, and loyalty updates need later implementation design. No code, manifest, schemas, or automation in this phase. |
+| D-005 | Foundry implementation | Deferred under S6/S7 and reiterated by S15/S16. The current rival framework is visible Guild Events, superseding A-007 in that scope. Time advancement, persistent-state handling, events, rival outcomes, rescue generation, and loyalty updates need later implementation design. No code, manifest, schemas, or automation in this phase. |
 | D-006 | Loyalty balancing | Score range or tiers, starting values, limits, relationship to rival-deployment probability, other loyalty gains or losses, and the amount of the large rescue bonus. S7 establishes the direction and rescue reward, not numbers. |
-| D-007 | Daily status procedure | Random method and probabilities; treatment of ongoing deployments, captivity, and other statuses; mission duration and return timing; whether player-guild deployment is assigned by the roll or reflects a player assignment. S7 establishes the daily roll without settling these interactions. |
-| D-008 | Rival capture and rescue resolution | How and when rival missions resolve, capture probability, rescue-mission generation and resolution, and post-rescue availability. S7 confirms that rival capture can happen and generates a rescue mission. |
+| D-007 | Daily status procedure | Any remaining non-rival daily availability procedure; treatment of ongoing deployments, captivity, and other statuses; mission duration and return timing. SG-007 supersedes daily rival-deployment rolls. Players assign Standard NPC Contracts under B-007; rival work arises through events. |
+| D-008 | Rival capture and rescue resolution | Event timing and outcome procedures, capture probability, rescue-mission generation and resolution, and post-rescue availability. SG-008 confirms event-based rival resolution without full mission simulation; S7 confirms capture and the party-rescue loyalty reward. |
 | D-009 | Job board procedures | Board size, refresh/generation, availability, and specific access/reputation requirements. SD-005 confirms that reputation affects new opportunities. |
 | D-010 | Contract values and content | Specific checks/DCs, durations, reward quantities/mixes, award conditions, non-credit reward timing, and authored phase outcomes. E-002 now confirms contract pay on completion. Recruitment as a reward does not settle the wider recruitment process. |
 | D-011 | Phase leads and support | Lead-selection timing, repeat-lead restrictions, relationship to squad leadership, support eligibility/amounts, stacking/caps, and interaction with squad size. |
@@ -136,7 +161,7 @@ S11/S12 are direct confirmation in the documentation request, not quotations rec
 | D-014 | Guild advancement | Guild XP thresholds/awards, development milestones, benefits, and feat content/selection. Preserve the confirmed 1–10 range and feats at 2/4/6/8/10. |
 | D-015 | Reputation | Score range, starting score, tier boundaries, gains/losses, and precise opportunity requirements. Starting tier is Neutral. |
 | D-016 | Officers | Required titles, qualifications, vacancies, delegation procedures, salary values, and consequences of suspended normal duties. |
-| D-017 | Guild Turn procedure | Monthly order, partial months, daily availability integration, ongoing deployments, and completion/advancement timing within turns. No universal downtime requirement. |
+| D-017 | Guild Turn procedure | Order of Guild Actions, Event Phase, and automatic operations; partial months, remaining daily availability integration, ongoing deployments, and completion/advancement timing within turns. No universal downtime requirement. |
 | D-018 | Treasury and receipts | Starting funds, withdrawal bookkeeping, payout values, and incomplete-contract treatment. Completion income and unrestricted withdrawals are confirmed. |
 | D-019 | Expense balancing and accounting | Salaries, overhead by asset, upgrade effects, detailed inclusions, contract allocation, and reporting of other costs. Monthly overhead must not be charged twice. |
 | D-020 | Loans | Eligibility, rates, terms, payment cadence/amortization, debt limits, collateral valuation, and repossession procedures. Multiple secured/unsecured loans are confirmed. |
@@ -147,12 +172,16 @@ S11/S12 are direct confirmation in the documentation request, not quotations rec
 | D-025 | Upgrade relocation | Trait assignment, move cost/time, destination constraints, and handling on sale/conversion/lease termination. |
 | D-026 | Property damage/repairs | First confirm adoption of P-005; then define damage effects, repairs, costs/time, and construction-capacity interactions. |
 | D-027 | Priority Contract follow-through | Adventure presentation, rewards, NPC participation, and rescue routing. Standard/Priority participation and resolution distinction is confirmed by S14. |
+| D-028 | Guild Actions and officer capacity | Action counts by level, catalog and costs, per-officer limits, qualifications, scheduling/conflict details, unused actions, and Decision Event responses. SD-008 confirms the shared pool, officer requirement, and automatic-operation exemptions. |
+| D-029 | Additional event quantity | Whether and how event quantity beyond the guaranteed monthly minimum scales with Guild Level; test through simulations and playtesting before choosing counts. |
+| D-030 | Event procedures and content | Selection/weights, repeat limits, target priorities and eligibility details, fallback when no targeted event qualifies, response timing/checks, and outcome values. Honor the monthly event minimum and valid targets. |
+| D-031 | Rival mechanics | Influence scale, special traits, starting profiles, level/reputation changes, relationship transitions, and exact relationship-based event eligibility. Preserve lightweight event resolution. |
 
 ## Source gaps
 
 | ID | Gap | Required follow-up |
 | --- | --- | --- |
-| G-001 | Earlier NPC statistics, recruitment, statuses, and leadership decisions. | The assistant claims these were outlined, but the retrieved source contains no rules or user approvals for them. S7 now confirms availability and distinct guild/rival deployment states; it does not recover the earlier full status model. Recover the earlier discussion and reconcile it with A-006 through A-010. Do not substitute new rules or describe the full personnel design as complete. |
+| G-001 | Earlier NPC statistics, recruitment, statuses, and leadership decisions. | The assistant claims these were outlined, but the retrieved source contains no rules or user approvals for them. S7 now confirms availability and distinct guild/rival deployment states; it does not recover the earlier full status model. Recover the earlier discussion and reconcile it with the current loyalty/status/rescue rules and SG-007/SG-008; the rival-roll portion of A-007 is superseded. Do not substitute new rules or describe the full personnel design as complete. |
 
 ## Recording the next decision
 
