@@ -1,5 +1,8 @@
 # System D: Guild Development
 
+> **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
+
+
 ## Current integration rules (October 10, 2026)
 
 Current guild integration: [INT-001, INT-003, INT-005, INT-010 and INT-016](integration-checkpoint.md) establish Upkeep → Commerce → Activity → Events & Advancement, next-turn Guild Level capacity benefits, shared level-growing pool, strategic acquisition versus free deployment, and unique development milestones. Two actions per officer is the selected provisional test baseline. See the [basic/trained action catalog](guild-actions.md); most costs/benefits and the action growth schedule remain deferred. Meaningful upgrades can award new development XP; repair/reinstallation/relocation cannot repeat an existing award.

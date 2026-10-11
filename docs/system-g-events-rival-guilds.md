@@ -1,5 +1,8 @@
 # System G: Events & Rival Guilds
 
+> **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
+
+
 ## Current integration rules (October 10, 2026)
 
 Current event integration: [INT-001 and INT-011](integration-checkpoint.md) establish free immediate decisions versus action-cost follow-up, disclosed response costs/deadlines with next-turn response opportunity, scheduled outcomes counting toward the monthly event minimum, valid fallback, and due rival returns shown in Upkeep. Do not wait for a random future draw to resolve an existing deployment. Free event choices do not waive recruitment/acquisition actions without an explicit exception. Event quantity beyond the minimum and numeric content remain deferred.

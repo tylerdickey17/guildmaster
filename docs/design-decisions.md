@@ -1,5 +1,8 @@
 # Design decision log
 
+> **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
+
+
 Initial capture: October 10, 2026.
 
 This log distinguishes confirmed user choices from assistant proposals, deliberately unresolved mechanics, and missing source material. Decision IDs are stable references. A future change should retain the prior decision and record what supersedes it.
@@ -224,3 +227,34 @@ These entries refine or supersede conflicting historical deferrals without reusi
 - P-005 property damage/repair remains provisional; naming Commission Project does not alone adopt its full damage mechanics.
 - P-001 XP carryover remains provisional. P-002 is refined by agreed assignment-fixed quotes, but exact ordinary pay basis/scale is not fully specified.
 - Foundry implementation remains deferred. Re-test these new rules before claiming integration validation.
+
+## Delegated integration pass 0.2 (current)
+
+Evidence: user request at October 10, 2026 22:41 America/Chicago: “go through this integration pass and make the decisions” using previous design and PF2e/SF2e, Kingmaker, and Trollskull, with feedback during playtesting. The assistant has delegated design authority for these procedures; label them **designer-adopted for playtesting**, not individual prior user approvals or proven balance.
+
+| ID | Adopted procedure | Scope |
+| --- | --- | --- |
+| PASS-001 | Boundary order, effective dates, one reset, no rollover/XP conversion, no repeated same-turn deployment recycling. | Refines INT-001/005/011 and D-017. |
+| PASS-002 | Next-turn candidate expiry and hire-plus-one-turn onboarding; Diplomacy lead batches, pending Inactive subtype. | Resolves INT-013 clocks; generation count for contract leads is prototype. |
+| PASS-003 | One success per successful/crit-success phase, Essential phases, Priority acquisition/story exceptions. | Resolves INT-002/004, D-012/027; preserves three-check default. |
+| PASS-004 | Failure/neutral cancellation, Guild XP success-only, leadership/MVP selection, cash-only combined risk adjustment, actual-pay Loyalty. | Resolves D-001/002/012/013; values remain content. |
+| PASS-005 | Phase lead plan/substitution, explicit ranks, status exits, longest concurrent recovery, rescue episode closure. | Resolves D-007/008/011; treatment/status data stays card-specific. |
+| PASS-006 | NPC profile advancement, XP carryover, deterministic rank tags, Level 5 leader qualification and one active feat. | Resolves P-001 procedurally; historical carryover approval additionally recovered as summary. |
+| PASS-007 | Four coverable officer portfolios, next-turn new execution capacity, vacancies/acting officers, one manager/project. | Resolves D-016/023/028; salary/values deferred. |
+| PASS-008 | Monthly training XP, nonretroactive consecutive bonus, free continuation with resources, delegated versus full-time teaching. | Resolves INT-015 cadence/management; no 10% adoption. |
+| PASS-009 | Reserved relocation slots, shared project limits, pauses/refunds/custody, minimal facility disruption and repair. | Resolves D-023/025/026; adopts P-005 minimal scope. |
+| PASS-010 | Agreement arrears, visible enforcement, player payment priority, solvency/recovery test and negotiated bankruptcy. | Resolves D-020/021 procedure; default grace term is prototype, not calibrated universal economy. |
+| PASS-011 | One-action accepted catalog prototype; checks/repeats/typed effects; no optional/Expert expansion. | Resolves general costs/access/repeats in D-028; modifier amounts remain unauthored. |
+
+### Supersession and evidence limits
+
+- INT-013's provisional hiring clocks are now resolved by PASS-002.
+- INT-002's critical-success weight is resolved by PASS-003.
+- INT-014's tentative squad-leader threshold is set at Level 5+ by PASS-006; no lower-level squad deployment ban.
+- INT-015's XP cadence/trainer commitment is resolved by PASS-008; the 10% formula remains deferred.
+- INT-016/catalog general one-action costs are now adopted prototype costs, retaining the acquisition A/B test.
+- P-001 individual XP carryover is implemented by PASS-006; a new historical search returned an approval summary, not full transcript.
+- P-005 is superseded by PASS-009's minimal Operational/Damaged/Offline event framework and Commission Project repairs. No HP/attack simulator adopted.
+- G-001 source provenance is still partially recovered. PASS rules resolve missing mechanics by delegated design rather than pretend the old transcript was recovered.
+- The earlier unresolved lists below/above are historical where PASS procedures settle them. Numeric DCs, rewards, pay, action growth, support caps, durations, facility/loan content and trained/Leader/Guild feat effects remain balancing/content work.
+- [28 regression walkthroughs](integration-regression-v0.2.md) are authored deterministic checks, not another independent six-agent test, probability simulation or live-session measurement.

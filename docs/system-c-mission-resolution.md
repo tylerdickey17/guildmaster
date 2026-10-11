@@ -1,5 +1,8 @@
 # System C: Mission Resolution
 
+> **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
+
+
 ## Current integration rules (October 10, 2026)
 
 Current mission integration: [INT-002 and INT-006–007](integration-checkpoint.md) establish contract-specific required-success counts, Squad Level as average rounded down, separate size/level evaluation combined into one final reward modifier, Trained-or-better support eligibility, and disclosed mission/phase recovery. Preserve three rolls and automatic support. No universal two-successes rule is imposed; the card chooses 1, 2, or 3. Critical Success counting as one phase is the working proposal awaiting explicit confirmation. Numerical support, rewards, risk effects, and essential-objective exceptions remain deferred.

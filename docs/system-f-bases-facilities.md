@@ -1,5 +1,8 @@
 # System F: Bases & Facilities
 
+> **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
+
+
 ## Current integration rules (October 10, 2026)
 
 Current facility integration: [INT-009–010](integration-checkpoint.md) establish Transferable N as relocation/reinstallation Guild Turns, destination slot eligibility, benefits inactive during transfer, and sale valuation excluding removed upgrades. Permanent remains nonrelocatable. Relocate Operations starts a transfer; continuing progress is automatic. New development milestones can earn XP, moving/repairing/reinstalling the same asset cannot repeat it. Costs, management/project-capacity interactions and interruption remain open; P-005 damage/repair is still provisional.

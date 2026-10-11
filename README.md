@@ -8,9 +8,12 @@ A design workspace for a mercenary-company subsystem for **Starfinder 2e**, init
 
 Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, mission-resolution, guild-development, finance, property, and events/rival-guild frameworks and identifies what still needs design or balancing.
 
-**Stage:** tabletop integration decisions recorded; numerical balancing, regression re-testing under the new rules, and live playtesting remain ahead. A Foundry VTT v14 module is a future target. This repository contains no module implementation or compatibility claim.
+**Stage:** procedural integration pass complete for playtest edition 0.2; numerical/content balancing, larger regression runs, and live playtesting remain ahead. A Foundry VTT v14 module is a future target. This repository contains no module implementation or compatibility claim.
 
 ## Documents
+
+- [Integration rules pass 0.2](docs/integration-rules-v0.2.md) — current playtest authority; remaining procedures chosen under delegated tabletop-design authority.
+- [Integration regression walkthroughs](docs/integration-regression-v0.2.md) — 28 deterministic workflow cases and explicit numerical-fixture limits.
 
 - [Current integration checkpoint](docs/integration-checkpoint.md) — accepted turn order, settlement, staffing, recruitment, training, leadership, recovery, debt, relocation, and events, with explicit provisional boundaries. Read this first; it supersedes conflicting older framework deferrals.
 - [Guild Action catalog](docs/guild-actions.md) — accepted basic/trained action concepts, requirements, costs versus provisional baselines, and A/B test agenda.
@@ -56,3 +59,7 @@ The October 10, 2026 D/G update uses the explicit documentation request to confi
 ## October 10 integration evidence
 
 The current Work conversation is the primary source for the INT decisions, from the user's numbered integration responses through confirmation that returning to Available ends a consecutive training streak. The user explicitly requested this repository checkpoint before context compaction. Original source-gap recovery used Personal Context summaries, not a full retrieved source transcript. Do not treat the 10% training example, three starting shared actions, or the complete two-clock hiring proposal as adopted numerical rules. No Foundry code is added.
+
+## Delegated design pass
+
+On October 10, 2026 the user authorized the assistant to finish remaining integration choices using prior design, PF2e/SF2e, Kingmaker and Trollskull as guidance, with feedback during playtesting. PASS-001–011 in the rules pass are adopted playtest procedures, not individually confirmed historical user votes. This pass preserves earlier explicit decisions, chooses remaining defaults, and adopts minimal facility disruption/repair (superseding P-005's previous provisional status). The original full personnel transcript is still not recovered, but its remaining procedural gaps have designer-selected rules. Most numerical content remains unauthored; this is not a Foundry module release.

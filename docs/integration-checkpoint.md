@@ -1,5 +1,8 @@
 # Integration checkpoint: October 10, 2026
 
+> **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
+
+
 This is the current tabletop design checkpoint following the six-agent integration stress test and the user's subsequent decisions, through consecutive training. It is not Foundry implementation or numerical balance validation.
 
 **Precedence:** the accepted rules below supersede conflicting October 10 baseline wording and deferrals in Systems A-G. Earlier entries remain historical evidence. Use this checkpoint and the [Guild Action catalog](guild-actions.md) when running the next tests. The [decision log](design-decisions.md) records stable INT IDs.
@@ -170,7 +173,7 @@ Players can instead continue training consecutively, keeping personnel unavailab
 
 The user accepted the eleven renamed basic action concepts and all nine trained action concepts/requirements. Expert-tier actions remain deferred. Relocate Operations was subsequently accepted through the transfer discussion. See [guild-actions.md](guild-actions.md) for the full catalog, basic versus trained access, action-cost evidence, and remaining optional proposals. Numerical mechanical benefits are explicitly reserved for balancing.
 
-## Remaining integration and balancing agenda
+## Historical remaining agenda (resolved procedurally by edition 0.2)
 
 - Confirm recruitment hiring-window and onboarding clocks.
 - Decide critical-success counting and essential objective/early-termination exceptions.

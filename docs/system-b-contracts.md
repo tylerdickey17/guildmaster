@@ -1,5 +1,8 @@
 # System B: Contracts
 
+> **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
+
+
 ## Current integration rules (October 10, 2026)
 
 Current contract integration: [INT-002–004](integration-checkpoint.md) govern card-specific 1/2/3 phase-success thresholds, participation XP plus a completion bonus, no client cash for failure, failure Reputation loss, and optional failed-job contractor payment. Secure Contract costs one action; deployment is routine. Available → Accepted → In Progress → Resolved. Exclusive is a trait independent of Standard/Priority: harder, greater rewards, disclosed completion deadline, failure/Reputation loss if missed after acceptance. Ordinary expiration alone does not hurt Reputation. Progression can offer leads or qualifying action-free acquisition with optional acceptance. Interruption, critical-success weighting, and Priority acquisition details remain open.

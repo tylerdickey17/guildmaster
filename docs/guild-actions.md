@@ -1,10 +1,13 @@
 # Guild Action catalog
 
+> **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
+
+
 Status: accepted names and conceptual purposes, October 10, 2026. See the [integration checkpoint](integration-checkpoint.md) for timing and the [decision log](design-decisions.md) for INT-016.
 
 Every Guild Action needs an available PC/NPC officer and uses the shared level-based action pool. The provisional officer limit is two per turn. Basic actions are intended to remain accessible to any available eligible officer; trained actions require the listed proficiency. No Expert-tier action catalog is adopted.
 
-**Costs:** Secure Contract and Recruit Operative are confirmed at one action each. Other listed actions use the proposed one-action starting baseline pending explicit cost design/playtesting. Exact effects, resources, DCs, durations, eligibility, repeat limits, and costs are not invented here.
+**Current costs:** edition 0.2 adopts one action for every accepted basic/trained action and Relocate Operations as a prototype. Prior Secure Contract/Recruit Operative user approvals remain. Numerical effects, resources, DCs and exceptions await balancing/content; the prior provisional cost distinction is retained in historical logs.
 
 ## Basic actions
 
@@ -18,7 +21,7 @@ Every Guild Action needs an available PC/NPC officer and uses the shared level-b
 | Boost Morale | Invest in personnel loyalty through recognition/support/team development. |
 | Establish Relations | Improve relations with another guild or organization. |
 | Appoint Officer | Hire an outside officer or promote an eligible existing member. |
-| Commission Project | Begin construction, an upgrade, or property expansion. Ongoing progress is automatic; manager remains committed. Repair scope remains conditional on adopting the provisional damage/repair system. |
+| Commission Project | Begin construction, an upgrade, or property expansion. Ongoing progress is automatic; manager remains committed. Edition 0.2 adopts minimal facility-disruption/repair scope. |
 | Secure Financing | Apply for borrowing/refinancing, subject to lender approval and debt requirements. |
 | Negotiate Property Deal | Buy, lease, or sell property, subject to transaction terms. |
 
@@ -44,7 +47,7 @@ Proficiency is an access requirement, not an automatic guaranteed bonus or succe
 
 ## Accepted relocation action and additional proposals
 
-**Relocate Operations** is accepted through INT-009: initiate headquarters/facility relocation, observing Transferable N, slots, lease restrictions, and inactive transfer time. Its one-action cost remains the starting proposal; no additional actions are spent just to advance an existing transfer.
+**Relocate Operations** is accepted through INT-009: initiate headquarters/facility relocation, observing Transferable N, slots, lease restrictions, and inactive transfer time. Its one-action prototype cost is now adopted in edition 0.2; no additional actions are spent just to advance an existing transfer.
 
 Gather Intel, Provide R&R, Reorganize Command, and Renegotiate Terms were proposed earlier but were not individually finalized. Keep them as optional catalog candidates rather than silently treating all five earlier suggestions as approved. Distinguish general Gather Intel from trained technical investigation, Provide R&R from medical recovery, and ordinary lease/contract renegotiation from Secure Financing.
 

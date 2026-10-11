@@ -1,5 +1,8 @@
 # System A: Personnel
 
+> **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
+
+
 ## Current integration rules (October 10, 2026)
 
 Current personnel integration: [INT-007 and INT-012–015](integration-checkpoint.md) govern recovery, recovered historical rules, recruitment, Leader Feats, and training. One primary status; default training is 30 days with next-turn availability and a consecutive-training bonus whose amount is deferred. Recruitment uses Diplomacy and 0/1/2/3 candidates by degree; Recruit Operative hires one for one action. Level 5 grants a Leader Feat. Deployment pay quotes are fixed for the assignment; failed jobs retain participation XP and permit full/half/no contractor pay with corresponding Loyalty effects. Candidate offer/start clocks remain provisional. G-001 is partially recovered from summaries, not closed by a full original transcript.

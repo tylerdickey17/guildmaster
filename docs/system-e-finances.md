@@ -1,5 +1,8 @@
 # System E: Finances
 
+> **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
+
+
 ## Current integration rules (October 10, 2026)
 
 Current finances integration: [INT-001–002 and INT-008](integration-checkpoint.md) put due receipts before obligations, freeze squad pay quotes at departure, deny failed jobs client cash, and let players choose full/half/no failed-job contractor pay. Agreements disclose delinquency/default escalation; repayment/restructuring can recover. Secured creditors may claim collateral; unsecured collections restrict finance; lease default can terminate access. Sale deficiency remains owed unless settled. Insolvency trigger, payment priority, detailed enforcement and values remain open. Financing/property actions use the shared pool in Commerce; routine repayment is free.
