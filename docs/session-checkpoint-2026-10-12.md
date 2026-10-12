@@ -1,6 +1,6 @@
 # Session checkpoint: October12,2026
 
-> **Latest live update:** [0.3.7](prototype-values-v0.3.7.md) implements the user-approved900/110 payout/pay test. Prior deployments and discussion-only statements below are history.
+> **Latest live update:** [0.3.8](prototype-values-v0.3.8.md) clarifies mission completion conditions and explains failures. The900/110 economy remains live. Exact user-reported mission is unconfirmed.
 
 The execution workspace is restored. The user explicitly requested putting the agreed Upkeep/base changes on the live site; they have now been implemented and published.
 
@@ -77,3 +77,17 @@ Fresh browser setup uses new values. Refresh; New playtest → Staffed starter y
 71 checks and288 intervals passed; minimal DOM checks include matching board/card/deployment prices, and exact8000-opening-outcome arithmetic yields net−39.075/month under stated one-job assumptions. Full browser QA unavailable. [Rules](prototype-values-v0.3.7.md), [frozen evidence](../playtests/prototype-0.3.7/verification.json).
 
 Next: human feedback on startup runway, paid failures, recruit/training choices and development affordability; then revise higher-level curves and officer features. No simulation subagents or Foundry work in this patch.
+
+
+## Latest0.3.8 handoff
+
+Reported issue: unnamed2-of-3 mission failed despite two successful phases. Reproduced Ghost Relay's existing Essential Engagement exception, not a count error on ordinary missions. **Confirm the actual mission name/outcomes with the user if needed.** Do not state definitively that the user played Ghost Relay.
+
+All completion conditions now prominent on board/details/deployment/resolution. Results/failed-pay/log explain success count and any required phase failure. Shared engine outcome preserves existing semantics. All historical rolls, outcomes, cash, XP and Reputation remain; existing settlement is not replayed. No Essential rule removal or retroactive payout adjustment.
+
+Live: https://contract-operations-playtest.primeangel2.chatgpt.site
+Source: `b1f609ef261d650cc5d6db8e4a57a4e43a426f7d`
+Deployment: `appgdep_6acd1846f5448191978b2f46479433da`, succeeded
+Version: `appgprj_6acb0e7adc888191bb2947bb4077c061~appgver_9f7bdb2c353c8191bc9ea2c4e8950cdd`
+
+74 checks, including24 ordinary2-of-3 outcome combinations, three Ghost Relay positions and UI explanations;288 campaign intervals. Browser visual QA unavailable. [Current rules](prototype-values-v0.3.8.md), [evidence](../playtests/prototype-0.3.8/verification.json).900/110, finance and progression unchanged.

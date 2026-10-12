@@ -367,3 +367,12 @@ Native deployment `appgdep_6acd13258e6081919c3169a964b297a6` succeeded, Site sou
 - **LIVE-031 — Designer implementation details:** preserve1.25 growth with five-credit wage rounding and scale client payouts from the new900 baseline using ordinary mission-level wage/110. Retain tier factors, squad discounts, employment ratios and wage-based hiring/repair relationships. Existing deployed quotes/repair basis and prepared invoices stay frozen. No full published-treasure salary curve or wage A/B toggle is claimed.
 
 [Current rules](prototype-values-v0.3.7.md).71 checks and288 intervals passed; actual0.3.6 save regression included. Native deployment `appgdep_6acd15d73844819181e06ff4b51d4cd3` succeeded with Site source `5ed913afab7932e795a710bd282e8e89a87198dd`. Full browser visual QA unavailable. Bounded opening net−39.075/month; additional personnel/development costs remain outside that model.
+
+
+## LIVE-032: reported two-success failure and visibility clarification, October12
+
+The user reported an unnamed2-of-3 mission failed after two successes. Exact mission identity is pending. Reproduced the symptom with Ghost Relay: its existing Essential Engagement rule fails the job when Engagement fails despite successful Insertion/Extraction. Tested ordinary2-of-3 cards successfully for every failure position/degree.
+
+Implemented0.3.8 makes full completion conditions prominent and gives outcome reasons in settlement/failed-pay/log views. This preserves the accepted count-plus-Essential rule, historical outcomes and financial settlement; no user approval to remove Essential phases is assumed. Confirm the mission before claiming the user's exact case is diagnosed.
+
+74 checks and288 intervals passed; full browser visual QA unavailable. Deployment `appgdep_6acd1846f5448191978b2f46479433da` succeeded; source `b1f609ef261d650cc5d6db8e4a57a4e43a426f7d`. [Rules](prototype-values-v0.3.8.md).

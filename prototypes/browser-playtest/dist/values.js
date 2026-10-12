@@ -1,5 +1,5 @@
 (function(root){const values={
-  "version": "0.3.7",
+  "version": "0.3.8",
   "rules_authority": "docs/integration-rules-v0.2.md",
   "currency": "credits",
   "level_dc": [
@@ -509,7 +509,7 @@
     "https://2e.aonsrd.com/rules/702-difficulty-classes",
     "https://2e.aonprd.com/Rules.aspx?ID=2629"
   ],
-  "finance_changes": "0.3.7 paired compensation test: Level 1 Normal payout 900, ordinary operative assignment pay 110; 1.25 level growth retained. Development/loan gates unchanged.",
+  "finance_changes": "0.3.8 paired compensation test: Level 1 Normal payout 900, ordinary operative assignment pay 110; 1.25 level growth retained. Development/loan gates unchanged.",
   "development_unlocks": {
     "installations": 2,
     "properties": 4

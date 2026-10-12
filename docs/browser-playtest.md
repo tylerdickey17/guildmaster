@@ -1,6 +1,6 @@
 # Browser playtest: opening season and expansion
 
-[Play Contract Operations](https://contract-operations-playtest.primeangel2.chatgpt.site). **Current version0.3.7**; existing browser progress is preserved.
+[Play Contract Operations](https://contract-operations-playtest.primeangel2.chatgpt.site). **Current version0.3.8**; existing browser progress is preserved.
 
 1. Choose **New playtest → Staffed starter** for the new opening experience. It starts with2,000 credits and a350-credit Upkeep invoice; later bare base+suite costs365/month. **Lean** starts with an empty300/month office. **Expansion test** gives Guild Level4,8,000 credits and four Level3 operatives to exercise purchases immediately; this is an artificial fixture.
 2. Review the invoice. Pay selected bills or apply available cash; pauses concern month-to-month facility support only. Unpaid balances stay owed and unfunded services are unavailable.
@@ -37,3 +37,10 @@ Normal Level1 client payout is now900; ordinary Free Agent assignment pay110 (fo
 Refresh to load the update. Use New playtest → Staffed starter for a fresh comparison; export old notes first. Existing deployed jobs/prepared invoices retain their previous quotes. Loans, installations at2, properties at4 and odd-level feats stay available as before.
 
 [Current executable rules](prototype-values-v0.3.7.md). This adoption supersedes the previous sentence that no payout/pay change has been applied.
+
+
+## Completion conditions0.3.8
+
+Read **Completion** on the card and deployment quote. Most2-of-3 contracts allow any two phases to succeed. Restore the Ghost Relay also requires **Engagement** to succeed; the other two successes cannot replace that objective. Results now show the successful-phase count, requirement and reason.
+
+Refresh to load this clarification. Saved rolls, outcomes and payments remain. [Patch details](prototype-values-v0.3.8.md).
