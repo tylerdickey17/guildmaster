@@ -1,41 +1,39 @@
 # Contract Operations browser playtest
 
-A browser-local opening-season demo using Contract Operations0.3.3 core values and edition0.2 procedures. Four distinct starting operatives, four unpaid iconic PC officer fixtures,2,000 credits, two Standard offers and four shared actions. Play six turns, export notes and discuss them in chat; continuing is supported.
+Version **0.3.4** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.4.md) records values, evidence and limits.
 
-The numerical authority is [the design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.3.md). `dist/values.js` embeds that JSON pack unchanged. Mission statistics preserve high/moderate profiles and listed skill ranks; unlisted skills have a disclosed+2 untrained fixture modifier. These are mission-skill profiles, not complete SF2e combat stat blocks.
+## Starting a playtest
 
-## Included decisions
+New Playtest offers **Staffed starter** (default), **Lean start**, and **Expansion test**. Every fresh scenario begins at an unpaid Upkeep invoice. Staffed starts with2,000 liquid credits, four Level1 Free Agents, four unpaid iconic PC officers, a leased station HQ and a landlord-owned Training Suite. Its first bill is350; following monthly bills are365 before other commitments. Lean has no installation and bills300. Expansion is an explicitly artificial Guild Level4 fixture with8,000 credits and four Level3 Free Agents for immediate purchase tests; it is not startup balance evidence.
 
-- Paid or free acquisition, selected at reset. Paid actions use the single shared pool (PC party size + Guild Level − 1); there is no officer action cap. Routine deployment is free. Each player gets first choice before repeats are allocated.
-- Declare2–6 available personnel and all three phase leads before departure; relevant supporters contribute automatically. Default minimum Squad Level and discounts follow0.3.2. Each extra operative above recommended grants +1 circumstance on every phase; use the highest circumstance bonus, with no oversized DC reduction. Cash falls10% per extra operative.
-- Same-turn Events resolution and return, exactly three phase checks, persistent/next-phase effects, Essential objectives, recovery, equal base XP, materially contributed MVP selection, Level5 Leader Feats and selected Guild Feats.
-- All client receipts precede automatic successful wages during Events. Failed wages are player choice then; HQ rent and facility overhead remain in the following Upkeep. Arrears remain creditor-specific and never become negative treasury.
-- Separate recruitment search/hire, end-next-turn candidate expiry and next-boundary onboarding.
-- Monthly training, funded continuation without a new action, nonretroactive streak bonuses, release/reset. No recovery/training overlap.
-- Morale, publicity, one-phase technical recon, Exclusive brokerage, immediate postreturn Medicine, two facilities with fully funded external managers, once-only development XP and postactivation overhead.
-- Three visible scenario events: lead/contact, personnel concern and community introduction. A lead does not waive acquisition; free recognition does not recover Loyalty automatically.
-- Browser-local saving, deterministic keyed dice, resettable seed, feedback notes and exported chronological decision log.
+The single shared action pool is PC count + Guild Level −1, with no officer caps. Each player gets first choice before allocating remaining actions. Routine funded Upkeep and deployment use no Guild Actions.
 
-## Deliberate scope limits
+## Upkeep and property
 
-No loans/property transactions, new officer appointments, rival jobs, full creditor enforcement/eviction, facility damage/transfer, captures/deaths/rescues, Priority adventures or complete trained-action catalog. The demo uses external qualified managers rather than requiring a PC officer to commit to construction. Guild feats available here: Trusted Client, Recruitment Pipeline, Training Cadre, Well Provisioned and Standing Agreement; no unimplemented feat is offered.
+Review the itemized invoice before paying. Individually prioritize bills when cash is short, or apply available cash and record remaining creditor-specific arrears. Mandatory obligations come before optional training continuation. Support contractors are month-to-month; pausing renewal removes their current service but not prior asset-maintenance bills or already-paid obligations. Unfunded services and retained personnel cannot provide their normal work. Arrears payments during Activity can restore fully funded current-interval services.
 
-The four starting officers use Navasi, Iseph, Dae and Chk Chk, from Paizo’s SF2e pregenerated heroes. Their administrative skills are authored fixtures; these are not official character sheets. Basic actions allow untrained skills where permitted; trained-action eligibility remains visible. NPC/officer data are authored for this playtest; no claim of a complete generated catalog or balanced live-table experience.
+The starter base costs300/month (250 rent +50 routine services) and has two slots. Bases & upgrades offers turnkey Mobile Field HQ3,000/75-month/two-slots, Permanent HQ6,000/100-month/four-slots, and Outpost3,000/80-month/two-slots plus a separately hired100-credit chief at125/month. Possession and ownership expenses begin next Upkeep. Empty property purchase uses one action, no construction manager or second project action. Outposts need funded local chiefs; they add no actions.
 
-The monthly UI compresses the budget/Commerce steps without inventing a second pool. It records unused action counts, staffing commitments and visible dice. A single seed aligns matching turn/card roll keys; changed choices can alter schedules. This is a playable prototype, not an exact reproduction of the earlier Monte Carlo policies or a replacement for the full rules. The fixed+10 officers may become underqualified at high Guild Levels.
+Training Suite600 installed/65-month; Infirmary1,400/90-month; Recruitment Office500/35-month; Comms Hub1,700/75-month. Installed prices include qualified external project managers. Staff payroll is due upon activation; asset maintenance starts the following boundary. Slot reservations and construction capacity are local and guild-wide respectively. Benefits require funded staff and Operational condition.
 
-## Verification
+A funded Training Instructor supplies ordinary trainer fees for up to six simultaneous suite trainees; materials stay25/person. Infirmary preserves mandatory recovery. Recruitment adds a candidate only on Success/Critical Success, cap3. Comms supports eligible remote administrative leadership at linked outposts, not extra actions or physical work.
 
-Run `node tests.cjs` from this directory. Twenty-seven checks cover shared-pool limits, uncapped officers, party-size scaling, revised Loyalty, sparse actual skill support, wage quotes, monthly clocks, candidates/onboarding, training continuation, facility cost/overhead, Events receipts-before-wages, advancement timing, failed pay, degree shifts, deployment bounds, exactly three checks, passive recovery minimum, arrears and expiry.48 deterministic smoke campaigns exercise288 management intervals and cash conservation. A minimal DOM smoke exercises four workspace renders and stage transitions.
+Focus a location in Bases & upgrades to see its local contracts and roster. The outpost chief can lead local actions; PC remote leadership needs staffed communications. Local crew transfers cost one action and25/person, with next-Upkeep availability. Headquarters relocation costs one action,10% of moved owned installation prices and100 per transfer interval for the move manager. TransferableN governs individual installations; old lease charges continue through actual notice. Landlord fixtures stay behind and stop incurring guild bills after their final occupied interval.
 
-Real browser/visual QA was **not run** because the required browser-control capability was unavailable. Native hosting success verifies deployment, not every visual interaction. UI/runtime issues found in actual use should be reported with exported notes, turn, seed and acquisition mode.
+## Personnel and missions
 
-Saving is local to the browser/device and does not sync back to chat. Clipboard permission denial falls back to selectable notes; a download button is also provided. No connector access or external game-data service is required.
+Recruit Free Agents at any Reputation; Retained Operatives at Friendly20. Retained wages are80% of the ordinary level-based wage and retainers50%, both rounded up to five credits. Retainers begin when onboarding completes at the next Upkeep. Assignment pay is frozen at deployment and settles in Events. Unpaid retainers block assignment without automatically terminating agreements or changing Loyalty in this prototype.
 
-## 0.3.2 saved-session migration
+Contracts retain exactly three phase checks with locked leads and capped automatic rank support. Squad Level is floor average. Oversize gives +1 circumstance per extra operative and−10% cash, with highest-only circumstance stacking. Same-turn Events collect all client receipts before successful assignment wages. Failed full/half/no wages change Loyalty +5/0/−5 separately from Reputation. Participation/completion/MVP/leader XP, recovery floors, Guild XP at Advancement and the five existing Guild Feats remain.
 
-Existing0.3.1 progress is migrated using the same browser storage key. Unsettled contracts move to Events; recorded rolls and frozen quotes remain unchanged. Legacy Upkeep and Advancement resume after contract decisions without duplicating the monthly event or bills. New deployments use0.3.2 squad-size bonuses. One recovery turn after Events blocks the following Activity and clears at the subsequent Upkeep; legacy missions already returning at a boundary preserve that boundary clock.
+## Saved games
 
-## 0.3.3 pool and pay update
+The existing localStorage key is preserved. Existing0.3.1–0.3.3 saves retain rolls, frozen wage quotes, cash, paid intervals and past Loyalty. No free fitted suite or retrospective invoice is added. Existing staff are treated as covered for their current migrated interval; new lease/staff expenses begin at the next unpaid Upkeep. Browser saving is local to the device; export notes to share in chat.
 
-Default four PCs receive four shared actions at Guild Level1, then +1 per Guild Level. New Playtest settings support1–8 PCs; this count never comes from the hired NPC roster. Officers have no individual action ceiling. The table first offers each player an action or a pass, then allocates remaining actions; the browser does not enforce player decision order. Failed pay changes Loyalty full+5/half0/none−5. Existing saves gain the four iconic officer names and recalculate unspent Activity actions from their recorded expenditure; previous payments and rolls remain unchanged.
+## Checks and limitations
+
+Run `node tests.cjs`. **44 checks** include invoice idempotency, shortfalls, staffing, purchase/onboarding, slots, transfer clocks, local services, retainer phases, old-save migration and the contract loop. **48 deterministic campaigns ×6 intervals =288 intervals** check cash conservation and core invariants. A minimal DOM smoke exercises invoices, settings, purchase actions and location controls. `fixtures/legacy-saves.json` contains actual0.3.3 states generated from Site commit a21c5ad; tests do not depend on scratch files.
+
+Real browser/visual QA could not run because control-browser was unavailable. Native hosting success verifies deployment, not every rendered layout. These checks verify mechanics, not numerical balance.
+
+Not included: loans, property sales, full creditor/eviction enforcement, worker termination and missed-retainer Loyalty cards, PC support-staff appointments, full officer signature progression/Reorganize Command, rival work, facility damage, capture/death/rescue and Priority adventures. Basic/trained actions still use their prior skill-based access; the later office-gating draft remains queued. Events remain three authored fixtures. No Foundry module is added.

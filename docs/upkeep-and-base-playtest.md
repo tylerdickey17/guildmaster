@@ -1,5 +1,7 @@
 # Upkeep and base playtest: 0.3.4 candidate
 
+> **October12 implementation:** [Live-play0.3.4](prototype-values-v0.3.4.md) now implements the specified Upkeep, property, staffing and employment subset. The offline/candidate wording below is retained as October11 history; read the live patch for actual rates, defaults and remaining exceptions.
+
 October 11, 2026 (America/Chicago). **Accepted feature direction; 300-credit starter base explicitly approved. Other values remain designer-selected candidates. Not implemented or deployed.**
 
 The user requested a more meaningful, visible Upkeep phase with a base and expansions in the browser playtest. The current execution workspace is disconnected, so the supported Site source-helper/testing/publication workflow cannot run. This checkpoint preserves concrete values and implementation requirements; it does not claim a site update.

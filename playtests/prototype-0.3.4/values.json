@@ -1,0 +1,405 @@
+{
+  "version": "0.3.4",
+  "rules_authority": "docs/integration-rules-v0.2.md",
+  "currency": "credits",
+  "level_dc": [
+    null,
+    15,
+    16,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    26,
+    27,
+    28,
+    30,
+    31,
+    32,
+    34,
+    35,
+    36,
+    38,
+    39,
+    40
+  ],
+  "skill_high": [
+    null,
+    7,
+    8,
+    10,
+    12,
+    13,
+    15,
+    17,
+    18,
+    20,
+    22,
+    23,
+    25,
+    27,
+    28,
+    30,
+    32,
+    33,
+    35,
+    37,
+    38
+  ],
+  "skill_moderate": [
+    null,
+    6,
+    7,
+    9,
+    10,
+    12,
+    13,
+    15,
+    16,
+    18,
+    19,
+    21,
+    22,
+    24,
+    25,
+    27,
+    28,
+    30,
+    31,
+    33,
+    34
+  ],
+  "support_by_rank": {
+    "untrained": 0,
+    "trained": 1,
+    "expert": 2,
+    "master": 3,
+    "legendary": 4
+  },
+  "support_cap": 3,
+  "project_capacity": [
+    null,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3
+  ],
+  "guild_xp_per_level": 1000,
+  "merc_xp_per_level": 1000,
+  "guild_feat_levels": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "pay_base": 50,
+  "pay_growth": 1.25,
+  "pay_rounding": 5,
+  "standard_payout_wage_multiple": 3,
+  "cash_adjustment_per_size_difference": 0.1,
+  "cash_adjustment_per_level_difference": 0.1,
+  "cash_adjustment_min": 0.5,
+  "cash_adjustment_max": 1,
+  "size_dc_adjustment_cap": 2,
+  "leadership_xp": 50,
+  "mvp_xp": 50,
+  "contracts": {
+    "routine": {
+      "dc_offset": -2,
+      "required_successes": 1,
+      "payout_factor": 0.75,
+      "participation_xp": 100,
+      "completion_xp": 100,
+      "guild_xp": 150,
+      "reputation_success": 1,
+      "reputation_failure": -2,
+      "mandatory_recovery": 0
+    },
+    "standard": {
+      "dc_offset": 0,
+      "required_successes": 2,
+      "payout_factor": 1,
+      "participation_xp": 100,
+      "completion_xp": 150,
+      "guild_xp": 250,
+      "reputation_success": 2,
+      "reputation_failure": -3,
+      "mandatory_recovery": 0
+    },
+    "demanding": {
+      "dc_offset": 0,
+      "required_successes": 3,
+      "payout_factor": 2.4,
+      "participation_xp": 200,
+      "completion_xp": 300,
+      "guild_xp": 600,
+      "reputation_success": 3,
+      "reputation_failure": -3,
+      "mandatory_recovery": 1
+    },
+    "exclusive": {
+      "dc_offset": 0,
+      "required_successes": 3,
+      "payout_factor": 3,
+      "participation_xp": 200,
+      "completion_xp": 350,
+      "guild_xp": 750,
+      "reputation_success": 4,
+      "reputation_failure": -4,
+      "mandatory_recovery": 1
+    }
+  },
+  "phase_forward": {
+    "critical_failure": -2,
+    "failure": -1,
+    "success": 0,
+    "critical_success": 1
+  },
+  "critical_failure_recovery": 1,
+  "training": {
+    "xp_base": 150,
+    "streak_bonus_per_block": 0.1,
+    "streak_bonus_cap": 0.5,
+    "cost_per_trainee": 25,
+    "trainer_cost_per_cohort": 50,
+    "cohort_capacity": 4
+  },
+  "loyalty_start": 50,
+  "loyalty_min": 0,
+  "loyalty_max": 100,
+  "failed_pay_loyalty": {
+    "full": 5,
+    "half": 0,
+    "none": -5
+  },
+  "rescue_loyalty": {
+    "delegated": 10,
+    "party": 20
+  },
+  "reputation_start": 0,
+  "reputation_min": -20,
+  "reputation_max": 100,
+  "reputation_tiers": [
+    [
+      "Unfriendly",
+      -20,
+      -1
+    ],
+    [
+      "Neutral",
+      0,
+      19
+    ],
+    [
+      "Friendly",
+      20,
+      49
+    ],
+    [
+      "Honored",
+      50,
+      79
+    ],
+    [
+      "Exalted",
+      80,
+      100
+    ]
+  ],
+  "starting_treasury": 2000,
+  "starting_mercenaries": 4,
+  "starting_officers": 4,
+  "starting_merc_level": 1,
+  "starting_officer_skill": 10,
+  "hq_lease_monthly": 300,
+  "officer_salary_base": 100,
+  "officer_salary_per_level": 25,
+  "officer_hiring_cost": 100,
+  "operative_hiring_wage_multiple": 2,
+  "recruitment_dc_offset": 0,
+  "promotion_cost": 50,
+  "promotion_reputation_by_degree": [
+    -1,
+    0,
+    2,
+    4
+  ],
+  "morale_cost_per_member": 10,
+  "morale_loyalty_by_degree": [
+    -2,
+    2,
+    5,
+    8
+  ],
+  "relations_points_by_degree": [
+    -1,
+    0,
+    1,
+    2
+  ],
+  "rival_offer_dc": 18,
+  "rival_offer_loyalty_divisor": 5,
+  "rival_offer_minimum_paid_wage_factor": 1,
+  "loan": {
+    "secured_monthly_rate": 0.01,
+    "unsecured_monthly_rate": 0.02,
+    "term_turns": 12,
+    "secured_ltv": 0.7,
+    "unsecured_limit_per_guild_level": 1000,
+    "debt_service_share": 0.3,
+    "first_miss": "Delinquent",
+    "uncured_next_boundary": "Default"
+  },
+  "facilities": {
+    "field_hq": {
+      "cost": 3000,
+      "monthly": 75,
+      "slots": 2,
+      "turns": 1
+    },
+    "permanent_hq": {
+      "cost": 6000,
+      "monthly": 100,
+      "slots": 4,
+      "turns": 2
+    },
+    "outpost": {
+      "cost": 3000,
+      "monthly": 80,
+      "slots": 2,
+      "turns": 2
+    },
+    "training_suite": {
+      "cost": 500,
+      "turns": 1,
+      "monthly": 15,
+      "staff_monthly": 50,
+      "staff_name": "Training Instructor",
+      "slots": 1,
+      "transferable": 1,
+      "description": "cohort capacity 6; staffed instructor replaces the 50-credit ordinary trainer charge for facility cohorts",
+      "name": "Training Suite",
+      "cohort_capacity": 6
+    },
+    "infirmary": {
+      "cost": 1200,
+      "turns": 2,
+      "monthly": 40,
+      "staff_monthly": 50,
+      "staff_name": "Medical Specialist",
+      "slots": 1,
+      "transferable": 2,
+      "description": "phase-added recovery reduction 1; mandatory floor preserved; active treatment materials still cost 25 per target",
+      "name": "Infirmary",
+      "recovery_reduction": 1
+    },
+    "comms_hub": {
+      "cost": 1500,
+      "turns": 2,
+      "monthly": 25,
+      "staff_monthly": 50,
+      "staff_name": "Communications Technician (trained Computers)",
+      "slots": 1,
+      "transferable": 1,
+      "description": "enables eligible remotely led administrative actions at linked owned outposts; no extra actions, skill ranks or mission checks",
+      "name": "Comms Hub"
+    },
+    "recruitment_office": {
+      "cost": 400,
+      "turns": 1,
+      "monthly": 10,
+      "staff_monthly": 25,
+      "staff_name": "Recruitment Agent",
+      "slots": 1,
+      "transferable": 1,
+      "description": "local recruitment access; successful or critical-success local recruitment gains one candidate, maximum 3; no free hiring",
+      "name": "Recruitment Office"
+    }
+  },
+  "cash_positive_understaffing_bonus": false,
+  "cash_positive_underlevel_bonus": false,
+  "minimum_squad_level_gap": 2,
+  "recovery_reductions_preserve_mandatory_floor": true,
+  "recovery_protocol_activation": "immediate_after_actual_return",
+  "optimize_infrastructure_cash_cost": 0,
+  "contract_resolution_phase": "events",
+  "default_contract_due": "deployment_turn_events",
+  "extra_operative_circumstance_bonus": 1,
+  "size_dc_adjustment_scope": "undersized_only",
+  "circumstance_bonus_stacking": "highest_only",
+  "guild_action_pool_formula": "pc_party_size + guild_level - 1",
+  "starting_pc_party_size": 4,
+  "officer_action_cap": null,
+  "participation_procedure": "Each player chooses an action or passes before the group allocates remaining actions.",
+  "base_market": {
+    "field_hq": {
+      "name": "Mobile Field HQ",
+      "purchase_price": 3000,
+      "property_monthly": 75,
+      "slots": 2,
+      "ownership": "owned",
+      "availability": "next_upkeep",
+      "type": "mobile operations rig; not a starship",
+      "requires_chief": false
+    },
+    "permanent_hq": {
+      "name": "Permanent Operations Center",
+      "purchase_price": 6000,
+      "property_monthly": 100,
+      "slots": 4,
+      "ownership": "owned",
+      "availability": "next_upkeep",
+      "requires_chief": false
+    },
+    "outpost": {
+      "name": "Regional Outpost",
+      "purchase_price": 3000,
+      "property_monthly": 80,
+      "slots": 2,
+      "ownership": "owned",
+      "availability": "next_upkeep",
+      "requires_chief": true,
+      "chief_hire_fee": 100,
+      "chief_monthly_level1": 125,
+      "fully_staffed_property_monthly_level1": 205
+    }
+  },
+  "setup_presets": {
+    "lean": "leased HQ, no installed facilities; all four starters Free Agents",
+    "staffed": "same cash and roster plus a landlord-owned Training Suite; instructor 50 due at first Upkeep, first asset overhead due next boundary; installation has no sale value or setup Guild XP",
+    "expansion": {
+      "name": "Expansion test",
+      "cash": 8000,
+      "guild_level": 4,
+      "pc_count": 4,
+      "operative_count": 4,
+      "operative_level": 3,
+      "reputation": 20,
+      "employment": "free_agent",
+      "base": "leased_station_hq",
+      "installed_facilities": [],
+      "contracts_recommended_level": 3,
+      "scope": "artificial mid-campaign fixture for purchase tests; not startup balance evidence"
+    }
+  },
+  "employment": {
+    "free_agent_assignment_multiplier": 1,
+    "retained_access_reputation": 20,
+    "retained_retainer_wage_multiplier": 0.5,
+    "retained_assignment_multiplier": 0.8,
+    "rounding": 5,
+    "start": "next_upkeep_after_hire",
+    "first_retainer": "effective_start_upkeep",
+    "conversion": "requires Personnel signature and separate authored card",
+    "legacy_existing_agreements": "not terminated by reputation loss"
+  }
+}

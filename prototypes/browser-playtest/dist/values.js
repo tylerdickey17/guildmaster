@@ -1,5 +1,5 @@
 (function(root){const values={
-  "version": "0.3.3",
+  "version": "0.3.4",
   "rules_authority": "docs/integration-rules-v0.2.md",
   "currency": "credits",
   "level_dc": [
@@ -220,7 +220,7 @@
   "starting_officers": 4,
   "starting_merc_level": 1,
   "starting_officer_skill": 10,
-  "hq_lease_monthly": 150,
+  "hq_lease_monthly": 300,
   "officer_salary_base": 100,
   "officer_salary_per_level": 25,
   "officer_hiring_cost": 100,
@@ -280,26 +280,49 @@
     },
     "training_suite": {
       "cost": 500,
-      "monthly": 15,
-      "slots": 1,
       "turns": 1,
+      "monthly": 15,
+      "staff_monthly": 50,
+      "staff_name": "Training Instructor",
+      "slots": 1,
       "transferable": 1,
+      "description": "cohort capacity 6; staffed instructor replaces the 50-credit ordinary trainer charge for facility cohorts",
+      "name": "Training Suite",
       "cohort_capacity": 6
     },
     "infirmary": {
       "cost": 1200,
-      "monthly": 40,
-      "slots": 1,
       "turns": 2,
+      "monthly": 40,
+      "staff_monthly": 50,
+      "staff_name": "Medical Specialist",
+      "slots": 1,
       "transferable": 2,
+      "description": "phase-added recovery reduction 1; mandatory floor preserved; active treatment materials still cost 25 per target",
+      "name": "Infirmary",
       "recovery_reduction": 1
     },
     "comms_hub": {
       "cost": 1500,
-      "monthly": 25,
-      "slots": 1,
       "turns": 2,
-      "transferable": 1
+      "monthly": 25,
+      "staff_monthly": 50,
+      "staff_name": "Communications Technician (trained Computers)",
+      "slots": 1,
+      "transferable": 1,
+      "description": "enables eligible remotely led administrative actions at linked owned outposts; no extra actions, skill ranks or mission checks",
+      "name": "Comms Hub"
+    },
+    "recruitment_office": {
+      "cost": 400,
+      "turns": 1,
+      "monthly": 10,
+      "staff_monthly": 25,
+      "staff_name": "Recruitment Agent",
+      "slots": 1,
+      "transferable": 1,
+      "description": "local recruitment access; successful or critical-success local recruitment gains one candidate, maximum 3; no free hiring",
+      "name": "Recruitment Office"
     }
   },
   "cash_positive_understaffing_bonus": false,
@@ -316,6 +339,68 @@
   "guild_action_pool_formula": "pc_party_size + guild_level - 1",
   "starting_pc_party_size": 4,
   "officer_action_cap": null,
-  "participation_procedure": "Each player chooses an action or passes before the group allocates remaining actions."
+  "participation_procedure": "Each player chooses an action or passes before the group allocates remaining actions.",
+  "base_market": {
+    "field_hq": {
+      "name": "Mobile Field HQ",
+      "purchase_price": 3000,
+      "property_monthly": 75,
+      "slots": 2,
+      "ownership": "owned",
+      "availability": "next_upkeep",
+      "type": "mobile operations rig; not a starship",
+      "requires_chief": false
+    },
+    "permanent_hq": {
+      "name": "Permanent Operations Center",
+      "purchase_price": 6000,
+      "property_monthly": 100,
+      "slots": 4,
+      "ownership": "owned",
+      "availability": "next_upkeep",
+      "requires_chief": false
+    },
+    "outpost": {
+      "name": "Regional Outpost",
+      "purchase_price": 3000,
+      "property_monthly": 80,
+      "slots": 2,
+      "ownership": "owned",
+      "availability": "next_upkeep",
+      "requires_chief": true,
+      "chief_hire_fee": 100,
+      "chief_monthly_level1": 125,
+      "fully_staffed_property_monthly_level1": 205
+    }
+  },
+  "setup_presets": {
+    "lean": "leased HQ, no installed facilities; all four starters Free Agents",
+    "staffed": "same cash and roster plus a landlord-owned Training Suite; instructor 50 due at first Upkeep, first asset overhead due next boundary; installation has no sale value or setup Guild XP",
+    "expansion": {
+      "name": "Expansion test",
+      "cash": 8000,
+      "guild_level": 4,
+      "pc_count": 4,
+      "operative_count": 4,
+      "operative_level": 3,
+      "reputation": 20,
+      "employment": "free_agent",
+      "base": "leased_station_hq",
+      "installed_facilities": [],
+      "contracts_recommended_level": 3,
+      "scope": "artificial mid-campaign fixture for purchase tests; not startup balance evidence"
+    }
+  },
+  "employment": {
+    "free_agent_assignment_multiplier": 1,
+    "retained_access_reputation": 20,
+    "retained_retainer_wage_multiplier": 0.5,
+    "retained_assignment_multiplier": 0.8,
+    "rounding": 5,
+    "start": "next_upkeep_after_hire",
+    "first_retainer": "effective_start_upkeep",
+    "conversion": "requires Personnel signature and separate authored card",
+    "legacy_existing_agreements": "not terminated by reputation loss"
+  }
 }
 ;if(typeof module!=="undefined"&&module.exports)module.exports=values;root.GuildValues=values;})(typeof globalThis!=="undefined"?globalThis:this);

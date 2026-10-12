@@ -1,5 +1,7 @@
 # Personnel employment: Free Agents and Retained Operatives
 
+> **October12 implementation:** [Live-play0.3.4](prototype-values-v0.3.4.md) now implements the specified Upkeep, property, staffing and employment subset. The offline/candidate wording below is retained as October11 history; read the live patch for actual rates, defaults and remaining exceptions.
+
 Accepted design checkpoint, October11,2026 (America/Chicago). Source: the current design conversation following the0.3.3 browser playtest. This records agreed tabletop rules; it is **not yet implemented in the browser demo**. It supplements the [0.3.3 prototype](prototype-values-v0.3.3.md), [System A](system-a-personnel.md) and [System E](system-e-finances.md). Conflicting older assumptions about ordinary mercenary pay or nonexclusive rival work are superseded in this scope.
 
 ## Employment models

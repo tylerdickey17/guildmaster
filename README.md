@@ -8,19 +8,22 @@ A design workspace for a mercenary-company subsystem for **Starfinder 2e**, init
 
 Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, mission-resolution, guild-development, finance, property, and events/rival-guild frameworks and identifies what still needs design or balancing.
 
-**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.3**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers and revised failed-pay Loyalty. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. The later officer/staffing working draft is documented but not implemented in the browser. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
+**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.4**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers, revised failed-pay Loyalty, visible Upkeep, employment pay, property purchases and staffed upgrades. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. Base staffing is implemented; full officer signature progression and Reorganize Command remain documented for later implementation. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
 
 ## Documents
 
-- [Base purchase and upgrade catalog](docs/base-purchase-playtest.md) — approved300-credit starter base, three purchasable property types, four upgrades, local staffing/transfer rules and an optional expansion-test preset; queued for browser implementation.
+- [Live-play patch0.3.4](docs/prototype-values-v0.3.4.md) — implemented visible Upkeep,300-credit starter base, three turnkey property offers, four staffed facilities, employment rates, local transfers and migration;44 checks and288 smoke intervals.
+- [Current session checkpoint: October12](docs/session-checkpoint-2026-10-12.md) — deployment, source and remaining scope.
 
-- [Upkeep and base playtest draft](docs/upkeep-and-base-playtest.md) — visible invoices, staffed HQ/expansion fixtures, recurring costs and candidate retainer rates; implementation is blocked by a disconnected execution workspace. Live browser remains0.3.3.
+- [Base purchase and upgrade catalog](docs/base-purchase-playtest.md) — approved300-credit starter base, three purchasable property types, four upgrades, local staffing/transfer rules and an optional expansion-test preset; implemented scope and exceptions are now recorded in0.3.4.
+
+- [Upkeep and base playtest draft](docs/upkeep-and-base-playtest.md) — visible invoices, staffed HQ/expansion fixtures, recurring costs and candidate retainer rates; historical candidate; workspace restored and implementation published as0.3.4.
 
 - [Latest session checkpoint: October11](docs/session-checkpoint-2026-10-11.md) — owner/spouse proof-of-concept feedback, employment, officer/staffing decisions and next authoring work.
 - [Officer positions and outpost staffing](docs/officers-and-staffing.md) — four founding offices, specialist progression and signature actions, facility staffing, and Reorganize Command; accepted working draft with provisional values, queued for implementation.
-- [Personnel employment](docs/personnel-employment.md) — accepted Free Agent/Retained Operative rules and payment phases; queued for browser implementation, with rates and threshold unresolved.
+- [Personnel employment](docs/personnel-employment.md) — accepted employment framework;0.3.4 implements selected rates and threshold, with missed-pay/termination content still incomplete.
 
-- [Play the browser demo](https://contract-operations-playtest.primeangel2.chatgpt.site) — interactive opening-season playtest using prototype0.3.3; private owner access.
+- [Play the browser demo](https://contract-operations-playtest.primeangel2.chatgpt.site) — interactive playtest using prototype0.3.4; private owner access.
 - [Browser playtest guide](docs/browser-playtest.md) — first session, feedback export, verification and scope; [source and tests](prototypes/browser-playtest/README.md).
 - [Live-play patch0.3.3](docs/prototype-values-v0.3.3.md) — implemented authority for party-sized shared actions and failed-pay Loyalty; later office-access rules are in the officer/staffing draft.
 - [Live-play patch0.3.2](docs/prototype-values-v0.3.2.md) — current authority for Events contract resolution, crew circumstance bonuses and retained cash discounts.

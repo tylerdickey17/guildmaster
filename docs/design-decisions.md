@@ -329,3 +329,11 @@ Primary evidence: current Work conversation, including the user's request for a 
 - **LIVE-020 — Confirmed scope; designer-selected catalog:** add purchasable new bases and upgrades so players can test their values. [Base purchase catalog](base-purchase-playtest.md) retains older3,000 Field HQ/6,000 Permanent HQ/3,000 Outpost prices for ready-property offers, separates ongoing chief/facility staffing, adds Comms Hub and an artificial expansion-test preset. Exact new effects/staff prices are not individually user-approved or balance-tested. Construction versus turnkey, site-specific services, transfer clocks, lease overlap and one shared pool remain explicit.
 
 These additions are saved as candidate design/data only. Execution workspace is disconnected, so browser code/testing/publication remains blocked; no new deployment is claimed.
+
+## LIVE-021: implemented Upkeep/property browser pass, October12,2026
+
+The user explicitly requested adding the saved changes to the live site after execution was restored. **Implemented0.3.4** includes the300-credit starter base, visible invoice, three property offers, four staffed upgrades, local slots/markets, separate chief hire/pay, retained pay and phase clocks, realistic transfer dates/lease overlap and artificial expansion-test preset.
+
+Designer-selected executable defaults include renewable monthly support contracts,25/person local transfers, funded-current-service restoration through arrears payments, and unpaid-retainer work blocking without automatic termination/Loyalty penalties. This is a bounded prototype; full financial enforcement, office signature progression and Reorganize Command remain unfinished. No independent historical approval or published SF2e price is claimed for each default.
+
+44 checks and288 smoke intervals passed; real browser QA unavailable. Native deployment **appgdep_6accfbeca2a08191b53b72e5016e26bd succeeded**, source **4e0f4e25e1f77a0ea694369f4baa33e355609b89**. [Rules](prototype-values-v0.3.4.md) and [current handoff](session-checkpoint-2026-10-12.md) supersede prior statements that the Upkeep/site work is still offline or entirely unimplemented.

@@ -1,5 +1,7 @@
 # Base purchase and upgrades: playtest candidate
 
+> **October12 implementation:** [Live-play0.3.4](prototype-values-v0.3.4.md) now implements the specified Upkeep, property, staffing and employment subset. The offline/candidate wording below is retained as October11 history; read the live patch for actual rates, defaults and remaining exceptions.
+
 October 11, 2026 (America/Chicago). **Confirmed scope:** the user accepted300/month for the starter base and requested purchasable new bases and upgrades in the browser so their values can be tested. **Prototype values:** catalog prices and effects below are retained or designer-selected; they are not final balance. **Not implemented or deployed:** execution workspace remains disconnected.
 
 Read with [Upkeep draft](upkeep-and-base-playtest.md), [officers/staffing](officers-and-staffing.md) and [candidate data](../playtests/prototype-0.3.4-candidate/upkeep-values.json). This supplements the candidate without changing deployed0.3.3.

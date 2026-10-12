@@ -1,5 +1,7 @@
 # Session checkpoint: October11,2026
 
+> **October12 implementation:** [Live-play0.3.4](prototype-values-v0.3.4.md) now implements the specified Upkeep, property, staffing and employment subset. The offline/candidate wording below is retained as October11 history; read the live patch for actual rates, defaults and remaining exceptions.
+
 This handoff now includes the owner's follow-up playtests with their wife and the employment, officer-position and staffing discussions. Read [officers and staffing](officers-and-staffing.md) and [personnel employment](personnel-employment.md) for the later tabletop design, and [0.3.3](prototype-values-v0.3.3.md) for the implemented browser prototype.
 
 ## What exists

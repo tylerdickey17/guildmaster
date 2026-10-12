@@ -1,0 +1,1121 @@
+{
+  "sourceCommit": "a21c5addd8f73a00b5debfdcc694d45f786ac827",
+  "activeMission": {
+    "schema": "contract-operations-browser-1",
+    "rules": "0.3.3",
+    "seed": 7,
+    "freeAcquisition": false,
+    "turn": 1,
+    "phase": "activity",
+    "serial": 7,
+    "cash": 2000,
+    "partySize": 4,
+    "actions": 3,
+    "guildLevel": 1,
+    "guildXP": 0,
+    "pendingGuildXP": 0,
+    "featChoices": 0,
+    "guildFeats": [],
+    "contacts": [
+      "Helix Transit",
+      "Station Authority"
+    ],
+    "reputation": 0,
+    "relations": 2,
+    "mercs": [
+      {
+        "id": "m1",
+        "name": "Vex",
+        "role": "Scout & navigator",
+        "color": "teal",
+        "bio": "Patient on approach. Knows when an exit is about to close.",
+        "skills": {
+          "Stealth": "high",
+          "Survival": "high",
+          "Piloting": "moderate",
+          "Athletics": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 50,
+        "status": "Deployed",
+        "leaderFeat": null,
+        "dispatchedTurn": 1
+      },
+      {
+        "id": "m2",
+        "name": "Briggs",
+        "role": "Breach specialist",
+        "color": "amber",
+        "bio": "Keeps the line steady when the operation gets loud.",
+        "skills": {
+          "Athletics": "high",
+          "Medicine": "high",
+          "Survival": "moderate",
+          "Piloting": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 50,
+        "status": "Deployed",
+        "leaderFeat": null,
+        "dispatchedTurn": 1
+      },
+      {
+        "id": "m3",
+        "name": "Patch",
+        "role": "Systems specialist",
+        "color": "violet",
+        "bio": "Can coax a locked terminal back to life. Less comfortable in open terrain.",
+        "skills": {
+          "Computers": "high",
+          "Crafting": "high",
+          "Piloting": "moderate",
+          "Society": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 50,
+        "status": "Deployed",
+        "leaderFeat": null,
+        "dispatchedTurn": 1
+      },
+      {
+        "id": "m4",
+        "name": "Halo",
+        "role": "Pilot & negotiator",
+        "color": "blue",
+        "bio": "Makes difficult arrivals look routine, and knows who to call afterward.",
+        "skills": {
+          "Piloting": "high",
+          "Diplomacy": "high",
+          "Stealth": "moderate",
+          "Medicine": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 50,
+        "status": "Deployed",
+        "leaderFeat": null,
+        "dispatchedTurn": 1
+      }
+    ],
+    "board": [
+      {
+        "key": "escort",
+        "name": "Escort Through Dock Nine",
+        "kind": "standard",
+        "client": "Helix Transit",
+        "skills": [
+          "Piloting",
+          "Athletics",
+          "Survival"
+        ],
+        "description": "A convoy needs safe passage through a contested orbital freight lane. Keep the crew moving when the route gets ugly.",
+        "id": "c5",
+        "level": 1,
+        "status": "Deployed",
+        "expires": 2,
+        "acceptedTurn": 1,
+        "deployBy": 2
+      },
+      {
+        "key": "relay",
+        "name": "Restore the Ghost Relay",
+        "kind": "standard",
+        "client": "Station Authority",
+        "skills": [
+          "Stealth",
+          "Computers",
+          "Piloting"
+        ],
+        "essential": 1,
+        "description": "Slip into a silent relay platform and restore the uplink before the station loses its long-range comms. Engagement is Essential: the relay must actually come online.",
+        "id": "c6",
+        "level": 1,
+        "status": "Offer",
+        "expires": 2
+      }
+    ],
+    "jobs": [
+      {
+        "id": "j7",
+        "contract": {
+          "key": "escort",
+          "name": "Escort Through Dock Nine",
+          "kind": "standard",
+          "client": "Helix Transit",
+          "skills": [
+            "Piloting",
+            "Athletics",
+            "Survival"
+          ],
+          "description": "A convoy needs safe passage through a contested orbital freight lane. Keep the crew moving when the route gets ugly.",
+          "id": "c5",
+          "level": 1,
+          "status": "Accepted",
+          "expires": 2,
+          "acceptedTurn": 1,
+          "deployBy": 2
+        },
+        "departure": 1,
+        "due": 1,
+        "ids": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ],
+        "leads": [
+          "m4",
+          "m2",
+          "m1"
+        ],
+        "leader": null,
+        "quote": {
+          "squadLevel": 1,
+          "minimum": 1,
+          "sizeBonus": 0,
+          "modifier": 1,
+          "payout": 600,
+          "pay": 200,
+          "checks": [
+            {
+              "phase": "Insertion",
+              "skill": "Piloting",
+              "lead": "m4",
+              "leadName": "Halo",
+              "skillBonus": 7,
+              "support": 3,
+              "supporters": [
+                {
+                  "id": "m1",
+                  "name": "Vex",
+                  "rank": "Trained",
+                  "contribution": 1,
+                  "marginal": 1
+                },
+                {
+                  "id": "m2",
+                  "name": "Briggs",
+                  "rank": "Trained",
+                  "contribution": 1,
+                  "marginal": 1
+                },
+                {
+                  "id": "m3",
+                  "name": "Patch",
+                  "rank": "Trained",
+                  "contribution": 1,
+                  "marginal": 1
+                }
+              ],
+              "circumstance": 0,
+              "modifier": 10,
+              "dc": 15
+            },
+            {
+              "phase": "Engagement",
+              "skill": "Athletics",
+              "lead": "m2",
+              "leadName": "Briggs",
+              "skillBonus": 7,
+              "support": 1,
+              "supporters": [
+                {
+                  "id": "m1",
+                  "name": "Vex",
+                  "rank": "Trained",
+                  "contribution": 1,
+                  "marginal": 1
+                }
+              ],
+              "circumstance": 0,
+              "modifier": 8,
+              "dc": 15
+            },
+            {
+              "phase": "Extraction",
+              "skill": "Survival",
+              "lead": "m1",
+              "leadName": "Vex",
+              "skillBonus": 7,
+              "support": 1,
+              "supporters": [
+                {
+                  "id": "m2",
+                  "name": "Briggs",
+                  "rank": "Trained",
+                  "contribution": 1,
+                  "marginal": 1
+                }
+              ],
+              "circumstance": 0,
+              "modifier": 8,
+              "dc": 15
+            }
+          ],
+          "leaderFeat": null,
+          "wageQuotes": [
+            {
+              "id": "m1",
+              "name": "Vex",
+              "level": 1,
+              "wage": 50
+            },
+            {
+              "id": "m2",
+              "name": "Briggs",
+              "level": 1,
+              "wage": 50
+            },
+            {
+              "id": "m3",
+              "name": "Patch",
+              "level": 1,
+              "wage": 50
+            },
+            {
+              "id": "m4",
+              "name": "Halo",
+              "level": 1,
+              "wage": 50
+            }
+          ]
+        },
+        "rolls": [],
+        "settled": false
+      }
+    ],
+    "cohorts": [],
+    "projects": [],
+    "facilities": [],
+    "arrears": [],
+    "actionHistory": [
+      {
+        "turn": 1,
+        "officer": "Navasi",
+        "action": "Secure Contract: Escort Through Dock Nine",
+        "cost": 1,
+        "credits": 0
+      }
+    ],
+    "ledger": [],
+    "log": [
+      {
+        "turn": 1,
+        "title": "Squad deployed",
+        "text": "Escort Through Dock Nine; Squad Level 1. Frozen wages 200; client payout 600 only on completion. No deployment action.",
+        "kind": "good"
+      },
+      {
+        "turn": 1,
+        "title": "Contract secured",
+        "text": "Escort Through Dock Nine. One Guild Action spent. Deployment is routine; it still requires Available crew.",
+        "kind": "good"
+      },
+      {
+        "turn": 1,
+        "title": "Open for business",
+        "text": "Four operatives. 4 PCs. Two clients. 4 shared actions. Give each player a first choice before allocating bonus or passed actions. There is no preceding-month bill at setup.",
+        "kind": "good"
+      }
+    ],
+    "feedback": "",
+    "metrics": {
+      "completed": 0,
+      "failed": 0,
+      "trainingBlocks": 0,
+      "hires": 0
+    },
+    "trustedUsed": false,
+    "pipelineUsed": false,
+    "searches": 0,
+    "upkeep": null,
+    "operations": null,
+    "event": null,
+    "lastRoll": null,
+    "officers": [
+      {
+        "id": "command",
+        "name": "Navasi",
+        "role": "Human Envoy · Commander",
+        "skills": {
+          "Diplomacy": 10,
+          "Performance": 10,
+          "Piloting": 10,
+          "Survival": 10
+        },
+        "used": 1
+      },
+      {
+        "id": "quarter",
+        "name": "Iseph",
+        "role": "Android Operative · Quartermaster",
+        "skills": {
+          "Diplomacy": 10,
+          "Computers": 10,
+          "Crafting": 10,
+          "Medicine": 10,
+          "Society": 10
+        },
+        "used": 0
+      },
+      {
+        "id": "field",
+        "name": "Dae",
+        "role": "Pahtra Solarian · Field Operations",
+        "skills": {
+          "Athletics": 10,
+          "Stealth": 10,
+          "Survival": 10,
+          "Medicine": 10
+        },
+        "used": 0
+      },
+      {
+        "id": "liaison",
+        "name": "Chk Chk",
+        "role": "Shirren Mystic · Personnel & Medical",
+        "skills": {
+          "Diplomacy": 10,
+          "Medicine": 10,
+          "Occultism": 10,
+          "Survival": 10
+        },
+        "used": 0
+      }
+    ]
+  },
+  "partialEvent": {
+    "schema": "contract-operations-browser-1",
+    "rules": "0.3.3",
+    "seed": 7,
+    "freeAcquisition": false,
+    "turn": 1,
+    "phase": "event",
+    "serial": 7,
+    "cash": 2000,
+    "partySize": 4,
+    "actions": 3,
+    "guildLevel": 1,
+    "guildXP": 0,
+    "pendingGuildXP": 0,
+    "featChoices": 0,
+    "guildFeats": [],
+    "contacts": [
+      "Helix Transit",
+      "Station Authority"
+    ],
+    "reputation": 0,
+    "relations": 2,
+    "mercs": [
+      {
+        "id": "m1",
+        "name": "Vex",
+        "role": "Scout & navigator",
+        "color": "teal",
+        "bio": "Patient on approach. Knows when an exit is about to close.",
+        "skills": {
+          "Stealth": "high",
+          "Survival": "high",
+          "Piloting": "moderate",
+          "Athletics": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 50,
+        "status": "Deployed",
+        "leaderFeat": null,
+        "dispatchedTurn": 1
+      },
+      {
+        "id": "m2",
+        "name": "Briggs",
+        "role": "Breach specialist",
+        "color": "amber",
+        "bio": "Keeps the line steady when the operation gets loud.",
+        "skills": {
+          "Athletics": "high",
+          "Medicine": "high",
+          "Survival": "moderate",
+          "Piloting": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 50,
+        "status": "Deployed",
+        "leaderFeat": null,
+        "dispatchedTurn": 1
+      },
+      {
+        "id": "m3",
+        "name": "Patch",
+        "role": "Systems specialist",
+        "color": "violet",
+        "bio": "Can coax a locked terminal back to life. Less comfortable in open terrain.",
+        "skills": {
+          "Computers": "high",
+          "Crafting": "high",
+          "Piloting": "moderate",
+          "Society": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 50,
+        "status": "Deployed",
+        "leaderFeat": null,
+        "dispatchedTurn": 1
+      },
+      {
+        "id": "m4",
+        "name": "Halo",
+        "role": "Pilot & negotiator",
+        "color": "blue",
+        "bio": "Makes difficult arrivals look routine, and knows who to call afterward.",
+        "skills": {
+          "Piloting": "high",
+          "Diplomacy": "high",
+          "Stealth": "moderate",
+          "Medicine": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 50,
+        "status": "Deployed",
+        "leaderFeat": null,
+        "dispatchedTurn": 1
+      }
+    ],
+    "board": [
+      {
+        "key": "escort",
+        "name": "Escort Through Dock Nine",
+        "kind": "standard",
+        "client": "Helix Transit",
+        "skills": [
+          "Piloting",
+          "Athletics",
+          "Survival"
+        ],
+        "description": "A convoy needs safe passage through a contested orbital freight lane. Keep the crew moving when the route gets ugly.",
+        "id": "c5",
+        "level": 1,
+        "status": "Deployed",
+        "expires": 2,
+        "acceptedTurn": 1,
+        "deployBy": 2
+      },
+      {
+        "key": "relay",
+        "name": "Restore the Ghost Relay",
+        "kind": "standard",
+        "client": "Station Authority",
+        "skills": [
+          "Stealth",
+          "Computers",
+          "Piloting"
+        ],
+        "essential": 1,
+        "description": "Slip into a silent relay platform and restore the uplink before the station loses its long-range comms. Engagement is Essential: the relay must actually come online.",
+        "id": "c6",
+        "level": 1,
+        "status": "Offer",
+        "expires": 2
+      }
+    ],
+    "jobs": [
+      {
+        "id": "j7",
+        "contract": {
+          "key": "escort",
+          "name": "Escort Through Dock Nine",
+          "kind": "standard",
+          "client": "Helix Transit",
+          "skills": [
+            "Piloting",
+            "Athletics",
+            "Survival"
+          ],
+          "description": "A convoy needs safe passage through a contested orbital freight lane. Keep the crew moving when the route gets ugly.",
+          "id": "c5",
+          "level": 1,
+          "status": "Accepted",
+          "expires": 2,
+          "acceptedTurn": 1,
+          "deployBy": 2
+        },
+        "departure": 1,
+        "due": 1,
+        "ids": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ],
+        "leads": [
+          "m4",
+          "m2",
+          "m1"
+        ],
+        "leader": null,
+        "quote": {
+          "squadLevel": 1,
+          "minimum": 1,
+          "sizeBonus": 0,
+          "modifier": 1,
+          "payout": 600,
+          "pay": 200,
+          "checks": [
+            {
+              "phase": "Insertion",
+              "skill": "Piloting",
+              "lead": "m4",
+              "leadName": "Halo",
+              "skillBonus": 7,
+              "support": 3,
+              "supporters": [
+                {
+                  "id": "m1",
+                  "name": "Vex",
+                  "rank": "Trained",
+                  "contribution": 1,
+                  "marginal": 1
+                },
+                {
+                  "id": "m2",
+                  "name": "Briggs",
+                  "rank": "Trained",
+                  "contribution": 1,
+                  "marginal": 1
+                },
+                {
+                  "id": "m3",
+                  "name": "Patch",
+                  "rank": "Trained",
+                  "contribution": 1,
+                  "marginal": 1
+                }
+              ],
+              "circumstance": 0,
+              "modifier": 10,
+              "dc": 15
+            },
+            {
+              "phase": "Engagement",
+              "skill": "Athletics",
+              "lead": "m2",
+              "leadName": "Briggs",
+              "skillBonus": 7,
+              "support": 1,
+              "supporters": [
+                {
+                  "id": "m1",
+                  "name": "Vex",
+                  "rank": "Trained",
+                  "contribution": 1,
+                  "marginal": 1
+                }
+              ],
+              "circumstance": 0,
+              "modifier": 8,
+              "dc": 15
+            },
+            {
+              "phase": "Extraction",
+              "skill": "Survival",
+              "lead": "m1",
+              "leadName": "Vex",
+              "skillBonus": 7,
+              "support": 1,
+              "supporters": [
+                {
+                  "id": "m2",
+                  "name": "Briggs",
+                  "rank": "Trained",
+                  "contribution": 1,
+                  "marginal": 1
+                }
+              ],
+              "circumstance": 0,
+              "modifier": 8,
+              "dc": 15
+            }
+          ],
+          "leaderFeat": null,
+          "wageQuotes": [
+            {
+              "id": "m1",
+              "name": "Vex",
+              "level": 1,
+              "wage": 50
+            },
+            {
+              "id": "m2",
+              "name": "Briggs",
+              "level": 1,
+              "wage": 50
+            },
+            {
+              "id": "m3",
+              "name": "Patch",
+              "level": 1,
+              "wage": 50
+            },
+            {
+              "id": "m4",
+              "name": "Halo",
+              "level": 1,
+              "wage": 50
+            }
+          ]
+        },
+        "rolls": [
+          {
+            "phase": "Insertion",
+            "skill": "Piloting",
+            "lead": "m4",
+            "leadName": "Halo",
+            "skillBonus": 7,
+            "support": 3,
+            "supporters": [
+              {
+                "id": "m1",
+                "name": "Vex",
+                "rank": "Trained",
+                "contribution": 1,
+                "marginal": 1
+              },
+              {
+                "id": "m2",
+                "name": "Briggs",
+                "rank": "Trained",
+                "contribution": 1,
+                "marginal": 1
+              },
+              {
+                "id": "m3",
+                "name": "Patch",
+                "rank": "Trained",
+                "contribution": 1,
+                "marginal": 1
+              }
+            ],
+            "circumstance": 0,
+            "modifier": 10,
+            "dc": 15,
+            "face": 7,
+            "actualModifier": 10,
+            "forward": 0,
+            "degree": 2
+          }
+        ],
+        "settled": false
+      }
+    ],
+    "cohorts": [],
+    "projects": [],
+    "facilities": [],
+    "arrears": [],
+    "actionHistory": [
+      {
+        "turn": 1,
+        "officer": "Navasi",
+        "action": "Secure Contract: Escort Through Dock Nine",
+        "cost": 1,
+        "credits": 0
+      }
+    ],
+    "ledger": [],
+    "log": [
+      {
+        "turn": 1,
+        "title": "Escort Through Dock Nine · Insertion",
+        "text": "Halo (Piloting): 7 +10 vs DC15, Success.",
+        "kind": "roll"
+      },
+      {
+        "turn": 1,
+        "title": "Squad deployed",
+        "text": "Escort Through Dock Nine; Squad Level 1. Frozen wages 200; client payout 600 only on completion. No deployment action.",
+        "kind": "good"
+      },
+      {
+        "turn": 1,
+        "title": "Contract secured",
+        "text": "Escort Through Dock Nine. One Guild Action spent. Deployment is routine; it still requires Available crew.",
+        "kind": "good"
+      },
+      {
+        "turn": 1,
+        "title": "Open for business",
+        "text": "Four operatives. 4 PCs. Two clients. 4 shared actions. Give each player a first choice before allocating bonus or passed actions. There is no preceding-month bill at setup.",
+        "kind": "good"
+      }
+    ],
+    "feedback": "",
+    "metrics": {
+      "completed": 0,
+      "failed": 0,
+      "trainingBlocks": 0,
+      "hires": 0
+    },
+    "trustedUsed": false,
+    "pipelineUsed": false,
+    "searches": 0,
+    "upkeep": null,
+    "operations": {
+      "settled": false,
+      "choices": [],
+      "complete": false
+    },
+    "event": null,
+    "lastRoll": null,
+    "officers": [
+      {
+        "id": "command",
+        "name": "Navasi",
+        "role": "Human Envoy · Commander",
+        "skills": {
+          "Diplomacy": 10,
+          "Performance": 10,
+          "Piloting": 10,
+          "Survival": 10
+        },
+        "used": 1
+      },
+      {
+        "id": "quarter",
+        "name": "Iseph",
+        "role": "Android Operative · Quartermaster",
+        "skills": {
+          "Diplomacy": 10,
+          "Computers": 10,
+          "Crafting": 10,
+          "Medicine": 10,
+          "Society": 10
+        },
+        "used": 0
+      },
+      {
+        "id": "field",
+        "name": "Dae",
+        "role": "Pahtra Solarian · Field Operations",
+        "skills": {
+          "Athletics": 10,
+          "Stealth": 10,
+          "Survival": 10,
+          "Medicine": 10
+        },
+        "used": 0
+      },
+      {
+        "id": "liaison",
+        "name": "Chk Chk",
+        "role": "Shirren Mystic · Personnel & Medical",
+        "skills": {
+          "Diplomacy": 10,
+          "Medicine": 10,
+          "Occultism": 10,
+          "Survival": 10
+        },
+        "used": 0
+      }
+    ],
+    "unusedHistory": [
+      {
+        "turn": 1,
+        "shared": 3,
+        "officers": [
+          {
+            "name": "Navasi",
+            "actionsLed": 1
+          },
+          {
+            "name": "Iseph",
+            "actionsLed": 0
+          },
+          {
+            "name": "Dae",
+            "actionsLed": 0
+          },
+          {
+            "name": "Chk Chk",
+            "actionsLed": 0
+          }
+        ]
+      }
+    ]
+  },
+  "settledUpkeep": {
+    "schema": "contract-operations-browser-1",
+    "rules": "0.3.3",
+    "seed": 7,
+    "freeAcquisition": false,
+    "turn": 2,
+    "phase": "upkeep",
+    "serial": 6,
+    "cash": 1850,
+    "partySize": 4,
+    "actions": 0,
+    "guildLevel": 1,
+    "guildXP": 0,
+    "pendingGuildXP": 0,
+    "featChoices": 0,
+    "guildFeats": [],
+    "contacts": [
+      "Helix Transit",
+      "Station Authority"
+    ],
+    "reputation": 0,
+    "relations": 2,
+    "mercs": [
+      {
+        "id": "m1",
+        "name": "Vex",
+        "role": "Scout & navigator",
+        "color": "teal",
+        "bio": "Patient on approach. Knows when an exit is about to close.",
+        "skills": {
+          "Stealth": "high",
+          "Survival": "high",
+          "Piloting": "moderate",
+          "Athletics": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 47,
+        "status": "Available",
+        "leaderFeat": null
+      },
+      {
+        "id": "m2",
+        "name": "Briggs",
+        "role": "Breach specialist",
+        "color": "amber",
+        "bio": "Keeps the line steady when the operation gets loud.",
+        "skills": {
+          "Athletics": "high",
+          "Medicine": "high",
+          "Survival": "moderate",
+          "Piloting": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 50,
+        "status": "Available",
+        "leaderFeat": null
+      },
+      {
+        "id": "m3",
+        "name": "Patch",
+        "role": "Systems specialist",
+        "color": "violet",
+        "bio": "Can coax a locked terminal back to life. Less comfortable in open terrain.",
+        "skills": {
+          "Computers": "high",
+          "Crafting": "high",
+          "Piloting": "moderate",
+          "Society": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 50,
+        "status": "Available",
+        "leaderFeat": null
+      },
+      {
+        "id": "m4",
+        "name": "Halo",
+        "role": "Pilot & negotiator",
+        "color": "blue",
+        "bio": "Makes difficult arrivals look routine, and knows who to call afterward.",
+        "skills": {
+          "Piloting": "high",
+          "Diplomacy": "high",
+          "Stealth": "moderate",
+          "Medicine": "moderate"
+        },
+        "level": 1,
+        "xp": 0,
+        "loyalty": 50,
+        "status": "Available",
+        "leaderFeat": null
+      }
+    ],
+    "board": [
+      {
+        "key": "escort",
+        "name": "Escort Through Dock Nine",
+        "kind": "standard",
+        "client": "Helix Transit",
+        "skills": [
+          "Piloting",
+          "Athletics",
+          "Survival"
+        ],
+        "description": "A convoy needs safe passage through a contested orbital freight lane. Keep the crew moving when the route gets ugly.",
+        "id": "c5",
+        "level": 1,
+        "status": "Offer",
+        "expires": 2
+      },
+      {
+        "key": "relay",
+        "name": "Restore the Ghost Relay",
+        "kind": "standard",
+        "client": "Station Authority",
+        "skills": [
+          "Stealth",
+          "Computers",
+          "Piloting"
+        ],
+        "essential": 1,
+        "description": "Slip into a silent relay platform and restore the uplink before the station loses its long-range comms. Engagement is Essential: the relay must actually come online.",
+        "id": "c6",
+        "level": 1,
+        "status": "Offer",
+        "expires": 2
+      }
+    ],
+    "jobs": [],
+    "cohorts": [],
+    "projects": [],
+    "facilities": [],
+    "arrears": [],
+    "actionHistory": [],
+    "ledger": [
+      {
+        "turn": 2,
+        "amount": -150,
+        "note": "HQ lease and ordinary overhead",
+        "category": "rent"
+      }
+    ],
+    "log": [
+      {
+        "turn": 2,
+        "title": "Monthly bills settled",
+        "text": "Prior Events receipts are already in treasury. HQ rent and installed-facility overhead are paid now; training continuation is your choice.",
+        "kind": "note"
+      },
+      {
+        "turn": 1,
+        "title": "Concern acknowledged",
+        "text": "There is no automatic Loyalty recovery. Consider an actual morale investment next Activity.",
+        "kind": "note"
+      },
+      {
+        "turn": 1,
+        "title": "Guild Event: The crew wants to be heard",
+        "text": "Vex is frustrated by long hours and unclear expectations. Loyalty falls by 3. You can acknowledge it now; a funded Boost Morale action can follow next turn.",
+        "kind": "event"
+      },
+      {
+        "turn": 1,
+        "title": "Contract settlement complete",
+        "text": "All due client receipts arrived before successful payroll. Choose failed-job wages and MVP before the monthly event.",
+        "kind": "note"
+      },
+      {
+        "turn": 1,
+        "title": "Open for business",
+        "text": "Four operatives. 4 PCs. Two clients. 4 shared actions. Give each player a first choice before allocating bonus or passed actions. There is no preceding-month bill at setup.",
+        "kind": "good"
+      }
+    ],
+    "feedback": "",
+    "metrics": {
+      "completed": 0,
+      "failed": 0,
+      "trainingBlocks": 0,
+      "hires": 0
+    },
+    "trustedUsed": false,
+    "pipelineUsed": false,
+    "searches": 0,
+    "upkeep": {
+      "settled": true,
+      "choices": [],
+      "complete": false
+    },
+    "operations": null,
+    "event": null,
+    "lastRoll": null,
+    "officers": [
+      {
+        "id": "command",
+        "name": "Navasi",
+        "role": "Human Envoy · Commander",
+        "skills": {
+          "Diplomacy": 10,
+          "Performance": 10,
+          "Piloting": 10,
+          "Survival": 10
+        },
+        "used": 0
+      },
+      {
+        "id": "quarter",
+        "name": "Iseph",
+        "role": "Android Operative · Quartermaster",
+        "skills": {
+          "Diplomacy": 10,
+          "Computers": 10,
+          "Crafting": 10,
+          "Medicine": 10,
+          "Society": 10
+        },
+        "used": 0
+      },
+      {
+        "id": "field",
+        "name": "Dae",
+        "role": "Pahtra Solarian · Field Operations",
+        "skills": {
+          "Athletics": 10,
+          "Stealth": 10,
+          "Survival": 10,
+          "Medicine": 10
+        },
+        "used": 0
+      },
+      {
+        "id": "liaison",
+        "name": "Chk Chk",
+        "role": "Shirren Mystic · Personnel & Medical",
+        "skills": {
+          "Diplomacy": 10,
+          "Medicine": 10,
+          "Occultism": 10,
+          "Survival": 10
+        },
+        "used": 0
+      }
+    ],
+    "unusedHistory": [
+      {
+        "turn": 1,
+        "shared": 4,
+        "officers": [
+          {
+            "name": "Navasi",
+            "actionsLed": 0
+          },
+          {
+            "name": "Iseph",
+            "actionsLed": 0
+          },
+          {
+            "name": "Dae",
+            "actionsLed": 0
+          },
+          {
+            "name": "Chk Chk",
+            "actionsLed": 0
+          }
+        ]
+      }
+    ]
+  }
+}
