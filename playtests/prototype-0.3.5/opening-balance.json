@@ -1,0 +1,12 @@
+{
+  "scope": "Exact opening Dock Nine contract, four Level1 Free Agents, optimal distinct leads, staffed HQ, half failed wages. No training, replacement, future crew loss or expansion.",
+  "combinations": 8000,
+  "successProbability": 0.806875,
+  "expectedRepairCredits": 1.25,
+  "missingRisk": 0.05,
+  "monthlyUpkeep": 365,
+  "currentNormalPayout": 600,
+  "expectedMonthlyNet": -62.8125,
+  "proposed900PayoutMonthlyNet": 179.25,
+  "proposalStatus": "Discussion only; payout, upkeep and expansion locks not changed."
+}

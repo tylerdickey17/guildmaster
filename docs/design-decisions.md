@@ -337,3 +337,14 @@ The user explicitly requested adding the saved changes to the live site after ex
 Designer-selected executable defaults include renewable monthly support contracts,25/person local transfers, funded-current-service restoration through arrears payments, and unpaid-retainer work blocking without automatic termination/Loyalty penalties. This is a bounded prototype; full financial enforcement, office signature progression and Reorganize Command remain unfinished. No independent historical approval or published SF2e price is claimed for each default.
 
 44 checks and288 smoke intervals passed; real browser QA unavailable. Native deployment **appgdep_6accfbeca2a08191b53b72e5016e26bd succeeded**, source **4e0f4e25e1f77a0ea694369f4baa33e355609b89**. [Rules](prototype-values-v0.3.4.md) and [current handoff](session-checkpoint-2026-10-12.md) supersede prior statements that the Upkeep/site work is still offline or entirely unimplemented.
+
+## LIVE-022–025: contract and visibility feedback, October12
+
+- **LIVE-022 — Confirmed structure; designer-selected numerical mapping:** Easy1/3 low payout; Normal2/3; Hard2/3 raised DC; Expert2/3 higher DC and additional rewards; Legendary3/3 at Expert DC with larger rewards/consequences. Working labels retained. Use published mission-level DCs, verified against both SF2e and PF2e GM Core; adjustments−2/0/+2/+5/+5. Printed skill/proficiency requirements remain separate from names.
+- **LIVE-023 — Explicit:** one NPC can lead only one of the three mission checks. New squads require minimum3, three different declared phase leads, valid actual skills; automatic support remains. Legacy deployed results stay frozen.
+- **LIVE-024 — Explicit visibility:** every rolled check shows result and values; Extraction must not disappear automatically. Implemented persistent guild-roll panel and explicit mission phase continuation, with all three results retained in summaries/logs.
+- **LIVE-025 — Confirmed risk direction; designer prototype:** Easy/Normal Critical Failures and Hard/Expert/Legendary Failures trigger authored phase complications. Implemented lead recovery, charter repair charges and a Missing operative requiring rescue; Legendary severity increases. No automatic death or rescue-resolution engine. Expert/Legendary referrals and contact reward are selected prototype content.
+
+**Finance discussion boundary:** user requested talking through expansion locks. The900 payout, Guild Level2/4 gates and reserve-warning draft are unimplemented/unadopted proposals. Current Normal600 and300 starter base remain. See [balance discussion](expansion-balance-discussion.md), bounded exact output and its reproduction script.
+
+Version0.3.5 native deployment **appgdep_6acd0bd8239481919a399a5d544f3edc succeeded**, Site source **e194b6eed5586f585f406342656b9b30ebfb4759**.56 checks and288 smoke intervals pass; real visual browser QA unavailable. [Current rules](prototype-values-v0.3.5.md).

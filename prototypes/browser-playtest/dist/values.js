@@ -1,5 +1,5 @@
 (function(root){const values={
-  "version": "0.3.4",
+  "version": "0.3.5",
   "rules_authority": "docs/integration-rules-v0.2.md",
   "currency": "credits",
   "level_dc": [
@@ -114,6 +114,7 @@
   "mvp_xp": 50,
   "contracts": {
     "routine": {
+      "label": "Easy",
       "dc_offset": -2,
       "required_successes": 1,
       "payout_factor": 0.75,
@@ -122,40 +123,91 @@
       "guild_xp": 150,
       "reputation_success": 1,
       "reputation_failure": -2,
-      "mandatory_recovery": 0
+      "mandatory_recovery": 0,
+      "minimum_lead_rank": "Untrained",
+      "complication_trigger": "critical_failure",
+      "severity": 1,
+      "additional_reward": null
     },
     "standard": {
+      "label": "Normal",
       "dc_offset": 0,
       "required_successes": 2,
-      "payout_factor": 1.0,
+      "payout_factor": 1,
       "participation_xp": 100,
       "completion_xp": 150,
       "guild_xp": 250,
       "reputation_success": 2,
       "reputation_failure": -3,
-      "mandatory_recovery": 0
+      "mandatory_recovery": 0,
+      "minimum_lead_rank": "Trained",
+      "complication_trigger": "critical_failure",
+      "severity": 1,
+      "additional_reward": null
     },
     "demanding": {
-      "dc_offset": 0,
-      "required_successes": 3,
+      "label": "Hard",
+      "dc_offset": 2,
+      "required_successes": 2,
       "payout_factor": 2.4,
+      "participation_xp": 150,
+      "completion_xp": 250,
+      "guild_xp": 400,
+      "reputation_success": 3,
+      "reputation_failure": -3,
+      "mandatory_recovery": 0,
+      "minimum_lead_rank": "Trained",
+      "complication_trigger": "failure",
+      "severity": 1,
+      "additional_reward": null
+    },
+    "expert": {
+      "label": "Expert",
+      "dc_offset": 5,
+      "required_successes": 2,
+      "payout_factor": 3.5,
       "participation_xp": 200,
       "completion_xp": 300,
       "guild_xp": 600,
-      "reputation_success": 3,
-      "reputation_failure": -3,
-      "mandatory_recovery": 1
-    },
-    "exclusive": {
-      "dc_offset": 0,
-      "required_successes": 3,
-      "payout_factor": 3.0,
-      "participation_xp": 200,
-      "completion_xp": 350,
-      "guild_xp": 750,
       "reputation_success": 4,
       "reputation_failure": -4,
-      "mandatory_recovery": 1
+      "mandatory_recovery": 0,
+      "minimum_lead_rank": "Trained",
+      "complication_trigger": "failure",
+      "severity": 1,
+      "additional_reward": "recruit"
+    },
+    "legendary": {
+      "label": "Legendary",
+      "dc_offset": 5,
+      "required_successes": 3,
+      "payout_factor": 5,
+      "participation_xp": 250,
+      "completion_xp": 400,
+      "guild_xp": 900,
+      "reputation_success": 5,
+      "reputation_failure": -5,
+      "mandatory_recovery": 0,
+      "minimum_lead_rank": "Trained",
+      "complication_trigger": "failure",
+      "severity": 2,
+      "additional_reward": "recruit_and_contact"
+    },
+    "exclusive": {
+      "label": "Hard",
+      "dc_offset": 2,
+      "required_successes": 2,
+      "payout_factor": 3,
+      "participation_xp": 200,
+      "completion_xp": 350,
+      "guild_xp": 600,
+      "reputation_success": 4,
+      "reputation_failure": -4,
+      "mandatory_recovery": 1,
+      "minimum_lead_rank": "Trained",
+      "complication_trigger": "failure",
+      "severity": 1,
+      "additional_reward": null
     }
   },
   "phase_forward": {
@@ -401,6 +453,59 @@
     "first_retainer": "effective_start_upkeep",
     "conversion": "requires Personnel signature and separate authored card",
     "legacy_existing_agreements": "not terminated by reputation loss"
-  }
+  },
+  "legacy_contracts_034": {
+    "routine": {
+      "dc_offset": -2,
+      "required_successes": 1,
+      "payout_factor": 0.75,
+      "participation_xp": 100,
+      "completion_xp": 100,
+      "guild_xp": 150,
+      "reputation_success": 1,
+      "reputation_failure": -2,
+      "mandatory_recovery": 0
+    },
+    "standard": {
+      "dc_offset": 0,
+      "required_successes": 2,
+      "payout_factor": 1.0,
+      "participation_xp": 100,
+      "completion_xp": 150,
+      "guild_xp": 250,
+      "reputation_success": 2,
+      "reputation_failure": -3,
+      "mandatory_recovery": 0
+    },
+    "demanding": {
+      "dc_offset": 0,
+      "required_successes": 3,
+      "payout_factor": 2.4,
+      "participation_xp": 200,
+      "completion_xp": 300,
+      "guild_xp": 600,
+      "reputation_success": 3,
+      "reputation_failure": -3,
+      "mandatory_recovery": 1
+    },
+    "exclusive": {
+      "dc_offset": 0,
+      "required_successes": 3,
+      "payout_factor": 3.0,
+      "participation_xp": 200,
+      "completion_xp": 350,
+      "guild_xp": 750,
+      "reputation_success": 4,
+      "reputation_failure": -4,
+      "mandatory_recovery": 1
+    }
+  },
+  "mission_minimum_crew": 3,
+  "distinct_phase_leads": true,
+  "level_dc_sources": [
+    "https://2e.aonsrd.com/rules/702-difficulty-classes",
+    "https://2e.aonprd.com/Rules.aspx?ID=2629"
+  ],
+  "finance_changes": "Expansion gates and baseline payouts unchanged pending discussion."
 }
 ;if(typeof module!=="undefined"&&module.exports)module.exports=values;root.GuildValues=values;})(typeof globalThis!=="undefined"?globalThis:this);

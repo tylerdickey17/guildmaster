@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Play your first season as a Starfinder mercenary guild. Choose actions, deploy a crew and see the monthly consequences using Contract Operations prototype 0.3.4.">
+<meta name="description" content="Play your first season as a Starfinder mercenary guild. Choose actions, deploy a crew and see the monthly consequences using Contract Operations prototype 0.3.5.">
 <meta name="theme-color" content="#10252c">
 <title>Contract Operations · Guild Playtest</title>
 <link rel="stylesheet" href="styles.css">
@@ -10,17 +10,18 @@
 </head>
 <body>
 <a href="#main" class="skip">Skip to guild operations</a>
-<header class="masthead"><a href="#" class="brand" aria-label="Contract Operations home"><span class="brand-icon" aria-hidden="true">CO</span><span>CONTRACT<br><b>OPERATIONS</b></span></a><div class="mast-meta"><span class="pulse" aria-hidden="true"></span><span>FIELD PROTOTYPE / 0.3.4</span><button data-do="help" class="quiet">How to play</button><button data-do="settings" class="quiet">New playtest</button></div></header>
+<header class="masthead"><a href="#" class="brand" aria-label="Contract Operations home"><span class="brand-icon" aria-hidden="true">CO</span><span>CONTRACT<br><b>OPERATIONS</b></span></a><div class="mast-meta"><span class="pulse" aria-hidden="true"></span><span>FIELD PROTOTYPE / 0.3.5</span><button data-do="help" class="quiet">How to play</button><button data-do="settings" class="quiet">New playtest</button></div></header>
 <main id="main">
 <section class="briefing"><div><p class="eyebrow">STATION MERIDIAN · INDEPENDENT OPERATIONS</p><h1>Build a guild.<br>Keep your people.</h1><p class="intro">The clients have work. Your crew has limits.<br>Every month, decide what deserves your attention.</p></div><div class="turn-mark"><span id="turn-caption">GUILD TURN</span><strong id="turn-number">01</strong><span id="phase-caption">Activity · 30-day interval</span></div></section>
 <section id="stats" class="stats" aria-label="Guild resources"></section>
 <div id="timeline" class="timeline" aria-label="Guild turn progress"></div>
 <div id="notice" class="notice" role="status" aria-live="polite"></div>
 <section id="stage-panel" aria-label="Current turn decisions"></section>
+<div id="roll-results"></div>
 <section id="activity-controls" class="activity-controls"><div><p class="eyebrow">CHOOSE ACTING OFFICER</p><label class="sr" for="active-officer">Officer leading the next action</label><select id="active-officer"></select><span id="officer-note"></span></div><div class="turn-buttons"><button data-do="pay-arrears" id="pay-arrears" class="quiet">Pay arrears · routine</button><button data-do="end" class="primary">Finish Activity <span aria-hidden="true">→</span></button></div></section>
 <nav class="tabs" aria-label="Guild workspaces"><button data-tab="contracts" class="active">Contract board <span id="board-count"></span></button><button data-tab="people">Personnel</button><button data-tab="development">Bases & upgrades</button><button data-tab="log">Operations log</button></nav>
 <div class="work-layout"><section id="workspace" class="workspace"></section><aside class="sidebar"><section class="panel command"><div class="section-heading"><h2>Guild Actions</h2><span class="small-label">SHARED POOL</span></div><div id="capacity"></div></section><section class="panel crew-panel"><div class="section-heading"><h2>At a glance</h2><button class="text-button" data-tab="people">Roster →</button></div><div id="crew-glance"></div></section><section class="panel experiment"><p class="eyebrow">YOUR PLAYTEST</p><h2>What did the choices feel like?</h2><p>Note actions you wanted to take, decisions that felt worthwhile, or anything that slowed the turn down.</p><label for="feedback" class="sr">Playtest feedback</label><textarea id="feedback" rows="4" placeholder="I wanted to recruit, but securing a contract used the action…"></textarea><button data-do="export" class="secondary full">Copy playtest notes</button><button data-do="download" class="text-button full">Download notes</button><p id="save-status" class="save-status">Progress is saved in this browser.</p></section></aside></div>
-<footer><div><b>Contract Operations</b> · A focused browser playtest, not a complete rules engine.</div><p>Included: itemized Upkeep, base purchases and HQ relocation, outpost chiefs, four staffed upgrades, local crew transfers, Free Agents/Retained Operatives, contract crews, recruitment, training and selected Guild/Leader Feats. Loans, property sales, full officer signature progression, rival missions, eviction and Priority adventures remain outside this focused demo.</p><a href="https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.4.md" target="_blank" rel="noopener">Read the current rules ↗</a></footer>
+<footer><div><b>Contract Operations</b> · A focused browser playtest, not a complete rules engine.</div><p>Included: itemized Upkeep, base purchases and HQ relocation, outpost chiefs, four staffed upgrades, local crew transfers, Free Agents/Retained Operatives, contract crews, recruitment, training and selected Guild/Leader Feats. Loans, property sales, full officer signature progression, rival missions, eviction and Priority adventures remain outside this focused demo.</p><a href="https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.5.md" target="_blank" rel="noopener">Read the current rules ↗</a></footer>
 </main>
 <dialog id="modal"><div class="dialog-top"><p id="modal-kicker" class="eyebrow">GUILD OPERATIONS</p><button id="close-modal" aria-label="Close dialog" class="close">×</button></div><div id="modal-content"></div></dialog>
 <noscript><p class="notice">This playtest needs JavaScript to run. The rules remain available through the repository link.</p></noscript>

@@ -1,6 +1,6 @@
 # Contract Operations browser playtest
 
-Version **0.3.4** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.4.md) records values, evidence and limits.
+Version **0.3.5** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.5.md) records values, evidence and limits.
 
 ## Starting a playtest
 
@@ -32,8 +32,20 @@ The existing localStorage key is preserved. Existing0.3.1–0.3.3 saves retain r
 
 ## Checks and limitations
 
-Run `node tests.cjs`. **44 checks** include invoice idempotency, shortfalls, staffing, purchase/onboarding, slots, transfer clocks, local services, retainer phases, old-save migration and the contract loop. **48 deterministic campaigns ×6 intervals =288 intervals** check cash conservation and core invariants. A minimal DOM smoke exercises invoices, settings, purchase actions and location controls. `fixtures/legacy-saves.json` contains actual0.3.3 states generated from Site commit a21c5ad; tests do not depend on scratch files.
+Run `node tests.cjs`. **56 checks** include invoice idempotency, shortfalls, staffing, purchase/onboarding, slots, transfer clocks, local services, retainer phases, old-save migration and the contract loop. **48 deterministic campaigns ×6 intervals =288 intervals** check cash conservation and core invariants. A minimal DOM smoke exercises invoices, settings, purchase actions and location controls. `fixtures/legacy-saves.json` contains actual0.3.3 states generated from Site commit a21c5ad; tests do not depend on scratch files.
 
 Real browser/visual QA could not run because control-browser was unavailable. Native hosting success verifies deployment, not every rendered layout. These checks verify mechanics, not numerical balance.
 
 Not included: loans, property sales, full creditor/eviction enforcement, worker termination and missed-retainer Loyalty cards, PC support-staff appointments, full officer signature progression/Reorganize Command, rival work, facility damage, capture/death/rescue and Priority adventures. Basic/trained actions still use their prior skill-based access; the later office-gating draft remains queued. Events remain three authored fixtures. No Foundry module is added.
+
+## 0.3.5 contract and roll feedback
+
+Five descriptive difficulty bands use the SF2e/PF2e GM Core level table: Easy−2/1 success, Normal+0/2, Hard+2/2, Expert+5/2, Legendary+5/3. The labels are distinct from actual proficiency requirements; ordinary cards require trained leads, Easy allows untrained, and custom cards can state a higher minimum per phase.
+
+Three different operatives lead the three checks, requiring minimum crew3. Automatic support can still contribute across phases. Deployment chooses a valid distinct assignment and rejects repeated leads.
+
+Each phase result shows die, actual modifier, total, DC and degree. The next-phase button acknowledges the previous result; the third result stays until explicitly continued. All three remain in settlement summaries and recent Operations log entries. Administrative checks have a persistent on-screen result panel and recent-roll table.
+
+Easy/Normal complications trigger only on Critical Failure; Hard/Expert/Legendary on Failure or Critical Failure. Insertion can require lead recovery, Engagement creates a disclosed charter-transport repair bill, Extraction can leave its lead Missing until a rescue adventure. Legendary has higher severity; no automatic permanent death or new rescue-resolution engine. Expert completion adds a specialist referral, Legendary also a client contact, without free hiring. Already-deployed contracts retain their original frozen completion and consequence rules.
+
+Expansion gates, starter base expense and Normal payout remain unchanged pending the requested balance discussion. `node balance-check.cjs` enumerates8,000 opening contract rolls: with half failed wages and the365/month staffed base, current600 payout gives about−62.81 expected credits/month before training/replacement/expansion. A900 payout gives179.25 in that same bounded calculation, but it is a proposal and not implemented. This is not a campaign balance study.
