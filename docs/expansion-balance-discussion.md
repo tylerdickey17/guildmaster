@@ -1,3 +1,5 @@
+> **Historical 0.3.5 draft.** Level 2/4 development gates are now adopted and implemented in [0.3.6](prototype-values-v0.3.6.md). The 900-payout-alone recommendation below is superseded by the [paired compensation discussion](startup-compensation-discussion.md). Live Normal payout remains 600; the reserve warning remains unimplemented.
+
 # Expansion and management budget: discussion draft
 
 October12,2026. **Not adopted or implemented.** The user reported debt after expansion and asked to talk through possible level locks before changing policy. This document preserves that feedback and a designer first draft for refinement.

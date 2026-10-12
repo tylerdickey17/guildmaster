@@ -348,3 +348,14 @@ Designer-selected executable defaults include renewable monthly support contract
 **Finance discussion boundary:** user requested talking through expansion locks. The900 payout, Guild Level2/4 gates and reserve-warning draft are unimplemented/unadopted proposals. Current Normal600 and300 starter base remain. See [balance discussion](expansion-balance-discussion.md), bounded exact output and its reproduction script.
 
 Version0.3.5 native deployment **appgdep_6acd0bd8239481919a399a5d544f3edc succeeded**, Site source **e194b6eed5586f585f406342656b9b30ebfb4759**.56 checks and288 smoke intervals pass; real visual browser QA unavailable. [Current rules](prototype-values-v0.3.5.md).
+
+## LIVE-026–029: startup economy, progression and finance, October 12
+
+- **LIVE-026 — User direction:** Level 1 may barely sustain itself or lose a little while gaining earning capacity through progression. Judge net margin after crew compensation and overhead; do not assume raising Normal payout alone is the solution. Calibrate crew rewards against PF2e/SF2e treasure and mission XP. [Compensation discussion](startup-compensation-discussion.md) distinguishes earned treasure from new-character starting wealth. **600/50 stays live; 900/110 is a paired test proposal.**
+- **LIVE-027 — Explicit progression:** Guild Feat at 3 and every odd level thereafter; new guild feature at each even level. Implemented browser schedule 3/5/7/9; installations at 2, properties/outposts at 4. Designer-selected project caps 2/3/4/5 at 4/6/8/10. Starting services and earlier awards/projects are grandfathered; older feat entitlements count toward later odd-level awards.
+- **LIVE-028 — Explicit finance access:** add loans to playtest, unsecured at 2 and secured at 4. Implemented Secure Financing (one action), routine repayments, visible Upkeep installments and creditor balances. Prior framework rates 2%/1%, term 12, unsecured level cap, 70% collateral cap and 30% receipts service test remain prototype terms. No new application roll. Approval uses actual client receipts, not borrowing or projected jobs.
+- **LIVE-029 — Designer implementation details:** interest-first partial payments, no duplicate principal billing, declining interest, unique owned-base pledge, Delinquent then Default and cure. Full foreclosure/restructuring remains GM adjudication; borrowing cannot erase existing debt. New Developing preset is an artificial Level 2 fixture without fabricated income.
+
+These decisions supersede the earlier statement that Level 2/4 gates were unadopted. The three-month purchase-reserve warning and 900 payout alone are still unimplemented. [Rules 0.3.6](prototype-values-v0.3.6.md) is the current executable authority.
+
+Native deployment `appgdep_6acd13258e6081919c3169a964b297a6` succeeded, Site source `544747ef10eeb86cd43949451b731ec91bbb4c73`. 69 checks plus 288 campaign intervals passed; minimal DOM finance checks passed, full browser visual QA unavailable.

@@ -1,6 +1,6 @@
 # Contract Operations browser playtest
 
-Version **0.3.5** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.5.md) records values, evidence and limits.
+Version **0.3.6** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.6.md) records values, evidence and limits.
 
 ## Starting a playtest
 
@@ -36,9 +36,9 @@ Run `node tests.cjs`. **56 checks** include invoice idempotency, shortfalls, sta
 
 Real browser/visual QA could not run because control-browser was unavailable. Native hosting success verifies deployment, not every rendered layout. These checks verify mechanics, not numerical balance.
 
-Not included: loans, property sales, full creditor/eviction enforcement, worker termination and missed-retainer Loyalty cards, PC support-staff appointments, full officer signature progression/Reorganize Command, rival work, facility damage, capture/death/rescue and Priority adventures. Basic/trained actions still use their prior skill-based access; the later office-gating draft remains queued. Events remain three authored fixtures. No Foundry module is added.
+Not included: property sales, full creditor/eviction enforcement, worker termination and missed-retainer Loyalty cards, PC support-staff appointments, full officer signature progression/Reorganize Command, rival work, facility damage, capture/death/rescue and Priority adventures. Basic/trained actions still use their prior skill-based access; the later office-gating draft remains queued. Events remain three authored fixtures. No Foundry module is added.
 
-## 0.3.5 contract and roll feedback
+## 0.3.6 contract and roll feedback
 
 Five descriptive difficulty bands use the SF2e/PF2e GM Core level table: Easy−2/1 success, Normal+0/2, Hard+2/2, Expert+5/2, Legendary+5/3. The labels are distinct from actual proficiency requirements; ordinary cards require trained leads, Easy allows untrained, and custom cards can state a higher minimum per phase.
 
@@ -49,3 +49,14 @@ Each phase result shows die, actual modifier, total, DC and degree. The next-pha
 Easy/Normal complications trigger only on Critical Failure; Hard/Expert/Legendary on Failure or Critical Failure. Insertion can require lead recovery, Engagement creates a disclosed charter-transport repair bill, Extraction can leave its lead Missing until a rescue adventure. Legendary has higher severity; no automatic permanent death or new rescue-resolution engine. Expert completion adds a specialist referral, Legendary also a client contact, without free hiring. Already-deployed contracts retain their original frozen completion and consequence rules.
 
 Expansion gates, starter base expense and Normal payout remain unchanged pending the requested balance discussion. `node balance-check.cjs` enumerates8,000 opening contract rolls: with half failed wages and the365/month staffed base, current600 payout gives about−62.81 expected credits/month before training/replacement/expansion. A900 payout gives179.25 in that same bounded calculation, but it is a proposal and not implemented. This is not a campaign balance study.
+
+
+## 0.3.6 progression and finance
+
+New installations unlock at Guild Level 2; new owned bases/outposts at Level 4. Existing installations and funded projects are grandfathered. Guild Feats are earned at 3/5/7/9. Existing earlier awards count toward the next odd-level entitlement instead of being removed or duplicated. Project capacity increases to 2/3/4/5 at 4/6/8/10.
+
+Secure Financing costs one shared action. Unsecured loans unlock at 2 (2% monthly interest; total principal cap 1,000 × Guild Level); secured loans at 4 (1%, one operational owned base pledged, 70% price cap). Twelve principal installments plus interest on outstanding principal. Approval requires nonnegative Reputation, no arrears and combined next payments at most 30% of average actual client receipts over up to three completed turns. No fabricated history is given to test presets. Repay principal freely during Activity after curing that loan's arrears.
+
+Payments begin next Upkeep. Partial payments cover interest then principal. Missed balances remain creditor arrears; principal is not billed twice. Delinquent on first miss, Default if uncured next boundary. Default blocks finance and relocation of pledged property; full foreclosure/restructuring needs GM adjudication. Loans are financing ledger entries, never client revenue.
+
+Normal Level 1 payout remains 600, with existing wages unchanged pending wealth-calibrated compensation design. The Developing Level 2 fixture has 2,000 credits and no upgrades; Expansion remains an artificial Level 4 fixture.

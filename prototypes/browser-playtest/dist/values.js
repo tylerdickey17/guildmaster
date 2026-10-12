@@ -1,5 +1,5 @@
 (function(root){const values={
-  "version": "0.3.5",
+  "version": "0.3.6",
   "rules_authority": "docs/integration-rules-v0.2.md",
   "currency": "credits",
   "level_dc": [
@@ -86,20 +86,19 @@
     1,
     2,
     2,
-    2,
     3,
     3,
-    3,
-    3
+    4,
+    4,
+    5
   ],
   "guild_xp_per_level": 1000,
   "merc_xp_per_level": 1000,
   "guild_feat_levels": [
-    2,
-    4,
-    6,
-    8,
-    10
+    3,
+    5,
+    7,
+    9
   ],
   "pay_base": 50,
   "pay_growth": 1.25,
@@ -309,7 +308,11 @@
     "unsecured_limit_per_guild_level": 1000,
     "debt_service_share": 0.3,
     "first_miss": "Delinquent",
-    "uncured_next_boundary": "Default"
+    "uncured_next_boundary": "Default",
+    "unsecured_level": 2,
+    "secured_level": 4,
+    "minimum_reputation": 0,
+    "revenue_window": 3
   },
   "facilities": {
     "field_hq": {
@@ -506,6 +509,10 @@
     "https://2e.aonsrd.com/rules/702-difficulty-classes",
     "https://2e.aonprd.com/Rules.aspx?ID=2629"
   ],
-  "finance_changes": "Expansion gates and baseline payouts unchanged pending discussion."
+  "finance_changes": "Expansion gates and baseline payouts unchanged pending discussion.",
+  "development_unlocks": {
+    "installations": 2,
+    "properties": 4
+  }
 }
 ;if(typeof module!=="undefined"&&module.exports)module.exports=values;root.GuildValues=values;})(typeof globalThis!=="undefined"?globalThis:this);

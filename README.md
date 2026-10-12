@@ -8,11 +8,14 @@ A design workspace for a mercenary-company subsystem for **Starfinder 2e**, init
 
 Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, mission-resolution, guild-development, finance, property, and events/rival-guild frameworks and identifies what still needs design or balancing.
 
-**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.5**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers, revised failed-pay Loyalty, visible Upkeep, employment pay, property purchases and staffed upgrades. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. Base staffing is implemented; full officer signature progression and Reorganize Command remain documented for later implementation. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
+**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.6**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers, revised failed-pay Loyalty, visible Upkeep, employment pay, property purchases and staffed upgrades. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. Base staffing is implemented; full officer signature progression and Reorganize Command remain documented for later implementation. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
 
 ## Documents
 
-- [Live-play patch0.3.5](docs/prototype-values-v0.3.5.md) — five contract bands, published DCs, distinct leads, visible rolls, complications and rewards;56 checks and288 intervals.
+- [Live-play patch 0.3.6](docs/prototype-values-v0.3.6.md) — level-gated development and loans, odd-level feats, transparent principal/interest; 69 checks and 288 intervals.
+- [Startup compensation discussion](docs/startup-compensation-discussion.md) — earned-treasure/XP calibration and paired payout/pay comparisons; live pay/payout remain unchanged.
+
+- [Previous live-play patch0.3.5](docs/prototype-values-v0.3.5.md) — five contract bands, published DCs, distinct leads, visible rolls, complications and rewards;56 checks and288 intervals.
 - [Expansion balance discussion](docs/expansion-balance-discussion.md) — debt feedback, bounded budget arithmetic and unimplemented payout/unlock/reserve proposals.
 
 - [Live-play patch0.3.4](docs/prototype-values-v0.3.4.md) — implemented visible Upkeep,300-credit starter base, three turnkey property offers, four staffed facilities, employment rates, local transfers and migration;44 checks and288 smoke intervals.
