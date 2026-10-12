@@ -1,0 +1,51 @@
+{
+  "rules": "0.3.11",
+  "seed": 42,
+  "scope": "Content-only fixture, not a legal startup or progression simulation.",
+  "npcsGenerated": 2000,
+  "uniqueRosterNames": 2004,
+  "ancestries": [
+    "Android",
+    "Barathu",
+    "Human",
+    "Kasatha",
+    "Lashunta",
+    "Pahtra",
+    "Shirren",
+    "Skittermander",
+    "Vesk",
+    "Ysoki"
+  ],
+  "roleProfiles": 12,
+  "missionsGenerated": 1000,
+  "uniqueMissionTitles": 1000,
+  "archetypesObserved": 30,
+  "categories": [
+    "Bounty Hunting",
+    "Espionage",
+    "Exploration",
+    "Investigation",
+    "Rescue",
+    "Sabotage",
+    "Salvage",
+    "Security",
+    "Smuggling",
+    "Transport"
+  ],
+  "uniqueLoreHooks": 148,
+  "malformedSlots": 0,
+  "duplicateTitles": 0,
+  "numberedNpcNames": 0,
+  "categoryCounts": {
+    "Espionage": 101,
+    "Salvage": 100,
+    "Sabotage": 99,
+    "Investigation": 99,
+    "Exploration": 100,
+    "Transport": 100,
+    "Bounty Hunting": 102,
+    "Security": 100,
+    "Rescue": 100,
+    "Smuggling": 99
+  }
+}

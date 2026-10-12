@@ -1,6 +1,6 @@
 # Design decision log
 
-> **Latest executable rules:** [0.3.10](prototype-values-v0.3.10.md), including relative Guild XP and multi-action activities. Historical entries below retain their original adoption/implementation status; later LIVE entries supersede conflicting older values.
+> **Latest executable rules:** [0.3.11](prototype-values-v0.3.11.md), including relative Guild XP and multi-action activities. Historical entries below retain their original adoption/implementation status; later LIVE entries supersede conflicting older values.
 
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
 
@@ -413,4 +413,15 @@ Implemented0.3.8 makes full completion conditions prominent and gives outcome re
 - **LIVE-045 — Confirmed bug fixes:** relocation preserves absent/dead lifecycle; one consistent Trusted/Standing acquisition allowance handles either order and old cards. Migration preserves earned/pendingXP, cash, rolls, Hero Points, deployed quotes and current bills; existing developments count as established without retroactive awards.
 
 [Live0.3.10](prototype-values-v0.3.10.md):112 checks plus288 smoke intervals; completed ordinary128campaigns and adapted optimizer16campaigns. Ordinary initial-Hero medianLevel10=48months; small cash-optimizer median39.5, fastest36; low-farm median60. No final five-year guarantee or global minimum. Full browser visualQA unavailable. Site source `978f0c0b16fbf16aa5631732c5508b219727a4ff`, deployment `appgdep_6acd5a8e74008191b7774b228c3a8a3e` **succeeded**. Prior review remains frozen historical evidence.
+
+
+
+## LIVE-046–049: living roster and varied mission content, October12
+
+- **LIVE-046 — Explicit user prerequisite for Foundry v0:** more names and better random NPC generation using actual SF2e ancestries; research a possible name API. Implemented10 Player Core ancestry labels with original bundled naming banks, unique full names, varied call signs and personal hooks. Specific-ancestry search is optional. Ancestry/role independent;12 skill profiles. Ancestry weighting/naming defaults are designer-selected content, not full ancestry actor mechanics.
+- **LIVE-047 — Explicit user content direction:** varied mission types/names and lore, with procedural/madlib generation suitable for Foundry. Implemented30 archetypes across the ten accepted categories, saved title/objective/contact/location/client history/lore/phase objectives. Persisted30-entry bag and collision handling reduce repetition. Existing risk/XP/pay packages remain; new skill combinations affect suitability and require fresh human feedback.
+- **LIVE-048 — Designer implementation choice after API research:** local seeded original tables for v0, with optional external provider later. Cuename documents a free seeded API but this environment's searches returned403; SF ancestry coverage not validated. MUNA classic fantasy API and Dungeonetics web generator were reviewed. No third-party generator source/tables were copied and no runtime AI/API dependency introduced.
+- **LIVE-049 — Implemented0.3.11 migration/publication:** default numbered identities upgrade with former call signs; custom names/clients/prose and accepted/deployed jobs remain. IDs, stats, XP, money, statuses and frozen quotes preserved.128 checks,288 existing smoke intervals, all30 mission archetypes resolved in targeted fixtures; variety audit1,000 unique titles/2,004 unique roster names. No new full pacing estimate, real-browser visualQA or Foundry compatibility claim.
+
+[Rules and API research](prototype-values-v0.3.11.md), [evidence/samples](../playtests/prototype-0.3.11/README.md), [portable content pack](../prototypes/browser-playtest/dist/content.js). Source `be0e5b9110cda18d478fa582e388ceefa2ff8876`, native deployment `appgdep_6acd6a7a857881919335a18f344a0387` **succeeded**. This prepares content for Foundry; the module itself is not implemented in this pass.
 

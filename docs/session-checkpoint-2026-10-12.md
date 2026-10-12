@@ -1,3 +1,5 @@
+> **Current live rules:0.3.11.** [Content handoff](prototype-values-v0.3.11.md) supersedes historical live-version statements below.
+
 > **Current live rules:0.3.10.** [Latest handoff](prototype-values-v0.3.10.md) supersedes historical live-version statements below.
 
 > **Project name: Guildmaster**, renamed October12 at the user's request. The current playtest remains0.3.9; see the branding handoff at the end for the latest deployment.
@@ -161,4 +163,21 @@ Commander Sector Campaign2 actions; Operations Briefing2 (Survival orComputers) 
 Fixed absent-person relocation and order/age-dependent free acquisitions.112 regressions/minimalDOM checks pass, including actual039 pending-save migration;288 smoke intervals. Ordinary128completed120-turn campaigns:initialHero median48months (range42–60), monthlymanualreset sensitivity46. Adapted optimizer two×8seeds:cashmedian39.5fastest36,lowfarmmedian60fastest59,all16reached by90,zero errors/censoring. Reused seeds; no new-activity optimization/global minimum/finalbalance claim. Latest-engine ordinaryseed7 replay exactly matches evidence. BrowservisualQA unavailable.
 
 Next:human feedback on revisedpace/multi-action value; expandoptimizercoverage and modeljointactivities; rescue/continuity and retained release; completeoffice/restructure; financialsinks/high-levelpay; explicitly scopedFoundry foundation. Preserve900/110 and existingcash/debts until newfeedback justifieschanging them.
+
+
+
+## Latest0.3.11 handoff: content ready for Foundry v0 adaptation
+
+User requested richer ancestry-based NPC identities and varied mission types/titles/lore as the last content prerequisites before Foundry. Published [0.3.11](prototype-values-v0.3.11.md); [evidence and samples](../playtests/prototype-0.3.11/README.md).
+
+- Live: https://contract-operations-playtest.primeangel2.chatgpt.site
+- Source: `be0e5b9110cda18d478fa582e388ceefa2ff8876`
+- Deployment: `appgdep_6acd6a7a857881919335a18f344a0387`, **succeeded**
+- Version: `appgprj_6acb0e7adc888191bb2947bb4077c061~appgver_54b9f5f2f488819180d80154a3cbdd04`
+
+New portable content.js:10 Player Core ancestry naming styles with original banks, personal hooks and independent call signs; optional ancestry recruitment;12 four-skill roles.30 mission archetypes across the10 established categories,30-entry persisted bag, unique titles,12 locations/eight recurring clients,50 authored lore templates and detailed per-phase objectives. Roster names and generated fields persist. Original default identities upgrade while preserving former call signs; custom names/clients/prose and accepted/deployed job snapshots remain. No changes to the0.3.10 numerical pay/XP/threat package; new phase skill mixes can change campaign success rates.
+
+128 tests pass and288 existing smoke intervals remain. All30 archetypes resolve through public phase APIs in labeled matching-roster fixtures. Seed42 variety fixture produces1,000 distinct mission titles,2,004 distinct NPC names,allancestries/categories/archetypes and148 instantiated lore hooks. This is content coverage, not a legal startup run. No new full progression estimate; real-browser visualQA unavailable.
+
+API review found Cuename documentation but endpoint searches returned403 here and exact SF2e support was not verified. Local authored tables are the v0 choice; no runtimeAI/API keys/network needed. Generator can be adapted to Foundry actors/contracts with stable keys and saved fields. Next session can scope the module foundation, mapping actors/skills, guild documents and player/GM controls. Existing rescue/release/restructuring gaps remain separate; no Foundry compatibility claim.
 

@@ -1,0 +1,818 @@
+{
+  "schema": "contract-operations-browser-1",
+  "rules": "0.3.10",
+  "heroSession": 1,
+  "seed": 19,
+  "freeAcquisition": false,
+  "turn": 1,
+  "phase": "event",
+  "serial": 11,
+  "cash": 1650,
+  "partySize": 4,
+  "actions": 2,
+  "guildLevel": 1,
+  "guildXP": 0,
+  "pendingGuildXP": 0,
+  "featChoices": 0,
+  "guildFeats": [],
+  "contacts": [
+    "Helix Transit",
+    "Station Authority"
+  ],
+  "reputation": 0,
+  "relations": 2,
+  "mercs": [
+    {
+      "id": "m1",
+      "baseId": "hq",
+      "employment": "free",
+      "name": "Vex",
+      "role": "Scout & navigator",
+      "color": "teal",
+      "bio": "Patient on approach. Knows when an exit is about to close.",
+      "skills": {
+        "Stealth": "high",
+        "Survival": "high",
+        "Piloting": "moderate",
+        "Athletics": "moderate"
+      },
+      "level": 1,
+      "xp": 0,
+      "loyalty": 50,
+      "status": "Deployed",
+      "leaderFeat": null,
+      "dispatchedTurn": 1
+    },
+    {
+      "id": "m2",
+      "baseId": "hq",
+      "employment": "free",
+      "name": "Briggs",
+      "role": "Breach specialist",
+      "color": "amber",
+      "bio": "Keeps the line steady when the operation gets loud.",
+      "skills": {
+        "Athletics": "high",
+        "Medicine": "high",
+        "Survival": "moderate",
+        "Piloting": "moderate"
+      },
+      "level": 1,
+      "xp": 0,
+      "loyalty": 50,
+      "status": "Deployed",
+      "leaderFeat": null,
+      "dispatchedTurn": 1
+    },
+    {
+      "id": "m3",
+      "baseId": "hq",
+      "employment": "free",
+      "name": "Patch",
+      "role": "Systems specialist",
+      "color": "violet",
+      "bio": "Can coax a locked terminal back to life. Less comfortable in open terrain.",
+      "skills": {
+        "Computers": "high",
+        "Crafting": "high",
+        "Piloting": "moderate",
+        "Society": "moderate"
+      },
+      "level": 1,
+      "xp": 0,
+      "loyalty": 50,
+      "status": "Deployed",
+      "leaderFeat": null,
+      "dispatchedTurn": 1
+    },
+    {
+      "id": "m4",
+      "baseId": "hq",
+      "employment": "free",
+      "name": "Halo",
+      "role": "Pilot & negotiator",
+      "color": "blue",
+      "bio": "Makes difficult arrivals look routine, and knows who to call afterward.",
+      "skills": {
+        "Piloting": "high",
+        "Diplomacy": "high",
+        "Stealth": "moderate",
+        "Medicine": "moderate"
+      },
+      "level": 1,
+      "xp": 0,
+      "loyalty": 50,
+      "status": "Deployed",
+      "leaderFeat": null,
+      "dispatchedTurn": 1
+    },
+    {
+      "id": "m8",
+      "baseId": "hq",
+      "employment": "free",
+      "name": "Halo 8",
+      "role": "Pilot & negotiator",
+      "color": "blue",
+      "bio": "Makes difficult arrivals look routine, and knows who to call afterward.",
+      "skills": {
+        "Piloting": "high",
+        "Diplomacy": "high",
+        "Stealth": "moderate",
+        "Medicine": "moderate"
+      },
+      "level": 1,
+      "xp": 0,
+      "loyalty": 50,
+      "status": "Candidate",
+      "leaderFeat": null,
+      "expires": 2,
+      "rarity": "Common"
+    },
+    {
+      "id": "m9",
+      "baseId": "hq",
+      "employment": "free",
+      "name": "Halo 9",
+      "role": "Pilot & negotiator",
+      "color": "blue",
+      "bio": "Makes difficult arrivals look routine, and knows who to call afterward.",
+      "skills": {
+        "Piloting": "high",
+        "Diplomacy": "high",
+        "Stealth": "moderate",
+        "Medicine": "moderate"
+      },
+      "level": 2,
+      "xp": 0,
+      "loyalty": 50,
+      "status": "Candidate",
+      "leaderFeat": null,
+      "expires": 2,
+      "rarity": "Common"
+    },
+    {
+      "id": "m10",
+      "baseId": "hq",
+      "employment": "free",
+      "name": "Vex 10",
+      "role": "Scout & navigator",
+      "color": "teal",
+      "bio": "Patient on approach. Knows when an exit is about to close.",
+      "skills": {
+        "Stealth": "high",
+        "Survival": "high",
+        "Piloting": "moderate",
+        "Athletics": "moderate"
+      },
+      "level": 1,
+      "xp": 0,
+      "loyalty": 50,
+      "status": "Candidate",
+      "leaderFeat": null,
+      "expires": 2,
+      "rarity": "Common"
+    }
+  ],
+  "board": [
+    {
+      "key": "escort",
+      "name": "Escort Through Dock Nine",
+      "kind": "standard",
+      "client": "Helix Transit",
+      "skills": [
+        "Piloting",
+        "Athletics",
+        "Survival"
+      ],
+      "description": "A convoy needs safe passage through a contested orbital freight lane. Keep the crew moving when the route gets ugly.",
+      "baseId": "hq",
+      "id": "c5",
+      "level": 1,
+      "status": "Deployed",
+      "expires": 2,
+      "acceptedTurn": 1,
+      "deployBy": 2
+    },
+    {
+      "key": "relay",
+      "name": "Restore the Ghost Relay",
+      "kind": "standard",
+      "client": "Station Authority",
+      "skills": [
+        "Stealth",
+        "Computers",
+        "Piloting"
+      ],
+      "description": "Slip into a silent relay platform and restore the uplink before the station loses its long-range comms. Any two successful phases complete the contract.",
+      "baseId": "hq",
+      "id": "c6",
+      "level": 1,
+      "status": "Offer",
+      "expires": 2
+    }
+  ],
+  "jobs": [
+    {
+      "id": "j11",
+      "contract": {
+        "key": "escort",
+        "name": "Escort Through Dock Nine",
+        "kind": "standard",
+        "client": "Helix Transit",
+        "skills": [
+          "Piloting",
+          "Athletics",
+          "Survival"
+        ],
+        "description": "A convoy needs safe passage through a contested orbital freight lane. Keep the crew moving when the route gets ugly.",
+        "baseId": "hq",
+        "id": "c5",
+        "level": 1,
+        "status": "Accepted",
+        "expires": 2,
+        "acceptedTurn": 1,
+        "deployBy": 2
+      },
+      "baseId": "hq",
+      "departure": 1,
+      "due": 1,
+      "ids": [
+        "m1",
+        "m2",
+        "m3",
+        "m4"
+      ],
+      "leads": [
+        "m4",
+        "m2",
+        "m1"
+      ],
+      "leader": null,
+      "quote": {
+        "guildAward": {
+          "index": 2,
+          "label": "Moderate",
+          "xp": 80,
+          "guildLevel": 1,
+          "missionLevel": 1,
+          "complexity": 0,
+          "offset": 0
+        },
+        "contingency": null,
+        "repairWage": 110,
+        "contractRules": {
+          "label": "Normal",
+          "dc_offset": 0,
+          "required_successes": 2,
+          "payout_factor": 1,
+          "participation_xp": 100,
+          "completion_xp": 150,
+          "guild_xp": 250,
+          "reputation_success": 2,
+          "reputation_failure": -3,
+          "mandatory_recovery": 0,
+          "minimum_lead_rank": "Trained",
+          "complication_trigger": "critical_failure",
+          "severity": 1,
+          "additional_reward": null
+        },
+        "squadLevel": 1,
+        "minimum": 1,
+        "sizeBonus": 0,
+        "modifier": 1,
+        "payout": 900,
+        "pay": 440,
+        "checks": [
+          {
+            "phase": "Insertion",
+            "skill": "Piloting",
+            "lead": "m4",
+            "leadName": "Halo",
+            "skillBonus": 7,
+            "support": 3,
+            "supporters": [
+              {
+                "id": "m1",
+                "name": "Vex",
+                "rank": "Trained",
+                "contribution": 1,
+                "marginal": 1
+              },
+              {
+                "id": "m2",
+                "name": "Briggs",
+                "rank": "Trained",
+                "contribution": 1,
+                "marginal": 1
+              },
+              {
+                "id": "m3",
+                "name": "Patch",
+                "rank": "Trained",
+                "contribution": 1,
+                "marginal": 1
+              }
+            ],
+            "circumstance": 0,
+            "modifier": 10,
+            "dc": 15
+          },
+          {
+            "phase": "Engagement",
+            "skill": "Athletics",
+            "lead": "m2",
+            "leadName": "Briggs",
+            "skillBonus": 7,
+            "support": 1,
+            "supporters": [
+              {
+                "id": "m1",
+                "name": "Vex",
+                "rank": "Trained",
+                "contribution": 1,
+                "marginal": 1
+              }
+            ],
+            "circumstance": 0,
+            "modifier": 8,
+            "dc": 15
+          },
+          {
+            "phase": "Extraction",
+            "skill": "Survival",
+            "lead": "m1",
+            "leadName": "Vex",
+            "skillBonus": 7,
+            "support": 1,
+            "supporters": [
+              {
+                "id": "m2",
+                "name": "Briggs",
+                "rank": "Trained",
+                "contribution": 1,
+                "marginal": 1
+              }
+            ],
+            "circumstance": 0,
+            "modifier": 8,
+            "dc": 15
+          }
+        ],
+        "leaderFeat": null,
+        "wageQuotes": [
+          {
+            "id": "m1",
+            "name": "Vex",
+            "level": 1,
+            "wage": 110,
+            "employment": "free"
+          },
+          {
+            "id": "m2",
+            "name": "Briggs",
+            "level": 1,
+            "wage": 110,
+            "employment": "free"
+          },
+          {
+            "id": "m3",
+            "name": "Patch",
+            "level": 1,
+            "wage": 110,
+            "employment": "free"
+          },
+          {
+            "id": "m4",
+            "name": "Halo",
+            "level": 1,
+            "wage": 110,
+            "employment": "free"
+          }
+        ]
+      },
+      "rolls": [
+        {
+          "phase": "Insertion",
+          "skill": "Piloting",
+          "lead": "m4",
+          "leadName": "Halo",
+          "skillBonus": 7,
+          "support": 3,
+          "supporters": [
+            {
+              "id": "m1",
+              "name": "Vex",
+              "rank": "Trained",
+              "contribution": 1,
+              "marginal": 1
+            },
+            {
+              "id": "m2",
+              "name": "Briggs",
+              "rank": "Trained",
+              "contribution": 1,
+              "marginal": 1
+            },
+            {
+              "id": "m3",
+              "name": "Patch",
+              "rank": "Trained",
+              "contribution": 1,
+              "marginal": 1
+            }
+          ],
+          "circumstance": 0,
+          "modifier": 10,
+          "dc": 15,
+          "face": 4,
+          "actualModifier": 10,
+          "total": 14,
+          "forward": 0,
+          "degree": 1,
+          "complication": null
+        }
+      ],
+      "settled": false
+    }
+  ],
+  "cohorts": [],
+  "projects": [],
+  "facilities": [
+    {
+      "id": "f7",
+      "type": "training_suite",
+      "baseId": "hq",
+      "condition": "Operational",
+      "activeSince": 1,
+      "landlordOwned": true,
+      "staff": {
+        "name": "Training Instructor",
+        "monthly": 50,
+        "active": true,
+        "paidTurn": 1
+      }
+    }
+  ],
+  "loans": [],
+  "arrears": [],
+  "actionHistory": [
+    {
+      "turn": 1,
+      "officer": "Navasi",
+      "action": "Work the Network: recruits",
+      "cost": 1,
+      "credits": 0
+    },
+    {
+      "turn": 1,
+      "officer": "Navasi",
+      "action": "Secure Contract: Escort Through Dock Nine",
+      "cost": 1,
+      "credits": 0
+    }
+  ],
+  "ledger": [
+    {
+      "turn": 1,
+      "amount": -300,
+      "note": "Station Operations Office · 250 rent + 50 routine services",
+      "category": "rent"
+    },
+    {
+      "turn": 1,
+      "amount": -50,
+      "note": "Training Instructor · current interval service",
+      "category": "staff"
+    }
+  ],
+  "log": [
+    {
+      "turn": 1,
+      "title": "Escort Through Dock Nine · Insertion",
+      "text": "Halo (Piloting): d20 4 +10 =14 vs DC15: Failure. Pending review; consequences apply at settlement.",
+      "kind": "roll"
+    },
+    {
+      "turn": 1,
+      "title": "Squad deployed",
+      "text": "Escort Through Dock Nine; Squad Level 1. Frozen wages 440; client payout 900 only on completion. No deployment action.",
+      "kind": "good"
+    },
+    {
+      "turn": 1,
+      "title": "Contract secured",
+      "text": "Escort Through Dock Nine. One Guild Action spent. Deployment is routine; it still requires Available crew.",
+      "kind": "good"
+    },
+    {
+      "turn": 1,
+      "title": "Network results",
+      "text": "Success: 3 candidates. Halo 8: L1, Common; table dice level 6, rarity 6, profile 16; Halo 9: L2, Common; table dice level 18, rarity 14, profile 16; Vex 10: L1, Common; table dice level 7, rarity 12, profile 7. Expires end Turn 2; finding remains separate from hiring/securing.",
+      "kind": "good"
+    },
+    {
+      "turn": 1,
+      "title": "Network recruits",
+      "text": "Navasi: d20 5 +10 vs DC15: Success.",
+      "kind": "roll"
+    },
+    {
+      "turn": 1,
+      "title": "Budget resets",
+      "text": "4 shared actions; no separate officer action limit. Give each player first choice before allocating remaining actions. Routine deployment needs no action. Development XP from Upkeep and contract XP from Events settle at end of this turn.",
+      "kind": "good"
+    },
+    {
+      "turn": 1,
+      "title": "Upkeep payments recorded",
+      "text": "350 actually paid; 0 total arrears. Optional training comes after mandatory payments.",
+      "kind": "note"
+    },
+    {
+      "turn": 1,
+      "title": "Upkeep ready for review",
+      "text": "350 credits due. Review staffing and obligations before payment; no Guild Action is spent.",
+      "kind": "note"
+    },
+    {
+      "turn": 1,
+      "title": "Open for business",
+      "text": "Setup: staffed. 2000 credits; four operatives and 4 PCs. Review the first current-interval Upkeep invoice before opening Activity. Expansion is an artificial mid-campaign fixture.",
+      "kind": "good"
+    }
+  ],
+  "feedback": "",
+  "metrics": {
+    "completed": 0,
+    "failed": 0,
+    "trainingBlocks": 0,
+    "hires": 0
+  },
+  "trustedUsed": false,
+  "pipelineUsed": false,
+  "searches": 1,
+  "upkeep": {
+    "settled": true,
+    "choices": [],
+    "complete": true,
+    "prepared": true,
+    "invoice": [
+      {
+        "id": "T1:base:hq",
+        "label": "Station Operations Office · 250 rent + 50 routine services",
+        "amount": 300,
+        "paid": 300,
+        "type": "base",
+        "reference": "hq",
+        "baseId": "hq"
+      },
+      {
+        "id": "T1:staff:f7",
+        "label": "Training Instructor · current interval service",
+        "amount": 50,
+        "paid": 50,
+        "type": "staff",
+        "reference": "f7",
+        "baseId": "hq"
+      }
+    ],
+    "changes": [],
+    "cashBefore": 2000,
+    "cashAfter": 1650
+  },
+  "operations": {
+    "settled": false,
+    "choices": [],
+    "complete": false,
+    "pendingReview": {
+      "job": "j11",
+      "phase": 0
+    }
+  },
+  "event": null,
+  "lastRoll": {
+    "label": "Network recruits",
+    "officer": "Navasi",
+    "turn": 1,
+    "face": 5,
+    "modifier": 10,
+    "total": 15,
+    "dc": 15,
+    "degree": 2
+  },
+  "preset": "staffed",
+  "initialCash": 2000,
+  "bases": [
+    {
+      "id": "hq",
+      "type": "leased_station_hq",
+      "name": "Station Operations Office",
+      "region": "Station Meridian",
+      "status": "Operational",
+      "readyAt": 1,
+      "slots": 2,
+      "monthly": 300,
+      "chief": null,
+      "milestone": true,
+      "paidTurn": 1
+    }
+  ],
+  "primaryBase": "hq",
+  "operatingBase": "hq",
+  "officers": [
+    {
+      "id": "command",
+      "name": "Navasi",
+      "role": "Human Envoy · Commander",
+      "skills": {
+        "Diplomacy": 10,
+        "Performance": 10,
+        "Piloting": 10,
+        "Survival": 10
+      },
+      "used": 2,
+      "heroPoints": 1
+    },
+    {
+      "id": "quarter",
+      "name": "Iseph",
+      "role": "Android Operative · Quartermaster",
+      "skills": {
+        "Diplomacy": 10,
+        "Computers": 10,
+        "Crafting": 10,
+        "Medicine": 10,
+        "Society": 10
+      },
+      "used": 0,
+      "heroPoints": 1
+    },
+    {
+      "id": "field",
+      "name": "Dae",
+      "role": "Pahtra Solarian · Field Operations",
+      "skills": {
+        "Athletics": 10,
+        "Stealth": 10,
+        "Survival": 10,
+        "Medicine": 10
+      },
+      "used": 0,
+      "heroPoints": 1
+    },
+    {
+      "id": "liaison",
+      "name": "Chk Chk",
+      "role": "Shirren Mystic · Personnel & Medical",
+      "skills": {
+        "Diplomacy": 10,
+        "Medicine": 10,
+        "Occultism": 10,
+        "Survival": 10
+      },
+      "used": 0,
+      "heroPoints": 1
+    }
+  ],
+  "developmentMilestones": {
+    "headquarters": false,
+    "outpost": false,
+    "facilities": [
+      "training_suite"
+    ]
+  },
+  "rollHistory": [
+    {
+      "label": "Network recruits",
+      "officer": "Navasi",
+      "turn": 1,
+      "face": 5,
+      "modifier": 10,
+      "total": 15,
+      "dc": 15,
+      "degree": 2
+    }
+  ],
+  "lastDiscovery": {
+    "turn": 1,
+    "mode": "recruits",
+    "degree": 2,
+    "targetLevel": 1,
+    "countRoll": null,
+    "results": [
+      {
+        "id": "m8",
+        "name": "Halo 8",
+        "level": 1,
+        "rarity": "Common",
+        "rolls": {
+          "level": 6,
+          "difficulty": 7,
+          "rarity": 6,
+          "profile": 16
+        },
+        "notes": []
+      },
+      {
+        "id": "m9",
+        "name": "Halo 9",
+        "level": 2,
+        "rarity": "Common",
+        "rolls": {
+          "level": 18,
+          "difficulty": 19,
+          "rarity": 14,
+          "profile": 16
+        },
+        "notes": []
+      },
+      {
+        "id": "m10",
+        "name": "Vex 10",
+        "level": 1,
+        "rarity": "Common",
+        "rolls": {
+          "level": 7,
+          "difficulty": 15,
+          "rarity": 12,
+          "profile": 7
+        },
+        "notes": []
+      }
+    ]
+  },
+  "discoveryHistory": [
+    {
+      "turn": 1,
+      "mode": "recruits",
+      "degree": 2,
+      "targetLevel": 1,
+      "countRoll": null,
+      "results": [
+        {
+          "id": "m8",
+          "name": "Halo 8",
+          "level": 1,
+          "rarity": "Common",
+          "rolls": {
+            "level": 6,
+            "difficulty": 7,
+            "rarity": 6,
+            "profile": 16
+          },
+          "notes": []
+        },
+        {
+          "id": "m9",
+          "name": "Halo 9",
+          "level": 2,
+          "rarity": "Common",
+          "rolls": {
+            "level": 18,
+            "difficulty": 19,
+            "rarity": 14,
+            "profile": 16
+          },
+          "notes": []
+        },
+        {
+          "id": "m10",
+          "name": "Vex 10",
+          "level": 1,
+          "rarity": "Common",
+          "rolls": {
+            "level": 7,
+            "difficulty": 15,
+            "rarity": 12,
+            "profile": 7
+          },
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "unusedHistory": [
+    {
+      "turn": 1,
+      "shared": 2,
+      "officers": [
+        {
+          "name": "Navasi",
+          "actionsLed": 2
+        },
+        {
+          "name": "Iseph",
+          "actionsLed": 0
+        },
+        {
+          "name": "Dae",
+          "actionsLed": 0
+        },
+        {
+          "name": "Chk Chk",
+          "actionsLed": 0
+        }
+      ]
+    }
+  ]
+}

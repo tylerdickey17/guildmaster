@@ -1,5 +1,5 @@
 (function(root){const values={
-  "version": "0.3.10",
+  "version": "0.3.11",
   "rules_authority": "docs/integration-rules-v0.2.md",
   "currency": "credits",
   "level_dc": [

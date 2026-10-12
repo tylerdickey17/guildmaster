@@ -1,0 +1,8 @@
+'use strict';
+const fs=require('node:fs'),assert=require('node:assert/strict'),G=require('./dist/engine.js');
+const seed=42,s=G.fresh(seed,false,4,'expansion'),npcNames=new Set(s.mercs.map(m=>m.name)),missions=[];
+for(let i=0;i<2000;i++){const m=G.makeMerc(s,G.people[i%G.people.length]);assert(!npcNames.has(m.name));assert(!/\d/.test(m.name));npcNames.add(m.name);s.mercs.push(m);}
+for(let i=0;i<1000;i++)missions.push(G.addOffer(s,'generated',1+i%20,{kind:['routine','standard','demanding','expert','legendary','exclusive'][i%6]}));
+const audit={rules:'0.3.11',seed,scope:'Content-only fixture, not a legal startup or progression simulation.',npcsGenerated:2000,uniqueRosterNames:npcNames.size,ancestries:[...new Set(s.mercs.map(m=>m.ancestry))].sort(),roleProfiles:G.people.length,missionsGenerated:missions.length,uniqueMissionTitles:new Set(missions.map(c=>c.name)).size,archetypesObserved:new Set(missions.map(c=>c.archetypeId)).size,categories:[...new Set(missions.map(c=>c.category))].sort(),uniqueLoreHooks:new Set(missions.map(c=>c.loreHook)).size,malformedSlots:missions.filter(c=>/\{[^}]+\}/.test(c.name+c.description)).length,duplicateTitles:missions.length-new Set(missions.map(c=>c.name)).size,numberedNpcNames:[...npcNames].filter(n=>/\d/.test(n)).length,categoryCounts:missions.reduce((counts,c)=>(counts[c.category]=(counts[c.category]||0)+1,counts),{})};
+assert.equal(audit.uniqueMissionTitles,1000);assert.equal(audit.archetypesObserved,30);assert.equal(audit.ancestries.length,10);assert.equal(audit.categories.length,10);assert.equal(audit.malformedSlots,0);
+console.log(JSON.stringify(audit,null,2));

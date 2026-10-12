@@ -1,3 +1,5 @@
+> **Current0.3.11:** ancestry-aware NPC identities,30 mission archetypes across ten categories, original mission names and lore dossiers; local seeded generation with saved identities. The0.3.10 progression/activity rules continue. Earlier sections below are history.
+
 > **Current0.3.10: relative-threat Guild XP, first-time operational milestones, multi-action officer activities and discretionary exceptional-performance guidance. Prior0.3.9: count-only completion, PC Hero Point mission rerolls, random-quality discovery and current-bill-first payment. Normal900 / Free Agent110 remains live. Prior sections below are history.**
 
 # Guildmaster browser playtest
@@ -100,3 +102,14 @@ All three final checks at Critical Success display Exceptional Performance guida
 Fixes: HQ relocation moves only Available crew and preserves Missing/Captured/Dead; Trusted Client and Standing Agreement share one current-turn free-acquisition allowance, including prior-turn cards. One waiver never supplies two free acquisitions outside the explicit free-acquisition test variant.
 
 Tests include an actual0.3.9 pending mission migration. Full browser visual QA is unavailable; engine and minimal-DOM checks are used. Five-year progression remains a playtest target, not a claimed guarantee. Rescue/release rules, complete office reassignment/specialists and stronger economic sinks remain future work.
+
+
+## 0.3.11 content generation
+
+The self-contained dist/content.js pack has ten SF2e Player Core ancestry name styles, original names, backgrounds, motivations, traits and quirks; random ancestries use a ten-entry shuffle bag. Specific ancestry recruitment is available without altering rolled quantity/quality. Ancestry and role are independent;12 four-skill mercenary profiles cover the expanded mission skills. Starter call signs Vex/Briggs/Patch/Halo remain recognizable, while new candidates have independent call signs and unique full names. Ancestry is an identity field in this streamlined prototype, without full ancestry feats or actor construction.
+
+Thirty archetypes span Bounty Hunting, Security, Espionage, Rescue, Salvage, Exploration, Smuggling, Sabotage, Investigation and Transport. Missions have unique generated titles, objectives, twelve compatible locations, eight recurring clients/contacts, client history and50 authored lore-hook templates (three eligible hooks per archetype). A30-entry mission shuffle bag avoids recent archetype repeats. All risk bands can use all archetypes; their printed DCs, success counts and reward curves remain the0.3.10 rules. Some new types use different phase skills and require a suitable roster. Open Card details for the full dossier.
+
+Generation is pure seeded local code; no API keys, AI calls or network dependency. The API research record explains evaluated options. Tables are original Guildmaster fiction, using verified SF2e ancestry labels and a few setting place names. Fields persist on the NPC/contract; changing future tables should not regenerate existing identities.
+
+Default legacy names are upgraded while preserving IDs, skills, status, finances and frozen job quotes; former names are recorded for recognition. Custom names/prose and accepted/deployed contract text remain. New content is not a mechanical rescue rule or a promise of hidden costs/bonuses. Full browser visual QA is unavailable; engine, generation and minimal-DOM checks are in tests.cjs. Run node content-check.cjs for the bounded variety audit.

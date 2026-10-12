@@ -1,0 +1,352 @@
+{
+  "rules": "0.3.11",
+  "seed": 42,
+  "roster": [
+    {
+      "name": "Sorin Mercer",
+      "ancestry": "Human",
+      "callSign": "Vex",
+      "role": "Scout & navigator",
+      "bio": "Originally from Absalom Station, they left a corporate security contract over unpaid wages. Sorin uses dry humor when a plan starts to unravel and is collecting enough experience to lead a rescue crew.",
+      "quirk": "hums a tune before opening an airlock"
+    },
+    {
+      "name": "Selen Haven",
+      "ancestry": "Android",
+      "callSign": "Briggs",
+      "role": "Breach specialist",
+      "bio": "Originally from an independent habitat in the Diaspora, they left a research expedition when its funding disappeared. Selen uses dry humor when a plan starts to unravel and is collecting enough experience to lead a rescue crew.",
+      "quirk": "collects discarded transit tokens"
+    },
+    {
+      "name": "Quibbi Dawnpatch",
+      "ancestry": "Skittermander",
+      "callSign": "Patch",
+      "role": "Systems specialist",
+      "bio": "Originally from the outer docks of Absalom Station, they left a research expedition when its funding disappeared. Quibbi celebrates small victories with the whole crew and is sending money back to their home community.",
+      "quirk": "sends postcards from every inhabited stop"
+    },
+    {
+      "name": "Oshrit Korra",
+      "ancestry": "Shirren",
+      "callSign": "Halo",
+      "role": "Pilot & negotiator",
+      "bio": "Originally from a chosen community on Absalom Station, they left a corporate security contract over unpaid wages. Oshrit prefers a clear agreement to a reassuring speech and is searching for a missing former colleague.",
+      "quirk": "trades recipes with every new crew"
+    }
+  ],
+  "missions": [
+    {
+      "name": "A Quiet Room at Tideglass Annex",
+      "category": "Security",
+      "archetype": "Witness protection",
+      "description": "Meridian Free Clinic requests this operation: Reach a whistleblower recovering from an attack at Tideglass Annex, stabilize the situation, and move them to a confidential safehouse. Tideglass Annex is a pressure-sealed research annex above the cloud layers; the annex must share its emergency transit windows with civilian traffic. An old mutual-aid agreement at Tideglass Annex protects people the current security charter does not recognize.",
+      "skills": [
+        "Diplomacy",
+        "Medicine",
+        "Stealth"
+      ],
+      "contact": {
+        "name": "Rishket Vara",
+        "role": "relief coordinator"
+      },
+      "location": {
+        "id": "tideglass",
+        "name": "Tideglass Annex",
+        "region": "a Brethedan orbital station"
+      },
+      "loreHook": "An old mutual-aid agreement at Tideglass Annex protects people the current security charter does not recognize.",
+      "phaseObjectives": [
+        "Establish trust and gain access to the protected person.",
+        "Handle injuries or medical complications.",
+        "Leave without exposing the safehouse route."
+      ]
+    },
+    {
+      "name": "The Record That Survived",
+      "category": "Salvage",
+      "archetype": "Historical archive recovery",
+      "description": "Research Consortium requests this operation: Reach a survey stations final data recorder at Tideglass Annex, recover its readable records, and keep them intact on the way out. Tideglass Annex is a pressure-sealed research annex above the cloud layers; the annex must share its emergency transit windows with civilian traffic. An inventory found at Tideglass Annex lists an extra compartment absent from the insurers diagrams.",
+      "skills": [
+        "Stealth",
+        "Computers",
+        "Survival"
+      ],
+      "contact": {
+        "name": "Calyra Relvar",
+        "role": "field-program director"
+      },
+      "location": {
+        "id": "tideglass",
+        "name": "Tideglass Annex",
+        "region": "a Brethedan orbital station"
+      },
+      "loreHook": "An inventory found at Tideglass Annex lists an extra compartment absent from the insurers diagrams.",
+      "phaseObjectives": [
+        "Reach the protected archive without alerting claimants.",
+        "Recover and authenticate the surviving data.",
+        "Preserve the archive through the return journey."
+      ]
+    },
+    {
+      "name": "Cut the Ash Thread Wire",
+      "category": "Sabotage",
+      "archetype": "Surveillance disruption",
+      "description": "Station Authority requests this operation: Approach an unauthorized tracking installation at Copper Spire, disable its operational components, and withdraw without revealing the client. Copper Spire is a refinery whose older modules have been sealed for years; the shutdown schedule does not match the machinery still drawing power. A public records request links the target to a contractor claiming to perform humanitarian work.",
+      "skills": [
+        "Stealth",
+        "Crafting",
+        "Piloting"
+      ],
+      "contact": {
+        "name": "Heskar of the Open Hand",
+        "role": "contract marshal"
+      },
+      "location": {
+        "id": "copper-spire",
+        "name": "Copper Spire",
+        "region": "Meridian outer belt"
+      },
+      "loreHook": "A public records request links the target to a contractor claiming to perform humanitarian work.",
+      "phaseObjectives": [
+        "Reach the installation without warning its operators.",
+        "Disable the target while avoiding collateral damage.",
+        "Withdraw before replacement security can arrive."
+      ]
+    },
+    {
+      "name": "Borrowed Faces at Hollow Crown",
+      "category": "Bounty Hunting",
+      "archetype": "Digital manhunt",
+      "description": "Station Authority requests this operation: Trace a data thief with an encrypted travel ledger at Hollow Crown, arrange a lawful handover, and intercept the departure route. Hollow Crown is a derelict observation ring surrounding a dark survey buoy; a repeating signal keeps disrupting nearby guidance systems. The suspect claims the stolen records expose a shell company that has been charging the same debt to three settlements.",
+      "skills": [
+        "Computers",
+        "Diplomacy",
+        "Piloting"
+      ],
+      "contact": {
+        "name": "Heskar of the Open Hand",
+        "role": "contract marshal"
+      },
+      "location": {
+        "id": "hollow-crown",
+        "name": "Hollow Crown",
+        "region": "Meridian outer belt"
+      },
+      "loreHook": "The suspect claims the stolen records expose a shell company that has been charging the same debt to three settlements.",
+      "phaseObjectives": [
+        "Trace the target without corrupting the evidence.",
+        "Negotiate access and secure the handover.",
+        "Intercept the escape route safely."
+      ]
+    },
+    {
+      "name": "The Voice from Lantern Row",
+      "category": "Investigation",
+      "archetype": "Communications investigation",
+      "description": "Station Authority requests this operation: Enter Lantern Row, determine the source of a relay broadcasting contradictory route updates, and return with a verified communications record. Lantern Row is a crowded market under the habitable decks; crowds and competing security jurisdictions complicate a clean exit. Several dispatchers remember answering the same call, but their recordings contain different words.",
+      "skills": [
+        "Stealth",
+        "Computers",
+        "Piloting"
+      ],
+      "contact": {
+        "name": "Heskar of the Open Hand",
+        "role": "contract marshal"
+      },
+      "location": {
+        "id": "lantern-row",
+        "name": "Lantern Row",
+        "region": "Station Meridian"
+      },
+      "loreHook": "Several dispatchers remember answering the same call, but their recordings contain different words.",
+      "phaseObjectives": [
+        "Reach the restricted communications site.",
+        "Diagnose the fault and preserve the source records.",
+        "Return with the evidence before the route closes."
+      ]
+    },
+    {
+      "name": "Bring It Back Breathing",
+      "category": "Bounty Hunting",
+      "archetype": "Dangerous creature removal",
+      "description": "Research Consortium requests this operation: Locate a dangerous burrowing animal under a trade route near Ash Garden, contain it, and transport it to a secured holding site. Ash Garden is an abandoned greenhouse complex on a wind-scoured plateau; spores in the ventilation system are interfering with delicate instruments. A rival claimant at Ash Garden has a convincing copy of the same contract, signed on a different date.",
+      "skills": [
+        "Survival",
+        "Athletics",
+        "Piloting"
+      ],
+      "contact": {
+        "name": "Calyra Relvar",
+        "role": "field-program director"
+      },
+      "location": {
+        "id": "ash-garden",
+        "name": "Ash Garden",
+        "region": "a frontier survey world"
+      },
+      "loreHook": "A rival claimant at Ash Garden has a convincing copy of the same contract, signed on a different date.",
+      "phaseObjectives": [
+        "Locate the creature and establish a safe approach.",
+        "Contain the threat without losing control of the site.",
+        "Move the secured specimen and crew out safely."
+      ]
+    },
+    {
+      "name": "Nothing Leaves Tonight",
+      "category": "Sabotage",
+      "archetype": "Targeted logistics disruption",
+      "description": "Outer Dockworkers Union requests this operation: Find a weapons shipment bound for hired enforcers near Sable Reach, render the specified resources unusable, and leave the civilians out of the conflict. Sable Reach is a chain of drifting mining habitats; a debris front is cutting across the approach corridor. A maintenance log from Sable Reach suggests a technician tried to disable the same operation and was reassigned overnight.",
+      "skills": [
+        "Survival",
+        "Athletics",
+        "Stealth"
+      ],
+      "contact": {
+        "name": "Sera Okoro",
+        "role": "organizer"
+      },
+      "location": {
+        "id": "sable-reach",
+        "name": "Sable Reach",
+        "region": "Meridian outer belt"
+      },
+      "loreHook": "A maintenance log from Sable Reach suggests a technician tried to disable the same operation and was reassigned overnight.",
+      "phaseObjectives": [
+        "Find the operational route and avoid civilian traffic.",
+        "Disable the contracted target precisely.",
+        "Withdraw without pulling civilians into pursuit."
+      ]
+    },
+    {
+      "name": "The Quiet Anchor Command Signal",
+      "category": "Sabotage",
+      "archetype": "Hostile guidance disruption",
+      "description": "Station Authority requests this operation: Reach a hostile command relay near Quiet Anchor, break its coordination systems, and survive the response. Quiet Anchor is a salvage anchorage pieced together from retired ships; the local tug network is operating on unreliable power. A maintenance log from Quiet Anchor suggests a technician tried to disable the same operation and was reassigned overnight.",
+      "skills": [
+        "Piloting",
+        "Computers",
+        "Survival"
+      ],
+      "contact": {
+        "name": "Heskar of the Open Hand",
+        "role": "contract marshal"
+      },
+      "location": {
+        "id": "quiet-anchor",
+        "name": "Quiet Anchor",
+        "region": "Meridian outer belt"
+      },
+      "loreHook": "A maintenance log from Quiet Anchor suggests a technician tried to disable the same operation and was reassigned overnight.",
+      "phaseObjectives": [
+        "Reach an attack position through controlled traffic.",
+        "Disrupt the command or guidance system.",
+        "Escape the reacting vessels and hazards."
+      ]
+    },
+    {
+      "name": "What the Next Shift Needs",
+      "category": "Transport",
+      "archetype": "Cargo delivery",
+      "description": "Helix Transit requests this operation: Carry a sealed medical shipment through Copper Spire, verify the receiving systems, and complete the delivery despite a difficult return route. Copper Spire is a refinery whose older modules have been sealed for years; the shutdown schedule does not match the machinery still drawing power. An old agreement at Copper Spire gives the intended recipient priority access that a new manager refuses to honor.",
+      "skills": [
+        "Piloting",
+        "Computers",
+        "Survival"
+      ],
+      "contact": {
+        "name": "Lena Rell",
+        "role": "dispatch coordinator"
+      },
+      "location": {
+        "id": "copper-spire",
+        "name": "Copper Spire",
+        "region": "Meridian outer belt"
+      },
+      "loreHook": "An old agreement at Copper Spire gives the intended recipient priority access that a new manager refuses to honor.",
+      "phaseObjectives": [
+        "Bring the shipment into the receiving corridor.",
+        "Verify the transfer and protect the cargo record.",
+        "Complete the delivery and return safely."
+      ]
+    },
+    {
+      "name": "A Ticket Without a Name",
+      "category": "Smuggling",
+      "archetype": "Undocumented passage",
+      "description": "Independent Route Exchange requests this operation: Arrange passage for a defector traveling with forged departure papers at Lantern Row, maintain their cover, and guide them beyond the local search area. Lantern Row is a crowded market under the habitable decks; crowds and competing security jurisdictions complicate a clean exit. A customs official at Lantern Row quietly provided a safe window, then disappeared from the duty roster.",
+      "skills": [
+        "Diplomacy",
+        "Deception",
+        "Survival"
+      ],
+      "contact": {
+        "name": "Eppit Warmwire",
+        "role": "route broker"
+      },
+      "location": {
+        "id": "lantern-row",
+        "name": "Lantern Row",
+        "region": "Station Meridian"
+      },
+      "loreHook": "A customs official at Lantern Row quietly provided a safe window, then disappeared from the duty roster.",
+      "phaseObjectives": [
+        "Arrange discreet cooperation from local contacts.",
+        "Maintain the travelers cover through inspection.",
+        "Reach a safe transfer point outside the search area."
+      ]
+    },
+    {
+      "name": "The Quiet Key Observatory",
+      "category": "Exploration",
+      "archetype": "Ruin reconnaissance",
+      "description": "Lantern Archive Trust requests this operation: Locate a buried observatory near Glasswater Basin, interpret its unusual features, and preserve a usable record for later expeditions. Glasswater Basin is a salt basin around a former survey camp; local weather is distorting navigation and sensor readings. A hand-drawn chart of Glasswater Basin carries a warning in three languages but no signature.",
+      "skills": [
+        "Survival",
+        "Occultism",
+        "Computers"
+      ],
+      "contact": {
+        "name": "Quiet Horizon",
+        "role": "recovery steward"
+      },
+      "location": {
+        "id": "glasswater",
+        "name": "Glasswater Basin",
+        "region": "a frontier survey world"
+      },
+      "loreHook": "A hand-drawn chart of Glasswater Basin carries a warning in three languages but no signature.",
+      "phaseObjectives": [
+        "Locate and reach the site safely.",
+        "Interpret unusual phenomena without disturbing them.",
+        "Record findings and secure a navigable exit."
+      ]
+    },
+    {
+      "name": "A Name Worth Catching",
+      "category": "Bounty Hunting",
+      "archetype": "Fugitive pursuit",
+      "description": "Outer Dockworkers Union requests this operation: Track a fugitive wanted for stealing workers pension funds through Sable Reach, secure a living handover, and get the squad clear before the charter enforcers of Greyline Security interferes. Sable Reach is a chain of drifting mining habitats; a debris front is cutting across the approach corridor. The file contains two incompatible witness statements; someone wants a quick arrest before the discrepancy reaches a hearing.",
+      "skills": [
+        "Stealth",
+        "Intimidation",
+        "Survival"
+      ],
+      "contact": {
+        "name": "Sera Okoro",
+        "role": "organizer"
+      },
+      "location": {
+        "id": "sable-reach",
+        "name": "Sable Reach",
+        "region": "Meridian outer belt"
+      },
+      "loreHook": "The file contains two incompatible witness statements; someone wants a quick arrest before the discrepancy reaches a hearing.",
+      "phaseObjectives": [
+        "Find a quiet approach and identify the correct target.",
+        "Secure a surrender or controlled capture.",
+        "Keep the squad and detainee clear of pursuit."
+      ]
+    }
+  ]
+}
