@@ -1,3 +1,5 @@
+> **Adopted for the live 0.3.7 test:** the user approved900 Normal Level1 payout and110 per operative on October12. [Executable rules](prototype-values-v0.3.7.md) supersede the discussion-only status below. The higher-level treasure-based curve and equipment accounting remain design work; the test retains1.25 growth.
+
 # Startup profitability and XP-based compensation
 
 October 12, 2026. **Discussion draft; wage and payout changes are not implemented.** The user prefers a barely sustainable Level 1 business that gains earning capacity with progression, and questions raising client payouts without raising crew pay.

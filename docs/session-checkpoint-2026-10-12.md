@@ -1,6 +1,6 @@
 # Session checkpoint: October12,2026
 
-> **Latest live update:** [0.3.6](prototype-values-v0.3.6.md) implements level-gated development/loans and odd-level feats. Prior deployments below are history. Payout and wage comparisons remain discussion only.
+> **Latest live update:** [0.3.7](prototype-values-v0.3.7.md) implements the user-approved900/110 payout/pay test. Prior deployments and discussion-only statements below are history.
 
 The execution workspace is restored. The user explicitly requested putting the agreed Upkeep/base changes on the live site; they have now been implemented and published.
 
@@ -58,3 +58,22 @@ Loans use 12 principal installments with declining 2%/1% interest, actual-income
 **Preserve discussion boundary:** Normal600 and Level1 Free Agent50 remain live. User's startup-loss preference supersedes treating all early deficit as inherently wrong. Use earned treasure by level for XP-based compensation; new-character wealth is a cross-check. Recommended paired experiment is 600/50 versus900/110, not900 alone. At250NPC XP, full Level1 treasure-value benchmark is109.375/person. It includes equipment; do not double-pay kit. Current expected monthly one-contract net−62.81; paired900/110−39.08, excluding replacement/training/growth.
 
 Next: adopt/test paired pay/payout curves, refine equipment funding, model two-squad growth and affordable management, then office-specific actions/Reorganize Command, creditor content and Foundry. No new human-playtest or Foundry compatibility result is claimed.
+
+
+## Latest0.3.7 handoff: paired values adopted
+
+The user explicitly requested testing900 Level1 Normal payout and110 per operative by updating the live site. **These values are now live.** Preserve that adoption; do not revert to calling900/110 an unimplemented proposal.
+
+- Live: https://contract-operations-playtest.primeangel2.chatgpt.site
+- Site source: `5ed913afab7932e795a710bd282e8e89a87198dd`
+- Deployment: `appgdep_6acd15d73844819181e06ff4b51d4cd3`, succeeded
+- Version: `appgprj_6acb0e7adc888191bb2947bb4077c061~appgver_9733b8ed89a08191aee519e75b8042dc`
+- Repository revision is this checkpoint's containing commit.
+
+Level1 Free Agent wages110; four440; clean success900−440−365=95. Hiring220; retained assignment90 and retainer55; Normal critical Engagement repair55. Existing1.25 wage growth retained; client payout900×wage(mission level)/110 before tier factors/discounts. A full treasure-table wage progression is still pending. Fixed facility/chief/training/property costs remain, as do loan rules, development gates and odd-level feats.
+
+Fresh browser setup uses new values. Refresh; New playtest → Staffed starter yields a clean comparison. Existing deployed jobs preserve payout/wages/checks/repair basis; prepared invoices and cash stay. Actual0.3.6 saved-job fixture tested.
+
+71 checks and288 intervals passed; minimal DOM checks include matching board/card/deployment prices, and exact8000-opening-outcome arithmetic yields net−39.075/month under stated one-job assumptions. Full browser QA unavailable. [Rules](prototype-values-v0.3.7.md), [frozen evidence](../playtests/prototype-0.3.7/verification.json).
+
+Next: human feedback on startup runway, paid failures, recruit/training choices and development affordability; then revise higher-level curves and officer features. No simulation subagents or Foundry work in this patch.

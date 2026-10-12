@@ -1,6 +1,8 @@
+> **Current economy test (0.3.7): Normal Level 1 payout 900; Free Agent pay 110 per assignment. Earlier 0.3.6 payout notes below are historical.**
+
 # Contract Operations browser playtest
 
-Version **0.3.6** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.6.md) records values, evidence and limits.
+Version **0.3.7** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.7.md) records values, evidence and limits.
 
 ## Starting a playtest
 
@@ -60,3 +62,12 @@ Secure Financing costs one shared action. Unsecured loans unlock at 2 (2% monthl
 Payments begin next Upkeep. Partial payments cover interest then principal. Missed balances remain creditor arrears; principal is not billed twice. Delinquent on first miss, Default if uncured next boundary. Default blocks finance and relocation of pledged property; full foreclosure/restructuring needs GM adjudication. Loans are financing ledger entries, never client revenue.
 
 Normal Level 1 payout remains 600, with existing wages unchanged pending wealth-calibrated compensation design. The Developing Level 2 fixture has 2,000 credits and no upgrades; Expansion remains an artificial Level 4 fixture.
+
+
+## 0.3.7 approved paired compensation test
+
+Normal Level 1 payout is now 900; ordinary Free Agent pay is 110 per assignment. Both retain the existing 1.25 level growth and five-credit wage rounding. Higher-level client payout = 900 × (ordinary wage at mission level / 110) × contract payout factor × squad discount, rounded to whole credits. This preserves paired scaling without claiming a complete treasure-by-level salary curve.
+
+Tier factors, XP, failure full/half/none Loyalty, 365 staffed starter upkeep and 2,000 starting cash remain. Crew-dependent quotes follow the new wage baseline: Level 1 hiring 220, retained assignment 90 and monthly retainer 55. Normal critical Engagement failure repair is55. Training materials/trainer and facility staff costs stay fixed.
+
+Migration preserves deployed quotes, rolls, repair basis and prepared invoices. New deployments and later bills use the new baseline. Refresh the site to load the patch; New playtest → Staffed starter is the clean comparison setup.

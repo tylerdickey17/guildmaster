@@ -1,5 +1,5 @@
 (function(root){const values={
-  "version": "0.3.6",
+  "version": "0.3.7",
   "rules_authority": "docs/integration-rules-v0.2.md",
   "currency": "credits",
   "level_dc": [
@@ -100,10 +100,10 @@
     7,
     9
   ],
-  "pay_base": 50,
+  "pay_base": 110,
   "pay_growth": 1.25,
   "pay_rounding": 5,
-  "standard_payout_wage_multiple": 3,
+  "standard_payout_wage_multiple": 2.0454545454545454,
   "cash_adjustment_per_size_difference": 0.1,
   "cash_adjustment_per_level_difference": 0.1,
   "cash_adjustment_min": 0.5,
@@ -509,10 +509,11 @@
     "https://2e.aonsrd.com/rules/702-difficulty-classes",
     "https://2e.aonprd.com/Rules.aspx?ID=2629"
   ],
-  "finance_changes": "Expansion gates and baseline payouts unchanged pending discussion.",
+  "finance_changes": "0.3.7 paired compensation test: Level 1 Normal payout 900, ordinary operative assignment pay 110; 1.25 level growth retained. Development/loan gates unchanged.",
   "development_unlocks": {
     "installations": 2,
     "properties": 4
-  }
+  },
+  "normal_payout_base": 900
 }
 ;if(typeof module!=="undefined"&&module.exports)module.exports=values;root.GuildValues=values;})(typeof globalThis!=="undefined"?globalThis:this);

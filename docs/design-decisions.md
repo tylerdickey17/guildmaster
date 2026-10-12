@@ -359,3 +359,11 @@ Version0.3.5 native deployment **appgdep_6acd0bd8239481919a399a5d544f3edc succee
 These decisions supersede the earlier statement that Level 2/4 gates were unadopted. The three-month purchase-reserve warning and 900 payout alone are still unimplemented. [Rules 0.3.6](prototype-values-v0.3.6.md) is the current executable authority.
 
 Native deployment `appgdep_6acd13258e6081919c3169a964b297a6` succeeded, Site source `544747ef10eeb86cd43949451b731ec91bbb4c73`. 69 checks plus 288 campaign intervals passed; minimal DOM finance checks passed, full browser visual QA unavailable.
+
+
+## LIVE-030–031: approved paired compensation test, October12
+
+- **LIVE-030 — Explicit user approval and implementation request:** test proposed900-credit Normal Level1 payout alongside110 per operative and update the live site. Implemented0.3.7. Supersedes600/50-as-current and900/110-as-unimplemented in LIVE-026 and the0.3.6 checkpoint.
+- **LIVE-031 — Designer implementation details:** preserve1.25 growth with five-credit wage rounding and scale client payouts from the new900 baseline using ordinary mission-level wage/110. Retain tier factors, squad discounts, employment ratios and wage-based hiring/repair relationships. Existing deployed quotes/repair basis and prepared invoices stay frozen. No full published-treasure salary curve or wage A/B toggle is claimed.
+
+[Current rules](prototype-values-v0.3.7.md).71 checks and288 intervals passed; actual0.3.6 save regression included. Native deployment `appgdep_6acd15d73844819181e06ff4b51d4cd3` succeeded with Site source `5ed913afab7932e795a710bd282e8e89a87198dd`. Full browser visual QA unavailable. Bounded opening net−39.075/month; additional personnel/development costs remain outside that model.

@@ -1,6 +1,6 @@
 # Browser playtest: opening season and expansion
 
-[Play Contract Operations](https://contract-operations-playtest.primeangel2.chatgpt.site). **Current version0.3.6**; existing browser progress is preserved.
+[Play Contract Operations](https://contract-operations-playtest.primeangel2.chatgpt.site). **Current version0.3.7**; existing browser progress is preserved.
 
 1. Choose **New playtest → Staffed starter** for the new opening experience. It starts with2,000 credits and a350-credit Upkeep invoice; later bare base+suite costs365/month. **Lean** starts with an empty300/month office. **Expansion test** gives Guild Level4,8,000 credits and four Level3 operatives to exercise purchases immediately; this is an artificial fixture.
 2. Review the invoice. Pay selected bills or apply available cash; pauses concern month-to-month facility support only. Unpaid balances stay owed and unfunded services are unavailable.
@@ -28,3 +28,12 @@ Under **Bases & upgrades → Guild financing**, review unsecured (Level 2) or se
 Prepay principal freely in Activity after curing that agreement's arrears. Missed balances remain owed, become Delinquent and then Default if uncured at the next boundary. Full seizure/restructuring is not simulated. Odd-level Guild Feats begin at 3; even levels unlock development or increase project capacity.
 
 [Current values](prototype-values-v0.3.6.md) · [Compensation discussion](startup-compensation-discussion.md). No payout/pay change has been applied.
+
+
+## Approved economy test 0.3.7
+
+Normal Level1 client payout is now900; ordinary Free Agent assignment pay110 (four cost440). A clean completion leaves95 after365 staffed upkeep. Related Level1 hiring220, retained assignment90/retainer55 and Normal repair55 follow the new baseline. Existing level growth and tier factors remain; no full treasure-based salary curve yet.
+
+Refresh to load the update. Use New playtest → Staffed starter for a fresh comparison; export old notes first. Existing deployed jobs/prepared invoices retain their previous quotes. Loans, installations at2, properties at4 and odd-level feats stay available as before.
+
+[Current executable rules](prototype-values-v0.3.7.md). This adoption supersedes the previous sentence that no payout/pay change has been applied.
