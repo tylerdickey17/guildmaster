@@ -376,3 +376,13 @@ The user reported an unnamed2-of-3 mission failed after two successes. Exact mis
 Implemented0.3.8 makes full completion conditions prominent and gives outcome reasons in settlement/failed-pay/log views. This preserves the accepted count-plus-Essential rule, historical outcomes and financial settlement; no user approval to remove Essential phases is assumed. Confirm the mission before claiming the user's exact case is diagnosed.
 
 74 checks and288 intervals passed; full browser visual QA unavailable. Deployment `appgdep_6acd1846f5448191978b2f46479433da` succeeded; source `b1f609ef261d650cc5d6db8e4a57a4e43a426f7d`. [Rules](prototype-values-v0.3.8.md).
+
+
+## LIVE-033–036: survival and random discovery feedback, October12
+
+- **LIVE-033 — User preference interpreted under designer-led playtest authority:** simplify the disliked2-of-3-plus-required-phase rule. New/unsettled browser contracts now use printed count alone. Historical settled outcomes/payments remain.
+- **LIVE-034 — Explicit request; custom implementation:** PC Hero Points can reroll NPC mission checks. Standard one-point, second-result, one-fortune/check convention guides it; each PC starts a table session with1, cap3. Before pending phase acceptance only; original and final values persist. No monthly refresh. Manual GM/session controls; administrative rerolls remain future.
+- **LIVE-035 — Explicit quantity/quality direction; designer tables:** normally3 new contract/recruit options on Failure/Success/Critical Success; Critical Failure quantity d20 yields0or1. Independent visible degree-weighted tables determine level, contract difficulty, rarity and profile. Exact weights/specialist extra skills are prototypes. Difficulty cannot be selected directly. Existing extra-candidate bonuses become level/quality improvements.
+- **LIVE-036 — User-described arrears spiral; designer recovery controls:** automatic current-bill-first payment, selectable partial routine arrears budget with next-Upkeep/committed-wages reserve preview. Old debts/interest/default remain; no forgiveness, hidden cash or unlimited finance.
+
+[Current0.3.9 rules](prototype-values-v0.3.9.md) supersede the old Essential and discovery-count rules.85 checks,600 discovery samples and288 campaign intervals pass; full browser visual QA unavailable. Deployment `appgdep_6acd1f01f7208191aea7fec4fc748212` succeeded; source `f9455b0e1b44f503e3795ba3782054658dad8004`.

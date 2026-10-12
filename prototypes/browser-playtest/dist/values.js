@@ -1,5 +1,5 @@
 (function(root){const values={
-  "version": "0.3.8",
+  "version": "0.3.9",
   "rules_authority": "docs/integration-rules-v0.2.md",
   "currency": "credits",
   "level_dc": [
@@ -376,7 +376,7 @@
       "staff_name": "Recruitment Agent",
       "slots": 1,
       "transferable": 1,
-      "description": "local recruitment access; successful or critical-success local recruitment gains one candidate, maximum 3; no free hiring",
+      "description": "on Success or Critical Success, upgrade one Common candidate to Uncommon; specialist quality rather than extra quantity; no free hiring",
       "name": "Recruitment Office"
     }
   },
@@ -514,6 +514,186 @@
     "installations": 2,
     "properties": 4
   },
-  "normal_payout_base": 900
+  "normal_payout_base": 900,
+  "hero_points": {
+    "per_session": 1,
+    "maximum": 3,
+    "one_reroll_per_check": true,
+    "use_second_result": true,
+    "scope": "PC-funded mission phase rerolls; session refresh is manual, not monthly"
+  },
+  "discovery": {
+    "default_count": 3,
+    "critical_failure_count_roll": {
+      "zero_through": 10,
+      "otherwise": 1
+    },
+    "level_offsets": [
+      [
+        [
+          20,
+          -1
+        ]
+      ],
+      [
+        [
+          12,
+          -1
+        ],
+        [
+          18,
+          0
+        ],
+        [
+          20,
+          1
+        ]
+      ],
+      [
+        [
+          5,
+          -1
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          20,
+          1
+        ]
+      ],
+      [
+        [
+          10,
+          0
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          20,
+          2
+        ]
+      ]
+    ],
+    "difficulty": [
+      [
+        [
+          20,
+          "routine"
+        ]
+      ],
+      [
+        [
+          12,
+          "routine"
+        ],
+        [
+          19,
+          "standard"
+        ],
+        [
+          20,
+          "demanding"
+        ]
+      ],
+      [
+        [
+          5,
+          "routine"
+        ],
+        [
+          15,
+          "standard"
+        ],
+        [
+          19,
+          "demanding"
+        ],
+        [
+          20,
+          "expert"
+        ]
+      ],
+      [
+        [
+          2,
+          "routine"
+        ],
+        [
+          9,
+          "standard"
+        ],
+        [
+          16,
+          "demanding"
+        ],
+        [
+          19,
+          "expert"
+        ],
+        [
+          20,
+          "legendary"
+        ]
+      ]
+    ],
+    "rarity": [
+      [
+        [
+          20,
+          "Common"
+        ]
+      ],
+      [
+        [
+          20,
+          "Common"
+        ]
+      ],
+      [
+        [
+          16,
+          "Common"
+        ],
+        [
+          20,
+          "Uncommon"
+        ]
+      ],
+      [
+        [
+          8,
+          "Common"
+        ],
+        [
+          17,
+          "Uncommon"
+        ],
+        [
+          20,
+          "Rare"
+        ]
+      ]
+    ],
+    "rarity_order": [
+      "Common",
+      "Uncommon",
+      "Rare"
+    ],
+    "candidate_skill_by_rarity": {
+      "Common": null,
+      "Uncommon": "moderate",
+      "Rare": "high"
+    },
+    "rarity_payout_factors": {
+      "Common": 1,
+      "Uncommon": 1,
+      "Rare": 1
+    }
+  },
+  "upkeep_payment_priority": "Current operating obligations first, then prior arrears; selected individual payments remain available."
 }
 ;if(typeof module!=="undefined"&&module.exports)module.exports=values;root.GuildValues=values;})(typeof globalThis!=="undefined"?globalThis:this);

@@ -1,8 +1,8 @@
-> **Current economy test (0.3.7): Normal Level 1 payout 900; Free Agent pay 110 per assignment. Earlier 0.3.6 payout notes below are historical.**
+> **Current0.3.9: count-only completion, PC Hero Point mission rerolls, random-quality discovery and current-bill-first payment. Normal900 / Free Agent110 remains live. Prior sections below are history.**
 
 # Contract Operations browser playtest
 
-Version **0.3.8** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.8.md) records values, evidence and limits.
+Version **0.3.9** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.9.md) records values, evidence and limits.
 
 ## Starting a playtest
 
@@ -76,3 +76,12 @@ Migration preserves deployed quotes, rolls, repair basis and prepared invoices. 
 ## 0.3.8 completion requirements
 
 Any two successful phases complete an ordinary 2-of-3 contract. Restore the Ghost Relay additionally requires Engagement to succeed, as specified in its existing Essential phase rule. Completion conditions are now prominent on the board, deployment quote and resolution screen; all results and failed-pay decisions explain the actual successful count and any required phase failure. This is a visibility fix, not a change to the accepted completion rule. Past rolls/outcomes/payments remain.
+
+
+## 0.3.9 survival and discovery pass
+
+Printed success count alone completes new/unsettled contracts; the Ghost Relay Essential phase is removed. Historical settled outcomes stay. PCs begin the test session with1 Hero Point, cap3; spend on the current unaccepted mission phase once and keep the second result. The original and reroll, owner, total/DC/outcome and final complication are visible. No monthly Hero Point refresh; manual GM awards and table-session reset are in Bases & upgrades. Administrative guild rolls do not yet have a Hero Point review step.
+
+Network Failure/Success/Critical Success each yield3 options; Critical Failure quantity d20≤10 yields0, otherwise1. Separate visible d20 tables determine bounded level, contract difficulty, rarity and profile. Specific difficulty is no longer selected. Uncommon/Rare recruits add one moderate/high skill; contract rarity is an availability tag without an extra payout multiplier. Recruitment Pipeline improves one candidate's level; funded Recruitment Office upgrades one Common candidate to Uncommon on Success+.
+
+Automatic Upkeep funds current obligations first, then old arrears. Individual payment controls remain. Debt is not forgiven and default clocks stay; this change keeps current services funded when cash suffices for this month but not all older balances.

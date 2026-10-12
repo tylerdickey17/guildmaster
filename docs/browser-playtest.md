@@ -1,6 +1,6 @@
 # Browser playtest: opening season and expansion
 
-[Play Contract Operations](https://contract-operations-playtest.primeangel2.chatgpt.site). **Current version0.3.8**; existing browser progress is preserved.
+[Play Contract Operations](https://contract-operations-playtest.primeangel2.chatgpt.site). **Current version0.3.9**; existing browser progress is preserved.
 
 1. Choose **New playtest → Staffed starter** for the new opening experience. It starts with2,000 credits and a350-credit Upkeep invoice; later bare base+suite costs365/month. **Lean** starts with an empty300/month office. **Expansion test** gives Guild Level4,8,000 credits and four Level3 operatives to exercise purchases immediately; this is an artificial fixture.
 2. Review the invoice. Pay selected bills or apply available cash; pauses concern month-to-month facility support only. Unpaid balances stay owed and unfunded services are unavailable.
@@ -44,3 +44,16 @@ Refresh to load the update. Use New playtest → Staffed starter for a fresh com
 Read **Completion** on the card and deployment quote. Most2-of-3 contracts allow any two phases to succeed. Restore the Ghost Relay also requires **Engagement** to succeed; the other two successes cannot replace that objective. Results now show the successful-phase count, requirement and reason.
 
 Refresh to load this clarification. Saved rolls, outcomes and payments remain. [Patch details](prototype-values-v0.3.8.md).
+
+
+## Current0.3.9: rerolls, discovery and recovery
+
+Refresh to load the patch; existing saves continue. New/unsettled missions now need only their printed success count. Ghost Relay's extra required Engagement is removed; old settled outcomes remain history.
+
+After each phase roll, choose **PC paying the point → Spend1 Hero Point** before accepting/rolling onward. Keep the second die. Original and reroll values remain visible. Each PC begins with1, cap3; month advancement does not refresh them. Bases & upgrades has GM awards and a confirmed new-table-session reset. This currently covers mission checks, not administrative guild rolls.
+
+Work the Network normally gives3 random-quality options, even on Failure. Critical Failure gives0or1. Target level sets the check DC and center of the level table; degree affects level, contract difficulty and rarity. The modal has exact tables and the persistent discovery panel shows every result/table die. Contract rarity is an availability tag; specialist recruits get an extra skill. Higher difficulty/level still carries risk.
+
+Upkeep now automatically funds current obligations before old arrears. **Pay arrears** lets you choose a partial amount and suggests retaining next Upkeep plus already-quoted mission wages. Outstanding debts/defaults remain; no rescue cash is fabricated.
+
+[Current executable rules](prototype-values-v0.3.9.md). This supersedes older Essential-phase and0/1/2/3 candidate-count instructions above.900/110 remains.

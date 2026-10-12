@@ -8,9 +8,11 @@ A design workspace for a mercenary-company subsystem for **Starfinder 2e**, init
 
 Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, mission-resolution, guild-development, finance, property, and events/rival-guild frameworks and identifies what still needs design or balancing.
 
-**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.8**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers, revised failed-pay Loyalty, visible Upkeep, employment pay, property purchases and staffed upgrades. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. Base staffing is implemented; full officer signature progression and Reorganize Command remain documented for later implementation. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
+**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.9**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers, revised failed-pay Loyalty, visible Upkeep, employment pay, property purchases and staffed upgrades. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. Base staffing is implemented; full officer signature progression and Reorganize Command remain documented for later implementation. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
 
 ## Documents
+
+- [Live survival/discovery pass0.3.9](docs/prototype-values-v0.3.9.md) — count-only completion, PC Hero Point mission rerolls, weighted random lead/recruit tables and partial arrears payments;85 checks.
 
 - [Live clarification0.3.8](docs/prototype-values-v0.3.8.md) — prominent complete mission requirements and result explanations;74 checks. Exact reported mission awaits confirmation.
 

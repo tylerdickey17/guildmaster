@@ -1,6 +1,6 @@
 # Session checkpoint: October12,2026
 
-> **Latest live update:** [0.3.8](prototype-values-v0.3.8.md) clarifies mission completion conditions and explains failures. The900/110 economy remains live. Exact user-reported mission is unconfirmed.
+> **Latest live update:** [0.3.9](prototype-values-v0.3.9.md) replaces the extra required-phase gate, adds PC Hero Point mission rerolls, randomized three-option discovery and partial arrears payment.900/110 remains live.
 
 The execution workspace is restored. The user explicitly requested putting the agreed Upkeep/base changes on the live site; they have now been implemented and published.
 
@@ -91,3 +91,23 @@ Deployment: `appgdep_6acd1846f5448191978b2f46479433da`, succeeded
 Version: `appgprj_6acb0e7adc888191bb2947bb4077c061~appgver_9f7bdb2c353c8191bc9ea2c4e8950cdd`
 
 74 checks, including24 ordinary2-of-3 outcome combinations, three Ghost Relay positions and UI explanations;288 campaign intervals. Browser visual QA unavailable. [Current rules](prototype-values-v0.3.8.md), [evidence](../playtests/prototype-0.3.8/verification.json).900/110, finance and progression unchanged.
+
+
+## Latest0.3.9 handoff
+
+User accepted Ghost Relay as the likely reported failure but disliked its extra condition. Also requested personal Hero Point rerolls, identified the debt recovery spiral and requested normally3 degree-weighted random leads/recruits.
+
+Implemented count-only completion for new/unsettled missions; no Essential gate. Historical settled outcomes/cash preserved. One-point PC-funded pending-phase reroll, keep second, one/check; final complications/forward effects only. PC1 initial session, cap3, explicit GM awards/session reset, no monthly refill. Scope mission checks; administrative check review still future.
+
+Network normally3 even on Failure; Critical Failure d20≤10:none,>10:one. Separate visible quality dice yield level (clamp1–min20,2guild+1), difficulty and rarity. Exact table rows in current rules/frozen values. Uncommon/Rare recruits add one moderate/high skill; contract rarity is currently an availability tag, without extra cash multiplier. Pipeline improves one candidate level once per turn; Recruitment Office upgrades one Common candidate on Success+. Hiring/onboarding/expiry remain.
+
+Automatic Upkeep funds current bills before old arrears. Routine arrears modal allows a chosen payment and previews retaining next Upkeep plus deployed wage quotes. Creditor balances/loan interest/default persist. This improves choices, not guaranteed recovery or bankruptcy forgiveness.
+
+85 checks,600 seeded discovery searches and288 campaign intervals pass; minimal DOM Hero/discovery checks and038 pending-save fixture included. Full browser QA unavailable. Prior one-job expected net−39.075 is the no-Hero-spending baseline, not a measured whole-patch result.
+
+Live: https://contract-operations-playtest.primeangel2.chatgpt.site
+Source: `f9455b0e1b44f503e3795ba3782054658dad8004`
+Deployment: `appgdep_6acd1f01f7208191aea7fec4fc748212`, succeeded
+Version: `appgprj_6acb0e7adc888191bb2947bb4077c061~appgver_e234e98cec308191a2bf70562380510e`
+
+[Rules](prototype-values-v0.3.9.md), [evidence](../playtests/prototype-0.3.9/verification.json). Next: human feedback on tables, session/point cadence and cash recovery; rarity-specific rewards, administrative reroll review, restructuring and office/Foundry remain.
