@@ -390,3 +390,14 @@ Implemented0.3.8 makes full completion conditions prominent and gives outcome re
 ## LIVE-037: Guildmaster name, October12
 
 **Explicit user decision:** rename the project from Contract Operations to **Guildmaster**. Updated live Site title/header/GM lettermark, browser title/description, exported note heading/download filename and primary repository documentation. Rules remain0.3.9. Existing Site URL, GitHub repository address and browser save/schema identifiers remain for continuity.
+
+
+## LIVE-038–041: action pressure and five-year progression review, October 12
+
+- **LIVE-038 — Owner playtest evidence:** Level 6 after 16 Guild Turns, two recoverable financial deficits, loan-funded base, positive core-loop/economy feedback. Browser UX redesign deferred in favor of eventual Foundry UX. This is personal feedback, not a controlled study.
+- **LIVE-039 — Explicit requested direction:** retain growing actions but introduce powerful two- and three-action activities. Current shared-pool/no-officer-cap participation requirement remains. Sector campaign, full briefing, intensive training and extraction contingency are **unimplemented draft cards**, not individually approved values.
+- **LIVE-040 — User-proposed pacing goal:** approximately five in-game years to build a Level-10 guild. Designer recommendation is a 48–72-month ordinary-play band around 60, permitting faster skilled play. No calendar minimum adopted. Rising 20,500-total-XP curve is an **experiment**: static ordinary projection 62 months; actual isolated optimizer median 21–24, fastest 18. Routine-work Guild XP and first-time operational milestones require integrated testing. NPC XP/pay and 900/110 economy remain unchanged.
+- **LIVE-041 — Authorized six-agent review:** frozen 0.3.9 optimized startup fastest found 10 months, independently replayed; ordinary median Level 6 16.5 and Level 10 26 months. Confirmed relocation lifecycle and Standing/Trusted allowance bugs; Missing-person continuity and recurring development XP remain design risks. No live fixes or new rules implemented by this documentation pass.
+
+[Review and proposed implementation order](playtest-review-2026-10-12.md), [source/scripts/evidence](../playtests/prototype-0.3.9-review/README.md). Reused seeds, censored runs, artificial fixtures, static projections, manual Hero-reset sensitivities and isolated counterfactuals are explicitly distinguished.
+

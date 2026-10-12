@@ -126,3 +126,18 @@ User explicitly renamed Contract Operations to **Guildmaster**. Updated Site dis
 - Version: `appgprj_6acb0e7adc888191bb2947bb4077c061~appgver_f390daff1ef08191b32f4ad6aaf6b93b`
 
 Existing85 checks passed after the label changes. No new behavior tests needed; browser visual QA remains unavailable. Use Guildmaster as the project name going forward.
+
+
+## Six-agent review handoff: progression and action pressure
+
+[Full review](playtest-review-2026-10-12.md) and [reproduction bundle](../playtests/prototype-0.3.9-review/README.md) record the latest user feedback and authorized simulations. Live/source stay at the Guildmaster branding handoff above, rules 0.3.9; **no new Site deployment**.
+
+- User: Level 6 in 16 months; two recovered deficits; financed base; economy feels balanced; wants stronger 2/3-action activities and about five years to Level 10. UX deferred to Foundry.
+- Current optimized fastest **10 completed months**, seed 30, 31 completed jobs, cash 14,159, no arrears, four initial Hero Points. Independent exact replay passed. 378/384 optimized attempts reached by 90 months, 6 censored, 0 errors.
+- Ordinary initial-Hero cohort: 63/64 reached by 120 months, 1 censored, median Level 6 16.5 months, Level 10 26. No HQ relocation in this cohort.
+- 20,500-total-XP candidate has ordinary **static** projection 62 months. Actual isolated optimizer test reaches in median 21–24 months, fastest 18; **not** integrated five-year balance.
+- Confirmed bugs: HQ relocation restores Missing (and synthetic Captured/Dead), Standing/Trusted free acquisition depends on order and old card age. Fix before using relocation-based rescue/economy conclusions. Corrected copied-engine Free-Agent growth rerun still median 27 months, all 64 reached.
+- Design risks: repeated low-level full Guild XP, repeated new-property/facility XP, fixed +10 officer fixture against rising DC, surplus action spam, permanent Missing-person/recruit affordability dead ends.
+
+Recommended next: focused bug fixes; explicit administrative benchmark; integrated pacing experiment with routine-work relevance and first-time operational milestones; two/three-action officer drafts and target attempt limits; rescue and retained-worker release/suspension. Keep 900/110 unchanged initially. All proposed changes remain draft, and prior earned cash/XP/outcomes should be preserved. No Foundry compatibility claim.
+
