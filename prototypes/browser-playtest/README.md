@@ -1,6 +1,6 @@
 > **Current0.3.9: count-only completion, PC Hero Point mission rerolls, random-quality discovery and current-bill-first payment. Normal900 / Free Agent110 remains live. Prior sections below are history.**
 
-# Contract Operations browser playtest
+# Guildmaster browser playtest
 
 Version **0.3.9** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.9.md) records values, evidence and limits.
 

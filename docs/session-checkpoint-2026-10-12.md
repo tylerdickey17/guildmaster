@@ -1,3 +1,5 @@
+> **Project name: Guildmaster**, renamed October12 at the user's request. The current playtest remains0.3.9; see the branding handoff at the end for the latest deployment.
+
 # Session checkpoint: October12,2026
 
 > **Latest live update:** [0.3.9](prototype-values-v0.3.9.md) replaces the extra required-phase gate, adds PC Hero Point mission rerolls, randomized three-option discovery and partial arrears payment.900/110 remains live.
@@ -111,3 +113,16 @@ Deployment: `appgdep_6acd1f01f7208191aea7fec4fc748212`, succeeded
 Version: `appgprj_6acb0e7adc888191bb2947bb4077c061~appgver_e234e98cec308191a2bf70562380510e`
 
 [Rules](prototype-values-v0.3.9.md), [evidence](../playtests/prototype-0.3.9/verification.json). Next: human feedback on tables, session/point cadence and cash recovery; rarity-specific rewards, administrative reroll review, restructuring and office/Foundry remain.
+
+
+## Guildmaster branding handoff
+
+User explicitly renamed Contract Operations to **Guildmaster**. Updated Site display title, visible header/GM lettermark, browser title/meta description, footer, note-export heading/download name and primary docs. Gameplay stays0.3.9; existing save key/schema, Site URL and GitHub repository path are retained.
+
+- Live: https://contract-operations-playtest.primeangel2.chatgpt.site
+- Title: Guildmaster — Guild Playtest
+- Source: `7c1b338b9b9b46f75b0296a660bd5aa08b857a0b`
+- Deployment: `appgdep_6acd401c2b0c8191b0e0d4764a11e1bf`, succeeded
+- Version: `appgprj_6acb0e7adc888191bb2947bb4077c061~appgver_f390daff1ef08191b32f4ad6aaf6b93b`
+
+Existing85 checks passed after the label changes. No new behavior tests needed; browser visual QA remains unavailable. Use Guildmaster as the project name going forward.

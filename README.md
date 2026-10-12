@@ -1,6 +1,6 @@
-# Contract Operations
+# Guildmaster
 
-A Contract Operations Guild System for Starfinder 2e.
+Guild management for Starfinder 2e.
 
 Repository: [`tylerdickey17/sf2e-contract-operations`](https://github.com/tylerdickey17/sf2e-contract-operations).
 

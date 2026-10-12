@@ -17,7 +17,7 @@ This closes the identified integration agenda at the procedural level. Numerical
 - Trollskull: a staffed home base and recurring contacts whose business creates adventures and relationships. We keep payroll/overhead and client activity tied to those people; we do not add daily tavern transactions, a separate profit roll, or a random passive-income engine.
 - Existing priorities: maximum narrative impact, minimum rolls, no full rival accounting, Guild Level 1-10, mercenary level 1-20, and no forced universal party downtime.
 
-Sources and access limits are listed at the end. All mechanics below are custom Contract Operations decisions unless expressly described as published guidance.
+Sources and access limits are listed at the end. All mechanics below are custom Guildmaster decisions unless expressly described as published guidance.
 
 ## PASS-001: A precise monthly boundary
 
@@ -242,5 +242,5 @@ A follow-up regression note lists concrete cases checked for this pass. It does 
 4. [PF2e Adjusting Creatures](https://2e.aonprd.com/Rules.aspx?ID=3262&Redirected=1): listed skills/rank guidance and avoidance of repeated elite adjustments. Our explicit rank schedule is a deterministic adaptation.
 5. [Paizo: Starfinder Player Core Explained](https://paizo.com/blog/starfinder-player-core-explained) and [Find Your Path—October 2025](https://paizo.com/blog/find-your-path-october-2025): search-indexed official confirmation of SF2e skills/compatibility; direct fetch was unavailable. No invented SF2e-specific advancement table is attributed to these pages.
 6. [D&D Beyond: Visitors to Trollskull Alley](https://www.dndbeyond.com/posts/316-visitors-to-trollskull-alley): recurring home-base contacts and business-linked story hooks. It includes author-added encounters/services; not all are book rules. The full Dragon Heist business chapter redirected to a storefront and was not readable, so no exact tavern accounting rule is claimed as verified.
-7. Prior Work checkpoint and explicit user decisions are primary for Contract Operations. Personal Context additionally recovered individual XP carryover approval; complete original stat/office procedures were not recovered. New PASS choices resolve them by current delegated design authority, not fabricated historical approval.
+7. Prior Work checkpoint and explicit user decisions are primary for Guildmaster. Personal Context additionally recovered individual XP carryover approval; complete original stat/office procedures were not recovered. New PASS choices resolve them by current delegated design authority, not fabricated historical approval.
 

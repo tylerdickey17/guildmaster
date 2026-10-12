@@ -57,7 +57,7 @@ S15/S16 are direct confirmation in the current request. The supplied preview is 
 
 | ID | Decision | Evidence and boundary |
 | --- | --- | --- |
-| R-001 | Begin a Markdown design repository for Contract Operations. Include a README, System A Personnel design, and decision log. Do not code the Foundry v14 module in this phase. | S6. Future module support is an intention, not verified compatibility. |
+| R-001 | Begin a Markdown design repository for Guildmaster. Include a README, System A Personnel design, and decision log. Do not code the Foundry v14 module in this phase. | S6. Future module support is an intention, not verified compatibility. |
 | A-001 | Use 1,000 XP per mercenary level. | Explicit choice in S1, reiterated in S2. |
 | A-002 | Give every participating NPC the same base contract XP regardless of level. | S2 rejects relative-level adjustments. S3 allows unequal totals through bonuses. |
 | A-003 | Include leadership and MVP/expertise bonus XP categories. | Proposed by the user in S2 and accepted together through S3. Exact triggers and amounts remain open. |
@@ -386,3 +386,7 @@ Implemented0.3.8 makes full completion conditions prominent and gives outcome re
 - **LIVE-036 — User-described arrears spiral; designer recovery controls:** automatic current-bill-first payment, selectable partial routine arrears budget with next-Upkeep/committed-wages reserve preview. Old debts/interest/default remain; no forgiveness, hidden cash or unlimited finance.
 
 [Current0.3.9 rules](prototype-values-v0.3.9.md) supersede the old Essential and discovery-count rules.85 checks,600 discovery samples and288 campaign intervals pass; full browser visual QA unavailable. Deployment `appgdep_6acd1f01f7208191aea7fec4fc748212` succeeded; source `f9455b0e1b44f503e3795ba3782054658dad8004`.
+
+## LIVE-037: Guildmaster name, October12
+
+**Explicit user decision:** rename the project from Contract Operations to **Guildmaster**. Updated live Site title/header/GM lettermark, browser title/description, exported note heading/download filename and primary repository documentation. Rules remain0.3.9. Existing Site URL, GitHub repository address and browser save/schema identifiers remain for continuity.

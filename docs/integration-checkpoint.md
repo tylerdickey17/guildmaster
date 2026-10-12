@@ -30,7 +30,7 @@ New assignments cannot complete at the boundary at which they begin. New Guild L
 
 Guild Turns represent monthly operation concurrent with adventures. Training uses a default 30-day Guild Turn (INT-015); calendar edge cases and partial-month proration remain unresolved. No universal PC downtime requirement is introduced.
 
-Kingmaker references: [Running a Kingdom](https://2e.aonprd.com/Rules.aspx?ID=1794&NoRedirect=1), [Activity Phase](https://2e.aonprd.com/Rules.aspx?ID=1805), [Event Phase](https://2e.aonprd.com/Rules.aspx?ID=1809). Kingmaker uses multiple activity budgets; Contract Operations deliberately retains one shared level-based pool.
+Kingmaker references: [Running a Kingdom](https://2e.aonprd.com/Rules.aspx?ID=1794&NoRedirect=1), [Activity Phase](https://2e.aonprd.com/Rules.aspx?ID=1805), [Event Phase](https://2e.aonprd.com/Rules.aspx?ID=1809). Kingmaker uses multiple activity budgets; Guildmaster deliberately retains one shared level-based pool.
 
 ## INT-002: Contract completion and failure
 

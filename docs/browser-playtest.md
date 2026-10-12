@@ -1,6 +1,6 @@
 # Browser playtest: opening season and expansion
 
-[Play Contract Operations](https://contract-operations-playtest.primeangel2.chatgpt.site). **Current version0.3.9**; existing browser progress is preserved.
+[Play Guildmaster](https://contract-operations-playtest.primeangel2.chatgpt.site). **Current version0.3.9**; existing browser progress is preserved.
 
 1. Choose **New playtest → Staffed starter** for the new opening experience. It starts with2,000 credits and a350-credit Upkeep invoice; later bare base+suite costs365/month. **Lean** starts with an empty300/month office. **Expansion test** gives Guild Level4,8,000 credits and four Level3 operatives to exercise purchases immediately; this is an artificial fixture.
 2. Review the invoice. Pay selected bills or apply available cash; pauses concern month-to-month facility support only. Unpaid balances stay owed and unfunded services are unavailable.
