@@ -1,5 +1,7 @@
 # Design decision log
 
+> **Latest executable rules:** [0.3.10](prototype-values-v0.3.10.md), including relative Guild XP and multi-action activities. Historical entries below retain their original adoption/implementation status; later LIVE entries supersede conflicting older values.
+
 > **Current playtest authority:** [Integration rules pass 0.2](integration-rules-v0.2.md) resolves the remaining procedures under the user's delegated design authority. It supersedes conflicting provisional clocks/deferrals below; the earlier checkpoint remains history. See [regression walkthroughs](integration-regression-v0.2.md) for verification limits.
 
 
@@ -400,4 +402,15 @@ Implemented0.3.8 makes full completion conditions prominent and gives outcome re
 - **LIVE-041 — Authorized six-agent review:** frozen 0.3.9 optimized startup fastest found 10 months, independently replayed; ordinary median Level 6 16.5 and Level 10 26 months. Confirmed relocation lifecycle and Standing/Trusted allowance bugs; Missing-person continuity and recurring development XP remain design risks. No live fixes or new rules implemented by this documentation pass.
 
 [Review and proposed implementation order](playtest-review-2026-10-12.md), [source/scripts/evidence](../playtests/prototype-0.3.9-review/README.md). Reused seeds, censored runs, artificial fixtures, static projections, manual Hero-reset sensitivities and isolated counterfactuals are explicitly distinguished.
+
+
+
+## LIVE-042–045: relative progression and officer activities, October12
+
+- **LIVE-042 — User-adopted direction/table:** Guild XP diminishes with the mission's challenge relative to Guild Level; player-facing Trivial/Low/Moderate/Severe/Extreme awards0/60/80/120/160. Retain1,000XP/level for the first experiment. Implementation's mission-level/complexity offset bands are **designer-selected mapping**, not published SF2e encounter math. NPCXP/cash and printed mission checks remain. First funded operational development categories replace repeated per-asset XP;80HQ,80outpost,30facility-type are selected accomplishment-scale values.
+- **LIVE-043 — Explicitly accepted guidance:** all three final Critical Successes may warrant one discretionary Hero Point to one PC for meaningful leadership/preparation. Routine/Trivial work normally does not qualify. No automatic payout/XP/point bonus and no guaranteed reroll refund. Implemented visible results/log guidance with existing manual GM controls.
+- **LIVE-044 — Authorized implementation:** four two/three-action officer activities, joint shared-action participation guidance, target-based promotion/morale/recovery limits, advancing trained PC administrative demo benchmark. Concrete costs/unlocks/effects remain prototype values. Full officer catalog/restructuring, rescue/release, market gating and Foundry remain queued.
+- **LIVE-045 — Confirmed bug fixes:** relocation preserves absent/dead lifecycle; one consistent Trusted/Standing acquisition allowance handles either order and old cards. Migration preserves earned/pendingXP, cash, rolls, Hero Points, deployed quotes and current bills; existing developments count as established without retroactive awards.
+
+[Live0.3.10](prototype-values-v0.3.10.md):112 checks plus288 smoke intervals; completed ordinary128campaigns and adapted optimizer16campaigns. Ordinary initial-Hero medianLevel10=48months; small cash-optimizer median39.5, fastest36; low-farm median60. No final five-year guarantee or global minimum. Full browser visualQA unavailable. Site source `978f0c0b16fbf16aa5631732c5508b219727a4ff`, deployment `appgdep_6acd5a8e74008191b7774b228c3a8a3e` **succeeded**. Prior review remains frozen historical evidence.
 

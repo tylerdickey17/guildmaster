@@ -1,8 +1,8 @@
-> **Current0.3.9: count-only completion, PC Hero Point mission rerolls, random-quality discovery and current-bill-first payment. Normal900 / Free Agent110 remains live. Prior sections below are history.**
+> **Current0.3.10: relative-threat Guild XP, first-time operational milestones, multi-action officer activities and discretionary exceptional-performance guidance. Prior0.3.9: count-only completion, PC Hero Point mission rerolls, random-quality discovery and current-bill-first payment. Normal900 / Free Agent110 remains live. Prior sections below are history.**
 
 # Guildmaster browser playtest
 
-Version **0.3.9** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.9.md) records values, evidence and limits.
+Version **0.3.10** adds visible Upkeep, staffed facilities, purchasable bases and local operations to the existing three-phase contract loop. The [design repository](https://github.com/tylerdickey17/sf2e-contract-operations/blob/main/docs/prototype-values-v0.3.9.md) records values, evidence and limits.
 
 ## Starting a playtest
 
@@ -85,3 +85,18 @@ Printed success count alone completes new/unsettled contracts; the Ghost Relay E
 Network Failure/Success/Critical Success each yield3 options; Critical Failure quantity d20≤10 yields0, otherwise1. Separate visible d20 tables determine bounded level, contract difficulty, rarity and profile. Specific difficulty is no longer selected. Uncommon/Rare recruits add one moderate/high skill; contract rarity is an availability tag without an extra payout multiplier. Recruitment Pipeline improves one candidate's level; funded Recruitment Office upgrades one Common candidate to Uncommon on Success+.
 
 Automatic Upkeep funds current obligations first, then old arrears. Individual payment controls remain. Debt is not forgiven and default clocks stay; this change keeps current services funded when cash suffices for this month but not all older balances.
+
+
+## 0.3.10 relative progression and officer activities
+
+Guild XP remains1,000/level. New deployments freeze Guild-threat XP: Trivial0, Low60, Moderate80, Severe120, Extreme160. Custom threat offset=mission level−Guild Level+profile complexity (Easy−1, Normal0, Hard/Exclusive+1, Expert+2, Legendary+3). Offset≤−3 Trivial;−2/−1 Low;0 Moderate;+1 Severe;+2or higher Extreme. This is organizational experience; the actual squad danger stays in the three printed DCs and success requirement. Operative XP, credit curves and complications stay. Old deployed quotes use their prior XP; existing earned/pending XP is retained.
+
+First funded owned headquarters80, first funded staffed outpost80, first funded operational facility of each type30 Guild XP. Additional copies do not repeat XP. Existing/inherited categories count as established with no retroactive award. Full current property/staff funding is required; paused installations do not award XP merely on completion.
+
+Four signature activities use the shared pool: Commander Sector Campaign2 actions/100 credits (Guild3); Operations Briefing2/25 per operative (Guild3, Survival or Computers); Personnel Intensive Training2/50 per operative for225 XP in one month (Guild6, funded suite); Operations Extraction Contingency3/25% wages (Guild4). Plan activities lock squad/leads/leader, expire end next turn and require separate routine deployment. Briefing uses the Recon slot, highest circumstance only; contingency prioritizes Missing-to-Recovering then half repairs. One public promotion or campaign per turn, one morale/recovery attempt per operative/turn. PC administrative rolls use raw modifier plus current adminDC−15 as an explicit demo benchmark; untrained checks and hired chiefs are not inflated. This is not published character advancement; Foundry should use actual actor skills.
+
+All three final checks at Critical Success display Exceptional Performance guidance. The GM may manually award one Hero Point to one PC for meaningful leadership/preparation. Routine/Trivial work normally does not qualify; no automatic cash, XP or Hero Point bonus. Existing GM controls and cap3 remain.
+
+Fixes: HQ relocation moves only Available crew and preserves Missing/Captured/Dead; Trusted Client and Standing Agreement share one current-turn free-acquisition allowance, including prior-turn cards. One waiver never supplies two free acquisitions outside the explicit free-acquisition test variant.
+
+Tests include an actual0.3.9 pending mission migration. Full browser visual QA is unavailable; engine and minimal-DOM checks are used. Five-year progression remains a playtest target, not a claimed guarantee. Rescue/release rules, complete office reassignment/specialists and stronger economic sinks remain future work.

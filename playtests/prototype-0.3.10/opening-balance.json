@@ -1,0 +1,35 @@
+{
+  "scope": "Exact opening Dock Nine contract, four Level1 Free Agents, optimal distinct leads, staffed HQ, half failed wages. No training, replacement, future crew loss or expansion.",
+  "combinations": 8000,
+  "successProbability": 0.806875,
+  "expectedRepairCredits": 2.75,
+  "missingRisk": 0.05,
+  "monthlyUpkeep": 365,
+  "currentNormalPayout": 900,
+  "expectedMonthlyNet": -39.07499999999999,
+  "proposed900PayoutMonthlyNet": -39.07499999999999,
+  "currentPerOperativePay": 110,
+  "currentCrewPay": 440,
+  "cleanSuccessfulMonthlyNet": 95,
+  "proposalStatus": "900/110 adopted for the live 0.3.7 test; 600/50 and 600/75 are historical/comparison baselines.",
+  "compensationComparisons": [
+    {
+      "payout": 600,
+      "wage": 50,
+      "cleanSuccessAfterUpkeep": 35,
+      "expectedMonthlyNet": -62.8125
+    },
+    {
+      "payout": 600,
+      "wage": 75,
+      "cleanSuccessAfterUpkeep": -65,
+      "expectedMonthlyNet": -153.78125
+    },
+    {
+      "payout": 900,
+      "wage": 110,
+      "cleanSuccessAfterUpkeep": 95,
+      "expectedMonthlyNet": -39.07499999999999
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 # Browser playtest: opening season and expansion
 
-[Play Guildmaster](https://contract-operations-playtest.primeangel2.chatgpt.site). **Current version0.3.9**; existing browser progress is preserved.
+[Play Guildmaster](https://contract-operations-playtest.primeangel2.chatgpt.site). **Current version0.3.10**; existing browser progress is preserved.
+
+Before starting: the board shows relative Guild threat and Guild XP:Trivial0/Low60/Moderate80/Severe120/Extreme160. This rates organizational experience; use the printed checks for crew danger. First-time funded development replaces repeated asset XP. Two/three-action officer options are in Bases & upgrades and accepted contract cards; select their named officer. All-three-critical performance has optional GM guidance, with no automatic bonus. [Current rules and migration](prototype-values-v0.3.10.md).
 
 1. Choose **New playtest → Staffed starter** for the new opening experience. It starts with2,000 credits and a350-credit Upkeep invoice; later bare base+suite costs365/month. **Lean** starts with an empty300/month office. **Expansion test** gives Guild Level4,8,000 credits and four Level3 operatives to exercise purchases immediately; this is an artificial fixture.
 2. Review the invoice. Pay selected bills or apply available cash; pauses concern month-to-month facility support only. Unpaid balances stay owed and unfunded services are unavailable.
@@ -57,3 +59,4 @@ Work the Network normally gives3 random-quality options, even on Failure. Critic
 Upkeep now automatically funds current obligations before old arrears. **Pay arrears** lets you choose a partial amount and suggests retaining next Upkeep plus already-quoted mission wages. Outstanding debts/defaults remain; no rescue cash is fabricated.
 
 [Current executable rules](prototype-values-v0.3.9.md). This supersedes older Essential-phase and0/1/2/3 candidate-count instructions above.900/110 remains.
+

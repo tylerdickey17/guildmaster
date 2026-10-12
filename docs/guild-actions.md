@@ -1,5 +1,7 @@
 # Guild Action catalog
 
+> **Latest browser additions:** [0.3.10](prototype-values-v0.3.10.md) implements four multi-action officer cards and target-based repeat limits. These selected cards supplement the conceptual catalog below. Full office/specialist progression and Reorganize Command remain queued; use the latest rules for executable values.
+
 > **Latest officer and staffing design:** [Officer positions and outpost staffing](officers-and-staffing.md) records founding/specialist offices, exclusive action concepts, staffing and **Reorganize Command (1 action, Activity, once per turn)**. This later tabletop draft supersedes conflicting office-access and role-change text below; browser 0.3.3 does not implement it yet.
 
 > Current pool, starting PC officers and failed-pay Loyalty are superseded where conflicting by [the0.3.3 live-play patch](prototype-values-v0.3.3.md). Older evidence and decisions remain for provenance.
@@ -76,3 +78,4 @@ Three starting shared actions was an earlier assistant suggestion only. The curr
 ## October 11 officer signatures and staffing
 
 [Officer positions and outpost staffing](officers-and-staffing.md) supplies the complete working catalog: twelve founding signature concepts and twelve specialist success effects, plus office progression and facility staffing. Matching entries above gain the documented office gates in the tabletop design; their prior skill-only browser behavior remains implementation history. Overlapping counterintelligence/logistics names require consolidation before new cards are implemented. Numerical effects and unlock levels remain prototype choices.
+

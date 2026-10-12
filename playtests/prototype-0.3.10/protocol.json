@@ -1,0 +1,20 @@
+{
+  "rules": "0.3.10",
+  "date": "2026-10-12",
+  "normal": "Two completed64-seed cohorts,0\u201363,120 turns. Monthly manual Hero reset is a sensitivity.",
+  "optimized": "Two public-information policies,1\u20138 reused,90 turns,initial four Hero Points; quotes/scoring and recovery eligibility adapted to current rules. No new-activity optimization.",
+  "rootReplay": "Latest engine ordinary seed7 byte-identical to full saved reference run.",
+  "sourceHashes": {
+    "engine.js": "d4218e066bef7c11f548241721c02dd2001b77f670a0e53db23a19c07bec869b",
+    "values.js": "aecf63c5bfb5f604b9ef2d048597a21d3634aff2f4c52a8cc8fad9228d9510d8"
+  },
+  "limits": [
+    "Shortest found is not global minimum",
+    "No final five-year guarantee",
+    "No full browser visual QA",
+    "Ordinary policies do not relocate/borrow; surplus unused HQ purchase possible",
+    "Synthetic regression fixtures are not startup campaigns"
+  ],
+  "siteSource": "978f0c0b16fbf16aa5631732c5508b219727a4ff",
+  "deployment": "appgdep_6acd5a8e74008191b7774b228c3a8a3e"
+}

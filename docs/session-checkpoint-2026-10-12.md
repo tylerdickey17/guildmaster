@@ -1,3 +1,5 @@
+> **Current live rules:0.3.10.** [Latest handoff](prototype-values-v0.3.10.md) supersedes historical live-version statements below.
+
 > **Project name: Guildmaster**, renamed October12 at the user's request. The current playtest remains0.3.9; see the branding handoff at the end for the latest deployment.
 
 # Session checkpoint: October12,2026
@@ -140,4 +142,23 @@ Existing85 checks passed after the label changes. No new behavior tests needed; 
 - Design risks: repeated low-level full Guild XP, repeated new-property/facility XP, fixed +10 officer fixture against rising DC, surplus action spam, permanent Missing-person/recruit affordability dead ends.
 
 Recommended next: focused bug fixes; explicit administrative benchmark; integrated pacing experiment with routine-work relevance and first-time operational milestones; two/three-action officer drafts and target attempt limits; rescue and retained-worker release/suspension. Keep 900/110 unchanged initially. All proposed changes remain draft, and prior earned cash/XP/outcomes should be preserved. No Foundry compatibility claim.
+
+
+
+## Latest0.3.10 handoff: relative progression and multi-action activities
+
+User adopted relative Guild challenge XP and discretionary exceptional-performance Hero Point guidance, then requested implementation. **Published and mirrored0.3.10**; [rules](prototype-values-v0.3.10.md), [evidence/scripts](../playtests/prototype-0.3.10/README.md).
+
+- Live: https://contract-operations-playtest.primeangel2.chatgpt.site
+- Source: `978f0c0b16fbf16aa5631732c5508b219727a4ff`
+- Deployment: `appgdep_6acd5a8e74008191b7774b228c3a8a3e`, **succeeded**
+- Version: `appgprj_6acb0e7adc888191bb2947bb4077c061~appgver_00528a98c5d08191b2f0511e435152db`
+
+New deployments:Trivial0/Low60/Moderate80/Severe120/Extreme160 GuildXP;1,000XP per level. Mission−GuildLevel+complexity determines the custom rating; existing mechanical profiles/DCs/counts/cash/operativeXP stay. Deployed039 quotes retain oldXP. First funded HQ80/outpost80/facility-type30; repeated copies noXP. Existing/inherited categories are established with no retroactive awards.
+
+Commander Sector Campaign2 actions; Operations Briefing2 (Survival orComputers) and Extraction Contingency3; Personnel Intensive Training2. Plan dialogs freeze assignment; repeat limits apply by work/target, no personal officer budget. TrainedPC administration uses explicit demoDC-growth modifier; Foundry should use actual actor skills. All-three-critical results display optionalGM one-PC Hero Point guidance; no automatic cash/XP/point award.
+
+Fixed absent-person relocation and order/age-dependent free acquisitions.112 regressions/minimalDOM checks pass, including actual039 pending-save migration;288 smoke intervals. Ordinary128completed120-turn campaigns:initialHero median48months (range42–60), monthlymanualreset sensitivity46. Adapted optimizer two×8seeds:cashmedian39.5fastest36,lowfarmmedian60fastest59,all16reached by90,zero errors/censoring. Reused seeds; no new-activity optimization/global minimum/finalbalance claim. Latest-engine ordinaryseed7 replay exactly matches evidence. BrowservisualQA unavailable.
+
+Next:human feedback on revisedpace/multi-action value; expandoptimizercoverage and modeljointactivities; rescue/continuity and retained release; completeoffice/restructure; financialsinks/high-levelpay; explicitly scopedFoundry foundation. Preserve900/110 and existingcash/debts until newfeedback justifieschanging them.
 

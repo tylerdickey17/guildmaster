@@ -1,0 +1,44 @@
+[
+  {
+    "mode": "balanced",
+    "heroPolicy": "initial table session only",
+    "attempts": 64,
+    "horizon": 120,
+    "reachedLevel10": 64,
+    "censored": 0,
+    "errors": 0,
+    "level10ConditionalMedian": 48,
+    "level10ConditionalRange": [
+      42,
+      60
+    ],
+    "level6ConditionalMedian": 31,
+    "medianLevelAt16": 3,
+    "level6By16": 0,
+    "medianFinalCash": 2298879.5,
+    "medianFinalArrears": 0,
+    "medianArrearsMonths": 0,
+    "medianUnusedActions": 10
+  },
+  {
+    "mode": "balanced",
+    "heroPolicy": "MANUAL monthly table-session reset sensitivity",
+    "attempts": 64,
+    "horizon": 120,
+    "reachedLevel10": 64,
+    "censored": 0,
+    "errors": 0,
+    "level10ConditionalMedian": 46,
+    "level10ConditionalRange": [
+      42,
+      56
+    ],
+    "level6ConditionalMedian": 29,
+    "medianLevelAt16": 3,
+    "level6By16": 0,
+    "medianFinalCash": 2392710.5,
+    "medianFinalArrears": 0,
+    "medianArrearsMonths": 0,
+    "medianUnusedActions": 10
+  }
+]

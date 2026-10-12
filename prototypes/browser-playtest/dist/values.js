@@ -1,5 +1,5 @@
 (function(root){const values={
-  "version": "0.3.9",
+  "version": "0.3.10",
   "rules_authority": "docs/integration-rules-v0.2.md",
   "currency": "credits",
   "level_dc": [
@@ -107,7 +107,7 @@
   "cash_adjustment_per_size_difference": 0.1,
   "cash_adjustment_per_level_difference": 0.1,
   "cash_adjustment_min": 0.5,
-  "cash_adjustment_max": 1.0,
+  "cash_adjustment_max": 1,
   "size_dc_adjustment_cap": 2,
   "leadership_xp": 50,
   "mvp_xp": 50,
@@ -299,7 +299,7 @@
   ],
   "rival_offer_dc": 18,
   "rival_offer_loyalty_divisor": 5,
-  "rival_offer_minimum_paid_wage_factor": 1.0,
+  "rival_offer_minimum_paid_wage_factor": 1,
   "loan": {
     "secured_monthly_rate": 0.01,
     "unsecured_monthly_rate": 0.02,
@@ -472,7 +472,7 @@
     "standard": {
       "dc_offset": 0,
       "required_successes": 2,
-      "payout_factor": 1.0,
+      "payout_factor": 1,
       "participation_xp": 100,
       "completion_xp": 150,
       "guild_xp": 250,
@@ -494,7 +494,7 @@
     "exclusive": {
       "dc_offset": 0,
       "required_successes": 3,
-      "payout_factor": 3.0,
+      "payout_factor": 3,
       "participation_xp": 200,
       "completion_xp": 350,
       "guild_xp": 750,
@@ -694,6 +694,94 @@
       "Rare": 1
     }
   },
-  "upkeep_payment_priority": "Current operating obligations first, then prior arrears; selected individual payments remain available."
-}
-;if(typeof module!=="undefined"&&module.exports)module.exports=values;root.GuildValues=values;})(typeof globalThis!=="undefined"?globalThis:this);
+  "upkeep_payment_priority": "Current operating obligations first, then prior arrears; selected individual payments remain available.",
+  "guild_threat": {
+    "awards": [
+      0,
+      60,
+      80,
+      120,
+      160
+    ],
+    "labels": [
+      "Trivial",
+      "Low",
+      "Moderate",
+      "Severe",
+      "Extreme"
+    ],
+    "complexity": {
+      "routine": -1,
+      "standard": 0,
+      "demanding": 1,
+      "expert": 2,
+      "legendary": 3,
+      "exclusive": 1
+    },
+    "offsetBands": [
+      {
+        "maximum": -3,
+        "index": 0
+      },
+      {
+        "maximum": -1,
+        "index": 1
+      },
+      {
+        "maximum": 0,
+        "index": 2
+      },
+      {
+        "maximum": 1,
+        "index": 3
+      },
+      {
+        "maximum": null,
+        "index": 4
+      }
+    ],
+    "frozen_at": "deployment",
+    "note": "Custom contract mapping: mission level - Guild Level + profile complexity. Crew danger remains on the printed DC/phase card."
+  },
+  "development_milestones": {
+    "headquarters": 80,
+    "outpost": 80,
+    "facility": 30
+  },
+  "advanced_actions": {
+    "campaign": {
+      "level": 3,
+      "actions": 2,
+      "cost": 100,
+      "reputation": [
+        -2,
+        0,
+        5,
+        8
+      ]
+    },
+    "briefing": {
+      "level": 3,
+      "actions": 2,
+      "per_operative": 25
+    },
+    "intensive": {
+      "level": 6,
+      "actions": 2,
+      "per_operative": 50,
+      "xp": 225,
+      "cooldown": 3
+    },
+    "contingency": {
+      "level": 4,
+      "actions": 3,
+      "wage_share": 0.25,
+      "charges": [
+        0,
+        0,
+        1,
+        2
+      ]
+    }
+  }
+};root.GuildValues=values;if(typeof module!=="undefined"&&module.exports)module.exports=values;})(typeof globalThis!=="undefined"?globalThis:this);

@@ -8,11 +8,13 @@ A design workspace for a mercenary-company subsystem for **Starfinder 2e**, init
 
 Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, mission-resolution, guild-development, finance, property, and events/rival-guild frameworks and identifies what still needs design or balancing.
 
-**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.9**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers, revised failed-pay Loyalty, visible Upkeep, employment pay, property purchases and staffed upgrades. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. Base staffing is implemented; full officer signature progression and Reorganize Command remain documented for later implementation. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
+**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.10**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers, revised failed-pay Loyalty, visible Upkeep, employment pay, property purchases and staffed upgrades. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. Base staffing is implemented; full officer signature progression and Reorganize Command remain documented for later implementation. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
 
 ## Documents
 
-- [Six-agent review: October 12](docs/playtest-review-2026-10-12.md) — verified ten-month Level-10 speedrun, ordinary progression, bugs and unimplemented pacing/multi-action recommendations; [reproducible evidence](playtests/prototype-0.3.9-review/README.md). Live rules stay 0.3.9.
+- [Live progression/activity pass0.3.10](docs/prototype-values-v0.3.10.md) — relative Guild threat XP, first-time operational milestones, four multi-action activities, discretionary exceptional-performance guidance and confirmed fixes;112 checks. [Evidence](playtests/prototype-0.3.10/README.md).
+
+- [Six-agent review: October 12](docs/playtest-review-2026-10-12.md) — verified ten-month Level-10 speedrun, ordinary progression, bugs and unimplemented pacing/multi-action recommendations; [reproducible evidence](playtests/prototype-0.3.9-review/README.md). Historical review froze0.3.9; the implemented0.3.10 patch below now supersedes it.
 
 - [Live survival/discovery pass0.3.9](docs/prototype-values-v0.3.9.md) — count-only completion, PC Hero Point mission rerolls, weighted random lead/recruit tables and partial arrears payments;85 checks.
 
@@ -37,7 +39,7 @@ Players develop mercenary personnel and weigh the benefits of experienced operat
 - [Officer positions and outpost staffing](docs/officers-and-staffing.md) — four founding offices, specialist progression and signature actions, facility staffing, and Reorganize Command; accepted working draft with provisional values, queued for implementation.
 - [Personnel employment](docs/personnel-employment.md) — accepted employment framework;0.3.4 implements selected rates and threshold, with missed-pay/termination content still incomplete.
 
-- [Play the browser demo](https://contract-operations-playtest.primeangel2.chatgpt.site) — interactive playtest using prototype0.3.9; private owner access.
+- [Play the browser demo](https://contract-operations-playtest.primeangel2.chatgpt.site) — interactive playtest using prototype0.3.10; private owner access.
 - [Browser playtest guide](docs/browser-playtest.md) — first session, feedback export, verification and scope; [source and tests](prototypes/browser-playtest/README.md).
 - [Live-play patch0.3.3](docs/prototype-values-v0.3.3.md) — implemented authority for party-sized shared actions and failed-pay Loyalty; later office-access rules are in the officer/staffing draft.
 - [Live-play patch0.3.2](docs/prototype-values-v0.3.2.md) — current authority for Events contract resolution, crew circumstance bonuses and retained cash discounts.
@@ -97,5 +99,6 @@ The current Work conversation is the primary source for the INT decisions, from 
 ## Delegated design pass
 
 On October 10, 2026 the user authorized the assistant to finish remaining integration choices using prior design, PF2e/SF2e, Kingmaker and Trollskull as guidance, with feedback during playtesting. PASS-001–011 in the rules pass are adopted playtest procedures, not individually confirmed historical user votes. This pass preserves earlier explicit decisions, chooses remaining defaults, and adopts minimal facility disruption/repair (superseding P-005's previous provisional status). The original full personnel transcript is still not recovered, but its remaining procedural gaps have designer-selected rules. Numerical prototype0.3 and its simulation evidence now supply the initial values; this is not a Foundry module release.
+
 
 
