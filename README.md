@@ -4,7 +4,7 @@
 
 Guild management for Starfinder 2e.
 
-Repository: [`tylerdickey17/sf2e-contract-operations`](https://github.com/tylerdickey17/sf2e-contract-operations).
+Repository: [`tylerdickey17/sf2e-contract-operations`](https://github.com/tylerdickey17/guildmaster).
 
 A design workspace for a mercenary-company subsystem for **Starfinder 2e**, initially intended for *The Brood Beneath* campaign.
 
