@@ -434,3 +434,14 @@ Implemented0.3.8 makes full completion conditions prominent and gives outcome re
 - **LIVE-052 — Foundry target and first alpha:** user confirms Foundry14.369 / native SF2e1.6.1. Built0.1.0-alpha.1, persistent shared Journal-backed Guild sheet, linked native PC skills/checks and actual Hero Point mission rerolls, actual dice/chat, existing turn/economy/content engine and new capacity. Coordinating GM commits all mutations; player view is read-only for this first alpha.28 mocked integration checks pass. No actual Foundry instance, visual layout, live multiplayer or third-party compatibility result is claimed. Manifest deliberately omits `compatibility.verified`.
 
 [Module source and installation](../foundry/guildmaster/README.md), [scope/acceptance checklist](foundry-alpha-0.1.0.md), [verification](../foundry/verification-alpha.json). Packaging contains a local module manifest and dependency-free ZIP for manual installation. The repository is private; unauthenticated raw URLs returned404, so remote manifest/download URLs are omitted. Visibility was preserved. Source generation has no external API or AI runtime.
+
+
+## LIVE-053: manifest installation, October13
+
+- **Explicit owner authorization:** the repository may be made public to permit installation by manifest.
+- **Implemented alpha0.1.0-alpha.2:** stable GitHub raw manifest URL and versioned package download, reflected inside the archive as well as the repository manifest. No gameplay change or new compatibility claim. Existing alpha1 remains in the release directory as historical evidence.
+- **Capability limit:** the connected GitHub tool catalog does not include repository visibility changes, and no authenticated GitHub CLI is available. The owner must use repository Settings → Danger Zone → Change repository visibility → Public. Verify actual anonymous manifest/ZIP retrieval before reporting that remote installation is ready. No new Site was created or existing Site audience changed.
+
+[Installation guide](../foundry/guildmaster/README.md) · [module manifest](../foundry/guildmaster/module.json).
+
+The repository was observed renamed by the owner to `tylerdickey17/guildmaster` during this pass (stable repository ID1413729123); alpha2 distribution URLs use that canonical name. Visibility was still private when observed.

@@ -3,7 +3,7 @@ import '../vendor/content.js';
 import '../vendor/engine.js';
 
 export const ID = 'guildmaster';
-export const VERSION = '0.1.0-alpha.1';
+export const VERSION = '0.1.0-alpha.2';
 export const E = globalThis.GuildmasterEngine;
 const Roll=foundry.dice.Roll;
 export const SKILLS = ['Acrobatics','Arcana','Athletics','Computers','Crafting','Deception','Diplomacy','Intimidation','Medicine','Nature','Occultism','Performance','Piloting','Religion','Society','Stealth','Survival','Thievery'];

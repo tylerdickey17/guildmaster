@@ -1,6 +1,6 @@
 # Guildmaster
 
-**Foundry alpha:** [0.1.0-alpha.1 source/install guide](foundry/guildmaster/README.md) targets Foundry14.369 / SF2e1.6.1, with28 mocked integration checks. Runtime/visual verification is pending. [Integration and acceptance checklist](docs/foundry-alpha-0.1.0.md). Browser live rules remain0.3.11.
+**Foundry alpha:** [0.1.0-alpha.2 source/install guide](foundry/guildmaster/README.md) targets Foundry14.369 / SF2e1.6.1, with28 mocked integration checks. Runtime/visual verification is pending. [Integration and acceptance checklist](docs/foundry-alpha-0.1.0.md). Browser live rules remain0.3.11.
 
 Guild management for Starfinder 2e.
 

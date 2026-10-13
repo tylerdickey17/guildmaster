@@ -1,17 +1,24 @@
 # Guildmaster Foundry Alpha
 
-Version **0.1.0-alpha.1** targets **Foundry 14.369 / native SF2e 1.6.1**. It has automated integration coverage but has **not yet been run inside a licensed Foundry instance**. The manifest deliberately does not declare a verified Foundry version.
+Version **0.1.0-alpha.2** targets **Foundry 14.369 / native SF2e 1.6.1**. It has automated integration coverage but has **not yet been run inside a licensed Foundry instance**. The manifest deliberately does not declare a verified Foundry version.
 
 ## Install
 
-The GitHub repository is private, so this alpha uses **manual ZIP installation**. Foundry cannot fetch its package through an unauthenticated raw GitHub URL. Repository visibility is preserved; no access token is included in the package.
+This package supports **manifest installation once the repository is public**. The owner has authorized public visibility; the connected GitHub tools cannot change visibility, so that settings step remains with the owner until verified.
 
-1. Download `guildmaster-0.1.0-alpha.1.zip`.
-2. Create `Data/modules/guildmaster/` inside your Foundry user-data directory.
-3. Extract the ZIP contents there. The result must be `Data/modules/guildmaster/module.json`, not an extra nested folder.
-4. Restart the Foundry server/application, launch an SF2e test world, and enable **Guildmaster** in Manage Modules.
+1. On the repository Settings page, scroll to Danger Zone and use Change repository visibility → Public.
+2. In Foundry Setup, open Add-on Modules → Install Module.
+3. Paste this manifest URL:
 
-This manifest intentionally omits remote `manifest` and `download` URLs. Automatic installation/update can be added when an accessible distribution location is available.
+```text
+https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildmaster/module.json
+```
+
+4. Install Guildmaster, launch an SF2e test world, and enable it in Manage Modules.
+
+The stable manifest points to the versioned ZIP and supports subsequent update checks. Until the repository is public, anonymous requests return404 and Foundry cannot download it. No GitHub access token is embedded.
+
+Manual fallback: download `guildmaster-0.1.0-alpha.2.zip`, extract its contents into `Data/modules/guildmaster/` with `module.json` directly in that folder, and restart Foundry.
 
 Open **Game Settings → Configure Settings → Guildmaster → Open Guildmaster**, use the Journal directory's Guildmaster button, or press **Ctrl+Shift+G**. This macro also opens it:
 

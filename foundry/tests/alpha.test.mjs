@@ -61,7 +61,7 @@ async function setState(j,edit){const saved=clone(envelope(j));edit(saved.state)
 
 await test('module manifest targets exact installed system without claiming runtime verification',async()=>{
   const m=JSON.parse(await readFile(new URL('../guildmaster/module.json',import.meta.url),'utf8'));
-  assert.equal(m.id,'guildmaster');assert.equal(m.compatibility.minimum,'14.369');assert.equal(m.relationships.systems[0].id,'sf2e');assert.equal(m.relationships.systems[0].compatibility.minimum,'1.6.1');assert.equal(m.compatibility.verified,undefined);assert.equal(m.manifest,undefined);assert.equal(m.download,undefined);
+  assert.equal(m.id,'guildmaster');assert.equal(m.compatibility.minimum,'14.369');assert.equal(m.relationships.systems[0].id,'sf2e');assert.equal(m.relationships.systems[0].compatibility.minimum,'1.6.1');assert.equal(m.compatibility.verified,undefined);assert.equal(m.version,'0.1.0-alpha.2');assert.equal(m.manifest,'https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildmaster/module.json');assert.equal(m.download,'https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/releases/guildmaster-0.1.0-alpha.2.zip');assert.equal(m.version,C.VERSION);
 });
 await test('guild creation stores a persistent shared observer journal and four unlinked PC slots',async()=>{
   const j=await createGuild();assert.equal(j.ownership.default,2);assert.equal(envelope(j).state.mercs.length,4);assert(envelope(j).state.officers.every(o=>!o.actorUuid&&o.heroPoints===0));assert.equal(envelope(j).state.cash,2000);

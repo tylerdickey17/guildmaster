@@ -1,5 +1,5 @@
 {
-  "moduleVersion": "0.1.0-alpha.1",
+  "moduleVersion": "0.1.0-alpha.2",
   "target": {
     "foundry": "14.369",
     "sf2e": "1.6.1"
@@ -36,5 +36,5 @@
     "shared player rendering disables spending and phase advancement"
   ],
   "verification": "Node integration harness with mocked Foundry documents, native checks, dice and chat. No live Foundry or visual verification.",
-  "generatedAt": "2026-10-13T00:40:12.779Z"
+  "generatedAt": "2026-10-13T01:09:40.020Z"
 }

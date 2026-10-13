@@ -1,10 +1,10 @@
-# Foundry alpha 0.1.0-alpha.1 — October 13, 2026
+# Foundry alpha 0.1.0-alpha.2 — October 13, 2026
 
-Owner target: **Foundry 14.369 / SF2e 1.6.1**. [Module source and installation](../foundry/guildmaster/README.md). [Manifest](../foundry/guildmaster/module.json). [Package](../foundry/releases/guildmaster-0.1.0-alpha.1.zip). [Automated verification](../foundry/verification-alpha.json).
+Owner target: **Foundry 14.369 / SF2e 1.6.1**. [Module source and installation](../foundry/guildmaster/README.md). [Manifest](../foundry/guildmaster/module.json). [Package](../foundry/releases/guildmaster-0.1.0-alpha.2.zip). [Automated verification](../foundry/verification-alpha.json).
 
 This is the first module implementation. The browser remains on its existing 0.3.11 source. The module reuses that rules/content engine with isolated globals and a Foundry adapter. It adds the approved capacity rule in its own engine copy; this does not claim a browser deployment or a new pacing study.
 
-The GitHub repository is private. Unauthenticated raw manifest/package requests were tested and returned404; repository metadata confirms private visibility. Use manual ZIP installation. Remote installation/update URLs are deliberately omitted, and visibility was not changed.
+The owner subsequently authorized public repository visibility for manifest installation. Alpha0.1.0-alpha.2 adds the stable GitHub raw `manifest` and versioned ZIP `download` URLs. Connected GitHub tools do not expose repository visibility edits, so changing that setting remains with the owner unless later verification confirms it. Until public access is verified, do not claim the remote installer works. The prior manual-only alpha1 package remains historical.
 
 ## Integration choices
 
@@ -39,7 +39,7 @@ To make roster replacement usable, routine release costs no Guild Action and is 
 
 ## First actual Foundry acceptance test
 
-1. Manually extract the ZIP into `Data/modules/guildmaster/` and restart Foundry. Use a separate native SF2e test world on the stated versions. Enable the module; confirm there are no startup console errors.
+1. Once public access is confirmed, install with the stable manifest URL from the module README. Manual ZIP installation remains a fallback. Use a separate native SF2e test world on the stated versions. Enable the module; confirm there are no startup console errors.
 2. Open the sheet from module settings, Ctrl+Shift+G, and the Journal directory. Check resizing, scrolling, and dialogs in the installed Foundry theme.
 3. Create a staffed guild; confirm 2,000 credits, four operatives, four officer slots, a 350-credit invoice, and a saved Observer-owned Journal.
 4. Link four distinct PCs. Change a PC skill/rank and confirm the next Guild Action uses the new value. Cancel a native check and confirm neither actions nor guild funds change.

@@ -7,7 +7,7 @@
       "name": "Tyler Dickey"
     }
   ],
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "compatibility": {
     "minimum": "14.369",
     "maximum": "14"
@@ -30,12 +30,14 @@
   "styles": [
     "styles/guildmaster.css"
   ],
-  "url": "https://github.com/tylerdickey17/sf2e-contract-operations",
+  "url": "https://github.com/tylerdickey17/guildmaster",
   "flags": {
     "guildmaster": {
       "targetFoundry": "14.369",
       "targetSystem": "1.6.1",
       "inFoundryVerified": false
     }
-  }
+  },
+  "manifest": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildmaster/module.json",
+  "download": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/releases/guildmaster-0.1.0-alpha.2.zip"
 }
