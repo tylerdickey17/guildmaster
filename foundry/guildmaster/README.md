@@ -4,13 +4,14 @@ Version **0.1.0-alpha.1** targets **Foundry 14.369 / native SF2e 1.6.1**. It has
 
 ## Install
 
-In Foundry Setup, open **Add-on Modules → Install Module** and paste:
+The GitHub repository is private, so this alpha uses **manual ZIP installation**. Foundry cannot fetch its package through an unauthenticated raw GitHub URL. Repository visibility is preserved; no access token is included in the package.
 
-```text
-https://raw.githubusercontent.com/tylerdickey17/sf2e-contract-operations/main/foundry/guildmaster/module.json
-```
+1. Download `guildmaster-0.1.0-alpha.1.zip`.
+2. Create `Data/modules/guildmaster/` inside your Foundry user-data directory.
+3. Extract the ZIP contents there. The result must be `Data/modules/guildmaster/module.json`, not an extra nested folder.
+4. Restart the Foundry server/application, launch an SF2e test world, and enable **Guildmaster** in Manage Modules.
 
-Alternatively, extract `guildmaster-0.1.0-alpha.1.zip` into `Data/modules/guildmaster/`, with `module.json` directly in that folder, and restart Foundry. Enable Guildmaster in an SF2e test world.
+This manifest intentionally omits remote `manifest` and `download` URLs. Automatic installation/update can be added when an accessible distribution location is available.
 
 Open **Game Settings → Configure Settings → Guildmaster → Open Guildmaster**, use the Journal directory's Guildmaster button, or press **Ctrl+Shift+G**. This macro also opens it:
 

@@ -1,8 +1,8 @@
 {
   "moduleVersion": "0.1.0-alpha.1",
   "archive": "guildmaster-0.1.0-alpha.1.zip",
-  "bytes": 70314,
-  "sha256": "66effdabc4b444565e7215be63fb5d9f4c56802481ed5a29a488d89d70b53172",
+  "bytes": 70400,
+  "sha256": "e6ef6c7f2e7fa4f3328b9112b70c277d7717b8d5d7ca235f43e34e5bcb7c672f",
   "entries": 9,
   "foundryRuntimeVerified": false
 }

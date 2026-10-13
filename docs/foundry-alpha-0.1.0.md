@@ -4,6 +4,8 @@ Owner target: **Foundry 14.369 / SF2e 1.6.1**. [Module source and installation](
 
 This is the first module implementation. The browser remains on its existing 0.3.11 source. The module reuses that rules/content engine with isolated globals and a Foundry adapter. It adds the approved capacity rule in its own engine copy; this does not claim a browser deployment or a new pacing study.
 
+The GitHub repository is private. Unauthenticated raw manifest/package requests were tested and returned404; repository metadata confirms private visibility. Use manual ZIP installation. Remote installation/update URLs are deliberately omitted, and visibility was not changed.
+
 ## Integration choices
 
 - Persist one guild envelope on a Journal Entry flag: schema, module version, revision, state, chat outbox, and optional interrupted Hero Point transaction. Default Observer ownership lets players share the sheet while server-side document permissions keep them from modifying the guild.
@@ -37,7 +39,7 @@ To make roster replacement usable, routine release costs no Guild Action and is 
 
 ## First actual Foundry acceptance test
 
-1. Install by manifest in a separate native SF2e world on the stated versions. Enable the module; confirm there are no startup console errors.
+1. Manually extract the ZIP into `Data/modules/guildmaster/` and restart Foundry. Use a separate native SF2e test world on the stated versions. Enable the module; confirm there are no startup console errors.
 2. Open the sheet from module settings, Ctrl+Shift+G, and the Journal directory. Check resizing, scrolling, and dialogs in the installed Foundry theme.
 3. Create a staffed guild; confirm 2,000 credits, four operatives, four officer slots, a 350-credit invoice, and a saved Observer-owned Journal.
 4. Link four distinct PCs. Change a PC skill/rank and confirm the next Guild Action uses the new value. Cancel a native check and confirm neither actions nor guild funds change.
