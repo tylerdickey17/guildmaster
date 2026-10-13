@@ -1,10 +1,10 @@
 {
-  "moduleVersion": "0.1.0-alpha.4",
+  "moduleVersion": "0.1.0-alpha.5",
   "target": {
     "foundry": "14.369",
     "sf2e": "1.6.1"
   },
-  "checks": 65,
+  "checks": 70,
   "passed": [
     "module manifest targets exact installed system without claiming runtime verification",
     "guild creation stores a persistent shared observer journal and four unlinked PC slots",
@@ -70,8 +70,13 @@
     "owned Operations player can request a basic briefing and only GM approval spends the shared budget",
     "a non-coordinating GM can inspect the board but cannot click enabled role buttons",
     "Journal entry button uses the ApplicationV2 element even when hook HTML is a context object",
-    "finishing the turn closes open guided windows while retaining the management sheet"
+    "finishing the turn closes open guided windows while retaining the management sheet",
+    "the Complete Guild Turn command does not reopen the finished guide",
+    "guild progression shifts every degree distribution upward and keeps level boundaries",
+    "new and legacy searches use guild DC and identical rolled levels, with ancestry preserved",
+    "exclusive brokerage rolls levels and rarity, records the actual brokerage check and preserves costs",
+    "search dialogs expose guild DC without a level input in both guided and management flows"
   ],
   "verification": "Node integration harness with mocked Foundry documents, native checks, dice and chat. No live Foundry or visual verification.",
-  "generatedAt": "2026-10-13T02:41:53.717Z"
+  "generatedAt": "2026-10-13T22:47:10.310Z"
 }

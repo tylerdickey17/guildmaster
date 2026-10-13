@@ -8,6 +8,11 @@ export class GuildTurnWizard extends GuildmasterSheet {
   static DEFAULT_OPTIONS={id:'guildmaster-turn',classes:['guildmaster','guildmaster-turn'],position:{width:1060,height:800},window:{title:'Guildmaster · Guided Turn',icon:'fa-solid fa-forward-step',resizable:true}};
   constructor(options={}){super(options);this.viewOfficer='all';this.startedTurn=null;this.workspace='actions';this.discoverySeen=null;this.assignmentContract=null;this.squadEdits=new Map();}
   get title(){return `${this.journal?.name??'Guildmaster'} · Guild Turn ${envelope(this.journal)?.state.turn??''}`;}
+  async refreshAfterCommand(){
+    const s=envelope(this.journal)?.state;
+    if(this.startedTurn&&!s?.turnGuide?.active&&s?.turnGuide?.completedTurn>=this.startedTurn)return this.close();
+    return super.refreshAfterCommand();
+  }
   async _renderHTML(){
     const j=this.journal;if(!j)return '<div class="gm-shell"><p>Create a guild in Guild Management first.</p></div>';
     const saved=envelope(j),s=stateForDisplay(j);this.guildId=j.id;this.revision=saved.revision;
@@ -80,8 +85,8 @@ export class GuildTurnWizard extends GuildmasterSheet {
   }
   discoverySummary(s,mode){
     const d=[...(s.discoveryHistory??[])].reverse().find(d=>d.mode===mode&&d.turn===s.turn);if(!d)return '';
-    const roll=[...(s.rollHistory??[])].reverse().find(r=>r.turn===d.turn&&r.label===`Network ${mode}`);
-    return card('Latest search results',badge(E.names[d.degree])+paragraph(roll?`${roll.officer}: d20 ${roll.face} ${roll.modifier>=0?'+':''}${roll.modifier} = ${roll.total} vs DC ${roll.dc}`:'Search result recorded.')+paragraph(`${d.results.length} ${mode==='contracts'?'contract leads':'candidates'} found at target Level ${d.targetLevel}. Finding is separate from securing or hiring.`)+(d.results.length?`<details><summary>Discovery table rolls</summary>${d.results.map(x=>paragraph(`${x.name} · ${Object.entries(x.rolls).map(([k,v])=>`${k} d20 ${v}`).join(', ')}${x.notes.length?' · '+x.notes.join('; '):''}`)).join('')}</details>`:paragraph('No results from this search. Earlier unexpired offers remain available.')));
+    const roll=[...(s.rollHistory??[])].reverse().find(r=>r.turn===d.turn&&r.label===(d.source==='broker'?'Exclusive brokerage':`Network ${mode}`));
+    return `<article class="gm-card gm-discovery"><div class="gm-discovery-heading"><h3>Latest search results</h3>${badge(E.names[d.degree])}</div>`+paragraph(roll?`${roll.officer}: d20 ${roll.face} ${roll.modifier>=0?'+':''}${roll.modifier} = ${roll.total} vs DC ${roll.dc}`:'Search result recorded.')+paragraph(`${d.results.length} ${mode==='contracts'?'contract leads':'candidates'} found${d.guildLevel?` at Guild Level ${d.guildLevel}`:''}. Each level is rolled; securing or hiring is separate.`)+(d.results.length?`<details><summary>Discovery table rolls</summary>${d.results.map(x=>paragraph(`${x.name} · ${Object.entries(x.rolls).map(([k,v])=>`${k} d20 ${v}`).join(', ')}${x.notes.length?' · '+x.notes.join('; '):''}`)).join('')}</details>`:paragraph('No results from this search. Earlier unexpired offers remain available.'))+'</article>';
   }
   contractDossier(s,c){
     const r=E.contractRule(c),xp=E.contractThreat(s,c),price=E.contractPayout(c.level,r.payout_factor);

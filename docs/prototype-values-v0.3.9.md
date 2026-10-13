@@ -1,3 +1,5 @@
+> **Discovery update:** [The local guild-scaled discovery revision](guild-discovery-rulebook-ui.md) supersedes player-selected search levels. This document retains the historical 0.3.9 rules.
+
 # Prototype0.3.9: survival choices and randomized discovery
 
 October12,2026. The user disliked2-of-3 plus a required phase, requested PC Hero Point rerolls because bad jobs can cripple the guild, described the arrears recovery spiral, and requested degree-based randomized contract/recruit tables with three results by default. This pass implements a designer first draft under the established designer-led playtest workflow. It supersedes the Essential/count and0/1/2/3 discovery rules in prior drafts.

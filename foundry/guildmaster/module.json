@@ -7,7 +7,7 @@
       "name": "Tyler Dickey"
     }
   ],
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0-alpha.5",
   "compatibility": {
     "minimum": "14.369",
     "maximum": "14"
@@ -35,9 +35,10 @@
     "guildmaster": {
       "targetFoundry": "14.369",
       "targetSystem": "1.6.1",
-      "inFoundryVerified": false
+      "inFoundryVerified": true,
+      "liveVerificationScope": "GM contract and recruitment flows, settlement, onboarding, reload persistence and turn completion; Foundry 14.369 / SF2e 1.6.1"
     }
   },
   "manifest": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildmaster/module.json",
-  "download": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/releases/guildmaster-0.1.0-alpha.4.zip"
+  "download": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/releases/guildmaster-0.1.0-alpha.5.zip"
 }

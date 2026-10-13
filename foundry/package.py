@@ -31,6 +31,6 @@ with zipfile.ZipFile(archive) as package:
     for file in sorted(module.rglob('*')):
         if file.is_file():assert package.read(file.relative_to(module).as_posix())==file.read_bytes()
 
-summary={'moduleVersion':manifest['version'],'archive':archive.name,'bytes':archive.stat().st_size,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'entries':len(zipfile.ZipFile(archive).namelist()),'foundryRuntimeVerified':False}
+summary={'moduleVersion':manifest['version'],'archive':archive.name,'bytes':archive.stat().st_size,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest(),'entries':len(zipfile.ZipFile(archive).namelist()),'foundryRuntimeVerified':manifest.get('flags',{}).get('guildmaster',{}).get('inFoundryVerified',False),'liveVerificationScope':manifest.get('flags',{}).get('guildmaster',{}).get('liveVerificationScope')}
 (root/'package-verification.json').write_text(json.dumps(summary,indent=2)+'\n')
 print(json.dumps(summary))

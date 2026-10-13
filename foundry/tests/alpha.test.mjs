@@ -66,7 +66,7 @@ async function setState(j,edit){const saved=clone(envelope(j));edit(saved.state)
 
 await test('module manifest targets exact installed system without claiming runtime verification',async()=>{
   const m=JSON.parse(await readFile(new URL('../guildmaster/module.json',import.meta.url),'utf8'));
-  assert.equal(m.id,'guildmaster');assert.equal(m.compatibility.minimum,'14.369');assert.equal(m.relationships.systems[0].id,'sf2e');assert.equal(m.relationships.systems[0].compatibility.minimum,'1.6.1');assert.equal(m.compatibility.verified,undefined);assert.equal(m.version,'0.1.0-alpha.4');assert.equal(m.manifest,'https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildmaster/module.json');assert.equal(m.download,'https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/releases/guildmaster-0.1.0-alpha.4.zip');assert.equal(m.version,C.VERSION);
+  assert.equal(m.id,'guildmaster');assert.equal(m.compatibility.minimum,'14.369');assert.equal(m.relationships.systems[0].id,'sf2e');assert.equal(m.relationships.systems[0].compatibility.minimum,'1.6.1');assert.equal(m.compatibility.verified,undefined);assert.equal(m.version,'0.1.0-alpha.5');assert.equal(m.manifest,'https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildmaster/module.json');assert.equal(m.download,'https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/releases/guildmaster-0.1.0-alpha.5.zip');assert.equal(m.version,C.VERSION);
 });
 await test('guild creation stores a persistent shared observer journal and four unlinked PC slots',async()=>{
   const j=await createGuild();assert.equal(j.ownership.default,2);assert.equal(envelope(j).state.mercs.length,4);assert(envelope(j).state.officers.every(o=>!o.actorUuid&&o.heroPoints===0));assert.equal(envelope(j).state.cash,2000);
@@ -300,10 +300,68 @@ await test('finishing the turn closes open guided windows while retaining the ma
   const j=await opened(),guide=new GuildTurnWizard(),manager=new GuildmasterSheet();guide.guildId=manager.guildId=j.id;guide.startedTurn=1;guide.rendered=manager.rendered=true;await setState(j,s=>{s.turn=2;s.turnGuide={active:false,completedTurn:1};});for(const fn of registeredHooks.get('updateJournalEntry'))fn(j);assert.equal(guide.rendered,false);assert.equal(manager.rendered,true);
 });
 
+await test('the Complete Guild Turn command does not reopen the finished guide',async()=>{
+  const j=await opened(),guide=new GuildTurnWizard();guide.guildId=j.id;
+  for(const o of envelope(j).state.officers)await commitCommand(j,{name:'pass',officerId:o.id});
+  await setState(j,s=>{s.phase='advancement';s.turnGuide.stage='finish';});
+  await guide._renderHTML();guide.rendered=true;
+  await guide.run('advance');
+  assert.equal(envelope(j).state.turn,2);assert.equal(envelope(j).state.turnGuide.active,false);
+  assert.equal(guide.rendered,false);assert.equal(guide.busy,false);
+});
+
+await test('guild progression shifts every degree distribution upward and keeps level boundaries',async()=>{
+  let previous=-1;
+  for(let guildLevel=1;guildLevel<=10;guildLevel++){
+    const s=E.fresh();s.guildLevel=guildLevel;const {baseLevel,cap,dc}=E.discoveryRange(s);
+    assert.equal(dc,E.administrativeDC(s));let sum=0;
+    for(let degree=0;degree<4;degree++)for(let face=1;face<=20;face++){
+      const entry=E.discoveryEntry(degree,baseLevel,{level:face,difficulty:face,rarity:face},cap);
+      assert(entry.level>=1&&entry.level<=Math.min(20,2*guildLevel+1));
+      if(guildLevel>=2)assert(entry.level>1);sum+=entry.level;
+    }
+    assert(sum>previous);previous=sum;
+  }
+  const s=E.fresh();s.guildLevel=3;const r=E.discoveryRange(s),counts={};
+  for(let face=1;face<=20;face++){const level=E.discoveryEntry(2,r.baseLevel,{level:face,difficulty:1,rarity:1},r.cap).level;counts[level]=(counts[level]??0)+1;}
+  assert.deepEqual(counts,{4:5,5:12,6:3});
+});
+await test('new and legacy searches use guild DC and identical rolled levels, with ancestry preserved',async()=>{
+  nativeDegree=2;
+  try{for(const mode of ['contracts','recruits']){
+    const a=await opened(),b=await opened();for(const j of [a,b])await setState(j,s=>s.guildLevel=3);
+    await commitCommand(a,{name:'network',args:[mode==='recruits'?'liaison':'command',mode,mode==='recruits'?'shirren':null]});
+    await commitCommand(b,{name:'network',args:[mode==='recruits'?'liaison':'command',mode,1,mode==='recruits'?'shirren':null]});
+    const x=envelope(a).state,y=envelope(b).state;
+    assert.equal(x.lastRoll.dc,E.V.level_dc[5]);assert.equal(y.lastRoll.dc,x.lastRoll.dc);
+    assert.deepEqual(x.lastDiscovery.results.map(r=>[r.level,r.rarity]),y.lastDiscovery.results.map(r=>[r.level,r.rarity]));
+    assert(x.lastDiscovery.results.every(r=>r.level===5));assert.equal(x.lastDiscovery.targetLevel,undefined);
+    if(mode==='recruits')assert(x.lastDiscovery.results.every(r=>r.ancestry==='Shirren'));
+  }}finally{nativeDegree=null;}
+});
+await test('exclusive brokerage rolls levels and rarity, records the actual brokerage check and preserves costs',async()=>{
+  const j=await opened();await setState(j,s=>{s.guildLevel=3;s.reputation=20;});
+  const before=clone(envelope(j).state);nativeDegree=3;
+  try{await commitCommand(j,{name:'broker',args:['command',1]});}finally{nativeDegree=null;}
+  const s=envelope(j).state;assert.equal(s.actions,before.actions-1);assert.equal(s.cash,before.cash-50);
+  assert.equal(s.lastDiscovery.source,'broker');assert.equal(s.lastDiscovery.results.length,2);
+  assert(s.lastDiscovery.results.every(r=>r.level===6&&r.kind==='exclusive'&&r.rarity==='Uncommon'));
+  const app=new GuildTurnWizard();app.guildId=j.id;const html=await app._renderHTML();
+  assert(html.includes(`= ${s.lastRoll.total} vs DC ${s.lastRoll.dc}`));assert(html.includes('level d20 15'));
+});
+await test('search dialogs expose guild DC without a level input in both guided and management flows',async()=>{
+  const j=await opened(),savedPrompt=foundry.applications.api.DialogV2.prompt;
+  try{for(const Type of [GuildmasterSheet,GuildTurnWizard])for(const command of [{command:'network',mode:'recruits'},{command:'network',mode:'contracts'},{command:'broker'}]){
+    const app=new Type();app.guildId=j.id;await app._renderHTML();let content='';
+    foundry.applications.api.DialogV2.prompt=async options=>{content=options.content;return null;};
+    await app.handle(command);assert(content.includes('Diplomacy DC'));assert(!content.includes('Target level'));assert(!content.includes('name="level"'));
+  }}finally{foundry.applications.api.DialogV2.prompt=savedPrompt;}
+});
+
 if(process.env.GUILDMASTER_UI_FIXTURES){
   const {mkdir}=await import('node:fs/promises'),dir=process.env.GUILDMASTER_UI_FIXTURES;await mkdir(dir,{recursive:true});
   const css=await readFile(new URL('../guildmaster/styles/guildmaster.css',import.meta.url),'utf8');
-  const wrap=html=>`<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0;background:#090f16;font-family:Arial,sans-serif;color:#edf1f4}*{box-sizing:border-box}.window-content{height:840px;width:1060px}select,input,button{font-family:inherit}button{cursor:pointer}${css}</style></head><body><div class="guildmaster"><div class="window-content">${html}</div></div></body></html>`;
+  const wrap=html=>`<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0;background:#090f16;font-family:Arial,sans-serif;color:#edf1f4}*{box-sizing:border-box}.window-content{height:840px;width:min(1060px,100vw)}select,input,button{font-family:inherit}button{cursor:pointer}${css}</style></head><body><div class="guildmaster"><div class="window-content">${html}</div></div></body></html>`;
   const j=await opened(),app=new GuildTurnWizard();app.guildId=j.id;await commitCommand(j,{name:'network',args:['command','contracts',1],officerId:'command'});await writeFile(path.join(dir,'contracts.html'),wrap(await app._renderHTML()));await commitCommand(j,{name:'network',args:['liaison','recruits',1],officerId:'liaison'});await writeFile(path.join(dir,'recruits.html'),wrap(await app._renderHTML()));const assignment=await assembled(),guide=new GuildTurnWizard();guide.guildId=assignment.j.id;guide.viewOfficer='quarter';await writeFile(path.join(dir,'assignments.html'),wrap(await guide._renderHTML()));
 }
 const report={moduleVersion:C.VERSION,target:{foundry:'14.369',sf2e:'1.6.1'},checks:results.length,passed:results,verification:'Node integration harness with mocked Foundry documents, native checks, dice and chat. No live Foundry or visual verification.',generatedAt:new Date().toISOString()};

@@ -1,6 +1,8 @@
+> **Foundry 0.1.0-alpha.5:** [Guild-scaled discovery without Target Level and the Foundry rulebook interface](../../docs/guild-discovery-rulebook-ui.md). Older version descriptions below are historical.
+
 # Guildmaster Foundry Alpha
 
-Version **0.1.0-alpha.4** targets **Foundry 14.369 / native SF2e 1.6.1**. It has automated integration coverage but has **not yet been run inside a licensed Foundry instance**. The manifest deliberately does not declare a verified Foundry version.
+Version **0.1.0-alpha.5** targets **Foundry 14.369 / native SF2e 1.6.1**. This revision has 70 automated integration checks and passed contract/recruitment flows inside the installed Foundry instance; see the linked revision notes. The manifest deliberately does not declare a verified Foundry version.
 
 ## Install
 
@@ -12,7 +14,7 @@ https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildma
 
 The repository is public. The stable manifest points to the versioned ZIP and supports update checks. For an existing installation, check for module updates in Foundry Setup and reload the world after updating.
 
-Manual fallback: extract `guildmaster-0.1.0-alpha.4.zip` into `Data/modules/guildmaster/` with `module.json` directly in that folder, then restart Foundry.
+Manual fallback: extract `guildmaster-0.1.0-alpha.5.zip` into `Data/modules/guildmaster/` with `module.json` directly in that folder, then restart Foundry.
 
 Open Guildmaster from the **Journal tab button**, **Configure Settings → Guildmaster → Open Guildmaster**, or **Ctrl+Shift+G**. Choose **Start Guild Turn** in management to open the guide. Settings also includes a separate Start/Resume Guild Turn entry. This macro also opens it:
 
@@ -74,4 +76,4 @@ Guild Archetype feats on even levels and Guild Feats on odd levels are future de
 
 ## Verification
 
-Run `node foundry/tests/alpha.test.mjs` from the repository root. The harness mocks Foundry documents, actor statistics, dice, chat, and application rendering. 65 checks cover authority, concurrency, native-style flag merging and old stuck Hero Point saves, owned-PC requests, role/skill gates, GM all/individual previews, discovery workspaces and direct card actions, inline squad saves and quotes, revised officer portfolios, non-stacking basic briefings, restructuring, squad reservations, guided stages and window completion, Journal access, compensation and chat retries. It cannot establish real Foundry loading, visual layout, live multiplayer behavior, or compatibility with other modules. Use the acceptance checklist in `docs/foundry-alpha-0.1.0.md` for the first actual world test.
+Run `node foundry/tests/alpha.test.mjs` from the repository root. The harness mocks Foundry documents, actor statistics, dice, chat, and application rendering. 70 checks cover authority, concurrency, native-style flag merging and old stuck Hero Point saves, owned-PC requests, role/skill gates, GM all/individual previews, discovery workspaces and direct card actions, inline squad saves and quotes, revised officer portfolios, non-stacking basic briefings, restructuring, squad reservations, guided stages and window completion, Journal access, compensation and chat retries. It cannot establish real Foundry loading, visual layout, live multiplayer behavior, or compatibility with other modules. The [October 13 live test report](../../docs/guild-discovery-live-test-2026-10-13.md) separately records the completed GM contract and recruitment smoke test. Multiplayer and broader compatibility testing remain separate.

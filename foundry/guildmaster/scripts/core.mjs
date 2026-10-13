@@ -4,7 +4,7 @@ import '../vendor/engine.js';
 import {initializeOffices,authorize,applyTurnCommand,afterCommand,officersForUser,actionSpec,stage} from './turns.mjs';
 
 export const ID = 'guildmaster';
-export const VERSION = '0.1.0-alpha.4';
+export const VERSION = '0.1.0-alpha.5';
 export const E = globalThis.GuildmasterEngine;
 const Roll=foundry.dice.Roll;
 export const SKILLS = ['Acrobatics','Arcana','Athletics','Computers','Crafting','Deception','Diplomacy','Intimidation','Medicine','Nature','Occultism','Performance','Piloting','Religion','Society','Stealth','Survival','Thievery'];

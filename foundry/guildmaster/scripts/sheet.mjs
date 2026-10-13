@@ -12,7 +12,7 @@ const b = (label,action,data={},disabled=false)=>`<button type="button" data-com
 const card = (title,body)=>`<article class="gm-card"><h3>${esc(title)}</h3>${body}</article>`;
 
 export async function prompt(title,content,label='Continue') {
-  return DialogV2.prompt({window:{title},position:{width:550},content:`<div class="guildmaster-dialog">${content}</div>`,ok:{label,callback:(_event,button)=>{
+  return DialogV2.prompt({classes:['guildmaster-prompt'],window:{title},position:{width:550},content:`<div class="guildmaster-dialog">${content}</div>`,ok:{label,callback:(_event,button)=>{
     const data=new FormData(button.form),result={};
     for(const key of data.keys())result[key]=key.endsWith('[]')?data.getAll(key):data.get(key);
     return result;
@@ -118,11 +118,12 @@ export class GuildmasterSheet extends ApplicationV2 {
   history(s) {
     return card('Guild record',s.log.map(l=>`<p><small>Turn ${l.turn}</small><br><b>${esc(l.title)}</b><br>${esc(l.text)}</p>`).join(''))+card('Treasury ledger',`<table><thead><tr><th>Turn</th><th>Entry</th><th>Credits</th></tr></thead><tbody>${s.ledger.slice().reverse().map(l=>`<tr><td>${l.turn}</td><td>${esc(l.note)}</td><td>${l.amount>=0?'+':''}${l.amount}</td></tr>`).join('')}</tbody></table>`);
   }
+  async refreshAfterCommand(){return this.render({force:true});}
   async run(name,args=[],expectedRevision=this.revision) {
     if(this.busy)return;
     const journal=this.journal,revision=expectedRevision;
     this.busy=true;
-    try{const cmd={name,args,officerId:this.officerId};if(canManage())await commitCommand(journal,cmd,revision);else{await submitRequest(journal,cmd,revision);ui.notifications.info('Action submitted to the GM.');}}finally{this.busy=false;await this.render({force:true});}
+    try{const cmd={name,args,officerId:this.officerId};if(canManage())await commitCommand(journal,cmd,revision);else{await submitRequest(journal,cmd,revision);ui.notifications.info('Action submitted to the GM.');}}finally{this.busy=false;await this.refreshAfterCommand();}
   }
   async handle(d) {
     const journal=this.journal,s=journal?stateForDisplay(journal):null,oid=this.officerId,revision=this.revision;
@@ -144,8 +145,8 @@ export class GuildmasterSheet extends ApplicationV2 {
       return value?run('linkOfficer',[d.id,value.actor]):null;
     }
     if(d.command==='network'||d.command==='broker') {
-      const value=await prompt(d.command==='broker'?'Broker Exclusive Deal':`Work the Network: ${d.mode}`,input('level','Target level',Math.min(20,2*s.guildLevel-1),'number',`min="1" max="${Math.min(20,2*s.guildLevel+1)}" step="1"`)+(d.mode==='recruits'?select('ancestry','Ancestry',[['','Any ancestry'],...E.C.ancestries.map(a=>[a.id,a.name])]):'')+paragraph('One shared Guild Action. Searching does not hire candidates or secure contracts.'),'Roll search');
-      if(!value)return;return d.command==='broker'?run('broker',[oid,Number(value.level)]):run('network',[oid,d.mode,Number(value.level),value.ancestry||null]);
+      const value=await prompt(d.command==='broker'?'Broker Exclusive Deal':`Work the Network: ${d.mode}`,paragraph(`Guild Level ${s.guildLevel} · Diplomacy DC ${E.administrativeDC(s)}. Roll to discover opportunities; each result’s level comes from the guild’s discovery tables.`)+(d.mode==='recruits'?select('ancestry','Ancestry',[['','Any ancestry'],...E.C.ancestries.map(a=>[a.id,a.name])]):'')+paragraph(d.command==='broker'?'One shared Guild Action and 50 cr. Friendly Reputation and Trained Diplomacy required. Success finds one Exclusive lead; Critical Success finds two. Securing is separate.':'One shared Guild Action. Failure, Success and Critical Success find three options; Critical Failure finds zero or one. Searching does not hire candidates or secure contracts.'),'Roll search');
+      if(!value)return;return d.command==='broker'?run('broker',[oid]):run('network',[oid,d.mode,value.ancestry||null]);
     }
     if(d.command==='hire') {
       const m=E.merc(s,d.id),value=await prompt(`Hire ${m.name}`,select('employment','Agreement',[['free','Free Agent'],['retained','Retained Operative · requires Reputation 20']])+paragraph(`One action; ${credit(2*E.wage(m.level))} hiring cost. Ready next Guild Turn. Retained assignment pay and Upkeep retainer remain separate.`),'Hire operative');

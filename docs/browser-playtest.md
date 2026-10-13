@@ -1,3 +1,5 @@
+> **Foundry 0.1.0-alpha.5:** [Guild-scaled discovery without Target Level and the Foundry rulebook interface](guild-discovery-rulebook-ui.md). Older version descriptions below are historical.
+
 # Browser playtest: opening season and expansion
 
 [Play Guildmaster](https://contract-operations-playtest.primeangel2.chatgpt.site). **Current version0.3.11**; existing browser progress is preserved.
