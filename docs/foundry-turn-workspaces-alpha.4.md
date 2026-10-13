@@ -41,3 +41,5 @@ No browser Site change, external name API, broader economy rebalance, feats/arch
 ## Distribution
 
 The stable manifest is `https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildmaster/module.json`; its alpha4 archive is versioned under `foundry/releases/`. See package and distribution verification records for the final archive fingerprint and anonymous download verification. Live-world testing remains pending.
+
+Anonymous manifest and alpha4 ZIP downloads both returned HTTP200. The88,052-byte archive matched the built package exactly, SHA256 `365ed6716968a1c351b916ce9d241426f0944fe52467b3b47e893d7c701b7d35`. Implementation commit: `c8fa47bca36603d8c20e1a73029aeacf80b4ff8b`. This confirms distribution, not Foundry runtime compatibility.
