@@ -1,0 +1,43 @@
+{
+  "id": "guildmaster",
+  "title": "Guildmaster",
+  "description": "An early playtest module for mercenary guild management in Starfinder Second Edition. GM-operated shared Guild sheet.",
+  "authors": [
+    {
+      "name": "Tyler Dickey"
+    }
+  ],
+  "version": "0.1.0-alpha.1",
+  "compatibility": {
+    "minimum": "14.369",
+    "maximum": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "sf2e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "1.6.1",
+          "maximum": "1.6.1"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/guildmaster.css"
+  ],
+  "url": "https://github.com/tylerdickey17/sf2e-contract-operations",
+  "manifest": "https://raw.githubusercontent.com/tylerdickey17/sf2e-contract-operations/main/foundry/guildmaster/module.json",
+  "download": "https://raw.githubusercontent.com/tylerdickey17/sf2e-contract-operations/main/foundry/releases/guildmaster-0.1.0-alpha.1.zip",
+  "flags": {
+    "guildmaster": {
+      "targetFoundry": "14.369",
+      "targetSystem": "1.6.1",
+      "inFoundryVerified": false
+    }
+  }
+}

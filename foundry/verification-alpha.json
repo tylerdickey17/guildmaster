@@ -1,0 +1,40 @@
+{
+  "moduleVersion": "0.1.0-alpha.1",
+  "target": {
+    "foundry": "14.369",
+    "sf2e": "1.6.1"
+  },
+  "checks": 28,
+  "passed": [
+    "module manifest targets exact installed system without claiming runtime verification",
+    "guild creation stores a persistent shared observer journal and four unlinked PC slots",
+    "one PC cannot fill two officer slots",
+    "players cannot mutate the guild or create one",
+    "second active GM cannot commit and authority transfers when coordinating GM disconnects",
+    "native actor modifiers replace the demo advancement adjustment",
+    "native degree adjustments determine administrative outcomes",
+    "funded hired outpost chiefs use their printed modifiers with real dice",
+    "cancelled native checks spend no actions, cash, or generated candidates",
+    "training gates use proficiency ranks, not nonzero modifiers",
+    "stale sheet revisions fail without spending",
+    "simultaneous commands serialize and the stale second command does not spend",
+    "authority loss during native roll prevents a guild commit",
+    "capacity follows Reputation tiers and counts unavailable operatives",
+    "both employment types are blocked at capacity without spending",
+    "capacity loss preserves roster and permits existing deployments",
+    "release opens capacity and removes only future retainers",
+    "all three mission checks require explicit review and remain saved after reload",
+    "native Hero Point reroll spends exactly one actual PC point and retains original result",
+    "interrupted actor write resumes once without losing the mission result",
+    "interrupted final guild write recovers without spending a second Hero Point",
+    "ambiguous Hero Point edits block recovery instead of guessing",
+    "chat failure keeps a durable outbox; retry does not duplicate delivered messages",
+    "complete turn settles count-only mission success, compensation, XP and next Upkeep once",
+    "a two-of-three contract completes with two successes despite failed Extraction",
+    "failed-job half pay preserves Loyalty and records exact wages once",
+    "rendered mission review includes the third die and escaped generated/custom text",
+    "shared player rendering disables spending and phase advancement"
+  ],
+  "verification": "Node integration harness with mocked Foundry documents, native checks, dice and chat. No live Foundry or visual verification.",
+  "generatedAt": "2026-10-13T00:35:23.006Z"
+}

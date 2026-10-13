@@ -1,3 +1,5 @@
+> **October13 Foundry handoff:** [0.1.0-alpha.1](foundry-alpha-0.1.0.md) is the first implemented module, targeting owner-confirmed Foundry14.369 / SF2e1.6.1.28 mocked integration checks pass; real-world loading, UI and multiplayer verification are pending. [Install/source](../foundry/guildmaster/README.md). Browser live rules remain0.3.11; capacity6/9/12/15 is implemented in the module copy only. Older “no Foundry code” statements below are historical. Guild Archetypes, expanded feats, morality and Heat remain explicitly future scope.
+
 > **Current live rules:0.3.11.** [Content handoff](prototype-values-v0.3.11.md) supersedes historical live-version statements below.
 
 > **Current live rules:0.3.10.** [Latest handoff](prototype-values-v0.3.10.md) supersedes historical live-version statements below.

@@ -425,3 +425,12 @@ Implemented0.3.8 makes full completion conditions prominent and gives outcome re
 
 [Rules and API research](prototype-values-v0.3.11.md), [evidence/samples](../playtests/prototype-0.3.11/README.md), [portable content pack](../prototypes/browser-playtest/dist/content.js). Source `be0e5b9110cda18d478fa582e388ceefa2ff8876`, native deployment `appgdep_6acd6a7a857881919335a18f344a0387` **succeeded**. This prepares content for Foundry; the module itself is not implemented in this pass.
 
+
+
+## LIVE-050–052: capacity, future customization, and Foundry alpha, October13
+
+- **LIVE-050 — User-approved design, module implementation:** guild-wide Operative Capacity6/9/12/15 at Reputation below20/20/50/80. Both employment types and unavailable hired operatives count; candidates do not. Capacity loss preserves existing personnel and blocks further hiring. Future feats may improve capacity. Module-only routine release procedures allow roster replacement without refunds or erased obligations; browser0.3.11 was not redeployed.
+- **LIVE-051 — Explicit future scope:** more Leader/Guild Feats and Guild Archetypes, with proposed odd-level Guild Feats/even-level Archetype Feats. Morality/conduct, authority scrutiny/Heat, investigation rolls, bribes/fines/disruption and severe campaign consequences are explicitly deferred. No such subsystem or new feat catalog was implemented.
+- **LIVE-052 — Foundry target and first alpha:** user confirms Foundry14.369 / native SF2e1.6.1. Built0.1.0-alpha.1, persistent shared Journal-backed Guild sheet, linked native PC skills/checks and actual Hero Point mission rerolls, actual dice/chat, existing turn/economy/content engine and new capacity. Coordinating GM commits all mutations; player view is read-only for this first alpha.28 mocked integration checks pass. No actual Foundry instance, visual layout, live multiplayer or third-party compatibility result is claimed. Manifest deliberately omits `compatibility.verified`.
+
+[Module source and installation](../foundry/guildmaster/README.md), [scope/acceptance checklist](foundry-alpha-0.1.0.md), [verification](../foundry/verification-alpha.json). Packaging contains a module manifest and dependency-free ZIP; source generation has no external API or AI runtime.

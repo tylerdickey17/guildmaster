@@ -1,5 +1,7 @@
 # Guildmaster
 
+**Foundry alpha:** [0.1.0-alpha.1 source/install guide](foundry/guildmaster/README.md) targets Foundry14.369 / SF2e1.6.1, with28 mocked integration checks. Runtime/visual verification is pending. [Integration and acceptance checklist](docs/foundry-alpha-0.1.0.md). Browser live rules remain0.3.11.
+
 Guild management for Starfinder 2e.
 
 Repository: [`tylerdickey17/sf2e-contract-operations`](https://github.com/tylerdickey17/sf2e-contract-operations).
@@ -8,7 +10,7 @@ A design workspace for a mercenary-company subsystem for **Starfinder 2e**, init
 
 Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, mission-resolution, guild-development, finance, property, and events/rival-guild frameworks and identifies what still needs design or balancing.
 
-**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.11**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers, revised failed-pay Loyalty, visible Upkeep, employment pay, property purchases and staffed upgrades. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. Base staffing is implemented; full officer signature progression and Reorganize Command remain documented for later implementation. A Foundry VTT v14 module is a future target; this repository contains no module implementation or compatibility claim.
+**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.11**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers, revised failed-pay Loyalty, visible Upkeep, employment pay, property purchases and staffed upgrades. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. Base staffing is implemented; full officer signature progression and Reorganize Command remain documented for later implementation. The first Foundry v14 alpha is now implemented in `foundry/guildmaster`, targeting14.369 / SF2e1.6.1. It has automated integration coverage, but no actual Foundry runtime or compatibility verification yet.
 
 ## Documents
 
@@ -78,7 +80,7 @@ These labels describe the evidence behind a rule, not its playtest quality. An a
 
 When a rule changes, update the affected system documents and their decision-log entries. Keep the reasoning and prior outcome available; mark replaced decisions as superseded rather than silently overwriting the history. Examples and possible implementations must remain labeled as proposals until approved.
 
-Systems A–G retain historical framework documents and source gaps. The October10 integration checkpoint followed six deterministic stress-test traces (58 authored turns); edition0.2 then selected remaining procedures. The0.3 simulation pass is distinct from those older traces and does not turn them into probability evidence. Read current prototype/rules first, then older documents for provenance. Module development remains deferred.
+Systems A–G retain historical framework documents and source gaps. The October10 integration checkpoint followed six deterministic stress-test traces (58 authored turns); edition0.2 then selected remaining procedures. The0.3 simulation pass is distinct from those older traces and does not turn them into probability evidence. Read current prototype/rules first, then older documents for provenance. The Foundry alpha handoff above supersedes older statements that all module development is deferred.
 
 Loyalty scale, return/status rules, rescue bonuses and a visible rival-offer fixture now exist. Full authored rival-mission capture/rescue content and campaign consequences remain ahead. Rival competition is through visible Guild Events; the older daily rival-deployment roll is superseded. Any remaining non-rival daily procedure and Foundry automation details remain deferred.
 
