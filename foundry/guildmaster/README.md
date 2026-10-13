@@ -1,46 +1,45 @@
 # Guildmaster Foundry Alpha
 
-Version **0.1.0-alpha.2** targets **Foundry 14.369 / native SF2e 1.6.1**. It has automated integration coverage but has **not yet been run inside a licensed Foundry instance**. The manifest deliberately does not declare a verified Foundry version.
+Version **0.1.0-alpha.3** targets **Foundry 14.369 / native SF2e 1.6.1**. It has automated integration coverage but has **not yet been run inside a licensed Foundry instance**. The manifest deliberately does not declare a verified Foundry version.
 
 ## Install
 
-This package supports **manifest installation once the repository is public**. The owner has authorized public visibility; the connected GitHub tools cannot change visibility, so that settings step remains with the owner until verified.
-
-1. On the repository Settings page, scroll to Danger Zone and use Change repository visibility → Public.
-2. In Foundry Setup, open Add-on Modules → Install Module.
-3. Paste this manifest URL:
+In Foundry Setup, open **Add-on Modules → Install Module** and paste:
 
 ```text
 https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildmaster/module.json
 ```
 
-4. Install Guildmaster, launch an SF2e test world, and enable it in Manage Modules.
+The repository is public. The stable manifest points to the versioned ZIP and supports update checks. For an existing installation, check for module updates in Foundry Setup and reload the world after updating.
 
-The stable manifest points to the versioned ZIP and supports subsequent update checks. Until the repository is public, anonymous requests return404 and Foundry cannot download it. No GitHub access token is embedded.
+Manual fallback: extract `guildmaster-0.1.0-alpha.3.zip` into `Data/modules/guildmaster/` with `module.json` directly in that folder, then restart Foundry.
 
-Manual fallback: download `guildmaster-0.1.0-alpha.2.zip`, extract its contents into `Data/modules/guildmaster/` with `module.json` directly in that folder, and restart Foundry.
-
-Open **Game Settings → Configure Settings → Guildmaster → Open Guildmaster**, use the Journal directory's Guildmaster button, or press **Ctrl+Shift+G**. This macro also opens it:
+Open Guildmaster from the **Journal tab button**, **Configure Settings → Guildmaster → Open Guildmaster**, or **Ctrl+Shift+G**. Choose **Start Guild Turn** in management to open the guide. Settings also includes a separate Start/Resume Guild Turn entry. This macro also opens it:
 
 ```js
 game.modules.get('guildmaster').api.open();
 ```
 
-## First session
+## First session / existing saves
 
-1. Create a new guild. The staffed setup has 2,000 credits, four generated operatives, a leased HQ, and a Training Suite. Choose four PC officer slots for a four-person table.
-2. Open Officers and link a different existing SF2e character to each slot. Generated operatives are separate, lightweight guild records.
-3. Review Upkeep, pay available funds, then open Activity. The staffed first invoice is 350 credits; the lean first invoice is 300.
-4. Choose the acting officer in the toolbar. Work the Network to find recruits or contracts. Administrative checks open that PC's native SF2e skill dialog; cancelling spends no guild cash/actions.
-5. Secure an opening contract, assign three to six operatives, declare three distinct phase leads, review wages/payout/DCs, and deploy. Deployment is routine.
-6. Begin Events, roll each phase, and review its result. Before accepting a result, optionally spend one linked PC's actual Hero Point. Keep the reroll. The third check also remains visible before settlement.
-7. Resolve failed-job wages or MVP, continue to the monthly event, make any Guild Feat choices, and begin the next turn.
-8. Export a JSON backup and refresh to check that the same guild, treasury, crew, and results remain.
+1. Existing guilds and resolved rolls remain. If an alpha2 Hero Point spend is stuck, use **Recover Hero Point spend** after updating; the old pending marker is now cleared explicitly without discarding the reroll.
+2. For a new guild, create one in management and link actual PCs to officer slots. Assign OWNER permission on their character Actors to the appropriate players.
+3. Choose **Start / Resume Guild Turn**. The guide resumes the existing phase rather than resetting it.
+4. Review/pay itemized Upkeep, renew services and resolve training choices. Continue to Guild Actions.
+5. GM view defaults to **All Officers**, with a dropdown for individual previews. Players see only owned-PC actions that their office, skill ranks and Guild Level qualify them to perform. Their requests await GM approval.
+6. Commander handles contracts; Personnel handles recruits/training; Quartermaster handles finances and assembles squads; Operations handles mission preparation. Boost Morale and passes are general. Everyone gets an action or pass before Assignments; Operations can reserve remaining actions for later plans.
+7. In Assignments, Quartermaster assembles distinct-lead squads, Operations prepares them, and Quartermaster deploys them. Assembly and deployment are routine.
+8. In Events, review every mission check—including the third—before proceeding; spend an actual PC Hero Point if desired. Resolve compensation/MVP, then the monthly event.
+9. Complete advancement/feat choices and **Complete Guild Turn**. The guide closes, management remains, and next Upkeep is prepared but not paid.
+
+**Reorganize Command** in Actions costs one shared action, once per turn, for the whole PC role reshuffle. Actor links, Hero Points and earlier actions stay with those characters.
+
+[Full guided-turn scope and test checklist](../../docs/foundry-guided-turn-alpha.3.md).
 
 ## Alpha scope
 
 - Shared persistent Guild sheet, stored in a module flag on a Journal Entry with default Observer ownership.
-- GM commits changes; players observe and participate through table discussion. First active GM by user ID coordinates mutations. There are no player action-request sockets yet.
+- GM commits shared state. Players submit owned-PC actions for GM approval; the first active GM by user ID coordinates mutations. Requests use native Actor permissions, not action-request sockets.
 - Native PC skill statistics/ranks and administrative check outcomes. The browser's PC modifier advancement benchmark is disabled for linked PCs.
 - Actual Foundry dice for missions, discovery tables, and monthly events, posted to chat alongside readable result summaries.
 - Actual PC Hero Point spending for pending mission rerolls; no separate point pool or automatic session reset.
@@ -52,16 +51,16 @@ game.modules.get('guildmaster').api.open();
 
 Guild spending is speculative until a command and its dice finish. One local queue and saved revision checks prevent overlapping or stale guild commands from spending twice. Only the coordinating GM writes the observer-protected guild Journal.
 
-Hero Points belong to a different Actor document. A durable pending transaction is saved before spending the point. If that actor update or the final guild save fails, normal guild actions stop and **Recover Hero Point spend** resumes the recorded result without rerolling or spending twice. If the actor's points were independently changed to neither the recorded before nor after value, recovery stops for GM reconciliation. Do not delete the linked actor during recovery.
+Hero Points belong to a different Actor document. A durable pending transaction is saved before spending the point. If that actor update or the final guild save fails, normal guild actions stop and **Recover Hero Point spend** resumes the recorded result without rerolling or spending twice. Completed saves write `pendingHeroSpend: null` because Foundry recursively merges flags; omission does not remove that marker. If the actor's points were independently changed to neither the recorded before nor after value, recovery stops for GM reconciliation. Do not delete the linked actor during recovery.
 
 Chat delivery uses a saved outbox and per-message identifiers. **Retry chat delivery** posts outstanding results without repeating already present messages. The guild state is the authoritative result; rolling independently from an existing chat card does not revise a settled guild action.
 
 ## Deliberately deferred
 
-Player-submitted action approval, complete officer signatures/Reorganize Command, full combat NPC generation, browser-save import and backup restoration UI, headquarters relocation/crew-transfer UI, authored rescue adjudication for Missing personnel, complete creditor enforcement, further feat catalogs, Guild Archetypes, morality, and Heat. Base purchases can be tested, but changing which owned property serves as HQ still needs the relocation UI. Existing missing-person and financial enforcement gaps remain prototype rules, not newly automated campaign consequences.
+Further officer signatures/specialist offices, full combat NPC generation, browser-save import and backup restoration UI, headquarters relocation/crew-transfer UI, authored rescue adjudication for Missing personnel, complete creditor enforcement, further feat catalogs, Guild Archetypes, morality, and Heat. Base purchases can be tested, but changing which owned property serves as HQ still needs the relocation UI. Existing missing-person and financial enforcement gaps remain prototype rules, not newly automated campaign consequences.
 
 Guild Archetype feats on even levels and Guild Feats on odd levels are future design direction. They are not implemented here. No external generation API or runtime AI is required.
 
 ## Verification
 
-Run `node foundry/tests/alpha.test.mjs` from the repository root. The harness mocks Foundry documents, actor statistics, dice, chat, and application rendering. It covers authority, stale/concurrent commands, cancelled checks, native skill/rank handling, capacity, phase review, real-resource Hero Point transactions, failure recovery, compensation, chat retries, escaping, and read-only player controls. It cannot establish real Foundry loading, visual layout, live multiplayer behavior, or compatibility with other modules. Use the acceptance checklist in `docs/foundry-alpha-0.1.0.md` for the first actual world test.
+Run `node foundry/tests/alpha.test.mjs` from the repository root. The harness mocks Foundry documents, actor statistics, dice, chat, and application rendering. 49 checks cover authority, concurrency, native-style flag merging and old stuck Hero Point saves, owned-PC requests, role/skill gates, GM all/individual previews, restructuring, squad reservations, guided stages and window completion, Journal access, compensation and chat retries. It cannot establish real Foundry loading, visual layout, live multiplayer behavior, or compatibility with other modules. Use the acceptance checklist in `docs/foundry-alpha-0.1.0.md` for the first actual world test.

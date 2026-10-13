@@ -447,3 +447,15 @@ Implemented0.3.8 makes full completion conditions prominent and gives outcome re
 The repository was observed renamed by the owner to `tylerdickey17/guildmaster` during this pass (stable repository ID1413729123); alpha2 distribution URLs use that canonical name. Visibility was still private when observed.
 
 Final handoff: repository metadata now reports public visibility. Anonymous manifest/ZIP GETs both returned200 for alpha0.1.0-alpha.2; ZIP70,558bytes, SHA256 `b7989e77aaba8eb09684774d83ddf1c63a8fa7e750b1c2e8c474199bf7246535`, matching the built archive. Remote installation is ready to try; this does not establish actual Foundry runtime compatibility. See `foundry/distribution-verification.json`.
+
+
+## LIVE-054–057: guided Foundry turn and Hero Point recovery
+
+October12, 2026, America/Chicago.
+
+- **LIVE-054 — Owner runtime feedback:** alpha2 works fairly well in the owner’s Foundry world; Hero Point transactions become stuck even after recovery. Reproduced the flag-merge mechanism: omission of pendingHeroSpend retains it. Alpha3 explicitly clears it with null and tests legacy recovery against recursive merge semantics. No reset of the guild or mission results.
+- **LIVE-055 — Explicit interface direction:** retain management, add Start/Resume Guild Turn opening a guided Upkeep → Actions → Assignments → Events → Completion flow. Save the stage, display expenses/payment controls, preserve Events mission resolution and close the guide on completion. Add visible Journal access using v14 ApplicationV2 elements.
+- **LIVE-056 — Explicit player/GM views:** players see eligible actions for owned, linked characters based on skills and office. GM defaults to All Officers and can preview any individual officer through a dropdown. Locked full-catalog options show requirements. Player requests are routed to a coordinating GM through owned Actor inbox flags; this GM-approval implementation is a designer choice for authoritative shared spending. Native roll dialogs remain on the approving GM client.
+- **LIVE-057 — Explicit role collaboration / adopted earlier restructuring:** Commander handles contracts; Personnel recruits/trains; Quartermaster assembles/deploys and handles finances; Operations prepares/resolves missions. Current workflow gates supersede older all-basic-actions-to-every-office drafts. Reorganize Command costs1 shared action, once/turn; actor links and earlier actions stay with PCs. Larger specialist office/feat/archetype/morality systems remain deferred.
+
+Alpha0.1.0-alpha.3 has49 integration checks, including stale requests/budget revalidation, binding and GM-only command rejection, role changes, squad reservations, recursive merge participation reset and guide closing. [Handoff](foundry-guided-turn-alpha.3.md), [verification](../foundry/verification-alpha.json). Owner feedback concerns alpha2; no actual alpha3 visual/live multiplayer test is claimed by this release. Browser0.3.11 is unchanged.

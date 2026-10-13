@@ -1,4 +1,4 @@
-import {ID,VERSION,E,esc,clone,envelope,guilds,canManage,stateForDisplay,createGuild,commitCommand,recoverHeroSpend,retryChat,activeGM} from './core.mjs';
+import {ID,VERSION,E,esc,clone,envelope,guilds,canManage,stateForDisplay,createGuild,commitCommand,recoverHeroSpend,retryChat,activeGM,submitRequest} from './core.mjs';
 
 const {ApplicationV2,DialogV2}=foundry.applications.api;
 const options = (rows,selected='') => rows.map(([value,label])=>`<option value="${esc(value)}" ${String(value)===String(selected)?'selected':''}>${esc(label)}</option>`).join('');
@@ -36,14 +36,14 @@ export class GuildmasterSheet extends ApplicationV2 {
     const officer=s.officers.some(o=>o.id===this.officerId)?this.officerId:s.officers[0].id;
     this.officerId=officer;
     return `<div class="gm-shell">
-      <header class="gm-header"><div><div class="gm-eyebrow">GUILDMASTER · ALPHA ${VERSION}</div><h1>${esc(journal.name)}</h1><p>Turn ${s.turn} · ${esc(s.phase)} · 30 days per turn</p></div><div class="gm-controls"><select name="guild">${options(all.map(j=>[j.id,j.name]),journal.id)}</select>${b('New guild','create',{},!manage)}${b('Export backup','export')}</div></header>
+      <header class="gm-header"><div><div class="gm-eyebrow">GUILDMASTER · ALPHA ${VERSION}</div><h1>${esc(journal.name)}</h1><p>Turn ${s.turn} · ${esc(s.phase)} · 30 days per turn</p></div><div class="gm-controls"><select name="guild">${options(all.map(j=>[j.id,j.name]),journal.id)}</select>${b(s.turnGuide?.active?'Resume Guild Turn':'Start Guild Turn','openTurn')}${b('New guild','create',{},!manage)}${b('Export backup','export')}</div></header>
       <div class="gm-metrics">${card('Treasury',`<strong>${credit(s.cash)}</strong><small>${credit(owed)} arrears</small>`)}${card('Guild Level',`<strong>${s.guildLevel}</strong><small>${s.guildXP}/1,000 XP · ${s.pendingGuildXP} pending</small>`)}${card('Reputation',`<strong>${s.reputation}</strong><small>${s.reputation>=80?'Exalted':s.reputation>=50?'Honored':s.reputation>=20?'Friendly':s.reputation>=0?'Neutral':'Unfriendly'}</small>`)}${card('Operatives',`<strong>${count} / ${capacity}</strong><small>${count>capacity?'Over capacity: recruitment blocked':'Guild-wide capacity'}</small>`)}${card('Guild Actions',`<strong>${s.actions}</strong><small>Pool ${E.actionPool(s)} · ${s.partySize} PCs</small>`)}</div>
-      <div class="gm-banner">${game.user.isGM?`Coordinating GM: ${esc(activeGM()?.name??'none')}. ${canManage()?'You commit guild changes.':'This sheet is read-only for you while that GM is active.'}`:'Shared player view. Tell the GM your action; they resolve it using your linked PC.'}</div>
+      <div class="gm-banner">${game.user.isGM?`Coordinating GM: ${esc(activeGM()?.name??'none')}. ${canManage()?'You commit guild changes.':'This sheet is read-only for you while that GM is active.'}`:'Shared guild management. Start / resume the guided turn to see your own officer actions.'}</div>
       ${data.pendingHeroSpend?`<div class="gm-alert">An interrupted Hero Point spend needs recovery. ${b('Recover Hero Point spend','recoverHero',{},!canManage()||this.busy)}</div>`:''}
       ${data.outbox?.length?`<div class="gm-alert">${data.outbox.length} chat result(s) await delivery. ${b('Retry chat delivery','retryChat',{},!manage)}</div>`:''}
       <div class="gm-toolbar">${select('officer','Acting officer',s.officers.map(o=>[o.id,`${o.name}${o.actorUuid||o.baseId?'':' · not linked'}`]),officer)}${select('base','Operating base',s.bases.filter(x=>x.status==='Operational').map(x=>[x.id,x.name]),s.operatingBase)}</div>
       <nav class="gm-tabs">${['overview','officers','roster','contracts','assets','history'].map(t=>b(t==='assets'?'Bases & finances':t[0].toUpperCase()+t.slice(1),'tab',{tab:t},this.tab===t)).join('')}</nav>
-      <div class="gm-layout"><aside>${this.phasePanel(s,manage)}</aside><main>${this[this.tab](s,manage)}</main></div>
+      <div class="gm-layout gm-management"><main>${this[this.tab](s,this.tab==='officers'?manage:false)}</main></div>
     </div>`;
   }
   _replaceHTML(html,content) {
@@ -57,7 +57,7 @@ export class GuildmasterSheet extends ApplicationV2 {
     content.onchange=event=>{
       const target=event.target;
       if(target.name==='guild'){this.guildId=target.value;this.render({force:true});}
-      if(target.name==='officer')this.officerId=target.value;
+      if(target.name==='officer'){this.officerId=target.value;this.render({force:true});}
       if(target.name==='base')this.run('focusBase',[target.value]).catch(error=>ui.notifications.error(error.message));
     };
     const base=content.querySelector('[name="base"]');if(base)base.disabled=!canManage()||this.busy;
@@ -99,7 +99,7 @@ export class GuildmasterSheet extends ApplicationV2 {
     return card('Current operations',jobs.length?jobs.map(j=>`<section><h4>${esc(j.contract.name)}</h4>${paragraph(j.result?j.result.completionReason:`${j.rolls.length} / 3 checks rolled · ${E.completionRule(j.contract)}`)}${j.rolls.map(r=>paragraph(`${r.phase}: ${E.names[r.degree]} · d20 ${r.face} ${r.actualModifier>=0?'+':''}${r.actualModifier} = ${r.total} vs DC ${r.dc}`)).join('')}${j.result?paragraph(`${j.result.success?'Completed':'Failed'} · ${j.result.guildXP??0} Guild XP · ${j.result.recovery} recovery turn(s)`):''}${j.result?.exceptionalGuidance?paragraph(j.result.exceptionalGuidance):''}</section>`).join(''):'<p>No squad deployed this turn.</p>')+card('Next Upkeep forecast',`<strong>${credit(E.forecast(s))}</strong><p>Known overhead only. Mission wages and optional spending are separate.</p>`)+card('Recent results',s.log.slice(0,8).map(l=>`<p><b>${esc(l.title)}</b><br>${esc(l.text)}</p>`).join(''));
   }
   officers(s,manage) {
-    return `<div class="gm-card-grid">${s.officers.map(o=>card(o.name,paragraph(o.role)+paragraph(o.baseId?'Hired outpost chief':o.actorUuid?'Linked PC':'Link your actual SF2e character to this slot.')+`<dl>${detail('Actions led this turn',o.used)}${!o.baseId?detail('Hero Points',o.heroPoints):''}</dl>`+(!o.baseId?b('Link / change character','link',{id:o.id},!manage):'')+(o.actorUuid?b('Open character sheet','actor',{uuid:o.actorUuid}):'')+`<details><summary>Current skill modifiers</summary>${Object.entries(o.skills).map(([k,v])=>paragraph(`${k}: ${v>=0?'+':''}${v}${o.skillRanks?` · rank ${o.skillRanks[k]??0}`:''}`)).join('')}</details>`)).join('')}</div><p>Linking assigns a character to an existing slot. Reorganize Command and the full officer progression are future work.</p>`;
+    return `<div class="gm-card-grid">${s.officers.map(o=>card(o.name,paragraph(o.role)+paragraph(o.baseId?'Hired outpost chief':o.actorUuid?'Linked PC':'Link your actual SF2e character to this slot.')+`<dl>${detail('Actions led this turn',o.used)}${!o.baseId?detail('Hero Points',o.heroPoints):''}</dl>`+(!o.baseId?b('Link / change character','link',{id:o.id},!manage):'')+(o.actorUuid?b('Open character sheet','actor',{uuid:o.actorUuid}):'')+`<details><summary>Current skill modifiers</summary>${Object.entries(o.skills).map(([k,v])=>paragraph(`${k}: ${v>=0?'+':''}${v}${o.skillRanks?` · rank ${o.skillRanks[k]??0}`:''}`)).join('')}</details>`)).join('')}</div><p>Link PCs for initial setup. Reorganize Command changes existing primary offices for one shared Guild Action, once per turn, in the guided Actions stage.</p>`;
   }
   roster(s,manage) {
     const members=s.mercs.filter(m=>!['Expired','Released','Dead','Inactive'].includes(m.status));
@@ -122,11 +122,12 @@ export class GuildmasterSheet extends ApplicationV2 {
     if(this.busy)return;
     const journal=this.journal,revision=expectedRevision;
     this.busy=true;
-    try{await commitCommand(journal,{name,args},revision);}finally{this.busy=false;await this.render({force:true});}
+    try{const cmd={name,args,officerId:this.officerId};if(canManage())await commitCommand(journal,cmd,revision);else{await submitRequest(journal,cmd,revision);ui.notifications.info('Action submitted to the GM.');}}finally{this.busy=false;await this.render({force:true});}
   }
   async handle(d) {
     const journal=this.journal,s=journal?stateForDisplay(journal):null,oid=this.officerId,revision=this.revision;
     const run=(name,args=[])=>this.run(name,args,revision);
+    if(d.command==='openTurn')return game.modules.get(ID).api.openTurn(this.guildId);
     if(d.command==='tab'){this.tab=d.tab;return this.render({force:true});}
     if(d.command==='export') {
       const blob=new Blob([JSON.stringify({exportedAt:new Date().toISOString(),guild:clone(envelope(journal))},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`guildmaster-turn-${s.turn}.json`;a.click();URL.revokeObjectURL(url);return;
@@ -199,15 +200,18 @@ export class GuildmasterSheet extends ApplicationV2 {
   }
   async squadDialog(s,cid,mode,revision=this.revision) {
     const run=(name,args=[])=>this.run(name,args,revision);
-    const c=E.offer(s,cid),members=E.localMercs(s).filter(m=>m.status==='Available'&&m.dispatchedTurn!==s.turn),initial=members.slice(0,4).map(m=>m.id),leads=E.chooseLeads(s,c,initial)??[];
-    const value=await prompt(mode==='deploy'?'Assign contract squad':'Prepare operation',paragraph(c.name)+members.map(m=>`<label class="gm-choice"><input type="checkbox" name="ids[]" value="${esc(m.id)}" ${initial.includes(m.id)?'checked':''}>${esc(m.name)} · Level ${m.level} · ${credit(E.assignmentWage(m))} pay</label>`).join('')+c.skills.map((k,p)=>select(`lead${p}`,`${E.phases[p]} · ${k}`,members.map(m=>[m.id,`${m.name}: +${E.skill(m,k)} · ${E.leadRank(m,k)}`]),leads[p])).join('')+select('leader','Squad leader',[['','No leader'],...members.filter(m=>m.level>=5&&m.leaderFeat).map(m=>[m.id,m.name])])+(mode==='prepare'?select('plan','Preparation',[['recon','Digital Recon · 1 action'],['briefing','Operations Briefing · 2 actions / Level 3+'],['contingency','Extraction Contingency · 3 actions / Level 4+']])+select('phase','Recon target phase',E.phases.map((p,i)=>[i,p]),1):''),'Review assignment');
+    const c=E.offer(s,cid),members=E.localMercs(s).filter(m=>m.status==='Available'&&m.dispatchedTurn!==s.turn&&!s.board.some(other=>other.id!==cid&&other.status==='Accepted'&&other.assignmentDraft?.turn===s.turn&&other.assignmentDraft.ids.includes(m.id))),initial=members.slice(0,4).map(m=>m.id),leads=E.chooseLeads(s,c,initial)??[];
+    const value=await prompt(mode==='deploy'||mode==='assemble'?'Assign contract squad':'Prepare operation',paragraph(c.name)+members.map(m=>`<label class="gm-choice"><input type="checkbox" name="ids[]" value="${esc(m.id)}" ${initial.includes(m.id)?'checked':''}>${esc(m.name)} · Level ${m.level} · ${credit(E.assignmentWage(m))} pay</label>`).join('')+c.skills.map((k,p)=>select(`lead${p}`,`${E.phases[p]} · ${k}`,members.map(m=>[m.id,`${m.name}: +${E.skill(m,k)} · ${E.leadRank(m,k)}`]),leads[p])).join('')+select('leader','Squad leader',[['','No leader'],...members.filter(m=>m.level>=5&&m.leaderFeat).map(m=>[m.id,m.name])])+(mode==='prepare'?select('plan','Preparation',[['recon','Digital Recon · 1 action'],['briefing','Operations Briefing · 2 actions / Level 3+'],['contingency','Extraction Contingency · 3 actions / Level 4+']])+select('phase','Recon target phase',E.phases.map((p,i)=>[i,p]),1):''),'Review assignment');
     if(!value)return;
     const ids=value['ids[]']??[],chosen=[value.lead0,value.lead1,value.lead2],leader=value.leader||null,q=E.quote(s,c,ids,chosen,leader);
-    const price=mode==='deploy'?`Success payout ${credit(q.payout)}; quoted wages ${credit(q.pay)}. Deployment spends no action.`:value.plan==='briefing'?`2 actions and ${credit(25*ids.length)}; squad and leads lock.`:value.plan==='contingency'?`3 actions and ${credit(5*Math.ceil(q.pay*.25/5))}; squad and leads lock.`:'1 action; prepare one phase.';
-    const ok=await prompt('Review squad',paragraph(price)+paragraph(`Squad Level ${q.squadLevel}; ${E.completionRule(c)}`)+q.checks.map(r=>paragraph(`${r.phase}: ${r.leadName} (${r.skill}) +${r.modifier} vs DC ${r.dc}`)).join('')+paragraph(E.consequencePreview(c)),mode==='deploy'?'Deploy':'Prepare');
+    const price=mode==='deploy'||mode==='assemble'?`Success payout ${credit(q.payout)}; quoted wages ${credit(q.pay)}. Deployment spends no action.`:value.plan==='briefing'?`2 actions and ${credit(25*ids.length)}; squad and leads lock.`:value.plan==='contingency'?`3 actions and ${credit(5*Math.ceil(q.pay*.25/5))}; squad and leads lock.`:'1 action; prepare one phase.';
+    const ok=await prompt('Review squad',paragraph(price)+paragraph(`Squad Level ${q.squadLevel}; ${E.completionRule(c)}`)+q.checks.map(r=>paragraph(`${r.phase}: ${r.leadName} (${r.skill}) +${r.modifier} vs DC ${r.dc}`)).join('')+paragraph(E.consequencePreview(c)),mode==='assemble'?'Save squad':mode==='deploy'?'Deploy':'Prepare');
     if(!ok)return;
+    if(mode==='assemble')return run('draftAssignment',[cid,ids,chosen,leader]);
     if(mode==='deploy')return run('deploy',[cid,ids,chosen,leader]);
     if(value.plan==='recon')return run('recon',[cid,this.officerId,Number(value.phase)]);
     return run(value.plan==='briefing'?'operationsBriefing':'extractionContingency',[cid,ids,chosen,this.officerId,leader]);
   }
 }
+
+export {options,select,input,credit,paragraph,badge,detail,b,card};

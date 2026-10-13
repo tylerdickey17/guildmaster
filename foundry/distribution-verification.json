@@ -1,18 +1,11 @@
 {
   "repository": "tylerdickey17/guildmaster",
-  "repositoryId": 1413729123,
   "visibility": "public",
-  "ownerAuthorizesPublic": true,
-  "visibilityChangedByAgent": false,
-  "publicAccessVerified": true,
+  "version": "0.1.0-alpha.3",
   "manifest": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildmaster/module.json",
-  "manifestStatus": 200,
-  "version": "0.1.0-alpha.2",
-  "download": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/releases/guildmaster-0.1.0-alpha.2.zip",
-  "archiveStatus": 200,
-  "archiveBytes": 70558,
-  "archiveSHA256": "b7989e77aaba8eb09684774d83ddf1c63a8fa7e750b1c2e8c474199bf7246535",
-  "authenticationUsedForDownload": false,
-  "credentialsEmbedded": false,
+  "download": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/releases/guildmaster-0.1.0-alpha.3.zip",
+  "archiveBytes": 83310,
+  "archiveSHA256": "65c050e5ad33cfade2a7c26e2c28f02fec39fa053475963e8af0aa05705e1ca9",
+  "publicAccessVerified": false,
   "foundryRuntimeVerified": false
 }

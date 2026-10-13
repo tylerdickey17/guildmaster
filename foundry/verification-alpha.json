@@ -1,10 +1,10 @@
 {
-  "moduleVersion": "0.1.0-alpha.2",
+  "moduleVersion": "0.1.0-alpha.3",
   "target": {
     "foundry": "14.369",
     "sf2e": "1.6.1"
   },
-  "checks": 28,
+  "checks": 49,
   "passed": [
     "module manifest targets exact installed system without claiming runtime verification",
     "guild creation stores a persistent shared observer journal and four unlinked PC slots",
@@ -33,8 +33,29 @@
     "a two-of-three contract completes with two successes despite failed Extraction",
     "failed-job half pay preserves Loyalty and records exact wages once",
     "rendered mission review includes the third die and escaped generated/custom text",
-    "shared player rendering disables spending and phase advancement"
+    "shared player rendering disables spending and phase advancement",
+    "Foundry recursive flag merge reproduces the old pending-marker bug and recovery clears it",
+    "starting and resuming the guided turn preserves the existing phase, treasury and rolls",
+    "player action lists depend on actual ownership, primary office, skill rank and guild level",
+    "GM defaults to all officers and can preview a single officer without other role cards",
+    "player wizard hides other officers and offers their own action submission controls",
+    "role gates are enforced when committing, not just when rendering",
+    "a player submits to their owned Actor inbox without spending shared actions or credits",
+    "a player cannot request another actor’s officer or a GM-only phase advance",
+    "forged GM commands in an actor inbox are rejected by the authoritative approval path",
+    "inbox requests cannot override their authoritative actor UUID or request ID",
+    "two player requests revalidate against the current shared budget without stale-revision deadlock",
+    "pending player requests block phase advancement and declining clears that gate",
+    "Reorganize Command swaps roles immediately for one action and preserves actor links",
+    "multi-action signatures follow the reorganized office rather than original slot index",
+    "Quartermaster drafts and deploys a distinct-lead team; Operations cannot assemble it",
+    "reserved squad members cannot be trained or silently reused in another assignment",
+    "guided completion prepares the next Upkeep without charging it and marks the old turn complete",
+    "new turn resets each participation marker under Foundry recursive flag merging",
+    "an invalidated squad draft produces a correction message rather than breaking the guide",
+    "Journal entry button uses the ApplicationV2 element even when hook HTML is a context object",
+    "finishing the turn closes open guided windows while retaining the management sheet"
   ],
   "verification": "Node integration harness with mocked Foundry documents, native checks, dice and chat. No live Foundry or visual verification.",
-  "generatedAt": "2026-10-13T01:09:40.020Z"
+  "generatedAt": "2026-10-13T02:00:01.027Z"
 }

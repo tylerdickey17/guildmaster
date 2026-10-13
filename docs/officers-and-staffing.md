@@ -1,3 +1,5 @@
+> **Foundry alpha3 update:** [Guided-turn implementation](foundry-guided-turn-alpha.3.md) now adds founding workflow role gates, Quartermaster squad assembly, owned-PC action approvals and one-action Reorganize Command. The owner's newer role collaboration request supersedes the older basic-actions-for-every-office rule below for the current module. Specialist office catalogs and additional unbalanced signatures remain future design.
+
 # Officer positions and outpost staffing
 
 October 11, 2026 (America/Chicago). Design checkpoint after the owner and spouse's browser playtests.
@@ -161,3 +163,4 @@ Next authoring:
 Primary evidence is the current Work conversation on October 11. The user reported playing with their wife and said the core loop seemed good; requested exclusive officer actions; requested later offices/outpost staff; accepted the specialist/staff draft; required a role-switching action; then accepted the one-action Reorganize Command procedure and requested saving the work.
 
 This is a positive two-person human playtest report, not a controlled balance study. Exact effects and progression levels above remain working design choices. See LIVE-011–017 in the [decision log](design-decisions.md).
+

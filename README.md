@@ -1,6 +1,6 @@
 # Guildmaster
 
-**Foundry alpha:** [0.1.0-alpha.2 source/install guide](foundry/guildmaster/README.md) targets Foundry14.369 / SF2e1.6.1, with28 mocked integration checks. Runtime/visual verification is pending. [Integration and acceptance checklist](docs/foundry-alpha-0.1.0.md). Browser live rules remain0.3.11.
+**Foundry guided-turn update:** [alpha3 workflow and Hero Point fix](docs/foundry-guided-turn-alpha.3.md). **Foundry alpha:** [0.1.0-alpha.3 source/install guide](foundry/guildmaster/README.md) targets Foundry14.369 / SF2e1.6.1, with49 mocked integration checks. Runtime/visual verification is pending. [Integration and acceptance checklist](docs/foundry-alpha-0.1.0.md). Browser live rules remain0.3.11.
 
 Guild management for Starfinder 2e.
 
@@ -10,7 +10,7 @@ A design workspace for a mercenary-company subsystem for **Starfinder 2e**, init
 
 Players develop mercenary personnel and weigh the benefits of experienced operatives against their increasing pay. NPC loyalty affects their likelihood of taking rival-guild missions; capture on those missions can lead to party rescues that substantially increase loyalty. The current work records the agreed personnel, contract, mission-resolution, guild-development, finance, property, and events/rival-guild frameworks and identifies what still needs design or balancing.
 
-**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.11**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers, revised failed-pay Loyalty, visible Upkeep, employment pay, property purchases and staffed upgrades. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. Base staffing is implemented; full officer signature progression and Reorganize Command remain documented for later implementation. The first Foundry v14 alpha is now implemented in `foundry/guildmaster`, targeting14.369 / SF2e1.6.1. It has automated integration coverage, but no actual Foundry runtime or compatibility verification yet.
+**Stage:** procedural integration edition0.2 plus **live-play prototype0.3.11**, incorporating Events resolution, crew bonuses, one party-sized action pool, four iconic PC officers, revised failed-pay Loyalty, visible Upkeep, employment pay, property purchases and staffed upgrades. Six independent agents reviewed frozen0.3.0; targeted reruns checked0.3.1. Owner and spouse playtest feedback is positive; broader human playtesting and content/balance remain ahead. Base staffing is implemented; full specialist officer progression remains deferred; Foundry alpha3 adds founding office workflow gates and Reorganize Command. The first Foundry v14 alpha is now implemented in `foundry/guildmaster`, targeting14.369 / SF2e1.6.1. It has automated integration coverage, but no actual Foundry runtime or compatibility verification yet.
 
 ## Documents
 

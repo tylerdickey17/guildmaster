@@ -1,9 +1,10 @@
 import '../vendor/values.js';
 import '../vendor/content.js';
 import '../vendor/engine.js';
+import {initializeOffices,authorize,applyTurnCommand,afterCommand,officersForUser,actionSpec,stage} from './turns.mjs';
 
 export const ID = 'guildmaster';
-export const VERSION = '0.1.0-alpha.2';
+export const VERSION = '0.1.0-alpha.3';
 export const E = globalThis.GuildmasterEngine;
 const Roll=foundry.dice.Roll;
 export const SKILLS = ['Acrobatics','Arcana','Athletics','Computers','Crafting','Deception','Diplomacy','Intimidation','Medicine','Nature','Occultism','Performance','Piloting','Religion','Society','Stealth','Survival','Thievery'];
@@ -22,6 +23,7 @@ export function stateForDisplay(journal) {
   const data = envelope(journal);
   if (!data) return null;
   const s = clone(data.state);
+  initializeOffices(s);
   for (const o of s.officers.filter(o => !o.baseId)) {
     const actor = game.actors.get(o.actorUuid?.split('.').at(-1));
     if (actor?.uuid === o.actorUuid) {
@@ -43,6 +45,7 @@ export function actorStatistic(actor, skill) {
 }
 
 export async function hydrateOfficers(s) {
+  initializeOffices(s);
   for (const o of s.officers.filter(o => !o.baseId)) {
     if (!o.actorUuid) { o.skills = {}; o.skillRanks = {}; o.heroPoints = 0; continue; }
     const actor = await fromUuid(o.actorUuid);
@@ -123,9 +126,18 @@ export async function resolveFoundryRoll(data) {
 }
 
 export function dispatch(s,cmd) {
+  const authorized=authorize(s,cmd);
+  if(authorized)cmd.officerId=authorized.id;
+  if(['train','intensiveTraining','release'].includes(cmd.name)){
+    const ids=cmd.name==='release'?[cmd.args[0]]:cmd.args[0];
+    if(s.board.some(c=>c.status==='Accepted'&&c.assignmentDraft?.turn===s.turn&&c.assignmentDraft.ids.some(id=>ids.includes(id))))throw new Error('Clear the operative’s reserved squad assignment before training or release.');
+  }
+  if(applyTurnCommand(s,cmd))return;
+  const beforeActions=s.actions;
   const a = cmd.args ?? [];
   const actions = {
     settleUpkeep:()=>E.settleUpkeep(s), finishUpkeep:()=>E.finishUpkeep(s),
+    payInvoiceLine:()=>E.payInvoiceLine(s,...a),
     network:()=>E.network(s,...a), hire:()=>E.hire(s,...a), release:()=>E.releaseOperative(s,...a),
     secure:()=>E.secure(s,...a), deploy:()=>E.deploy(s,...a), promote:()=>E.promote(s,...a),
     train:()=>E.train(s,...a), morale:()=>E.morale(s,...a), recover:()=>E.recover(s,...a),
@@ -144,12 +156,15 @@ export function dispatch(s,cmd) {
     linkOfficer:()=>{
       const [oid,uuid]=a, o=E.officer(s,oid);
       if(o.baseId)throw new Error('Only a PC officer can link a character.');
+      if(o.actorUuid&&o.actorUuid!==uuid&&s.actionHistory.length)throw new Error('Use Reorganize Command to change existing officer roles. PC replacement after play starts needs a vacant slot.');
       if(s.officers.some(x=>x.id!==oid&&uuid&&x.actorUuid===uuid))throw new Error('Each PC can fill only one officer slot.');
       o.actorUuid=uuid||null; o.skills={}; o.skillRanks={}; o.heroPoints=0;
     }
   };
   if(!actions[cmd.name])throw new Error('Unsupported Guildmaster action.');
-  return actions[cmd.name]();
+  const result=actions[cmd.name]();
+  afterCommand(s,cmd,beforeActions);
+  return result;
 }
 
 let queue = Promise.resolve();
@@ -171,12 +186,15 @@ export async function createGuild({name='New Guild',partySize=4,seed=7,preset='s
     const state=E.fresh(Number(seed),false,Number(partySize),preset);
     state.guildName=name.trim()||'New Guild';
     state.officers.forEach(o=>{o.actorUuid=null;o.skills={};o.skillRanks={};o.heroPoints=0;});
-    return CONFIG.JournalEntry.documentClass.create({name:state.guildName,ownership:{default:CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER},flags:{[ID]:{guild:{schema:1,moduleVersion:VERSION,revision:0,state,outbox:[]}}}});
+    initializeOffices(state);
+    return CONFIG.JournalEntry.documentClass.create({name:state.guildName,ownership:{default:CONST.DOCUMENT_OWNERSHIP_LEVELS.OBSERVER},flags:{[ID]:{guild:{schema:1,moduleVersion:VERSION,revision:0,state,outbox:[],pendingHeroSpend:null,requestOutcomes:{}}}}});
   });
 }
 
 export async function commitCommand(journal,cmd,expectedRevision) {
-  return serialize(async()=>{
+  return serialize(()=>commitUnlocked(journal,cmd,expectedRevision));
+}
+async function commitUnlocked(journal,cmd,expectedRevision,requestId=null) {
     requireManager();
     const base=clone(envelope(journal));
     if(!base||base.schema!==1)throw new Error('Unsupported guild save schema.');
@@ -184,6 +202,7 @@ export async function commitCommand(journal,cmd,expectedRevision) {
     if(expectedRevision!==undefined&&base.revision!==expectedRevision)throw new Error('That sheet was out of date. Refresh before taking another action.');
     const initial=clone(base.state);
     await hydrateOfficers(initial);
+    if(['finishUpkeep','finishActions','endActivity','respondEvent','advance'].includes(cmd.name)&&pendingRequests(journal).length)throw new Error('Resolve pending player requests before advancing the shared stage.');
     if(cmd.name==='linkOfficer'&&cmd.args?.[1]) {
       const actor=await fromUuid(cmd.args[1]);
       if(actor?.documentName!=='Actor'||actor.type!=='character'||actor.parent)throw new Error('Link a world character actor.');
@@ -195,7 +214,8 @@ export async function commitCommand(journal,cmd,expectedRevision) {
     const records=resolved.rolls.map((r,i)=>({id:`${transaction}:roll:${i}`,kind:'roll',...r}));
     const newLogs=resolved.state.log.slice(0,Math.max(0,resolved.state.log.length-oldLogs)).reverse();
     records.push({id:`${transaction}:summary`,kind:'summary',title:cmd.name,logs:newLogs});
-    const prepared={schema:1,moduleVersion:VERSION,revision:base.revision+1,state:resolved.state,outbox:[...(base.outbox??[]),...records]};
+    const prepared={...base,schema:1,moduleVersion:VERSION,revision:base.revision+1,state:resolved.state,outbox:[...(base.outbox??[]),...records],pendingHeroSpend:null};
+    if(requestId)prepared.requestOutcomes={...(base.requestOutcomes??{}),[requestId]:{status:'Approved',turn:initial.turn,action:cmd.name}};
     if(cmd.name==='rerollPhase') {
       const officer=E.officer(initial,cmd.args[0]),actor=await fromUuid(officer.actorUuid);
       const before=actor.system.resources.heroPoints.value;
@@ -208,7 +228,6 @@ export async function commitCommand(journal,cmd,expectedRevision) {
     } else await journal.setFlag(ID,'guild',prepared);
     try { await flushOutbox(journal); } catch(error) { ui.notifications.warn('Guild saved; some chat results could not be posted. Use Retry chat delivery.'); console.error('Guildmaster chat delivery',error); }
     return envelope(journal);
-  });
 }
 
 export async function recoverHeroSpend(journal) {
@@ -222,7 +241,7 @@ export async function recoverHeroSpend(journal) {
     if(current!==pending.before&&current!==pending.after)throw new Error('Hero Points were edited during the interruption. Restore their recorded pre-spend or post-spend value before recovery.');
     if(current===pending.before)await actor.update({'system.resources.heroPoints.value':pending.after});
     requireManager();
-    await journal.setFlag(ID,'guild',pending.prepared);
+    await journal.setFlag(ID,'guild',{...pending.prepared,pendingHeroSpend:null});
     await flushOutbox(journal);
   });
 }
@@ -249,3 +268,44 @@ export async function flushOutbox(journal) {
 }
 
 export const retryChat = journal => serialize(()=>flushOutbox(journal));
+
+export function pendingRequests(journal){
+  const saved=envelope(journal),result=[];
+  for(const actor of game.actors.values())for(const [id,r] of Object.entries(actor.getFlag(ID,'requests')??{})){
+    if(r.guildUuid===journal.uuid&&r.status==='Pending'&&!saved?.requestOutcomes?.[id])result.push({...r,id,actorUuid:actor.uuid,actorName:actor.name});
+  }
+  return result;
+}
+export async function submitRequest(journal,cmd,expectedRevision){
+  const saved=envelope(journal),s=stateForDisplay(journal);
+  if(!s.turnGuide?.active)throw new Error('The GM must start the guided Guild Turn first.');
+  if(saved.revision!==expectedRevision)throw new Error('The guild changed. Refresh and submit again.');
+  const o=authorize(s,cmd);if(!o||o.baseId)throw new Error('Submit an action for your linked PC officer.');const actor=await fromUuid(o.actorUuid);
+  if(!actor?.testUserPermission(game.user,3))throw new Error('You must own the linked PC to submit an action.');
+  if(pendingRequests(journal).some(r=>r.actorUuid===actor.uuid))throw new Error('Wait for your pending action to be approved or declined.');
+  const id=foundry.utils.randomID(),request={guildUuid:journal.uuid,status:'Pending',turn:s.turn,stage:stage(s),baseId:s.operatingBase,command:clone({...cmd,officerId:o.id}),createdAt:Date.now()};
+  await actor.update({[`flags.${ID}.requests.${id}`]:request});
+  return id;
+}
+export async function approveRequest(journal,actorUuid,id){
+  return serialize(async()=>{
+    requireManager();
+    const actor=await fromUuid(actorUuid),r=actor?.getFlag(ID,'requests')?.[id],saved=envelope(journal);
+    if(!r||r.guildUuid!==journal.uuid||r.status!=='Pending'||saved.requestOutcomes?.[id])throw new Error('This request is no longer pending.');
+    const s=stateForDisplay(journal),o=E.officer(s,r.command.officerId);
+    if(!actionSpec(r.command))throw new Error('Players can request officer actions, not GM phase or setup commands.');
+    if(o.actorUuid!==actor.uuid||r.turn!==s.turn||r.stage!==stage(s)||r.baseId!==s.operatingBase)throw new Error('This request no longer matches its officer, turn, stage or base. Decline it and ask for a revised action.');
+    // Actor ownership protects the inbox. Never trust a claimed user ID in a socket.
+    authorize(s,r.command);
+    return commitUnlocked(journal,clone(r.command),saved.revision,id);
+  });
+}
+export async function declineRequest(journal,id){
+  return serialize(async()=>{
+    requireManager();const saved=clone(envelope(journal));
+    if(saved.pendingHeroSpend)throw new Error('Recover the pending Hero Point spend first.');
+    if(saved.requestOutcomes?.[id])throw new Error('That request is already resolved.');
+    saved.requestOutcomes={...(saved.requestOutcomes??{}),[id]:{status:'Declined',turn:saved.state.turn}};saved.revision++;
+    await journal.setFlag(ID,'guild',saved);
+  });
+}
