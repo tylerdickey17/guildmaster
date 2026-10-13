@@ -69,3 +69,5 @@ The owner has tested alpha2 in Foundry; alpha3 itself has not been visually or l
 - Complete the turn: the guide closes, management remains, and next Upkeep is unpaid until handled.
 
 This release does not expand the economy, feat catalog, Guild Archetypes, morality/Heat, NPC combat sheets or specialist staffing model.
+
+Public distribution verified after publication: anonymous manifest and ZIP GETs both returned200; the83,310-byte ZIP SHA256 matched `65c050e5ad33cfade2a7c26e2c28f02fec39fa053475963e8af0aa05705e1ca9`. This verifies package retrieval, not actual alpha3 Foundry execution.

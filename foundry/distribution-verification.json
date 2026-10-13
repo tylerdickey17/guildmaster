@@ -6,6 +6,9 @@
   "download": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/releases/guildmaster-0.1.0-alpha.3.zip",
   "archiveBytes": 83310,
   "archiveSHA256": "65c050e5ad33cfade2a7c26e2c28f02fec39fa053475963e8af0aa05705e1ca9",
-  "publicAccessVerified": false,
-  "foundryRuntimeVerified": false
+  "publicAccessVerified": true,
+  "foundryRuntimeVerified": false,
+  "manifestStatus": 200,
+  "archiveStatus": 200,
+  "authenticationUsedForDownload": false
 }
