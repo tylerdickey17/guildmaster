@@ -1,3 +1,5 @@
+> **Public installer verified:** repository `tylerdickey17/guildmaster` now reports public visibility. Anonymous GETs returned200 for the alpha2 manifest and70,558-byte ZIP; archive SHA256 matches the built package. [Install manifest](https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildmaster/module.json). This supersedes the visibility-pending statements below; Foundry runtime verification remains pending.
+
 # Foundry alpha 0.1.0-alpha.2 — October 13, 2026
 
 Owner target: **Foundry 14.369 / SF2e 1.6.1**. [Module source and installation](../foundry/guildmaster/README.md). [Manifest](../foundry/guildmaster/module.json). [Package](../foundry/releases/guildmaster-0.1.0-alpha.2.zip). [Automated verification](../foundry/verification-alpha.json).

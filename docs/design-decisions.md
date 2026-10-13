@@ -445,3 +445,5 @@ Implemented0.3.8 makes full completion conditions prominent and gives outcome re
 [Installation guide](../foundry/guildmaster/README.md) · [module manifest](../foundry/guildmaster/module.json).
 
 The repository was observed renamed by the owner to `tylerdickey17/guildmaster` during this pass (stable repository ID1413729123); alpha2 distribution URLs use that canonical name. Visibility was still private when observed.
+
+Final handoff: repository metadata now reports public visibility. Anonymous manifest/ZIP GETs both returned200 for alpha0.1.0-alpha.2; ZIP70,558bytes, SHA256 `b7989e77aaba8eb09684774d83ddf1c63a8fa7e750b1c2e8c474199bf7246535`, matching the built archive. Remote installation is ready to try; this does not establish actual Foundry runtime compatibility. See `foundry/distribution-verification.json`.
