@@ -1,6 +1,6 @@
 # Guildmaster Foundry Alpha
 
-Version **0.1.0-alpha.3** targets **Foundry 14.369 / native SF2e 1.6.1**. It has automated integration coverage but has **not yet been run inside a licensed Foundry instance**. The manifest deliberately does not declare a verified Foundry version.
+Version **0.1.0-alpha.4** targets **Foundry 14.369 / native SF2e 1.6.1**. It has automated integration coverage but has **not yet been run inside a licensed Foundry instance**. The manifest deliberately does not declare a verified Foundry version.
 
 ## Install
 
@@ -12,7 +12,7 @@ https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildma
 
 The repository is public. The stable manifest points to the versioned ZIP and supports update checks. For an existing installation, check for module updates in Foundry Setup and reload the world after updating.
 
-Manual fallback: extract `guildmaster-0.1.0-alpha.3.zip` into `Data/modules/guildmaster/` with `module.json` directly in that folder, then restart Foundry.
+Manual fallback: extract `guildmaster-0.1.0-alpha.4.zip` into `Data/modules/guildmaster/` with `module.json` directly in that folder, then restart Foundry.
 
 Open Guildmaster from the **Journal tab button**, **Configure Settings → Guildmaster → Open Guildmaster**, or **Ctrl+Shift+G**. Choose **Start Guild Turn** in management to open the guide. Settings also includes a separate Start/Resume Guild Turn entry. This macro also opens it:
 
@@ -27,14 +27,25 @@ game.modules.get('guildmaster').api.open();
 3. Choose **Start / Resume Guild Turn**. The guide resumes the existing phase rather than resetting it.
 4. Review/pay itemized Upkeep, renew services and resolve training choices. Continue to Guild Actions.
 5. GM view defaults to **All Officers**, with a dropdown for individual previews. Players see only owned-PC actions that their office, skill ranks and Guild Level qualify them to perform. Their requests await GM approval.
-6. Commander handles contracts; Personnel handles recruits/training; Quartermaster handles finances and assembles squads; Operations handles mission preparation. Boost Morale and passes are general. Everyone gets an action or pass before Assignments; Operations can reserve remaining actions for later plans.
-7. In Assignments, Quartermaster assembles distinct-lead squads, Operations prepares them, and Quartermaster deploys them. Assembly and deployment are routine.
+6. Commander handles contracts; Personnel handles recruiting, loyalty and leader development; Operations handles training/recovery and mission preparation; Quartermaster handles finances and assembles squads; Passes and Reorganize Command are general; Boost Morale belongs to Personnel. Everyone gets an action or pass before Assignments; Operations can reserve remaining actions for later plans.
+7. In Actions, use the Contracts, Recruits and Crew workspaces to inspect discoveries and secure/hire directly. In Assignments, Quartermaster uses the inline crew and distinct-lead editor, Operations prepares the saved squad, and Quartermaster deploys it. Assembly and deployment are routine.
 8. In Events, review every mission check—including the third—before proceeding; spend an actual PC Hero Point if desired. Resolve compensation/MVP, then the monthly event.
 9. Complete advancement/feat choices and **Complete Guild Turn**. The guide closes, management remains, and next Upkeep is prepared but not paid.
 
 **Reorganize Command** in Actions costs one shared action, once per turn, for the whole PC role reshuffle. Actor links, Hero Points and earlier actions stay with those characters.
 
-[Full guided-turn scope and test checklist](../../docs/foundry-guided-turn-alpha.3.md).
+[Full guided-turn scope and test checklist](../../docs/foundry-turn-workspaces-alpha.4.md).
+
+## Officer portfolios
+
+| Office | Gameplay responsibility |
+| --- | --- |
+| Guild Commander | Leads, acquisition, brokerage, public reputation, Guild Feats |
+| Quartermaster | Expenses, financing, bases/upgrades, team assembly and deployment |
+| Operations Officer | Training, medical recovery, recon/briefings, extraction plans and mission resolution |
+| Personnel Officer | Candidates, hiring/release, loyalty programs and Leader Feats |
+
+**Brief Mission Team** is a basic Operations action during Assignments: one shared action and 25 credits per assembled operative, with no check or trained skill requirement. It gives +1 circumstance to one selected phase. It shares the existing preparation slot with Recon and advanced briefings, uses the highest circumstance bonus, and locks the saved squad/leads. These values are provisional; existing trained actions and unlock levels are preserved. Existing training continuation decisions now belong to Operations.
 
 ## Alpha scope
 
@@ -63,4 +74,4 @@ Guild Archetype feats on even levels and Guild Feats on odd levels are future de
 
 ## Verification
 
-Run `node foundry/tests/alpha.test.mjs` from the repository root. The harness mocks Foundry documents, actor statistics, dice, chat, and application rendering. 49 checks cover authority, concurrency, native-style flag merging and old stuck Hero Point saves, owned-PC requests, role/skill gates, GM all/individual previews, restructuring, squad reservations, guided stages and window completion, Journal access, compensation and chat retries. It cannot establish real Foundry loading, visual layout, live multiplayer behavior, or compatibility with other modules. Use the acceptance checklist in `docs/foundry-alpha-0.1.0.md` for the first actual world test.
+Run `node foundry/tests/alpha.test.mjs` from the repository root. The harness mocks Foundry documents, actor statistics, dice, chat, and application rendering. 65 checks cover authority, concurrency, native-style flag merging and old stuck Hero Point saves, owned-PC requests, role/skill gates, GM all/individual previews, discovery workspaces and direct card actions, inline squad saves and quotes, revised officer portfolios, non-stacking basic briefings, restructuring, squad reservations, guided stages and window completion, Journal access, compensation and chat retries. It cannot establish real Foundry loading, visual layout, live multiplayer behavior, or compatibility with other modules. Use the acceptance checklist in `docs/foundry-alpha-0.1.0.md` for the first actual world test.

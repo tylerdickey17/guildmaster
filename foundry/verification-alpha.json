@@ -1,10 +1,10 @@
 {
-  "moduleVersion": "0.1.0-alpha.3",
+  "moduleVersion": "0.1.0-alpha.4",
   "target": {
     "foundry": "14.369",
     "sf2e": "1.6.1"
   },
-  "checks": 49,
+  "checks": 65,
   "passed": [
     "module manifest targets exact installed system without claiming runtime verification",
     "guild creation stores a persistent shared observer journal and four unlinked PC slots",
@@ -53,9 +53,25 @@
     "guided completion prepares the next Upkeep without charging it and marks the old turn complete",
     "new turn resets each participation marker under Foundry recursive flag merging",
     "an invalidated squad draft produces a correction message rather than breaking the guide",
+    "contract discovery opens the in-turn board with exact roll and direct secure controls",
+    "recruit discovery shows identity, skills, wages, expiry and hiring controls in the guide",
+    "all officers inspect boards while secure and hire controls belong to their correct role",
+    "empty discovery reports zero results without hiding previous unexpired offers",
+    "direct card hire and secure commands spend exactly their printed action and update records",
+    "assignment guide embeds mission requirements, roster, distinct-lead editor and saved quote",
+    "inline squad save submits the editor data through the authoritative Quartermaster path",
+    "Operations sees mission squad and quote without Quartermaster editing controls",
+    "level-one Operations retains training and a basic briefing without any trained skills",
+    "training and medical recovery are authorized for Operations and denied to Personnel",
+    "training continuation decisions and intensive signatures follow Operations after restructuring",
+    "basic mission briefing charges once, gives one phase +1, locks squad and cannot stack",
+    "basic briefing rejects an unassembled target, another officer and an invalid phase without spending",
+    "generated dossier and roster text stays escaped inside the guided workspaces",
+    "owned Operations player can request a basic briefing and only GM approval spends the shared budget",
+    "a non-coordinating GM can inspect the board but cannot click enabled role buttons",
     "Journal entry button uses the ApplicationV2 element even when hook HTML is a context object",
     "finishing the turn closes open guided windows while retaining the management sheet"
   ],
   "verification": "Node integration harness with mocked Foundry documents, native checks, dice and chat. No live Foundry or visual verification.",
-  "generatedAt": "2026-10-13T02:00:01.027Z"
+  "generatedAt": "2026-10-13T02:41:53.717Z"
 }

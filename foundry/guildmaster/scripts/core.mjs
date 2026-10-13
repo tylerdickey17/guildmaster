@@ -4,7 +4,7 @@ import '../vendor/engine.js';
 import {initializeOffices,authorize,applyTurnCommand,afterCommand,officersForUser,actionSpec,stage} from './turns.mjs';
 
 export const ID = 'guildmaster';
-export const VERSION = '0.1.0-alpha.3';
+export const VERSION = '0.1.0-alpha.4';
 export const E = globalThis.GuildmasterEngine;
 const Roll=foundry.dice.Roll;
 export const SKILLS = ['Acrobatics','Arcana','Athletics','Computers','Crafting','Deception','Diplomacy','Intimidation','Medicine','Nature','Occultism','Performance','Piloting','Religion','Society','Stealth','Survival','Thievery'];
@@ -152,7 +152,7 @@ export function dispatch(s,cmd) {
     focusBase:()=>E.focusBase(s,...a), renewStaff:()=>E.renewStaff(s,...a),
     borrow:()=>E.borrow(s,...a), repayLoan:()=>E.repayLoan(s,...a), optimize:()=>E.optimize(s,...a),
     sectorCampaign:()=>E.sectorCampaign(s,...a), intensiveTraining:()=>E.intensiveTraining(s,...a),
-    operationsBriefing:()=>E.operationsBriefing(s,...a), extractionContingency:()=>E.extractionContingency(s,...a),
+    missionBriefing:()=>E.missionBriefing(s,...a), operationsBriefing:()=>E.operationsBriefing(s,...a), extractionContingency:()=>E.extractionContingency(s,...a),
     linkOfficer:()=>{
       const [oid,uuid]=a, o=E.officer(s,oid);
       if(o.baseId)throw new Error('Only a PC officer can link a character.');

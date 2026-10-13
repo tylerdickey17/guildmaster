@@ -1,3 +1,5 @@
+> **Foundry alpha4 portfolios:** [Implemented revision](foundry-turn-workspaces-alpha.4.md). Commander: contracts/public reputation; Quartermaster: finances/infrastructure/squads; Operations: training/recovery/preparation/mission resolution; Personnel: recruitment/loyalty/Leader Feats. Boost Morale is Personnel-exclusive. Operations has a basic level-one mission briefing without a skill prerequisite. This revision supersedes the alpha3 assignment of training to Personnel for the module. Specialist offices remain future scope.
+
 > **Foundry alpha3 update:** [Guided-turn implementation](foundry-guided-turn-alpha.3.md) now adds founding workflow role gates, Quartermaster squad assembly, owned-PC action approvals and one-action Reorganize Command. The owner's newer role collaboration request supersedes the older basic-actions-for-every-office rule below for the current module. Specialist office catalogs and additional unbalanced signatures remain future design.
 
 # Officer positions and outpost staffing

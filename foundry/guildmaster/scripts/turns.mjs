@@ -17,11 +17,12 @@ export const ACTIONS={
   sectorCampaign:spec('Launch a Sector Campaign',['command'],['actions'],['Diplomacy'],3,2,0),
   hire:spec('Recruit Operative',['liaison'],['actions'],[],1,1,1),
   release:spec('Release Operative',['liaison'],['actions'],[],1,0),
-  train:spec('Run Training Drills',['liaison'],['actions'],[],1,1,1),
-  intensiveTraining:spec('Run Intensive Training',['liaison'],['actions'],['Medicine'],6,2,1),
-  recover:spec('Establish Recovery Protocol',['liaison'],['actions'],['Medicine'],1,1,1),
-  morale:spec('Boost Morale',null,['actions'],[],1,1,1),
+  train:spec('Run Training Drills',['field'],['actions'],[],1,1,1),
+  intensiveTraining:spec('Run Intensive Training',['field'],['actions'],['Medicine'],6,2,1),
+  recover:spec('Establish Recovery Protocol',['field'],['actions'],['Medicine'],1,1,1),
+  morale:spec('Boost Morale',['liaison'],['actions'],[],1,1,1),
   recon:spec('Conduct Digital Recon',['field'],['actions','assignments'],['Computers'],1,1,1),
+  missionBriefing:spec('Brief Mission Team',['field'],['assignments'],[],1,1,3),
   operationsBriefing:spec('Prepare Operations Briefing',['field'],['assignments'],['Computers','Survival'],3,2,3),
   extractionContingency:spec('Establish Extraction Contingency',['field'],['assignments'],['Medicine','Survival'],4,3,3),
   project:spec('Commission Upgrade',['quarter'],['actions'],[],2,1,1),
@@ -61,7 +62,7 @@ export function authorize(s,cmd,user=game.user){
   const a=actionSpec(cmd);if(!a)throw new Error('Unsupported Guildmaster action.');
   const inline=a.actingArg===null?null:cmd.args?.[a.actingArg];
   const choice=(s.phase==='upkeep'?s.upkeep:s.operations)?.choices?.find(c=>c.id===cmd.args?.[0]);
-  const choiceRole=cmd.name==='choice'?(choice?.type==='training'?'liaison':choice?.type==='failedPay'?'quarter':'field'):null;
+  const choiceRole=cmd.name==='choice'?(choice?.type==='training'?'field':choice?.type==='failedPay'?'quarter':'field'):null;
   const oid=cmd.officerId??inline??(user.isGM?s.officers.find(o=>choiceRole?office(o)===choiceRole:!a.offices||a.offices.includes(office(o)))?.id:null);
   const o=E.officer(s,oid);
   if(inline&&inline!==o.id)throw new Error('The requested action must use its own officer.');
@@ -72,7 +73,7 @@ export function authorize(s,cmd,user=game.user){
   if(a.skill.length&&!a.skill.some(k=>o.skillRanks?o.skillRanks[k]>0:!!o.skills[k]))throw new Error(`This action requires Trained ${a.skill.join(' or ')}.`);
   if(cmd.name==='choice'){
     const choice=(s.phase==='upkeep'?s.upkeep:s.operations)?.choices.find(c=>c.id===cmd.args?.[0]);
-    const required=choice?.type==='training'?'liaison':choice?.type==='failedPay'?'quarter':'field';
+    const required=choice?.type==='training'?'field':choice?.type==='failedPay'?'quarter':'field';
     if(office(o)!==required)throw new Error(`This decision belongs to ${OFFICES[required]}.`);
   }
   return o;

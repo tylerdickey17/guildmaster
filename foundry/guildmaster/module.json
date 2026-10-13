@@ -7,7 +7,7 @@
       "name": "Tyler Dickey"
     }
   ],
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.4",
   "compatibility": {
     "minimum": "14.369",
     "maximum": "14"
@@ -39,5 +39,5 @@
     }
   },
   "manifest": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/guildmaster/module.json",
-  "download": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/releases/guildmaster-0.1.0-alpha.3.zip"
+  "download": "https://raw.githubusercontent.com/tylerdickey17/guildmaster/main/foundry/releases/guildmaster-0.1.0-alpha.4.zip"
 }
